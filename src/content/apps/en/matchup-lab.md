@@ -27,7 +27,7 @@ Recommended for people who want to manage members locally.
 
 ## Key features
 
-- Member registration, editing, hiding, and participant selection
+- Member registration, editing, deletion, and participant selection
 - Singles/doubles matchup generation and regeneration
 - Matchup PDF output and member JSON import/export
 
