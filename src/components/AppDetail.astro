@@ -1,0 +1,26 @@
+---
+import { render, type CollectionEntry } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import UpdateList from './UpdateList.astro';
+import { categories, statuses, ui, formatDate, type Locale, type CategoryId } from '../i18n/ui';
+import { getUpdates } from '../lib/content';
+import { pagePath, withBase } from '../lib/paths';
+interface Props { app: CollectionEntry<'apps'>; locale: Locale; }
+const { app, locale } = Astro.props;
+const d = app.data;
+const t = ui[locale];
+const { Content } = await render(app);
+const updates = (await getUpdates(locale, d.appId)).slice(0, 5);
+---
+<Layout locale={locale} title={d.title} description={d.description} path={`apps/${d.slug}/`}>
+  <div class="container page-content detail-page">
+    <a class="text-link back-link" href={withBase(pagePath(locale, 'apps/'), import.meta.env.BASE_URL)}><span aria-hidden="true">←</span>{t.backToApps}</a>
+    <div class="detail-heading"><div class="card-top"><span class="category-label">{categories[d.category as CategoryId][locale]}</span>{d.sample && <span class="sample-badge">{t.sample}</span>}</div><h1>{d.title}</h1><p class="detail-description">{d.description}</p><div class="detail-actions">{d.appUrl && <a class="button" href={d.appUrl}>{t.open}<span aria-hidden="true">↗</span></a>}{d.githubUrl && <a class="button button-outline" href={d.githubUrl}>GitHub<span aria-hidden="true">↗</span></a>}</div></div>
+    {d.sample && <aside class="sample-notice"><span class="sample-badge">{t.sample}</span><p>{t.sampleDetail}</p></aside>}
+    {d.thumbnail && <img class="detail-image" src={withBase(d.thumbnail.src, import.meta.env.BASE_URL)} alt={d.thumbnail.alt} width="1200" height="675" />}
+    <div class="detail-grid"><div class="prose app-body"><Content />{d.screenshots?.map((shot) => <figure><img src={withBase(shot.src, import.meta.env.BASE_URL)} alt={shot.alt} width="1200" height="675" loading="lazy" /><figcaption>{shot.alt}</figcaption></figure>)}</div>
+      <aside class="detail-meta"><dl><div><dt>{t.lastUpdated}</dt><dd><time datetime={d.updatedAt}>{formatDate(d.updatedAt, locale)}</time></dd></div>{d.createdAt && <div><dt>{t.created}</dt><dd><time datetime={d.createdAt}>{formatDate(d.createdAt, locale)}</time></dd></div>}<div><dt>{t.status}</dt><dd>{statuses[d.status][locale]}</dd></div><div><dt>{t.technologies}</dt><dd><ul class="tags">{d.tags.map((tag) => <li>{tag}</li>)}</ul></dd></div></dl></aside>
+    </div>
+    <section class="detail-updates"><h2>{t.recentChanges}</h2><UpdateList updates={updates} apps={[app]} locale={locale} heading="h3" /></section>
+  </div>
+</Layout>

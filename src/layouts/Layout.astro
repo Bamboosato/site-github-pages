@@ -1,0 +1,51 @@
+---
+import { siteConfig } from '../config/site';
+import { ui, type Locale } from '../i18n/ui';
+import { pagePath, withBase } from '../lib/paths';
+import '../styles/global.css';
+interface Props { locale: Locale; title: string; description: string; path?: string; }
+const { locale, title, description, path = '' } = Astro.props;
+const t = ui[locale];
+const link = (language: Locale, route = '') => withBase(pagePath(language, route), import.meta.env.BASE_URL);
+const canonical = new URL(link(locale, path), Astro.site);
+const pageTitle = title === siteConfig.name ? title : `${title} | ${siteConfig.name}`;
+const nav = [{ path: 'apps/', label: t.apps }, { path: 'updates/', label: t.updates }, { path: 'about/', label: t.about }];
+---
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#153f39" />
+    <link rel="icon" type="image/svg+xml" href={withBase('/favicon.svg', import.meta.env.BASE_URL)} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="ja" href={new URL(link('ja', path), Astro.site)} />
+    <link rel="alternate" hreflang="en" href={new URL(link('en', path), Astro.site)} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteConfig.name} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={locale === 'ja' ? 'ja_JP' : 'en_US'} />
+    <meta property="og:locale:alternate" content={locale === 'ja' ? 'en_US' : 'ja_JP'} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{t.skip}</a>
+    <header class="site-header"><div class="header-inner container">
+      <a class="brand" href={link(locale)} aria-label={`${siteConfig.name} — ${t.home}`}><span class="brand-mark" aria-hidden="true">B.</span><span>{siteConfig.name}</span></a>
+      <nav aria-label={t.navigation}>
+        {nav.map((item) => <a href={link(locale, item.path)} aria-current={path.startsWith(item.path) ? 'page' : undefined}>{item.label}</a>)}
+        <a href={siteConfig.githubUrl}>GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+      <div class="language-switch" role="group" aria-label={t.language}>
+        <a href={link('ja', path)} lang="ja" hreflang="ja" aria-current={locale === 'ja' ? 'true' : undefined} aria-label={locale === 'ja' ? `日本語 — ${t.currentLanguage}` : '日本語'}>日本語</a>
+        <span aria-hidden="true">/</span>
+        <a href={link('en', path)} lang="en" hreflang="en" aria-current={locale === 'en' ? 'true' : undefined} aria-label={locale === 'en' ? `English — ${t.currentLanguage}` : 'English'}>English</a>
+      </div>
+    </div></header>
+    <main id="main" tabindex="-1"><slot /></main>
+    <footer class="site-footer container"><span>© {new Date().getUTCFullYear()} {siteConfig.author}</span><a href={siteConfig.githubUrl}>GitHub <span aria-hidden="true">↗</span></a></footer>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+---
+import { render, type CollectionEntry } from 'astro:content';
+import { ui, formatDate, type Locale } from '../i18n/ui';
+import { pagePath, withBase } from '../lib/paths';
+interface Props { updates: CollectionEntry<'updates'>[]; apps: CollectionEntry<'apps'>[]; locale: Locale; heading?: 'h2' | 'h3'; }
+const { updates, apps, locale, heading: Heading = 'h2' } = Astro.props;
+const t = ui[locale];
+const rendered = await Promise.all(updates.map(async (entry) => ({ entry, ...(await render(entry)) })));
+---
+{rendered.length === 0 ? <p class="empty-state">{t.noUpdates}</p> : <div class="update-list">
+  {rendered.map(({ entry, Content }) => {
+    const app = apps.find((item) => item.data.appId === entry.data.appId);
+    return <article class="update-entry" data-update-id={entry.data.updateId}>
+      <time datetime={entry.data.date}>{formatDate(entry.data.date, locale)}</time>
+      <div>
+        {app && <div class="update-app"><a href={withBase(pagePath(locale, `apps/${app.data.slug}/`), import.meta.env.BASE_URL)}>{app.data.title}</a>{app.data.sample && <span class="sample-badge">{t.sample}</span>}</div>}
+        <Heading>{entry.data.title}</Heading><div class="prose"><Content /></div>
+      </div>
+    </article>;
+  })}
+</div>}
