@@ -19,11 +19,11 @@ usageNote: "Patterns are generated and saved on your device. Use a browser with 
 
 ## Overview
 
-Adjust four independent CMYK layers to explore patterns created by their overlap. Switch between Flowline, dot, and mixed rendering to create responsive art.
+Toggle the visibility of four CMYK layers individually to explore patterns created by their overlap. Adjust shared parameters such as line spacing and noise, and switch between Flowline, dot, and mixed rendering.
 
 ## Key features
 
-- Per-layer parameters and rendering modes
+- Per-layer visibility controls, shared parameters, and rendering modes
 - Pointer, touch, pen, and keyboard interaction
 - Play/pause, random settings, PNG export, and preset storage
 

@@ -14,7 +14,7 @@ appUrl: https://app-slide-puzzle-lab.vercel.app/
 githubUrl: https://github.com/Bamboosato/app-slide-puzzle-lab
 access: open
 usageFeatures: ["on-device-processing","no-registration","offline-after-setup"]
-usageNote: "To play offline, first use the app online and let it finish loading. You can then use images on your device or saved puzzles."
+usageNote: "To play offline, first load the app online. You can play using an image selected from your device. Saved records contain results and the starting tile layout, along with puzzle settings; they do not include the selected image."
 ---
 
 ## Overview

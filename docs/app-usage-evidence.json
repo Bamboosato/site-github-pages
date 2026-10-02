@@ -38,7 +38,10 @@
         "src/App.tsx",
         "src/logic/imageProcessor.ts",
         "src/logic/storage.ts",
-        "vite.config.ts"
+        "vite.config.ts",
+        "src/types/record.ts",
+        "src/logic/recordStorage.ts",
+        "src/components/puzzle-play/PuzzlePlayScreen.tsx"
       ],
       "access": "open",
       "usageFeatures": [
@@ -47,11 +50,12 @@
         "offline-after-setup"
       ],
       "confirmed": [
-        "READMEの入力画像をアップロードしない仕様、Appの端末内画像処理・アカウントを介さない開始経路、storageのローカル保存、vite.configのHTML/JS事前キャッシュを確認。オフライン対象は端末内画像・保存済みパズルでのプレイ。"
+        "READMEの入力画像をアップロードしない仕様、Appの端末内画像処理・アカウントを介さない開始経路、storageのローカル設定保存、vite.configのHTML/JS事前キャッシュを確認。端末内画像を選んで行うプレイがオフライン利用の対象。types/record、recordStorage、PuzzlePlayScreenで保存記録は設定・初期配置・成績・最短手数の根拠を持ち、画像自体を含まないことを確認。保存済みの初期配置による再挑戦と画像の保存・復元は区別する。"
       ],
       "notVerified": [
         "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
-        "オフライン表示はREADMEと実装の対応に基づく。ブラウザー対応・初回準備・キャッシュ保持が前提。"
+        "オフライン表示はREADMEと実装の対応に基づく。ブラウザー対応・初回準備・キャッシュ保持が前提。",
+        "公開版でのオフライン起動、再読込後に保存記録から再挑戦する操作、画像の再選択が必要になる画面遷移は未確認。"
       ]
     },
     {
@@ -131,7 +135,9 @@
         "README.md",
         "src/App.tsx",
         "src/render/webglRenderer.ts",
-        "public/sw.js"
+        "public/sw.js",
+        "src/types.ts",
+        "src/constants.ts"
       ],
       "access": "open",
       "usageFeatures": [
@@ -139,11 +145,13 @@
         "no-registration"
       ],
       "confirmed": [
-        "README、App、webglRendererでアカウントを介さないCanvas/WebGL 2描画とローカル保存を確認。対象は模様生成・保存。"
+        "README、App、webglRendererでアカウントを介さないCanvas/WebGL 2描画とローカル保存を確認。対象は模様生成・保存。",
+        "2026-10-02、固定commitのsrc/types.tsおよびsrc/App.tsxで、各CMYKレイヤーの設定は表示ON/OFFのみ、線間隔・太さ・ノイズ等は共通パラメータであることを確認。引き継ぎ元の公開画面確認（2026-10-02T16:13:00+09:00、dotクラウドブラウザー、https://interactive-moire-art.vercel.app/）でも同じ操作項目を確認済み。"
       ],
       "notVerified": [
         "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
-        "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。"
+        "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。",
+        "2026-10-02の公開画面確認ではWebGL 2要求の表示があり、模様描画・保存操作の動作と公開版のcommit一致は未確認。"
       ]
     },
     {
@@ -219,7 +227,8 @@
         "README.md",
         "src/features/members/memberRepository.ts",
         "src/features/matchups/generateMatchupLocally.ts",
-        "public/sw.js"
+        "public/sw.js",
+        "src/app/AppClientShell.tsx"
       ],
       "access": "open",
       "usageFeatures": [
@@ -227,11 +236,13 @@
         "no-registration"
       ],
       "confirmed": [
-        "古いREADMEのFirebase記述ではなく、現行memberRepositoryのIndexedDB、generateMatchupLocallyのローカル生成、公開画面のアカウントを介さない主要経路を優先。対象はメンバー保存と組合せ生成。"
+        "古いREADMEのFirebase記述ではなく、現行memberRepositoryのIndexedDB、generateMatchupLocallyのローカル生成、公開画面のアカウントを介さない主要経路を優先。対象はメンバー保存と組合せ生成。",
+        "2026-10-02、固定commitのAppClientShell.tsxの削除メニュー・確認ダイアログ・confirmMemberDeleteからdeleteMemberへの呼び出しと、memberRepository.tsのIndexedDB store.delete(memberId)を確認。メンバー操作は非表示化ではなく削除。"
       ],
       "notVerified": [
         "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
-        "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。"
+        "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。",
+        "引き継ぎ元の公開画面確認（2026-10-02 07:14 UTC報告、dotクラウドブラウザー、https://matchup-lab-one.vercel.app/ と /members）は読み取りのみ。メンバー0人で削除UIは表示されず、追加・削除操作および公開版のcommit一致は未確認。"
       ],
       "operationalConfirmation": {
         "source": "user",

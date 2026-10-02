@@ -134,13 +134,14 @@
       "name": "rsvp-manager-app",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/rsvp-manager-app",
-      "appUrl": "https://rsvp-manager-app.vercel.app/",
+      "appUrl": "https://rsvphub.bamboosato.com/",
       "homepageHttpStatus": 200,
       "createdAt": "2026-06-01",
       "updatedAt": "2026-06-13",
       "commit": "3b8e1f69a6433b999f038117a91088979e9c7b08",
       "commitUrl": "https://github.com/Bamboosato/rsvp-manager-app/commit/3b8e1f69a6433b999f038117a91088979e9c7b08",
-      "readmeUrl": "https://github.com/Bamboosato/rsvp-manager-app/blob/main/README.md"
+      "readmeUrl": "https://github.com/Bamboosato/rsvp-manager-app/blob/main/README.md",
+      "note": "2026-10-02、正式本番URLをREADME固定SHA https://github.com/Bamboosato/rsvp-manager-app/blob/1436d26a50ef320af46730967c2b004f4924b4bb/README.md と正式URL導入commit https://github.com/Bamboosato/rsvp-manager-app/commit/3a48c2ee8938d4a399e2860391d7eebcc8fe3dcc で再確認。引き継ぎ元の公開確認（2026-10-02T16:10:01+09:00、dot cloud browser、read-only）では https://rsvphub.bamboosato.com/ と https://rsvp-manager-app.vercel.app/ の両方で公開概要・チュートリアル・v1.1.0フッターを確認。旧URLはそのURLに留まり正式ドメインへリダイレクトしない。homepageHttpStatusは旧Vercel URLについての既存記録であり、今回HTTPコードを測定した値ではない。ログイン・招待作成・回答送信は未操作で、公開デプロイSHAは未確認。アプリ更新日根拠commit以降の差分は開発者向けscripts/maintenance/delete-plan.mjsのみのため、commit・updatedAtは維持。"
     },
     {
       "name": "tennis-matchup-app",

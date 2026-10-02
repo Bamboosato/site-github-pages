@@ -10,7 +10,7 @@ updatedAt: "2026-06-13"
 status: active
 tags: ["Next.js","TypeScript","Firebase","PWA"]
 featured: false
-appUrl: https://rsvp-manager-app.vercel.app/
+appUrl: https://rsvphub.bamboosato.com/
 githubUrl: https://github.com/Bamboosato/rsvp-manager-app
 access: role-dependent
 usageFeatures: []
