@@ -1,0 +1,11 @@
+---
+import PortfolioPage from '../../../components/PortfolioPage.astro';
+import { getApps } from '../../../lib/content';
+import type { CategoryId } from '../../../i18n/ui';
+export async function getStaticPaths() {
+  const apps = await getApps('ja');
+  return [...new Set(apps.map((app) => app.data.category as CategoryId))].map((category) => ({ params: { category }, props: { category } }));
+}
+const { category } = Astro.props;
+---
+<PortfolioPage locale="ja" view="apps" category={category} />

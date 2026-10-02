@@ -1,0 +1,181 @@
+{
+  "owner": "Bamboosato",
+  "verifiedAt": "2026-10-02",
+  "scope": "All owner repositories returned as public by the GitHub API; no fork or archived exclusions.",
+  "repository": "https://github.com/Bamboosato/site-github-pages",
+  "repositories": [
+    {
+      "name": "app-reveal-lab",
+      "public": true,
+      "githubUrl": "https://github.com/Bamboosato/app-reveal-lab",
+      "appUrl": "https://app-reveal-lab.vercel.app/",
+      "homepageHttpStatus": 200,
+      "createdAt": "2026-09-17",
+      "updatedAt": "2026-09-17",
+      "commit": "6f187fc4d95088636fda7a68fa877d131ca61b99",
+      "commitUrl": "https://github.com/Bamboosato/app-reveal-lab/commit/6f187fc4d95088636fda7a68fa877d131ca61b99",
+      "readmeUrl": "https://github.com/Bamboosato/app-reveal-lab/blob/main/README.md"
+    },
+    {
+      "name": "app-slide-puzzle-lab",
+      "public": true,
+      "githubUrl": "https://github.com/Bamboosato/app-slide-puzzle-lab",
+      "appUrl": "https://app-slide-puzzle-lab.vercel.app/",
+      "homepageHttpStatus": 200,
+      "createdAt": "2026-09-24",
+      "updatedAt": "2026-10-02",
+      "commit": "d838d2ec85b4e28709d2da0ef59eba57bfcd747f",
+      "commitUrl": "https://github.com/Bamboosato/app-slide-puzzle-lab/commit/d838d2ec85b4e28709d2da0ef59eba57bfcd747f",
+      "readmeUrl": "https://github.com/Bamboosato/app-slide-puzzle-lab/blob/main/README.md"
+    },
+    {
+      "name": "bbcafe-app",
+      "public": true,
+      "githubUrl": "https://github.com/Bamboosato/bbcafe-app",
+      "appUrl": "https://bbcafe-app.vercel.app/",
+      "homepageHttpStatus": 200,
+      "createdAt": "2026-05-26",
+      "updatedAt": "2026-09-11",
+      "commit": "7d4d39167d3b3ba1f7e9e0276bba54fea4cd194c",
+      "commitUrl": "https://github.com/Bamboosato/bbcafe-app/commit/7d4d39167d3b3ba1f7e9e0276bba54fea4cd194c",
+      "readmeUrl": "https://github.com/Bamboosato/bbcafe-app/blob/main/README.md"
+    },
+    {
+      "name": "draw-lab",
+      "public": true,
+      "githubUrl": "https://github.com/Bamboosato/draw-lab",
+      "appUrl": "https://draw-lab-rho.vercel.app/",
+      "homepageHttpStatus": 200,
+      "createdAt": "2026-07-02",
+      "updatedAt": "2026-09-14",
+      "commit": "a1ecba6afc9c68b9444072fcf15acd7bc41fc508",
+      "commitUrl": "https://github.com/Bamboosato/draw-lab/commit/a1ecba6afc9c68b9444072fcf15acd7bc41fc508",
+      "readmeUrl": "https://github.com/Bamboosato/draw-lab/blob/main/README.md"
+    },
+    {
+      "name": "face-icon-maker",
+      "public": true,
+      "githubUrl": "https://github.com/Bamboosato/face-icon-maker",
+      "appUrl": "https://face-icon-maker.vercel.app/",
+      "homepageHttpStatus": 200,
+      "createdAt": "2026-06-21",
+      "updatedAt": "2026-09-07",
+      "commit": "2bbc3ddfa5e416441e7556996936cd32df78def9",
+      "commitUrl": "https://github.com/Bamboosato/face-icon-maker/commit/2bbc3ddfa5e416441e7556996936cd32df78def9",
+      "readmeUrl": "https://github.com/Bamboosato/face-icon-maker/blob/main/README.md"
+    },
+    {
+      "name": "interactive-moire-art",
+      "public": true,
+      "githubUrl": "https://github.com/Bamboosato/interactive-moire-art",
+      "appUrl": "https://interactive-moire-art.vercel.app/",
+      "homepageHttpStatus": 200,
+      "createdAt": "2026-08-25",
+      "updatedAt": "2026-08-27",
+      "commit": "6ed6ab0ce313d936721c8bfb10ed388c99c86065",
+      "commitUrl": "https://github.com/Bamboosato/interactive-moire-art/commit/6ed6ab0ce313d936721c8bfb10ed388c99c86065",
+      "readmeUrl": "https://github.com/Bamboosato/interactive-moire-art/blob/main/README.md"
+    },
+    {
+      "name": "local-document-preprocessor",
+      "public": true,
+      "githubUrl": "https://github.com/Bamboosato/local-document-preprocessor",
+      "appUrl": "https://local-document-preprocessor.vercel.app/",
+      "homepageHttpStatus": 200,
+      "createdAt": "2026-08-06",
+      "updatedAt": "2026-08-14",
+      "commit": "e239046a273b72defb56b9cbc66757d7b084bd96",
+      "commitUrl": "https://github.com/Bamboosato/local-document-preprocessor/commit/e239046a273b72defb56b9cbc66757d7b084bd96",
+      "readmeUrl": "https://github.com/Bamboosato/local-document-preprocessor/blob/main/README.md"
+    },
+    {
+      "name": "local-pii-masker",
+      "public": true,
+      "githubUrl": "https://github.com/Bamboosato/local-pii-masker",
+      "appUrl": "https://local-pii-masker.vercel.app/",
+      "homepageHttpStatus": 200,
+      "createdAt": "2026-07-10",
+      "updatedAt": "2026-08-13",
+      "commit": "716077e50c50033bea32ffb7b54f077efc412403",
+      "commitUrl": "https://github.com/Bamboosato/local-pii-masker/commit/716077e50c50033bea32ffb7b54f077efc412403",
+      "readmeUrl": "https://github.com/Bamboosato/local-pii-masker/blob/main/README.md"
+    },
+    {
+      "name": "markdown-knowledge-board",
+      "public": true,
+      "githubUrl": "https://github.com/Bamboosato/markdown-knowledge-board",
+      "appUrl": "https://markdown-knowledge-board.vercel.app/",
+      "homepageHttpStatus": 200,
+      "createdAt": "2026-07-09",
+      "updatedAt": "2026-10-01",
+      "commit": "2c2f9b5cbf4c129094e892964e125e89fcb0272e",
+      "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/2c2f9b5cbf4c129094e892964e125e89fcb0272e",
+      "readmeUrl": "https://github.com/Bamboosato/markdown-knowledge-board/blob/main/README.md"
+    },
+    {
+      "name": "matchup-lab",
+      "public": true,
+      "githubUrl": "https://github.com/Bamboosato/matchup-lab",
+      "appUrl": "https://matchup-lab-one.vercel.app/",
+      "homepageHttpStatus": 200,
+      "createdAt": "2026-08-20",
+      "updatedAt": "2026-09-14",
+      "commit": "3854466c6eaf002c4bdb5d5316fde7f2589b560b",
+      "commitUrl": "https://github.com/Bamboosato/matchup-lab/commit/3854466c6eaf002c4bdb5d5316fde7f2589b560b",
+      "readmeUrl": "https://github.com/Bamboosato/matchup-lab/blob/main/README.md",
+      "implementationSources": [
+        "https://github.com/Bamboosato/matchup-lab/blob/main/src/features/members/memberRepository.ts",
+        "https://github.com/Bamboosato/matchup-lab/blob/main/src/features/matchups/generateMatchupLocally.ts"
+      ],
+      "note": "README contains pre-migration descriptions; current implementation confirms IndexedDB and local generation."
+    },
+    {
+      "name": "rsvp-manager-app",
+      "public": true,
+      "githubUrl": "https://github.com/Bamboosato/rsvp-manager-app",
+      "appUrl": "https://rsvp-manager-app.vercel.app/",
+      "homepageHttpStatus": 200,
+      "createdAt": "2026-06-01",
+      "updatedAt": "2026-06-13",
+      "commit": "3b8e1f69a6433b999f038117a91088979e9c7b08",
+      "commitUrl": "https://github.com/Bamboosato/rsvp-manager-app/commit/3b8e1f69a6433b999f038117a91088979e9c7b08",
+      "readmeUrl": "https://github.com/Bamboosato/rsvp-manager-app/blob/main/README.md"
+    },
+    {
+      "name": "tennis-matchup-app",
+      "public": true,
+      "githubUrl": "https://github.com/Bamboosato/tennis-matchup-app",
+      "appUrl": "https://tennis-matchup-app.vercel.app/",
+      "homepageHttpStatus": 200,
+      "createdAt": "2026-04-20",
+      "updatedAt": "2026-05-29",
+      "commit": "768f17aa66c28824f8eb50c72d55ad518eee53cb",
+      "commitUrl": "https://github.com/Bamboosato/tennis-matchup-app/commit/768f17aa66c28824f8eb50c72d55ad518eee53cb",
+      "readmeUrl": "https://github.com/Bamboosato/tennis-matchup-app/blob/main/README.md"
+    },
+    {
+      "name": "tennis-organizing-app",
+      "public": true,
+      "githubUrl": "https://github.com/Bamboosato/tennis-organizing-app",
+      "appUrl": "https://tennis-organizing-app.vercel.app/",
+      "homepageHttpStatus": 200,
+      "createdAt": "2026-05-08",
+      "updatedAt": "2026-05-29",
+      "commit": "08bc879b3c47442b820c19a5ce91058371887942",
+      "commitUrl": "https://github.com/Bamboosato/tennis-organizing-app/commit/08bc879b3c47442b820c19a5ce91058371887942",
+      "readmeUrl": "https://github.com/Bamboosato/tennis-organizing-app/blob/main/README.md"
+    },
+    {
+      "name": "turing-pattern-lab",
+      "public": true,
+      "githubUrl": "https://github.com/Bamboosato/turing-pattern-lab",
+      "appUrl": "https://turing-pattern-lab.vercel.app/",
+      "homepageHttpStatus": 200,
+      "createdAt": "2026-06-18",
+      "updatedAt": "2026-08-26",
+      "commit": "9662eab19b048ba5785285b09259ed3b314e6d50",
+      "commitUrl": "https://github.com/Bamboosato/turing-pattern-lab/commit/9662eab19b048ba5785285b09259ed3b314e6d50",
+      "readmeUrl": "https://github.com/Bamboosato/turing-pattern-lab/blob/main/README.md"
+    }
+  ]
+}
