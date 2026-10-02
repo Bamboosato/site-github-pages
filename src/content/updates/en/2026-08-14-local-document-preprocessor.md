@@ -7,4 +7,3 @@ title: "Include metadata in Markdown downloads"
 ---
 
 Added document metadata to downloaded Markdown.
-

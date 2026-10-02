@@ -31,4 +31,3 @@ Processing normally stays in memory; explicit saving covers the mapping rather t
 ## Technologies
 
 React, TypeScript, CodeMirror, and Transformers.js/ONNX support the tool; OPFS stores saved mappings.
-

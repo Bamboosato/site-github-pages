@@ -31,4 +31,3 @@ Word・PowerPoint・Excel・OpenDocument・RTF・EPUB・CSV・テキストを含
 ## 技術構成
 
 React・TypeScript、anydocのWebAssembly、PDFiumを使用し、文書処理をWorkerへ分離しています。
-

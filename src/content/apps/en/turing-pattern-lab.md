@@ -31,4 +31,3 @@ Beyond manual controls, supported devices can use sensors, sound, or face moveme
 ## Technologies
 
 React, TypeScript, and Canvas provide the app, with MediaPipe Face Landmarker for face input.
-

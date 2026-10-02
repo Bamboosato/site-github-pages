@@ -31,4 +31,3 @@ Markdownファイルを取り込み、タグや検索で整理しながら編集
 ## 技術構成
 
 React・TypeScript、CodeMirror、IndexedDB、Mermaid、Marpを使用します。
-

@@ -7,4 +7,3 @@ title: "Support singles matchups"
 ---
 
 Added support for generating singles matchups.
-

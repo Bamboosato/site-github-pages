@@ -31,4 +31,3 @@ Images are processed with Canvas. Shuffles remain solvable, and the timer pauses
 ## Technologies
 
 React, TypeScript, and Canvas power the interface; move searches run in a Web Worker.
-

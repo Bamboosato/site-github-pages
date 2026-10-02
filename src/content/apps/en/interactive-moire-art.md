@@ -31,4 +31,3 @@ Store up to 100 named presets in IndexedDB. Fullscreen and PWA support are avail
 ## Technologies
 
 React and TypeScript provide the interface; WebGL2/GLSL render the artwork and IndexedDB stores presets.
-

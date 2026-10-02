@@ -31,4 +31,3 @@ Documents are processed in the browser without persistent document storage. PDF 
 ## Technologies
 
 React, TypeScript, anydoc WebAssembly, and PDFium support document processing in Workers.
-

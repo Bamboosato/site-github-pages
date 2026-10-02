@@ -31,4 +31,3 @@ The app connects LINE with a web interface. Authentication and network access su
 ## Technologies
 
 Next.js, React, and Firebase integrate with LINE webhooks and Web Push.
-

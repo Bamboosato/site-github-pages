@@ -31,4 +31,3 @@ githubUrl: https://github.com/Bamboosato/rsvp-manager-app
 ## 技術構成
 
 Next.js・TypeScript、Firebase Authentication、Firestore、Firebase Cloud Messagingを使用します。
-

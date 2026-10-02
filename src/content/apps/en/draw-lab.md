@@ -31,4 +31,3 @@ Tournament data is stored locally in IndexedDB. PWA support and browser printing
 ## Technologies
 
 React, TypeScript, IndexedDB, and SVG support the app, with React Router for navigation.
-

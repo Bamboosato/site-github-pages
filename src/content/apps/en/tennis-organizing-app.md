@@ -31,4 +31,3 @@ Member information is stored in Firebase/Firestore, and matchup generation uses 
 ## Technologies
 
 Next.js, TypeScript, Firebase/Firestore, a matchup generation API, and jsPDF support the app.
-

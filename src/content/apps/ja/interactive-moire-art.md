@@ -31,4 +31,3 @@ githubUrl: https://github.com/Bamboosato/interactive-moire-art
 ## 技術構成
 
 React・TypeScriptとWebGL2／GLSLで描画し、プリセットをIndexedDBに保存します。
-

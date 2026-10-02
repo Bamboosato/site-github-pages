@@ -7,4 +7,3 @@ title: "Preserve image proportions in reveal effects"
 ---
 
 Corrected shader scaling for cover fitting to reduce image distortion across aspect ratios.
-

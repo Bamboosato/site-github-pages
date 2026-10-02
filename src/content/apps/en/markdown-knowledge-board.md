@@ -31,4 +31,3 @@ Notes are stored in IndexedDB, with PWA support for offline use. GitHub-connecte
 ## Technologies
 
 React, TypeScript, CodeMirror, IndexedDB, Mermaid, and Marp support the app.
-

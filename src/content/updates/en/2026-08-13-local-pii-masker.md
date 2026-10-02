@@ -7,4 +7,3 @@ title: "Improve mapping storage and dialogs"
 ---
 
 Improved local mapping storage and the related dialogs.
-

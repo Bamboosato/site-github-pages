@@ -31,4 +31,3 @@ githubUrl: https://github.com/Bamboosato/local-pii-masker
 ## 技術構成
 
 React・TypeScript、CodeMirror、Transformers.js／ONNXと、対応表保存用のOPFSを使用します。
-

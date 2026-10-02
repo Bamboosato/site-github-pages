@@ -31,4 +31,3 @@ Firebase supports organizer authentication and data storage. Separate organizer 
 ## Technologies
 
 Next.js, TypeScript, Firebase Authentication, Firestore, and Firebase Cloud Messaging support the app.
-

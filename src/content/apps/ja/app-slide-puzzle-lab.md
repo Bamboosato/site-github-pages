@@ -31,4 +31,3 @@ githubUrl: https://github.com/Bamboosato/app-slide-puzzle-lab
 ## 技術構成
 
 React・TypeScriptとCanvasを使用し、手数の探索はWeb Workerで処理します。
-

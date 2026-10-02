@@ -7,4 +7,3 @@ title: "Reduce repeated infection notices"
 ---
 
 Adjusted daily notifications to reduce repeated infection notices.
-

@@ -7,4 +7,3 @@ title: "Move presets above the controls"
 ---
 
 Moved presets above the controls to improve access to saved settings.
-

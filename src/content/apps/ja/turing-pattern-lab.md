@@ -31,4 +31,3 @@ Feed・Killなどのパラメータを変更し、反応拡散から生まれる
 ## 技術構成
 
 React・TypeScriptとCanvasで構成し、顔を使う操作にはMediaPipe Face Landmarkerを使用します。
-

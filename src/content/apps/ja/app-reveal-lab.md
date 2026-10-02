@@ -31,4 +31,3 @@ githubUrl: https://github.com/Bamboosato/app-reveal-lab
 ## 技術構成
 
 WebGL2とtwgl.jsでシェーダーを描画し、mediabunnyとgifencで動画・GIFを書き出します。
-

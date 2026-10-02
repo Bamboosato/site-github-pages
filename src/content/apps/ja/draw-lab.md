@@ -31,4 +31,3 @@ githubUrl: https://github.com/Bamboosato/draw-lab
 ## 技術構成
 
 React・TypeScript、IndexedDB、SVGを使用し、画面遷移はReact Routerで構成しています。
-

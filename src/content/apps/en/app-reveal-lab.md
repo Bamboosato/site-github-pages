@@ -31,4 +31,3 @@ Choose an image, tune its animation, and export it in the browser. Keyboard shor
 ## Technologies
 
 WebGL2 and twgl.js render the shaders; mediabunny and gifenc handle video and GIF export.
-

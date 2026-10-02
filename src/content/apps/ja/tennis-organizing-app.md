@@ -31,4 +31,3 @@ githubUrl: https://github.com/Bamboosato/tennis-organizing-app
 ## 技術構成
 
 Next.js・TypeScript、Firebase／Firestore、組合せ生成API、jsPDFを使用します。
-

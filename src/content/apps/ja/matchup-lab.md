@@ -31,4 +31,3 @@ githubUrl: https://github.com/Bamboosato/matchup-lab
 ## 技術構成
 
 Next.js・TypeScript、IndexedDBとブラウザー内の組合せロジックを使用し、PDFをjsPDFで出力します。
-

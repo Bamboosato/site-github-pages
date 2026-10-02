@@ -7,4 +7,3 @@ title: "Support native fullscreen on mobile"
 ---
 
 Added native fullscreen support for mobile environments.
-

@@ -31,4 +31,3 @@ LINEとWeb画面をつなぐ構成です。受信内容の確認や通知管理�
 ## 技術構成
 
 Next.js・ReactとFirebaseを中心に、LINE WebhookとWeb Pushを連携しています。
-

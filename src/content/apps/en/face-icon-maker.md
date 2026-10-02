@@ -31,4 +31,3 @@ Optional 4× super-resolution can enhance the source image. Model loading and sh
 ## Technologies
 
 React, TypeScript, MediaPipe, and Canvas work alongside a LiteRT super-resolution model.
-

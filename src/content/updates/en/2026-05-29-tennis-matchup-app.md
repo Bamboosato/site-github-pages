@@ -7,4 +7,3 @@ title: "Improve doubles pair labels"
 ---
 
 Updated doubles pair labels to join partners with an ampersand (&).
-

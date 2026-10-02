@@ -31,4 +31,3 @@ JPEG・PNGの写真から顔を検出し、選んだ顔をアイコンにでき�
 ## 技術構成
 
 React・TypeScript、MediaPipe、Canvasに加え、LiteRTの超解像モデルを使用しています。
-

@@ -7,4 +7,3 @@ title: "Shorten invitation URLs"
 ---
 
 Shortened invitation URLs to make shared links easier to handle.
-

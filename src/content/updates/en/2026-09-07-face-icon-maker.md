@@ -7,4 +7,3 @@ title: "Add animal face effects"
 ---
 
 Added presets for animal effects placed over the selected face.
-

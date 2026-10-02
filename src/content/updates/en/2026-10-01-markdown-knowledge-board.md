@@ -7,4 +7,3 @@ title: "Clarify cloud backup menu wording"
 ---
 
 Improved wording in the cloud backup menu and its related information links.
-

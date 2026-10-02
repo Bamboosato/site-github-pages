@@ -31,4 +31,3 @@ Members are stored in IndexedDB without accounts or an external matchup API. In-
 ## Technologies
 
 Next.js and TypeScript combine IndexedDB with browser-side matchup logic; jsPDF produces PDF output.
-

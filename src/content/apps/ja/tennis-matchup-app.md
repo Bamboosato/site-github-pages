@@ -31,4 +31,3 @@ githubUrl: https://github.com/Bamboosato/tennis-matchup-app
 ## 技術構成
 
 Next.js・TypeScriptを中心に、状態管理にZustand、PDFにjsPDF、共有にQRコードを使用します。
-

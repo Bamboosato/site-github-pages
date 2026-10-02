@@ -31,4 +31,3 @@ Turn a day's practice settings into matchups ready for printing or sharing. PWA 
 ## Technologies
 
 Next.js and TypeScript use Zustand for state, jsPDF for PDFs, and QR codes for sharing.
-
