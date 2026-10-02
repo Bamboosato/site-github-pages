@@ -42,7 +42,7 @@
 | --- | --- |
 | 日本語・英語Apps | 14件、更新日降順、公開アプリリンク14件、サンプル表示なし |
 | スポーツカテゴリ → MatchupLab | 対象4件に絞り込み、実アプリの詳細へ正常遷移 |
-| MatchupLabの日本語 → 英語 | 同じslugを保持し、英語の概要・機能・特徴・技術構成を表示 |
+| MatchupLabの日本語 → 英語 → 日本語 | 同じslugを保持し、英語の概要・機能・特徴・技術構成を表示。日本語へ戻っても同じアプリを維持 |
 | 英語詳細 → Apps → Updates → About | 英語を維持。Apps14件、Updates14件で日付順 |
 | 英語Apps 320／390／768／1440px | DOM実測で横方向のはみ出しなし。Mobileは1カラム、768／1440pxは3カラム |
 | 英語MatchupLab 320px | 横方向のはみ出しなし |
@@ -60,4 +60,6 @@
 
 サイトrepo自体は確認時点でPrivate、Pages未設定。掲載対象としての「Public repoすべて」と、サイトrepoの公開設定は別の指定として扱い、repoのvisibilityを変更していない。
 
-実公開・公開URLでの動作確認は未実施。GitHubへ反映する変更はレビュー用PRにまとめ、CI結果を別途記録する。
+レビュー用の[Draft PR #1](https://github.com/Bamboosato/site-github-pages/pull/1)を作成。実装コミット `a9bcecec51f21f0b2cf1a678ec2c5e365aa8e086` の[GitHub Actions run](https://github.com/Bamboosato/site-github-pages/actions/runs/36957610338)は成功した。Ubuntuでの依存関係インストール、テスト、型チェック、両baseのBuild、最終Build／リンク検証とartifact生成を確認。PRのDeployは条件どおりskipされた。
+
+実公開・公開URLでの動作確認は未実施。サイトrepoのvisibility変更とmainへの反映は行っていない。
