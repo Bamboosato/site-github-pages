@@ -6,7 +6,7 @@
 
 ## 新しいアプリ
 
-1. 掲載対象はBamboosato所有のPublic repoすべてです。fork・archived・検証用という理由だけで除外しません。Private repoの情報は掲載しません。
+1. 掲載対象はBamboosato所有のPublic repoすべてです。ただしユーザー指定によりサイトrepo `site-github-pages` は除外します。fork・archived・検証用という理由だけで除外しません。Private repoの情報は掲載しません。
 2. `src/content/apps/ja/` と `en/` にファイルを追加します。
 3. 必須frontmatterと、概要・機能・特徴・技術構成を両言語で記入します。
 4. 存在する公開URL・GitHub URLだけを記載します。サンプルは `sample: true` とします。
@@ -40,4 +40,4 @@ dependency更新、CI変更、内部refactoring、formattingだけなら原則�
 
 Markdown追加／変更だけで紹介情報を更新できる構造を保ってください。Public repoの一覧は2026-10-02時点の確認記録であり、自動同期ではありません。READMEが古い場合は現在のソースを確認します。今回のMatchupLabはその確認を行い、ローカル保存・生成の実装に基づいて記載しました。
 
-サイト専用repoは `Bamboosato/site-github-pages` です。掲載対象のPublic指定と、サイトrepo自体のPrivate／Public設定は別です。後者は確認前に変更しません。サイトrepoをPublicにした場合は、そのrepoも掲載対象一覧に追加します。
+サイト専用repoは `Bamboosato/site-github-pages` です。2026-10-02にPublic化とPages公開が承認されました。サイトrepo自体は、Publicになっても掲載対象から除外するユーザー指定です。確認記録の `excludedRepositories` とテストでこの条件を保持します。

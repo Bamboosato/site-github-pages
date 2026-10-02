@@ -1,6 +1,6 @@
 # Bamboosato Apps
 
-個人開発アプリの機能、特徴、技術構成、更新履歴を紹介する静的ポートフォリオです。日本語が既定で、英語版は `/en/` 配下に生成します。Bamboosato所有のPublic repoすべて（2026-10-02確認時点で14件）を両言語で掲載しています。
+個人開発アプリの機能、特徴、技術構成、更新履歴を紹介する静的ポートフォリオです。日本語が既定で、英語版は `/en/` 配下に生成します。Bamboosato所有のPublic repo（サイトrepo自体はユーザー指定により除外、2026-10-02確認時点で14件）を両言語で掲載しています。
 
 ## 技術構成
 
@@ -36,7 +36,7 @@ npm run preview -- --host 127.0.0.1
 
 `src/config/site.ts` にサイト名、作者、GitHubリンク、公開origin、baseを集約しています。カテゴリ／状態の翻訳とUI文言は `src/i18n/ui.ts` で管理します。
 
-公開先は `Bamboosato/site-github-pages`、Pages用URLは `https://bamboosato.github.io/site-github-pages/` です。ローカルのGitはこのフォルダー内で独立し、指定されたremoteの既存main履歴を保持しています。**サイトrepo自体は確認時点でPrivate、Pages実公開は未実施です。**
+公開先は `Bamboosato/site-github-pages`、Pages用URLは `https://bamboosato.github.io/site-github-pages/` です。ローカルのGitはこのフォルダー内で独立し、指定されたremoteの既存main履歴を保持しています。サイトrepoのPublic化とPages公開は2026-10-02に承認されました。サイトrepo自体はPublicになっても紹介に掲載しません。
 
 掲載の根拠と確認日、公開URL、利用者向け更新コミットは `docs/public-repositories.json` に記録しています。紹介文はPublic repoのREADME・ソース・変更記録に基づきます。全14件のhomepageは確認時点でHTTP 200でしたが、各アプリの機能を通しで検証したことは意味しません。GitHubの一覧を自動同期する構成ではありません。
 
@@ -120,7 +120,7 @@ screenshots:
 
 ## Deploy手順
 
-1. サイトrepoのPrivate設定を維持するか、Publicへ変更するかを確認します。Pagesの利用可否は契約とrepo設定に依存します。
+1. サイトrepoをPublicに設定します（2026-10-02承認済み）。紹介の掲載対象からは除外します。
 2. `src/config/site.ts` の公開設定を確認します。GitHub repository variablesの `SITE_URL` / `SITE_BASE` で上書きする場合は設定値を揃えます。
 3. サイト専用remoteのPRでレビューした変更をmainへ反映します。
 4. GitHubのSettings → Pages → Sourceで「GitHub Actions」を選択します。

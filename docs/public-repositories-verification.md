@@ -56,10 +56,10 @@
 
 クロスブラウザー、別OS、実スマートフォン、全画面の画像確認、各紹介アプリ内部の機能は今回の対象外。
 
-## GitHubと公開
+## 公開前のGitHub確認
 
-サイトrepo自体は確認時点でPrivate、Pages未設定。掲載対象としての「Public repoすべて」と、サイトrepoの公開設定は別の指定として扱い、repoのvisibilityを変更していない。
+以下は初回PR検証時点の記録です。サイトrepo自体はこの時点でPrivate、Pages未設定でした。掲載範囲の指定だけではrepoのvisibilityを変更していません。
 
 レビュー用の[Draft PR #1](https://github.com/Bamboosato/site-github-pages/pull/1)を作成。実装コミット `a9bcecec51f21f0b2cf1a678ec2c5e365aa8e086` の[GitHub Actions run](https://github.com/Bamboosato/site-github-pages/actions/runs/36957610338)は成功した。Ubuntuでの依存関係インストール、テスト、型チェック、両baseのBuild、最終Build／リンク検証とartifact生成を確認。PRのDeployは条件どおりskipされた。
 
-実公開・公開URLでの動作確認は未実施。サイトrepoのvisibility変更とmainへの反映は行っていない。
+この後、ユーザーがPublic化・mainへの反映・Pages公開を承認しました。さらにサイトrepo自体は掲載対象から除外する指定があり、14件の紹介を維持します。実公開の検証観点は `docs/test-plan.md`、Deploy結果はmainのGitHub Actionsと公開URLで確認します。

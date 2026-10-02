@@ -42,6 +42,17 @@ test('normal: both languages cover the complete verified public repository inven
     }
   }
 });
+test('scope: the site repository stays excluded from apps and updates even when public', () => {
+  const inventory = JSON.parse(readFileSync(new URL('../docs/public-repositories.json', import.meta.url), 'utf8'));
+  assert.deepEqual(inventory.excludedRepositories, ['site-github-pages']);
+  const { apps, updates } = readContent();
+  for (const excluded of inventory.excludedRepositories) {
+    assert.ok(!inventory.repositories.some((repo) => repo.name === excluded), 'excluded repository must not enter the inventory');
+    assert.ok(!apps.some((entry) => entry.data.appId === excluded), 'excluded repository must not have app pages');
+    assert.ok(!updates.some((entry) => entry.data.appId === excluded), 'excluded repository must not have updates');
+  }
+});
+
 test('boundary: no entries is valid, and optional URLs/images and empty tags are supported', () => {
   assert.deepEqual(validateRecords([], []), []);
   assert.deepEqual(validateRecords(pair(), []), []);

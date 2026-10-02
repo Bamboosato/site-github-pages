@@ -1,7 +1,8 @@
 {
   "owner": "Bamboosato",
   "verifiedAt": "2026-10-02",
-  "scope": "All owner repositories returned as public by the GitHub API; no fork or archived exclusions.",
+  "scope": "All owner public repositories except site-github-pages, excluded by the user; no fork or archived exclusions.",
+  "excludedRepositories": ["site-github-pages"],
   "repository": "https://github.com/Bamboosato/site-github-pages",
   "repositories": [
     {
