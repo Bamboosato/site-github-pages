@@ -108,10 +108,25 @@
       "appUrl": "https://markdown-knowledge-board.vercel.app/",
       "homepageHttpStatus": 200,
       "createdAt": "2026-07-09",
-      "updatedAt": "2026-10-01",
-      "commit": "2c2f9b5cbf4c129094e892964e125e89fcb0272e",
-      "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/2c2f9b5cbf4c129094e892964e125e89fcb0272e",
-      "readmeUrl": "https://github.com/Bamboosato/markdown-knowledge-board/blob/main/README.md"
+      "updatedAt": "2026-10-02",
+      "commit": "c10cf11b2c1cf6f8ba77f85740241124e727a8a5",
+      "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/c10cf11b2c1cf6f8ba77f85740241124e727a8a5",
+      "readmeUrl": "https://github.com/Bamboosato/markdown-knowledge-board/blob/main/README.md",
+      "implementationSources": [
+        "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/src/App.tsx#L1830-L1975",
+        "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/src/App.tsx#L540-L602",
+        "https://github.com/Bamboosato/markdown-knowledge-board/pull/47",
+        "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/docs/markdown-import-auto-activation-requirements.md",
+        "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/tests/e2e/markdown-import-current-note.spec.ts"
+      ],
+      "note": "PR47は2026-10-02T09:10:52Zにmerge。比較 https://github.com/Bamboosato/markdown-knowledge-board/compare/2c2f9b5cbf4c129094e892964e125e89fcb0272e...c10cf11b2c1cf6f8ba77f85740241124e727a8a5 は1commit・5files、README変更なし。Markdown/text新規取り込みの入力順で最初の保存成功ノートを条件付き自動選択。固定App.tsxとPR47のmerge・Vercel SUCCESSを今回再照合。実際の取り込み・アップロード・保存操作は未試験。",
+      "productionAssetEvidence": {
+        "url": "https://markdown-knowledge-board.vercel.app/assets/index-C3Uvm9s8.js",
+        "checkedAt": "2026-10-02T21:03:01Z",
+        "httpStatus": 200,
+        "sha256": "6499469330f51dd06e9c309afb1e569f609768d631e760f79ba6e330f50e4603",
+        "method": "引き継ぎ元の公開配信JS確認。固定ソースと同じ自動選択guard・選択処理を確認済み。今回のCodex Cloud環境からの再取得は403で失敗し、HTTP200とハッシュの再測定は未実施。"
+      }
     },
     {
       "name": "matchup-lab",

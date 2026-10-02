@@ -6,7 +6,7 @@ slug: markdown-knowledge-board
 category: utilities
 description: "Organize Markdown notes with search, editing, previews, and export."
 createdAt: "2026-07-09"
-updatedAt: "2026-10-01"
+updatedAt: "2026-10-02"
 status: active
 tags: ["React","TypeScript","IndexedDB","Markdown"]
 featured: true
@@ -26,6 +26,12 @@ Import Markdown files and organize them with tags and search. Edit notes stored 
 - Multiple Markdown imports/exports, title/body search, and tags
 - CodeMirror editing, task checkboxes, Mermaid, and Marp rendering
 - JSON backups, print/PDF output, and GitHub-connected cloud backup
+
+## Selection after import
+
+When Markdown or text files are imported as new notes, the first note saved successfully is selected automatically. This happens only if there are no unsaved changes or unfinished tag input, and no save is in progress, both when the import starts and when it finishes. Selecting, editing, or saving a note during import takes priority and prevents automatic selection.
+
+The Edit/Preview view and search/tag filters stay unchanged. If the selected note does not match the filters, its card stays hidden until the filters are cleared.
 
 ## Design and usage
 
