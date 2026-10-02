@@ -3,7 +3,7 @@ appId: face-icon-maker
 locale: ja
 title: "Face Icon Maker"
 slug: face-icon-maker
-category: utilities
+category: visual-experimental
 description: "写真から顔を選び、加工や動物エフェクトを加えてアイコンを作るツール。"
 createdAt: "2026-06-21"
 updatedAt: "2026-09-07"
@@ -12,6 +12,9 @@ tags: ["React","TypeScript","MediaPipe","Canvas"]
 featured: false
 appUrl: https://face-icon-maker.vercel.app/
 githubUrl: https://github.com/Bamboosato/face-icon-maker
+access: open
+usageFeatures: ["on-device-processing","no-registration"]
+usageNote: "写真は端末内で処理します。顔検出・背景除去等の初回利用時には、処理用モデルや実行環境の取得にネットワーク接続が必要です。"
 ---
 
 ## 概要

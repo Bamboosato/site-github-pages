@@ -107,3 +107,67 @@ test('transition: translated descriptions may change without advancing the app u
   const apps = pair(); apps[1].data.description = 'Revised translation'; apps[1].body = 'Corrected translation';
   assert.deepEqual(validateRecords(apps, updates()), []);
 });
+
+test('normal and boundary: optional usage data supports neither, access only, features only and both', () => {
+  const base = pair()[0].data;
+  const omitted = { ...base }; delete omitted.access; delete omitted.usageFeatures;
+  const parsed = appSchema.parse(omitted);
+  assert.equal(parsed.access, 'unknown', 'omission must not imply open access');
+  assert.deepEqual(parsed.usageFeatures, []);
+  for (const usage of [
+    { access: 'login-required' },
+    { usageFeatures: ['on-device-processing', 'no-registration'] },
+    { access: 'role-dependent', usageFeatures: ['on-device-processing'], usageNote: 'Organizer login; invitee PIN' },
+    { access: 'open', usageFeatures: ['on-device-processing', 'no-registration', 'offline-after-setup'], usageNote: 'First use online' },
+  ]) assert.equal(appSchema.safeParse({ ...base, ...usage }).success, true);
+});
+
+test('abnormal and boundary: unsupported IDs, duplicates, more than three features and empty notes fail', () => {
+  const base = pair()[0].data;
+  for (const usage of [
+    { access: 'public' }, { usageFeatures: ['pwa'] },
+    { usageFeatures: ['on-device-processing', 'on-device-processing'] },
+    { usageFeatures: ['on-device-processing', 'no-registration', 'offline-after-setup', 'on-device-processing'], usageNote: 'First use online' },
+    { usageNote: '' }, { usageNote: '  ' },
+  ]) assert.equal(appSchema.safeParse({ ...base, ...usage }).success, false, JSON.stringify(usage));
+  assert.equal(appSchema.parse({ ...base, usageNote: '  A translated note  ' }).usageNote, 'A translated note');
+});
+
+test('abnormal: login contradictions, unexplained roles and offline prerequisites are rejected', () => {
+  const base = pair()[0].data;
+  for (const usage of [
+    { access: 'login-required', usageFeatures: ['no-registration'] },
+    { access: 'role-dependent', usageFeatures: ['no-registration'], usageNote: 'Different roles' },
+    { access: 'role-dependent' }, { usageFeatures: ['offline-after-setup'] },
+  ]) assert.equal(appSchema.safeParse({ ...base, ...usage }).success, false, JSON.stringify(usage));
+});
+
+test('translation: usage IDs must match and notes must exist in both languages without sharing translated text', () => {
+  for (const [field, value] of Object.entries({ access: 'open', usageFeatures: ['on-device-processing'] })) {
+    const apps = pair(); apps[1].data[field] = value;
+    assert.match(validateRecords(apps, []).join('\n'), new RegExp(`shared field ${field}`));
+  }
+  const apps = pair(); apps[0].data.usageNote = '日本語の補足';
+  assert.match(validateRecords(apps, []).join('\n'), /usageNote translation is missing/);
+  apps[1].data.usageNote = 'English note';
+  assert.deepEqual(validateRecords(apps, []), []);
+});
+
+test('evidence: all published usage metadata matches its pinned source audit', () => {
+  const audit = JSON.parse(readFileSync(new URL('../docs/app-usage-evidence.json', import.meta.url), 'utf8'));
+  const { apps } = readContent();
+  assert.equal(audit.repositories.length, 14);
+  assert.deepEqual(audit.repositories.map((repo) => repo.name).sort(), apps.filter((app) => app.data.locale === 'ja').map((app) => app.data.appId).sort());
+  for (const repo of audit.repositories) {
+    assert.match(repo.commit, /^[a-f0-9]{40}$/);
+    assert.ok(repo.sourcePaths.includes('README.md'));
+    assert.ok(repo.confirmed.length > 0 && repo.notVerified.length > 0);
+    for (const app of apps.filter((app) => app.data.appId === repo.name)) {
+      assert.equal(app.data.access, repo.access);
+      assert.deepEqual(app.data.usageFeatures, repo.usageFeatures);
+    }
+  }
+  const bbcafe = audit.repositories.find((repo) => repo.name === 'bbcafe-app');
+  assert.equal(bbcafe.operationalConfirmation.source, 'user');
+  assert.equal(bbcafe.operationalConfirmation.date, '2026-10-02');
+});

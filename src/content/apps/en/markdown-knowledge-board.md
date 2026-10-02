@@ -3,7 +3,7 @@ appId: markdown-knowledge-board
 locale: en
 title: "Markdown Knowledge Board"
 slug: markdown-knowledge-board
-category: productivity
+category: utilities
 description: "Organize Markdown notes with search, editing, previews, and export."
 createdAt: "2026-07-09"
 updatedAt: "2026-10-01"
@@ -12,6 +12,9 @@ tags: ["React","TypeScript","IndexedDB","Markdown"]
 featured: true
 appUrl: https://markdown-knowledge-board.vercel.app/
 githubUrl: https://github.com/Bamboosato/markdown-knowledge-board
+access: open
+usageFeatures: ["on-device-processing","no-registration","offline-after-setup"]
+usageNote: "To edit and save offline, complete the app's offline preparation during your first online use. Optional cloud backups require signing in to the relevant account and a network connection, and send backup data to the cloud."
 ---
 
 ## Overview

@@ -12,6 +12,9 @@ tags: ["TypeScript","WebGL2","GLSL"]
 featured: false
 appUrl: https://app-reveal-lab.vercel.app/
 githubUrl: https://github.com/Bamboosato/app-reveal-lab
+access: open
+usageFeatures: ["on-device-processing","no-registration","offline-after-setup"]
+usageNote: "オフラインで画像の描画・動画出力を使うには、対応ブラウザーで初回のオンライン読み込みを完了してください。出力形式はブラウザーの対応状況によって異なります。"
 ---
 
 ## 概要

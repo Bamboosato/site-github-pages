@@ -1,0 +1,338 @@
+{
+  "checkedAt": "2026-10-02",
+  "owner": "Bamboosato",
+  "method": "公開mainの固定commitでREADMEと主要ソースを確認。リンク先アプリの通信キャプチャ・実機オフライン試験は未実施。ユーザー入力の主要処理が端末内という表示はアプリ配信・モデル取得を含む通信ゼロを意味しない。",
+  "excludedRepositories": [
+    "site-github-pages"
+  ],
+  "repositories": [
+    {
+      "name": "app-reveal-lab",
+      "commit": "6f187fc4d95088636fda7a68fa877d131ca61b99",
+      "sourcePaths": [
+        "README.md",
+        "src/App.svelte",
+        "src/lib/core/imageLoader.ts",
+        "vite.config.ts",
+        "src/lib/export/exportPipeline.ts"
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration",
+        "offline-after-setup"
+      ],
+      "confirmed": [
+        "READMEの端末内処理・登録なし・初回後のオフライン利用と、App.svelteの画像読み込み、exportPipelineのWorker出力、vite.configのHTML/JS/WASM事前キャッシュを確認。対象は画像描画と対応ブラウザーでの動画出力。"
+      ],
+      "notVerified": [
+        "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
+        "オフライン表示はREADMEと実装の対応に基づく。ブラウザー対応・初回準備・キャッシュ保持が前提。"
+      ]
+    },
+    {
+      "name": "app-slide-puzzle-lab",
+      "commit": "5a40cea9d870f329b93eb8eff3d85b278762be42",
+      "sourcePaths": [
+        "README.md",
+        "src/App.tsx",
+        "src/logic/imageProcessor.ts",
+        "src/logic/storage.ts",
+        "vite.config.ts"
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration",
+        "offline-after-setup"
+      ],
+      "confirmed": [
+        "READMEの入力画像をアップロードしない仕様、Appの端末内画像処理・アカウントを介さない開始経路、storageのローカル保存、vite.configのHTML/JS事前キャッシュを確認。オフライン対象は端末内画像・保存済みパズルでのプレイ。"
+      ],
+      "notVerified": [
+        "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
+        "オフライン表示はREADMEと実装の対応に基づく。ブラウザー対応・初回準備・キャッシュ保持が前提。"
+      ]
+    },
+    {
+      "name": "bbcafe-app",
+      "commit": "6bedc6abec09cf4ce0b413a5e267be0d18d6dd37",
+      "sourcePaths": [
+        "README.md",
+        "src/app/page.tsx",
+        "src/app/api/auth/login/route.ts",
+        "docs/firebase-auth-channel-migration.md"
+      ],
+      "access": "login-required",
+      "usageFeatures": [],
+      "confirmed": [
+        "READMEとログインAPIでFirebase Authログイン、管理者側ユーザー作成、アプリ内新規登録なしを確認。受信メッセージ閲覧・管理が対象。新規利用時のLINE準備は下記ユーザー確認に基づく。"
+      ],
+      "notVerified": [
+        "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
+        "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。"
+      ],
+      "operationalConfirmation": {
+        "source": "user",
+        "date": "2026-10-02",
+        "reference": "docs/site-github-pages-card-usage-instructions.md",
+        "condition": "新規利用にはLINE公式アカウント取得とアプリ管理者によるアカウント登録が必要。既存利用者の毎回のログイン手順ではない。"
+      }
+    },
+    {
+      "name": "draw-lab",
+      "commit": "a1ecba6afc9c68b9444072fcf15acd7bc41fc508",
+      "sourcePaths": [
+        "README.md",
+        "src/storage/tournamentRepository.ts",
+        "pwa/sw.ts",
+        "src/storage/appDatabase.ts"
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration",
+        "offline-after-setup"
+      ],
+      "confirmed": [
+        "READMEの登録・ログイン・クラウド非対応、tournamentRepositoryのIndexedDB保存、sw.tsの事前キャッシュとオフラインナビゲーションを確認。対象は大会編集・保存。"
+      ],
+      "notVerified": [
+        "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
+        "オフライン表示はREADMEと実装の対応に基づく。ブラウザー対応・初回準備・キャッシュ保持が前提。"
+      ]
+    },
+    {
+      "name": "face-icon-maker",
+      "commit": "2bbc3ddfa5e416441e7556996936cd32df78def9",
+      "sourcePaths": [
+        "README.md",
+        "src/App.tsx",
+        "src/services/faceLandmarker.ts",
+        "src/services/segmentationService.ts"
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration"
+      ],
+      "confirmed": [
+        "READMEのユーザーアカウントなし・写真の端末内処理とAppの処理経路を確認。faceLandmarker/segmentationServiceはモデル・WASMを読み込み、背景除去は外部配信元から取得する。対象は写真加工。"
+      ],
+      "notVerified": [
+        "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
+        "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。"
+      ]
+    },
+    {
+      "name": "interactive-moire-art",
+      "commit": "6ed6ab0ce313d936721c8bfb10ed388c99c86065",
+      "sourcePaths": [
+        "README.md",
+        "src/App.tsx",
+        "src/render/webglRenderer.ts",
+        "public/sw.js"
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration"
+      ],
+      "confirmed": [
+        "README、App、webglRendererでアカウントを介さないCanvas/WebGL 2描画とローカル保存を確認。対象は模様生成・保存。"
+      ],
+      "notVerified": [
+        "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
+        "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。"
+      ]
+    },
+    {
+      "name": "local-document-preprocessor",
+      "commit": "b43d0d6bf3e6ab78342407956bde802ae469edb8",
+      "sourcePaths": [
+        "README.md",
+        "src/converter/AnyDocConverter.ts",
+        "src/converter/converter.worker.ts"
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration"
+      ],
+      "confirmed": [
+        "README、AnyDocConverter、converter.workerでアカウントを介さず文書をブラウザー内WASM/Workerへ渡して変換する経路を確認。対象は選択文書の変換と結果出力。"
+      ],
+      "notVerified": [
+        "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
+        "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。"
+      ]
+    },
+    {
+      "name": "local-pii-masker",
+      "commit": "716077e50c50033bea32ffb7b54f077efc412403",
+      "sourcePaths": [
+        "README.md",
+        "docs/privacy.md",
+        "src/domain/detection/ner/nerWorker.ts",
+        "src/App.tsx"
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration"
+      ],
+      "confirmed": [
+        "README、App、nerWorkerとprivacy.mdで登録を介さない検出・マスキング・復元、モデル取得、明示操作での暗号化対応表OPFS保存を確認。対象は主要テキスト処理と対応表保存であり、原文セッション保存ではない。"
+      ],
+      "notVerified": [
+        "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
+        "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。"
+      ]
+    },
+    {
+      "name": "markdown-knowledge-board",
+      "commit": "2c2f9b5cbf4c129094e892964e125e89fcb0272e",
+      "sourcePaths": [
+        "README.md",
+        "vite.config.ts",
+        "src/lib/storagePersistence.ts",
+        "src/App.tsx"
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration",
+        "offline-after-setup"
+      ],
+      "confirmed": [
+        "README、App、storagePersistenceとvite.configで登録不要のローカル編集・保存、初回オンライン準備後のオフライン利用を確認。任意のGitHub/Google等のクラウド連携には別途認証と通信が必要。主要機能はローカルノート編集・保存。"
+      ],
+      "notVerified": [
+        "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
+        "オフライン表示はREADMEと実装の対応に基づく。ブラウザー対応・初回準備・キャッシュ保持が前提。"
+      ]
+    },
+    {
+      "name": "matchup-lab",
+      "commit": "3854466c6eaf002c4bdb5d5316fde7f2589b560b",
+      "sourcePaths": [
+        "README.md",
+        "src/features/members/memberRepository.ts",
+        "src/features/matchups/generateMatchupLocally.ts",
+        "public/sw.js"
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration"
+      ],
+      "confirmed": [
+        "古いREADMEのFirebase記述ではなく、現行memberRepositoryのIndexedDB、generateMatchupLocallyのローカル生成、公開画面のアカウントを介さない主要経路を優先。対象はメンバー保存と組合せ生成。"
+      ],
+      "notVerified": [
+        "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
+        "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。"
+      ],
+      "operationalConfirmation": {
+        "source": "user",
+        "date": "2026-10-02",
+        "reference": "docs/site-github-pages-tennis-app-comparison-instructions.md",
+        "condition": "アカウント登録不要。メンバーを利用中のブラウザー内で保存・登録・編集し、クラウドで自動共有しない。メンバーをローカルで管理したい人におすすめ。紹介内容の確認日でありアプリのリリース日ではない。"
+      }
+    },
+    {
+      "name": "rsvp-manager-app",
+      "commit": "1436d26a50ef320af46730967c2b004f4924b4bb",
+      "sourcePaths": [
+        "README.md",
+        "src/features/auth/ProtectedRoute.tsx",
+        "src/app/i/[inviteCode]/entry/page.tsx",
+        "src/features/invite/InviteScreens.tsx"
+      ],
+      "access": "role-dependent",
+      "usageFeatures": [],
+      "confirmed": [
+        "READMEとProtectedRouteのログイン誘導、InviteScreensのニックネーム/PINによる回答セッションを確認。主催者用アカウントと招待回答者の条件を区別。"
+      ],
+      "notVerified": [
+        "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
+        "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。"
+      ]
+    },
+    {
+      "name": "tennis-matchup-app",
+      "commit": "024d75b5c1d314d7ea24d438ddcda8180c30f527",
+      "sourcePaths": [
+        "README.md",
+        "src/hooks/useMatchupGeneration.ts",
+        "public/sw.js"
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration"
+      ],
+      "confirmed": [
+        "READMEの管理API用認証と一般画面を区別。useMatchupGenerationからgenerateMatchupUseCaseを端末内で呼ぶ経路を確認。対象は一般画面のシングルス・ダブルス生成。"
+      ],
+      "notVerified": [
+        "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
+        "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。"
+      ],
+      "operationalConfirmation": {
+        "source": "user",
+        "date": "2026-10-02",
+        "reference": "docs/site-github-pages-tennis-app-comparison-instructions.md",
+        "condition": "アカウント登録不要。継続利用するメンバー情報の保存・管理機能はない。組合せ作成後にラウンドを追加し参加人数を調整できる。メンバー管理までは必要なく当日の参加人数に合わせて組合せを作りたい人におすすめ。他2アプリの対応有無や過去ラウンドの保持挙動は判断しない。紹介内容の確認日でありアプリのリリース日ではない。"
+      }
+    },
+    {
+      "name": "tennis-organizing-app",
+      "commit": "ed269664ec1f175e7c8619653171b70b38133e3a",
+      "sourcePaths": [
+        "README.md",
+        "src/app/page.tsx",
+        "src/features/members/memberRepository.ts",
+        "src/app/AppClientShell.tsx"
+      ],
+      "access": "login-required",
+      "usageFeatures": [],
+      "confirmed": [
+        "READMEとAppClientShellのFirebaseメール/パスワード認証・匿名ゲスト認証、memberRepositoryのFirestore保存、組合せ生成APIを確認。ゲストもログイン経路を使用するため登録不要チップを付けない。",
+        "固定commitのAppClientShell.tsxを再確認。269、673、706行で匿名ユーザーのメンバー取得・編集を禁止し、831行でメンバー画面に登録要求を表示する。567行では人数からゲスト参加者を構成する。ゲストの人数指定による組合せ作成と、登録済みアカウントによるメンバー管理を区別する。"
+      ],
+      "notVerified": [
+        "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
+        "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。"
+      ],
+      "operationalConfirmation": {
+        "source": "user",
+        "date": "2026-10-02",
+        "reference": "docs/site-github-pages-tennis-app-comparison-instructions.md",
+        "condition": "クラウドのメンバー管理にはアカウント登録が必要。保存済みメンバーを複数端末・ブラウザーで利用でき、そこで管理したい人におすすめ。リアルタイム同期・同時編集・他ユーザーへの共有権限は推測しない。紹介内容の確認日でありアプリのリリース日ではない。"
+      }
+    },
+    {
+      "name": "turing-pattern-lab",
+      "commit": "9662eab19b048ba5785285b09259ed3b314e6d50",
+      "sourcePaths": [
+        "README.md",
+        "src/App.tsx",
+        "src/simulation/grayScott.ts",
+        "vite.config.ts"
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration"
+      ],
+      "confirmed": [
+        "README、App、grayScottでアカウントを介さない反応拡散計算・Canvas描画を確認。vite.configにPWAキャッシュ設定はない。任意の顔・音・動きの操作には権限やモデル読み込みがある。"
+      ],
+      "notVerified": [
+        "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
+        "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。"
+      ]
+    }
+  ]
+}

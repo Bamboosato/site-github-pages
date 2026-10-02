@@ -12,6 +12,9 @@ tags: ["Next.js","TypeScript","Firebase","PWA"]
 featured: false
 appUrl: https://rsvp-manager-app.vercel.app/
 githubUrl: https://github.com/Bamboosato/rsvp-manager-app
+access: role-dependent
+usageFeatures: []
+usageNote: "Organizers sign in with an account. Invitees use an invitation link and follow its instructions to enter a nickname, PIN and any other required details. Invitees do not need an organizer account, but do need a network connection."
 ---
 
 ## Overview

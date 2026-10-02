@@ -12,6 +12,9 @@ tags: ["React","TypeScript","WebGL2","GLSL"]
 featured: false
 appUrl: https://interactive-moire-art.vercel.app/
 githubUrl: https://github.com/Bamboosato/interactive-moire-art
+access: open
+usageFeatures: ["on-device-processing","no-registration"]
+usageNote: "模様の生成と保存は端末内で行います。WebGL 2に対応したブラウザーを使用してください。"
 ---
 
 ## 概要

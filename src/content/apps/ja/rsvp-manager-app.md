@@ -12,6 +12,9 @@ tags: ["Next.js","TypeScript","Firebase","PWA"]
 featured: false
 appUrl: https://rsvp-manager-app.vercel.app/
 githubUrl: https://github.com/Bamboosato/rsvp-manager-app
+access: role-dependent
+usageFeatures: []
+usageNote: "主催者はアカウントでログインします。回答者は招待リンクから入り、案内に従ってニックネーム・PIN等を入力します。回答者に主催者用アカウントの作成は不要ですが、通信が必要です。"
 ---
 
 ## 概要

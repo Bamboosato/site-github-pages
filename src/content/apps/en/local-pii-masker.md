@@ -12,6 +12,9 @@ tags: ["React","TypeScript","CodeMirror","ONNX"]
 featured: false
 appUrl: https://local-pii-masker.vercel.app/
 githubUrl: https://github.com/Bamboosato/local-pii-masker
+access: open
+usageFeatures: ["on-device-processing","no-registration"]
+usageNote: "Detection, masking and restoration run in your browser. Downloading the detection model initially requires a network connection. Mappings are encrypted and saved on your device only when you choose to save them. Review the results yourself."
 ---
 
 ## Overview
