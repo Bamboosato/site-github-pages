@@ -12,6 +12,9 @@ tags: ["React","TypeScript","IndexedDB","PWA"]
 featured: true
 appUrl: https://draw-lab-rho.vercel.app/
 githubUrl: https://github.com/Bamboosato/draw-lab
+access: open
+usageFeatures: ["on-device-processing","no-registration","offline-after-setup"]
+usageNote: "To edit and save tournament data offline, complete the initial online load in a supported browser. Data is stored in the browser you use."
 ---
 
 ## Overview

@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import { categories, ui, formatDate, type Locale, type CategoryId } from '../i18n/ui';
 import { pagePath, withBase } from '../lib/paths';
+import UsageFeatures from './UsageFeatures.astro';
 interface Props { app: CollectionEntry<'apps'>; locale: Locale; }
 const { app, locale } = Astro.props;
 const d = app.data;
@@ -14,7 +15,8 @@ const detailUrl = withBase(pagePath(locale, `apps/${d.slug}/`), import.meta.env.
     <div class="card-top"><span class="category-label">{categories[d.category as CategoryId][locale]}</span>{d.sample && <span class="sample-badge">{t.sample}</span>}</div>
     <h3><a href={detailUrl}>{d.title}</a></h3>
     <p class="card-description">{d.description}</p>
-    <ul class="tags" aria-label={t.technologies}>{d.tags.map((tag) => <li>{tag}</li>)}</ul>
+    <UsageFeatures features={d.usageFeatures} locale={locale} />
+    {d.tags.length > 0 && <ul class="tags" aria-label={t.technologies}>{d.tags.map((tag) => <li>{tag}</li>)}</ul>}
     <p class="card-date">{t.lastUpdated} <time datetime={d.updatedAt}>{formatDate(d.updatedAt, locale)}</time></p>
     <div class="card-actions">
       {d.appUrl && <a class="button button-small" href={d.appUrl}>{t.open}<span aria-hidden="true">↗</span></a>}

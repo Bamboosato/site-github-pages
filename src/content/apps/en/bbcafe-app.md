@@ -12,6 +12,9 @@ tags: ["Next.js","TypeScript","Firebase","LINE"]
 featured: false
 appUrl: https://bbcafe-app.vercel.app/
 githubUrl: https://github.com/Bamboosato/bbcafe-app
+access: login-required
+usageFeatures: []
+usageNote: "To start using the app, you need to obtain a LINE Official Account and have your account registered by the app administrator."
 ---
 
 ## Overview
@@ -27,6 +30,8 @@ Store text received through LINE webhooks and review it in an authenticated list
 ## Design and usage
 
 The app connects LINE with a web interface. Authentication and network access support message review and notification management.
+
+Existing users sign in with their registered account. There is no in-app sign-up screen. Obtaining a LINE Official Account and registration by the app administrator are preparation steps for new users, rather than tasks to repeat at every login.
 
 ## Technologies
 

@@ -2,7 +2,7 @@ import { categories, locales } from '../i18n/ui.ts';
 import type { AppData, UpdateData } from './schema.ts';
 
 export type RecordEntry<T> = { file: string; data: T; body: string };
-const sharedAppFields = ['appId', 'slug', 'category', 'appUrl', 'githubUrl', 'createdAt', 'updatedAt', 'status', 'tags', 'featured', 'sample', 'version', 'license'] as const;
+const sharedAppFields = ['appId', 'slug', 'category', 'appUrl', 'githubUrl', 'createdAt', 'updatedAt', 'status', 'tags', 'featured', 'sample', 'version', 'license', 'access', 'usageFeatures'] as const;
 
 /** Check raw files before Astro loaders can overwrite entries with duplicate IDs. */
 export function validateRecords(apps: RecordEntry<AppData>[], updates: RecordEntry<UpdateData>[]): string[] {
@@ -12,7 +12,7 @@ export function validateRecords(apps: RecordEntry<AppData>[], updates: RecordEnt
     if (entry.file.split('/')[0] !== entry.data.locale) errors.push(`${entry.file}: directory and locale disagree`);
   }
   for (const entry of apps) {
-    if (!(entry.data.category in categories)) errors.push(`${entry.file}: unknown category ${entry.data.category}`);
+    if (!Object.hasOwn(categories, entry.data.category)) errors.push(`${entry.file}: unknown category ${entry.data.category}`);
   }
   function pairs<T extends { locale: 'ja' | 'en' }>(entries: RecordEntry<T>[], idKey: keyof T, shared: readonly (keyof T)[]) {
     const groups = new Map<string, RecordEntry<T>[]>();
@@ -33,6 +33,12 @@ export function validateRecords(apps: RecordEntry<AppData>[], updates: RecordEnt
     }
   }
   pairs(apps, 'appId', sharedAppFields);
+  for (const entry of apps) {
+    const translation = apps.find((other) => other.data.appId === entry.data.appId && other.data.locale !== entry.data.locale);
+    if (translation && Boolean(entry.data.usageNote) !== Boolean(translation.data.usageNote)) {
+      errors.push(`${entry.file}: usageNote translation is missing for appId=${entry.data.appId}`);
+    }
+  }
   pairs(updates, 'updateId', ['updateId', 'appId', 'date']);
   const slugs = new Set<string>();
   for (const entry of apps) {

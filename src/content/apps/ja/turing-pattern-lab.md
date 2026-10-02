@@ -12,6 +12,9 @@ tags: ["React","TypeScript","Canvas","MediaPipe"]
 featured: false
 appUrl: https://turing-pattern-lab.vercel.app/
 githubUrl: https://github.com/Bamboosato/turing-pattern-lab
+access: open
+usageFeatures: ["on-device-processing","no-registration"]
+usageNote: "反応拡散の描画は端末内で行います。顔・音・端末の動きを使う追加操作では、対応機能や権限が必要です。顔検出モデルの取得には通信を使います。"
 ---
 
 ## 概要

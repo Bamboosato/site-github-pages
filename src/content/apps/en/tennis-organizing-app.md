@@ -4,7 +4,7 @@ locale: en
 title: "Tennis Organizing App"
 slug: tennis-organizing-app
 category: sports-competition
-description: "Manage tennis members and participants, then generate practice-session matchups."
+description: "Manage members in the cloud and organize practice sessions across devices and browsers."
 createdAt: "2026-05-08"
 updatedAt: "2026-05-29"
 status: active
@@ -12,11 +12,18 @@ tags: ["Next.js","TypeScript","Firebase","jsPDF"]
 featured: false
 appUrl: https://tennis-organizing-app.vercel.app/
 githubUrl: https://github.com/Bamboosato/tennis-organizing-app
+access: login-required
+usageFeatures: []
+usageNote: "Account registration is required to manage members in the cloud. Saved member information can be accessed from multiple devices and browsers. Guest sign-in lets you create matchups using participant counts, but does not provide member management. A network connection is required."
 ---
 
 ## Overview
 
-Choose the day's participants from registered members and generate matchups using court settings. Login and guest flows support cloud-based member management.
+Choose the day's participants from members managed in the cloud and generate matchups using court settings.
+
+## Who this app is for
+
+Recommended for people who want to access and manage their members across devices and browsers.
 
 ## Key features
 

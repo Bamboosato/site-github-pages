@@ -12,6 +12,9 @@ tags: ["React","TypeScript","WebAssembly","PDFium"]
 featured: true
 appUrl: https://local-document-preprocessor.vercel.app/
 githubUrl: https://github.com/Bamboosato/local-document-preprocessor
+access: open
+usageFeatures: ["on-device-processing","no-registration"]
+usageNote: "Selected documents and conversion results are processed in your browser. The initial load of the app and its conversion runtime requires a network connection."
 ---
 
 ## Overview

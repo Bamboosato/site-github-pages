@@ -12,6 +12,9 @@ tags: ["React","TypeScript","IndexedDB","PWA"]
 featured: true
 appUrl: https://draw-lab-rho.vercel.app/
 githubUrl: https://github.com/Bamboosato/draw-lab
+access: open
+usageFeatures: ["on-device-processing","no-registration","offline-after-setup"]
+usageNote: "オフラインで大会データの編集・保存を行うには、対応ブラウザーで初回のオンライン読み込みを完了してください。データは利用中のブラウザーに保存されます。"
 ---
 
 ## 概要

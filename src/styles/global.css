@@ -72,6 +72,17 @@ main:focus { outline: none; }
 .card-description { font-size: .86rem; color: var(--muted); line-height: 1.85; margin-bottom: 20px; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; margin: 0 0 20px; }
 .tags li { font-size: .68rem; padding: 3px 8px; background: var(--tint); color: var(--muted); border-radius: 3px; overflow-wrap: anywhere; max-width: 100%; }
+.usage-features { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; margin: 0 0 14px; }
+.usage-features li { font-size: .75rem; line-height: 1.65; padding: 4px 9px; background: var(--tint); color: var(--ink); border-radius: 3px; max-width: 100%; overflow-wrap: anywhere; }
+.app-card .tags { gap: 4px 10px; }
+.app-card .tags li { padding: 0; background: transparent; }
+.app-usage { margin-bottom: 38px; padding: 22px; border: 1px solid var(--line); border-radius: 5px; }
+.app-usage h2 { margin: 0 0 16px; font-size: 1.3rem; }
+.app-usage .usage-access { font-weight: 600; color: var(--ink); margin-bottom: 14px; }
+.app-usage .usage-features { padding: 0; margin-bottom: 14px; }
+.app-usage .usage-features li { margin-top: 0; }
+.app-usage .usage-note { margin-bottom: 0; overflow-wrap: anywhere; }
+.app-usage > :last-child { margin-bottom: 0; }
 .card-date { margin: 0 0 16px; font-size: .72rem; color: var(--muted); margin-top: auto; }
 .card-date time { display: block; }
 .card-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 12px; }

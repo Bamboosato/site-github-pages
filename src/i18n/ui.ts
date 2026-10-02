@@ -2,13 +2,43 @@ export const locales = ['ja', 'en'] as const;
 export type Locale = typeof locales[number];
 
 export const categories = {
-  'sports-competition': { ja: 'スポーツ・大会運営', en: 'Sports / Competition' },
-  'visual-experimental': { ja: 'ビジュアル・実験', en: 'Visual / Experimental' },
-  utilities: { ja: 'ユーティリティ', en: 'Utilities' },
-  productivity: { ja: '生産性', en: 'Productivity' },
+  // Keep this display order. IDs preserve existing category URLs independently of labels.
+  'sports-competition': { ja: 'スポーツ・対戦運営', en: 'Sports & Match Management' },
+  'visual-experimental': { ja: 'ビジュアル・ホビー', en: 'Visual & Hobbies' },
+  utilities: { ja: '文書・情報整理', en: 'Documents & Information' },
+  productivity: { ja: '予定・連絡管理', en: 'Events & Communication' },
   other: { ja: 'その他', en: 'Other' },
 } as const;
 export type CategoryId = keyof typeof categories;
+export const categoryDescriptions = {
+  'sports-competition': {
+    ja: '大会表や対戦組合せを作り、参加者やメンバーを管理するアプリ。',
+    en: 'Apps for tournament draws, match schedules, and participant or member management.',
+  },
+  'visual-experimental': {
+    ja: '画像や映像をつくる、模様を試す、パズルを楽しむアプリ。',
+    en: 'Apps for creating images and videos, exploring patterns, and enjoying puzzles.',
+  },
+  utilities: {
+    ja: 'メモを整理し、文書を変換し、文章中の情報を確認・加工するアプリ。',
+    en: 'Apps for organizing notes, converting documents, and reviewing or processing text.',
+  },
+  productivity: {
+    ja: 'イベントの出欠や招待、メッセージやお知らせを管理するアプリ。',
+    en: 'Apps for event invitations and RSVPs, messages, and announcements.',
+  },
+} as const;
+export const usageFeatures = {
+  'on-device-processing': { ja: '端末内処理', en: 'On-device processing' },
+  'no-registration': { ja: '登録不要', en: 'No registration required' },
+  'offline-after-setup': { ja: 'オフライン対応', en: 'Offline after setup' },
+} as const;
+export const accessLabels = {
+  open: { ja: '', en: '' },
+  'login-required': { ja: 'ログインが必要', en: 'Login required' },
+  'role-dependent': { ja: '役割によりログインが必要', en: 'Login depends on your role' },
+  unknown: { ja: '', en: '' },
+} as const;
 export const statuses = {
   active: { ja: '公開中', en: 'Active' },
   experimental: { ja: '実験中', en: 'Experimental' },
@@ -43,6 +73,7 @@ export const ui = {
     open: 'アプリを開く', details: '詳しく見る', github: 'GitHub',
     lastUpdated: '最終更新日', created: '作成日', technologies: '技術', status: '状態',
     recentChanges: '最近の主な変更', backToApps: 'アプリ一覧へ',
+    features: '利用者向けの特徴', requirements: '利用条件・使い始めるには',
     noApps: 'このカテゴリのアプリは、まだありません。', noUpdates: '更新履歴は、まだありません。',
     homeDescription: 'Bamboosatoの個人開発アプリを紹介。主な機能、特徴、技術構成、更新履歴を日本語と英語で読むことができます。',
     count: '件', all: 'すべて', portfolio: '個人開発ポートフォリオ',
@@ -74,6 +105,7 @@ export const ui = {
     open: 'Open app', details: 'View details', github: 'GitHub',
     lastUpdated: 'Last updated', created: 'Created', technologies: 'Technologies', status: 'Status',
     recentChanges: 'Recent changes', backToApps: 'Back to apps',
+    features: 'Features for users', requirements: 'Requirements & getting started',
     noApps: 'There are no apps in this category yet.', noUpdates: 'No updates yet.',
     homeDescription: 'Explore independently built apps by Bamboosato: their features, design, technologies, and update histories in Japanese and English.',
     count: 'apps', all: 'All', portfolio: 'Independent app portfolio',

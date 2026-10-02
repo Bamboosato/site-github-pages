@@ -1,0 +1,15 @@
+---
+import type { AppData } from '../lib/schema';
+import { accessLabels, ui, type Locale } from '../i18n/ui';
+import UsageFeatures from './UsageFeatures.astro';
+interface Props { data: AppData; locale: Locale; }
+const { data, locale } = Astro.props;
+const accessLabel = accessLabels[data.access][locale];
+const visible = Boolean(accessLabel || data.usageFeatures.length || data.usageNote);
+---
+{visible && <section class="app-usage" aria-labelledby="usage-requirements">
+  <h2 id="usage-requirements">{ui[locale].requirements}</h2>
+  {accessLabel && <p class="usage-access">{accessLabel}</p>}
+  <UsageFeatures features={data.usageFeatures} locale={locale} />
+  {data.usageNote && <p class="usage-note">{data.usageNote}</p>}
+</section>}

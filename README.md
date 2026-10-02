@@ -32,6 +32,8 @@ npm run preview -- --host 127.0.0.1
 
 `npm run build`でも必ずコンテンツ検証が先に実行されます。出力先は `dist/` です。
 
+`npm run verify:usage` は任意の利用条件・特徴・補足の表示を、日英の6つのデータ状態でBuildして確認します。通常の生成ページ検証でも、Home・一覧・カテゴリのカードと全アプリ詳細の表示分担・文言・順序・リスト名を検証します。
+
 ## サイト設定
 
 `src/config/site.ts` にサイト名、作者、GitHubリンク、公開origin、baseを集約しています。カテゴリ／状態の翻訳とUI文言は `src/i18n/ui.ts` で管理します。
@@ -83,7 +85,20 @@ sample: false
 
 `appUrl`、`githubUrl`、`createdAt`、`thumbnail`、`screenshots`、`version`、`license` は任意です。存在しないURLは省略してください。アプリ名・技術タグは共通表記で構いません。
 
-カテゴリは `sports-competition` / `visual-experimental` / `utilities` / `productivity` / `other` です。追加する場合はUI辞書に両言語の表示名を追加します。
+`access`、`usageFeatures`、`usageNote` も任意です。カードには短い特徴だけ、詳細には利用条件と準備の補足も表示します。設定ID・翻訳・矛盾の検証ルールは `docs/content-maintenance.md`、全14件の確認根拠と未確認事項は `docs/app-usage-evidence.json` を参照してください。
+
+カテゴリは主目的・利用場面に基づき、次の順序で表示します。IDは既存カテゴリURLを維持するための識別子で、表示名とは別です。
+
+| ID | 日本語 | English |
+| --- | --- | --- |
+| `sports-competition` | スポーツ・対戦運営 | Sports & Match Management |
+| `visual-experimental` | ビジュアル・ホビー | Visual & Hobbies |
+| `utilities` | 文書・情報整理 | Documents & Information |
+| `productivity` | 予定・連絡管理 | Events & Communication |
+
+画像・動画制作、模様の実験、写真パズルはビジュアル・ホビー、ノート・文書・テキスト処理は文書・情報整理にまとめます。1アプリは主目的に合う1カテゴリへ配置し、技術名で分類しません。表示名・説明は `src/i18n/ui.ts`、所属は両言語Markdownで管理します。カテゴリページは専用説明を本文冒頭・description・Open Graphへ反映します。
+
+`other` は将来用の予約IDです。空のカテゴリは表示せず、分類に迷ったアプリを自動的に割り当てません。当面は4カテゴリとし、収まりにくいアプリが増えた場合に5つ目をユーザーと検討します。カテゴリ整理だけではアプリの更新日やUpdatesを変更しません。
 
 ## アプリ更新とUpdate追加
 

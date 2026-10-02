@@ -12,6 +12,9 @@ tags: ["React","TypeScript","Canvas","PWA"]
 featured: false
 appUrl: https://app-slide-puzzle-lab.vercel.app/
 githubUrl: https://github.com/Bamboosato/app-slide-puzzle-lab
+access: open
+usageFeatures: ["on-device-processing","no-registration","offline-after-setup"]
+usageNote: "オフラインで遊ぶには、初回のオンライン利用が必要です。アプリの読み込みを完了してから、端末内の画像や保存済みのパズルを使ってください。"
 ---
 
 ## 概要
