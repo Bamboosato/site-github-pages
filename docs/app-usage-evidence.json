@@ -218,7 +218,36 @@
       "notVerified": [
         "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
         "オフライン表示はREADMEと実装の対応に基づく。ブラウザー対応・初回準備・キャッシュ保持が前提。"
-      ]
+      ],
+      "importSelectionEvidence": {
+        "proposalId": "markdown-knowledge-board-2c2f9b5cbf4c-c10cf11b2c1c-import-auto-selection",
+        "checkedAt": "2026-10-02",
+        "commit": "c10cf11b2c1cf6f8ba77f85740241124e727a8a5",
+        "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/c10cf11b2c1cf6f8ba77f85740241124e727a8a5",
+        "sourceUrls": [
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/src/App.tsx#L1830-L1975",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/src/App.tsx#L540-L602",
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/47",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/docs/markdown-import-auto-activation-requirements.md",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/tests/e2e/markdown-import-current-note.spec.ts"
+        ],
+        "confirmed": [
+          "Markdown/text新規取り込みで、入力順の最初の保存成功ノートを選択。開始時と完了時のdirty・未確定タグ・保存状態、および操作世代を確認し、処理中の選択・編集・保存を優先する。",
+          "Edit/Previewと検索・タグ絞り込みを維持。条件外のノートも選択されるが、カードは絞り込み解除まで表示されない。",
+          "PR47のmerge日時は2026-10-02T09:10:52Z、Vercel statusはSUCCESS。既存の利用条件の根拠commit・主張は変更しない。"
+        ],
+        "productionAssetEvidence": {
+          "url": "https://markdown-knowledge-board.vercel.app/assets/index-C3Uvm9s8.js",
+          "checkedAt": "2026-10-02T21:03:01Z",
+          "httpStatus": 200,
+          "sha256": "6499469330f51dd06e9c309afb1e569f609768d631e760f79ba6e330f50e4603",
+          "method": "引き継ぎ元の公開配信JS確認。固定ソースと同じ自動選択guard・選択処理を確認済み。今回のCodex Cloud環境からの再取得は403で失敗し、HTTP200とハッシュの再測定は未実施。"
+        },
+        "notVerified": [
+          "今回の確認は固定ソース・PRの読み取り。実際の取り込み・アップロード・保存操作は未実施。",
+          "ブラウザー別・実機・オフライン・Google Drive連携の動作保証は追加しない。JSON Import Backup・本文置換・New Note・クラウド復元の変更ではない。"
+        ]
+      }
     },
     {
       "name": "matchup-lab",
