@@ -96,10 +96,21 @@
       "appUrl": "https://local-pii-masker.vercel.app/",
       "homepageHttpStatus": 200,
       "createdAt": "2026-07-10",
-      "updatedAt": "2026-08-13",
-      "commit": "716077e50c50033bea32ffb7b54f077efc412403",
-      "commitUrl": "https://github.com/Bamboosato/local-pii-masker/commit/716077e50c50033bea32ffb7b54f077efc412403",
-      "readmeUrl": "https://github.com/Bamboosato/local-pii-masker/blob/main/README.md"
+      "updatedAt": "2026-10-06",
+      "commit": "b42980ab156ad07cd3d310e27d483d978e237406",
+      "commitUrl": "https://github.com/Bamboosato/local-pii-masker/commit/b42980ab156ad07cd3d310e27d483d978e237406",
+      "readmeUrl": "https://github.com/Bamboosato/local-pii-masker/blob/main/README.md",
+      "implementationSources": [
+        "https://github.com/Bamboosato/local-pii-masker/blob/b42980ab156ad07cd3d310e27d483d978e237406/src/domain/mapping/opfsRepository.ts#L122-L259",
+        "https://github.com/Bamboosato/local-pii-masker/blob/b42980ab156ad07cd3d310e27d483d978e237406/src/domain/mapping/validate.ts",
+        "https://github.com/Bamboosato/local-pii-masker/blob/b42980ab156ad07cd3d310e27d483d978e237406/src/components/MaskMappingDialogs.tsx#L434-L438",
+        "https://github.com/Bamboosato/local-pii-masker/blob/b42980ab156ad07cd3d310e27d483d978e237406/src/components/PwaStatus.tsx#L126-L191",
+        "https://github.com/Bamboosato/local-pii-masker/blob/b42980ab156ad07cd3d310e27d483d978e237406/src/domain/detection/ner/modelCache.ts",
+        "https://github.com/Bamboosato/local-pii-masker/blob/b42980ab156ad07cd3d310e27d483d978e237406/src/App.tsx#L1565-L1581",
+        "https://github.com/Bamboosato/local-pii-masker/blob/b42980ab156ad07cd3d310e27d483d978e237406/docs/model-cache-hardening.md",
+        "https://github.com/Bamboosato/local-pii-masker/blob/b42980ab156ad07cd3d310e27d483d978e237406/docs/local-work-history-implementation-status.md"
+      ],
+      "note": "proposalId: local-pii-masker-716077e50c50-b42980ab156a-mapping-storage-cache-hardening。比較 https://github.com/Bamboosato/local-pii-masker/compare/716077e50c50033bea32ffb7b54f077efc412403...b42980ab156ad07cd3d310e27d483d978e237406 は1commit。PR21は2026-10-06T09:16:23Zにmerge、deployment6880221867は同日09:16:59Zにexact SHAでsuccess（environment=Production、production_environment=falseという生値）。固定ソース・PR・CI・deploymentを今回再照合。保存・削除エラー、保存領域診断と読込専用復旧、モデルキャッシュ未完了案内とモデル資材だけの削除・再取得を日英紹介に反映。公開root・配信assetの引き継ぎ元の静的確認、今回Cloudからの403再取得失敗、未確認範囲はdocs/app-usage-evidence.jsonのstorageCacheHardeningEvidenceに区別して記録。"
     },
     {
       "name": "markdown-knowledge-board",

@@ -195,7 +195,87 @@
       "notVerified": [
         "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
         "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。"
-      ]
+      ],
+      "storageCacheHardeningEvidence": {
+        "proposalId": "local-pii-masker-716077e50c50-b42980ab156a-mapping-storage-cache-hardening",
+        "checkedAt": "2026-10-06",
+        "baseCommit": "716077e50c50033bea32ffb7b54f077efc412403",
+        "commit": "b42980ab156ad07cd3d310e27d483d978e237406",
+        "commitUrl": "https://github.com/Bamboosato/local-pii-masker/commit/b42980ab156ad07cd3d310e27d483d978e237406",
+        "compareUrl": "https://github.com/Bamboosato/local-pii-masker/compare/716077e50c50033bea32ffb7b54f077efc412403...b42980ab156ad07cd3d310e27d483d978e237406",
+        "sourceUrls": [
+          "https://github.com/Bamboosato/local-pii-masker/blob/b42980ab156ad07cd3d310e27d483d978e237406/src/domain/mapping/opfsRepository.ts#L122-L259",
+          "https://github.com/Bamboosato/local-pii-masker/blob/b42980ab156ad07cd3d310e27d483d978e237406/src/domain/mapping/validate.ts",
+          "https://github.com/Bamboosato/local-pii-masker/blob/b42980ab156ad07cd3d310e27d483d978e237406/src/components/MaskMappingDialogs.tsx#L434-L438",
+          "https://github.com/Bamboosato/local-pii-masker/blob/b42980ab156ad07cd3d310e27d483d978e237406/src/components/PwaStatus.tsx#L126-L191",
+          "https://github.com/Bamboosato/local-pii-masker/blob/b42980ab156ad07cd3d310e27d483d978e237406/src/domain/detection/ner/modelCache.ts",
+          "https://github.com/Bamboosato/local-pii-masker/blob/b42980ab156ad07cd3d310e27d483d978e237406/src/App.tsx#L1565-L1581",
+          "https://github.com/Bamboosato/local-pii-masker/blob/b42980ab156ad07cd3d310e27d483d978e237406/docs/model-cache-hardening.md",
+          "https://github.com/Bamboosato/local-pii-masker/blob/b42980ab156ad07cd3d310e27d483d978e237406/docs/local-work-history-implementation-status.md"
+        ],
+        "confirmed": [
+          "固定commitのRepository・検証・管理ダイアログで保存・削除エラーの通知、未参照・一時ファイルの件数、利用可能な一覧バックアップからの読込専用復旧を再確認。復旧時は保存・個別削除を停止し、残存ファイルを自動削除しない。",
+          "人名の関連付けは現在の作業内で利用できるが、保存形式v1では関連付けを保存・読込で拒否する。保存には解除が必要。既存の関連付けファイルを自動補正・移行・削除しない。",
+          "固定commitのPwaStatus・modelCache・Appでモデルキャッシュ未完了案内と明示確認後の現在モデル資材だけの削除、次回オンライン検出での再取得を再確認。現在の作業・OPFS対応表・アプリ資材は維持する。キャッシュ完了とAI検出成功は別扱いで、オフラインAI検出を保証しない。",
+          "PR21 mergeとexact commitのCI・deployment成功をGitHub APIで再照合。利用者向け変更日2026-10-06の根拠とする。既存の利用条件の根拠commit・sourcePaths・confirmed・notVerifiedは維持する。"
+        ],
+        "pullRequestEvidence": {
+          "url": "https://github.com/Bamboosato/local-pii-masker/pull/21",
+          "mergedAt": "2026-10-06T09:16:23Z",
+          "mergeCommit": "b42980ab156ad07cd3d310e27d483d978e237406"
+        },
+        "ciEvidence": {
+          "url": "https://github.com/Bamboosato/local-pii-masker/actions/runs/37441814782",
+          "headSha": "b42980ab156ad07cd3d310e27d483d978e237406",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        "deploymentEvidence": {
+          "url": "https://api.github.com/repos/Bamboosato/local-pii-masker/deployments/6880221867",
+          "id": 6880221867,
+          "sha": "b42980ab156ad07cd3d310e27d483d978e237406",
+          "createdAt": "2026-10-06T09:16:59Z",
+          "statusCreatedAt": "2026-10-06T09:16:59Z",
+          "state": "success",
+          "environment": "Production",
+          "production_environment": false,
+          "environmentUrl": "https://local-pii-masker-h58w9mr5q-bamboosato.vercel.app",
+          "method": "GitHub deploymentとstatuses APIの生値を再確認。公開alias全体のexact commit一致を証明するものではない。"
+        },
+        "productionAssetEvidence": {
+          "checkedAt": "2026-10-06",
+          "method": "引き継ぎ元による公開rootと配信JSの取得・機能marker静的照合。今回Cloudでのソース再確認・GitHub API照合と区別する。",
+          "root": {
+            "url": "https://local-pii-masker.vercel.app/",
+            "httpStatus": 200
+          },
+          "assets": [
+            {
+              "url": "https://local-pii-masker.vercel.app/assets/index-DzBLb2cu.js",
+              "httpStatus": 200,
+              "bytes": 616907,
+              "sha256": "029976af3b3056d8b3351475d5536e3c9c5ad1a8d331cc818482f6108d42afa9",
+              "confirmed": "cache warning/reset、residual-file/read-only recovery、association-save rejection markersを静的確認。"
+            },
+            {
+              "url": "https://local-pii-masker.vercel.app/assets/nerWorker-BMWBMs6E.js",
+              "httpStatus": 200,
+              "bytes": 567490,
+              "sha256": "766f2773a4fa84c772b2ddee8905cfc39942bc7998c5de80b74834c0f65c60a2",
+              "confirmed": "pinned-public-fetch/customcache markersを静的確認。"
+            }
+          ],
+          "cloudRecheck": {
+            "checkedAt": "2026-10-06",
+            "result": "公開rootと2assetはいずれもTunnel connection failed: 403 Forbiddenで再取得できず、HTTP200・byte数・hash・配信markerの再測定は未実施。"
+          }
+        },
+        "notVerified": [
+          "公開alias全体の配信成果物と固定Git commitの完全な同一性は未証明。機能に関わる配信assetの静的確認に限る。",
+          "保存・削除・読込専用復旧・モデルキャッシュ削除再取得の実操作、公開AI推論、実通信キャプチャ、実機・ブラウザー別・オフライン試験は今回未実施。引き継ぎ元の配信asset確認を操作成功と読み替えない。",
+          "一覧バックアップの正式一覧への昇格、孤立ファイルの個別救出、外部バックアップは未実装。自動復旧、関連付け保存対応、オフラインAI検出の保証は主張しない。"
+        ]
+      }
     },
     {
       "name": "markdown-knowledge-board",
