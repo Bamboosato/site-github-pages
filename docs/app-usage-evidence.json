@@ -247,6 +247,63 @@
           "今回の確認は固定ソース・PRの読み取り。実際の取り込み・アップロード・保存操作は未実施。",
           "ブラウザー別・実機・オフライン・Google Drive連携の動作保証は追加しない。JSON Import Backup・本文置換・New Note・クラウド復元の変更ではない。"
         ]
+      },
+      "optionalGoogleDriveEvidence": {
+        "proposalId": "markdown-knowledge-board-2c2f9b5cbf4c-2c2f9b5cbf4c-optional-google-drive-description",
+        "checkedAt": "2026-10-06",
+        "commit": "c10cf11b2c1cf6f8ba77f85740241124e727a8a5",
+        "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/c10cf11b2c1cf6f8ba77f85740241124e727a8a5",
+        "sourcePaths": [
+          "README.md",
+          "src/lib/googleDriveOperations.ts",
+          "src/lib/googleIdentity.ts",
+          "src/App.tsx",
+          "src/components/cloud/GoogleDriveSection.tsx",
+          "docs/google-drive-implementation-design.md",
+          "src/hooks/useCloudBackup.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/README.md#L74-L80",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/src/lib/googleDriveOperations.ts#L28-L149",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/src/lib/googleIdentity.ts#L63-L157",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/src/App.tsx#L3522-L3689",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/src/components/cloud/GoogleDriveSection.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/docs/google-drive-implementation-design.md#L19-L51",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/src/hooks/useCloudBackup.ts#L148-L205"
+        ],
+        "staticSourceConfirmation": [
+          "固定commitのREADME・実装・設計を再確認。任意のGitHub・Google Drive連携には対応アカウントの認証と通信が必要。バックアップはブラウザー内で暗号化して送信する。",
+          "Google Driveのバックアップ・復元とMarkdown出力は手動操作。選択中ノートのMarkdownをPickerで選んだフォルダーへ暗号化されていない.mdファイルとして作成・更新する。",
+          "Google Drive連携の本番対象は独自ドメイン https://mkb.bamboosato.com/。既存appUrlとローカル編集・保存の利用条件は維持する。"
+        ],
+        "productionAssetEvidence": {
+          "checkedAt": "2026-10-06",
+          "method": "引き継ぎ元による公開配信JSの取得と該当処理の静的照合。今回のソース再確認と区別する。",
+          "urls": [
+            "https://mkb.bamboosato.com/assets/index-C3Uvm9s8.js",
+            "https://markdown-knowledge-board.vercel.app/assets/index-C3Uvm9s8.js"
+          ],
+          "httpStatus": 200,
+          "bytes": 1339224,
+          "sha256": "6499469330f51dd06e9c309afb1e569f609768d631e760f79ba6e330f50e4603",
+          "confirmed": "両originの配信JSは同一。Google Drive認証・バックアップ・復元・Markdown出力に対応する処理の存在を静的照合済み。"
+        },
+        "productionUiConfirmation": {
+          "checkedAt": "2026-10-06",
+          "method": "引き継ぎ元の公開画面読み取り確認",
+          "confirmed": "独自ドメインのGoogle Driveメニューに接続操作が表示されることを確認。"
+        },
+        "operationalConfirmation": {
+          "source": "user",
+          "date": "2026-10-06",
+          "type": "Google Drive OAuth接続成功のユーザー確認",
+          "confirmed": "独自ドメインのアプリへの案内後、ユーザーが認証を実施して接続成功を確認。接続成功だけを対象とする。"
+        },
+        "notVerified": [
+          "配信成果物全体と固定Git commitの完全な対応は未証明。",
+          "実GoogleサービスでのPicker選択、バックアップの保存、復元、Markdown出力の作成・更新は未試験。OAuth接続成功からこれらの成功は推定しない。",
+          "自動同期・共同編集・任意のDrive Markdown取り込みは主張しない。実機・ブラウザー別・オフライン動作の追加確認は未実施。"
+        ]
       }
     },
     {

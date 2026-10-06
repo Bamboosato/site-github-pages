@@ -14,7 +14,7 @@ appUrl: https://markdown-knowledge-board.vercel.app/
 githubUrl: https://github.com/Bamboosato/markdown-knowledge-board
 access: open
 usageFeatures: ["on-device-processing","no-registration","offline-after-setup"]
-usageNote: "To edit and save offline, complete the app's offline preparation during your first online use. Optional cloud backups require signing in to the relevant account and a network connection, and send backup data to the cloud."
+usageNote: "To edit and save offline, complete the app's offline preparation during your first online use. Optional GitHub and Google Drive integrations require authentication with the relevant account and a network connection. Cloud backups are encrypted in the browser before upload. Markdown export to Google Drive uploads an unencrypted .md file."
 ---
 
 ## Overview
@@ -25,7 +25,9 @@ Import Markdown files and organize them with tags and search. Edit notes stored 
 
 - Multiple Markdown imports/exports, title/body search, and tags
 - CodeMirror editing, task checkboxes, Mermaid, and Marp rendering
-- JSON backups, print/PDF output, and GitHub-connected cloud backup
+- JSON backups and print/PDF output
+- Optional encrypted cloud backup and restore with GitHub or Google Drive
+- Markdown export of the current note to a selected Google Drive folder
 
 ## Selection after import
 
@@ -35,7 +37,7 @@ The Edit/Preview view and search/tag filters stay unchanged. If the selected not
 
 ## Design and usage
 
-Notes are stored in IndexedDB, with PWA support for offline use. GitHub-connected cloud backup requires authentication and network access.
+Notes are stored in IndexedDB, with PWA support for offline use after initial preparation. Google Drive backup, restore, and Markdown export are manual operations. For Google Drive integration, use the [public app on the custom domain](https://mkb.bamboosato.com/).
 
 ## Technologies
 
