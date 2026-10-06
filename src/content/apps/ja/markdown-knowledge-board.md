@@ -14,7 +14,7 @@ appUrl: https://markdown-knowledge-board.vercel.app/
 githubUrl: https://github.com/Bamboosato/markdown-knowledge-board
 access: open
 usageFeatures: ["on-device-processing","no-registration","offline-after-setup"]
-usageNote: "オフラインで編集・保存を使うには、初回オンライン利用時にアプリ内のオフライン準備を完了してください。任意のクラウドバックアップには、対応するアカウントでのログインと通信が必要で、バックアップデータをクラウドへ送信します。"
+usageNote: "オフラインで編集・保存を使うには、初回オンライン利用時にアプリ内のオフライン準備を完了してください。任意のGitHub・Google Drive連携には、対応するアカウントでの認証と通信が必要です。クラウドバックアップはブラウザーで暗号化して送信します。Google DriveへのMarkdown出力は、暗号化されていない.mdファイルとして送信します。"
 ---
 
 ## 概要
@@ -25,7 +25,9 @@ Markdownファイルを取り込み、タグや検索で整理しながら編集
 
 - 複数Markdownの入出力、本文・タイトル検索、タグ管理
 - CodeMirror編集、タスクチェック、MermaidとMarpの表示
-- JSONバックアップ、印刷／PDF、GitHub連携のクラウドバックアップ
+- JSONバックアップ、印刷／PDF
+- 任意のGitHub・Google Drive連携による暗号化クラウドバックアップ・復元
+- 選択中ノートをGoogle Driveで選んだフォルダーへMarkdown出力
 
 ## 取り込み後の選択
 
@@ -35,7 +37,7 @@ Edit／Previewの表示や検索・タグの絞り込みは維持されます。
 
 ## 特徴
 
-通常のノートはIndexedDBに保存し、PWAのオフライン利用にも対応します。GitHub連携のクラウドバックアップを使う場合は認証とネットワーク接続が必要です。
+通常のノートはIndexedDBに保存し、初回準備後はPWAのオフライン利用にも対応します。Google Drive連携では、バックアップ・復元とMarkdown出力を手動で行います。Google Drive連携には[独自ドメインのアプリ](https://mkb.bamboosato.com/)をご利用ください。
 
 ## 技術構成
 
