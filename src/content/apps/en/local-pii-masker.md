@@ -6,7 +6,7 @@ slug: local-pii-masker
 category: utilities
 description: "Review potential personal information in Japanese text and mask it in the browser."
 createdAt: "2026-07-10"
-updatedAt: "2026-08-13"
+updatedAt: "2026-10-06"
 status: active
 tags: ["React","TypeScript","CodeMirror","ONNX"]
 featured: false
@@ -25,11 +25,14 @@ Detect potential personal information in Japanese text, then review candidates b
 
 - Candidate detection with manual review and adjustment
 - Masking/restoration with longer matches taking priority
-- Explicit local saving of an encrypted mapping
+- Explicit local saving of encrypted mappings, with storage-status information
+- Incomplete model-cache warnings and removal of model assets for downloading again
 
 ## Design and usage
 
 Processing normally stays in memory; explicit saving covers the mapping rather than the original text session. Desktop Chrome on Windows and macOS is the primary target. Automated detection may miss personal information, so human review remains part of the workflow.
+
+If mapping storage needs recovery, usable backups can be opened in read-only mode. Linked names can be used in the current session, but must be unlinked before saving a mapping. Successful AI detection and a complete model cache are tracked separately; offline AI detection is not guaranteed.
 
 ## Technologies
 
