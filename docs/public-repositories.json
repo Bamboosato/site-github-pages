@@ -7,6 +7,7 @@
   "repositories": [
     {
       "name": "app-reveal-lab",
+      "category": "visual-experimental",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/app-reveal-lab",
       "appUrl": "https://app-reveal-lab.vercel.app/",
@@ -19,6 +20,7 @@
     },
     {
       "name": "app-slide-puzzle-lab",
+      "category": "visual-experimental",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/app-slide-puzzle-lab",
       "appUrl": "https://app-slide-puzzle-lab.vercel.app/",
@@ -31,6 +33,7 @@
     },
     {
       "name": "bbcafe-app",
+      "category": "productivity",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/bbcafe-app",
       "appUrl": "https://bbcafe-app.vercel.app/",
@@ -43,6 +46,7 @@
     },
     {
       "name": "draw-lab",
+      "category": "sports-competition",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/draw-lab",
       "appUrl": "https://draw-lab-rho.vercel.app/",
@@ -55,6 +59,7 @@
     },
     {
       "name": "face-icon-maker",
+      "category": "visual-experimental",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/face-icon-maker",
       "appUrl": "https://face-icon-maker.vercel.app/",
@@ -67,6 +72,7 @@
     },
     {
       "name": "interactive-moire-art",
+      "category": "visual-experimental",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/interactive-moire-art",
       "appUrl": "https://interactive-moire-art.vercel.app/",
@@ -79,6 +85,7 @@
     },
     {
       "name": "local-document-preprocessor",
+      "category": "utilities",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/local-document-preprocessor",
       "appUrl": "https://local-document-preprocessor.vercel.app/",
@@ -91,6 +98,7 @@
     },
     {
       "name": "local-pii-masker",
+      "category": "utilities",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/local-pii-masker",
       "appUrl": "https://local-pii-masker.vercel.app/",
@@ -114,6 +122,7 @@
     },
     {
       "name": "markdown-knowledge-board",
+      "category": "utilities",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/markdown-knowledge-board",
       "appUrl": "https://markdown-knowledge-board.vercel.app/",
@@ -188,6 +197,7 @@
     },
     {
       "name": "matchup-lab",
+      "category": "sports-competition",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/matchup-lab",
       "appUrl": "https://matchup-lab-one.vercel.app/",
@@ -205,6 +215,7 @@
     },
     {
       "name": "rsvp-manager-app",
+      "category": "productivity",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/rsvp-manager-app",
       "appUrl": "https://rsvphub.bamboosato.com/",
@@ -218,6 +229,7 @@
     },
     {
       "name": "sudoku-ai-app",
+      "category": "visual-experimental",
       "public": true,
       "verifiedAt": "2026-10-08",
       "githubUrl": "https://github.com/Bamboosato/sudoku-ai-app",
@@ -255,6 +267,7 @@
     },
     {
       "name": "tennis-matchup-app",
+      "category": "sports-competition",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/tennis-matchup-app",
       "appUrl": "https://tennis-matchup-app.vercel.app/",
@@ -267,6 +280,7 @@
     },
     {
       "name": "tennis-organizing-app",
+      "category": "sports-competition",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/tennis-organizing-app",
       "appUrl": "https://tennis-organizing-app.vercel.app/",
@@ -279,6 +293,7 @@
     },
     {
       "name": "turing-pattern-lab",
+      "category": "visual-experimental",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/turing-pattern-lab",
       "appUrl": "https://turing-pattern-lab.vercel.app/",

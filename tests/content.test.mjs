@@ -14,6 +14,23 @@ function pair(id = 'test-app') {
 function updates() {
   return ['ja', 'en'].map((locale) => ({ file: `${locale}/test-update.md`, body: 'Translated update', data: updateSchema.parse({ updateId: 'test-update', appId: 'test-app', locale, date: '2026-10-02', title: 'Update' }) }));
 }
+
+function assertInventoryIds(actual, expected, label) {
+  assert.equal(new Set(expected).size, expected.length, 'inventory names must be unique');
+  assert.equal(new Set(actual).size, actual.length, `${label}: IDs must be unique`);
+  assert.deepEqual([...actual].sort(), [...expected].sort(), `${label}: no missing or extra repositories`);
+}
+
+test('boundary/data: inventory ID comparison follows count changes and rejects missing, extra and duplicate evidence IDs', () => {
+  for (const expected of [[], ['alpha'], ['alpha', 'beta']]) {
+    assertInventoryIds([...expected].reverse(), expected, 'valid coverage');
+  }
+  const expected = ['alpha', 'beta'];
+  for (const actual of [['alpha'], ['alpha', 'beta', 'gamma'], ['alpha', 'alpha'], ['alpha', 'gamma']]) {
+    assert.throws(() => assertInventoryIds(actual, expected, 'invalid coverage'), assert.AssertionError);
+  }
+  assert.throws(() => assertInventoryIds(['alpha', 'alpha'], ['alpha', 'alpha'], 'duplicate inventory'), assert.AssertionError);
+});
 test('normal: published content has complete translations and valid references', () => {
   const content = readContent();
   assert.deepEqual(content.errors, []);
@@ -28,7 +45,7 @@ test('normal: both languages cover the complete verified public repository inven
   assert.equal(new Set(expected).size, expected.length, 'inventory names must be unique');
   for (const locale of ['ja', 'en']) {
     const entries = apps.filter((entry) => entry.data.locale === locale);
-    assert.deepEqual(entries.map((entry) => entry.data.appId).sort(), expected, `${locale}: no missing or extra repositories`);
+    assertInventoryIds(entries.map((entry) => entry.data.appId), expected, locale);
     for (const repo of inventory.repositories) {
       const entry = entries.find((entry) => entry.data.appId === repo.name).data;
       assert.equal(repo.public, true, `${repo.name}: public source required`);
@@ -154,10 +171,15 @@ test('translation: usage IDs must match and notes must exist in both languages w
 });
 
 test('evidence: all published usage metadata matches its pinned source audit', () => {
+  const inventory = JSON.parse(readFileSync(new URL('../docs/public-repositories.json', import.meta.url), 'utf8'));
   const audit = JSON.parse(readFileSync(new URL('../docs/app-usage-evidence.json', import.meta.url), 'utf8'));
-  const { apps } = readContent();
-  assert.equal(audit.repositories.length, 14);
-  assert.deepEqual(audit.repositories.map((repo) => repo.name).sort(), apps.filter((app) => app.data.locale === 'ja').map((app) => app.data.appId).sort());
+  const { apps, errors } = readContent();
+  assert.deepEqual(errors, []);
+  const expected = inventory.repositories.map((repo) => repo.name);
+  assertInventoryIds(audit.repositories.map((repo) => repo.name), expected, 'usage evidence');
+  for (const locale of ['ja', 'en']) {
+    assertInventoryIds(apps.filter((app) => app.data.locale === locale).map((app) => app.data.appId), expected, locale);
+  }
   for (const repo of audit.repositories) {
     assert.match(repo.commit, /^[a-f0-9]{40}$/);
     assert.ok(repo.sourcePaths.includes('README.md'));
