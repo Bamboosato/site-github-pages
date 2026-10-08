@@ -384,6 +384,53 @@
           "実GoogleサービスでのPicker選択、バックアップの保存、復元、Markdown出力の作成・更新は未試験。OAuth接続成功からこれらの成功は推定しない。",
           "自動同期・共同編集・任意のDrive Markdown取り込みは主張しない。実機・ブラウザー別・オフライン動作の追加確認は未実施。"
         ]
+      },
+      "boundedYamlMetadataEvidence": {
+        "proposalId": "markdown-knowledge-board-a0d6aacc8b8c-2df91cac201b-bounded-yaml-metadata",
+        "checkedAt": "2026-10-08",
+        "sourceRepository": "Bamboosato/set3-markdown-knowledge-board",
+        "canonicalRepository": "Bamboosato/markdown-knowledge-board",
+        "commit": "2df91cac201b5de29f48dead9bd188ea8effdcc8",
+        "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/2df91cac201b5de29f48dead9bd188ea8effdcc8",
+        "baseCommit": "a0d6aacc8b8cb30015152e00e11b175f54bdc85f",
+        "compareUrl": "https://github.com/Bamboosato/markdown-knowledge-board/compare/a0d6aacc8b8cb30015152e00e11b175f54bdc85f...2df91cac201b5de29f48dead9bd188ea8effdcc8",
+        "sourcePaths": [
+          "README.md",
+          "src/lib/frontmatter.ts",
+          "src/components/MetadataDialog.tsx",
+          "src/lib/cloudRestore.ts",
+          "tests/unit/frontmatter.test.ts",
+          "tests/e2e/markdown-import-current-note.spec.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/2df91cac201b5de29f48dead9bd188ea8effdcc8/README.md",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/2df91cac201b5de29f48dead9bd188ea8effdcc8/src/lib/frontmatter.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/2df91cac201b5de29f48dead9bd188ea8effdcc8/src/components/MetadataDialog.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/2df91cac201b5de29f48dead9bd188ea8effdcc8/src/lib/cloudRestore.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/2df91cac201b5de29f48dead9bd188ea8effdcc8/tests/unit/frontmatter.test.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/2df91cac201b5de29f48dead9bd188ea8effdcc8/tests/e2e/markdown-import-current-note.spec.ts"
+        ],
+        "confirmed": [
+          "指定repo名はGitHub APIで既存のmarkdown-knowledge-board（repository ID 1294924607、Public）へ解決。比較は2026-10-07の1commit・6files。既存appId、appUrl、githubUrl、利用条件、Drive・取り込みの説明と証跡を維持。",
+          "frontmatter.tsは展開後の出現数を10,000、文字列とキーの合計を1,000,000文字に制限し、循環参照を拒否。パース・コピー・比較・出力の前に検査する。小さなYAMLエイリアスは維持。",
+          "MetadataDialog.tsxは各フィールドの値と複数フィールドの合計を検査。エラー表示とApply無効化があり、キーボードによるApplyもhasErrorsで拒否。cloudRestore.tsでもcustomMetadataを検査。",
+          "固定テストの静的確認：小さなエイリアス、循環参照、展開数・文字数の上限ちょうど／超過、複数フィールド合計、復元・出力・コピーの拒否、エラー後の正常入力・Apply再有効化。テストはこの環境で実行していない。"
+        ],
+        "productionAssetEvidence": {
+          "checkedAt": "2026-10-08",
+          "urls": [
+            "https://markdown-knowledge-board.vercel.app/assets/index-2maABplJ.js",
+            "https://mkb.bamboosato.com/assets/index-2maABplJ.js"
+          ],
+          "httpStatus": 200,
+          "sha256": "0975c8c7a699282db9d76528bebc663af1fdc12a923a6f694b23bde2352dedde",
+          "method": "親側の2026-10-08の引き継ぎによる公開配信HTML・JSのHTTP200と機能文字列の静的照合。今回の固定ソース確認とは区別する。このCodex環境での再取得はプロキシの403で失敗し、HTTP200・ハッシュは再測定していない。配信成果物全体と固定Git commitの完全な対応は未証明。"
+        },
+        "notVerified": [
+          "ブラウザーでのMetadata編集、Apply、取り込み、クラウド復元の操作は未試験。",
+          "実機・ブラウザー別・オフライン・実Google Drive操作の追加確認は未実施。",
+          "今回の公開URL再取得はプロキシ403。配信コード確認は親側の静的証跡であり、UI操作や成果物全体と固定SHAの同一性を保証しない。"
+        ]
       }
     },
     {
@@ -434,6 +481,51 @@
       "notVerified": [
         "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
         "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。"
+      ]
+    },
+    {
+      "name": "sudoku-ai-app",
+      "proposalId": "sudoku-ai-app-new-2f929a1a194a-initial-listing",
+      "checkedAt": "2026-10-08",
+      "commit": "2f929a1a194a90e733475230dd59bacde58f226d",
+      "commitUrl": "https://github.com/Bamboosato/sudoku-ai-app/commit/2f929a1a194a90e733475230dd59bacde58f226d",
+      "sourcePaths": [
+        "README.md",
+        "src/App.tsx",
+        "src/lib/sudoku/generator.ts",
+        "src/lib/sudoku/gameReducer.ts",
+        "src/lib/sudoku/hints.ts",
+        "src/hooks/useSudokuGame.ts",
+        "src/hooks/useApiKey.ts",
+        "src/lib/gemini/hintClient.ts",
+        "src/lib/gemini/directClient.ts",
+        "vite.config.ts",
+        "src/hooks/useTheme.ts",
+        "package.json"
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration"
+      ],
+      "confirmed": [
+        "公開repoの固定READMEと実装を照合。App.tsxから登録・APIキーを介さずゲームを開始し、ブラウザー内で3難易度の盤面生成、手動／自動メモ、Undo・消去・誤入力リセット、ローカル単一候補ヒントと誤入力の特定を行う。useTheme.tsで明暗テーマを確認。",
+        "任意のGeminiアドバイスは4段階。useApiKey.tsで個人キーをlocalStorageに保存し、hintClient.tsからdirectClient.tsを通じてGoogle Generative Language APIへ盤面・メモ等を送る。キー未設定時は/api/hintへ送る分岐があるが公開サーバー側提供状況は未確認。",
+        "vite.config.tsにPWA設定はあるが、実オフライン試験は未実施のためoffline-after-setupは付けない。READMEの100%保証、ゲームオーバー時ロック、安全なキー保存、完全オフラインAI、高度な連鎖推論は紹介で保証しない。",
+        "固定commitは2026-10-08T09:55:04Z。GitHub combined statusでVercel successを今回再確認。実プレイ・実Gemini応答の成功とは区別する。"
+      ],
+      "productionAssetEvidence": {
+        "checkedAt": "2026-10-08",
+        "htmlUrl": "https://sudoku-ai-app.vercel.app/",
+        "url": "https://sudoku-ai-app.vercel.app/assets/index-Clqp-CDV.js",
+        "httpStatus": 200,
+        "sha256": "b102d48c029daa161beb086191bade7dee85aff0b026a122c00d8d2454efbda4",
+        "method": "親側の2026-10-08の引き継ぎによる公開配信HTML・JSのHTTP200と機能文字列の静的照合。今回の固定ソース確認とは区別する。このCodex環境での再取得はプロキシの403で失敗し、HTTP200・ハッシュは再測定していない。配信成果物全体と固定Git commitの完全な対応は未証明。"
+      },
+      "notVerified": [
+        "ブラウザーでの実プレイ、実Gemini応答、個人APIキーの設定操作、通信キャプチャ、オフライン動作は未試験。",
+        "個人キーなしでのサーバー側AI提供状況、ブラウザー・実機別の動作は未確認。",
+        "今回の公開URL再取得はプロキシ403。HTTP200・JSハッシュと機能文字列は親側から引き継いだ静的証跡であり、成果物全体と固定SHAの同一性は未証明。"
       ]
     },
     {
