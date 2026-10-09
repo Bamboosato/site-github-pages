@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/draw-lab
 access: open
 usageFeatures: ["on-device-processing","no-registration","offline-after-setup"]
 usageNote: "オフラインで大会データの編集・保存を行うには、対応ブラウザーで初回のオンライン読み込みを完了してください。データは利用中のブラウザーに保存されます。"
+heroImage:
+  src: /apps/draw-lab/hero.webp
+  alt: "4人のトーナメント表と、勝利数・勝点が整合する別の3人リーグ表を表す図案。選手名は架空。"
+  width: 1600
+  height: 900
 ---
 
 ## 概要

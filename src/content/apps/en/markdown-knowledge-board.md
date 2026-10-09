@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/markdown-knowledge-board
 access: open
 usageFeatures: ["on-device-processing","no-registration","offline-after-setup"]
 usageNote: "To edit and save offline, complete the app's offline preparation during your first online use. Optional GitHub and Google Drive integrations require authentication with the relevant account and a network connection. Cloud backups are encrypted in the browser before upload. Markdown export to Google Drive uploads an unencrypted .md file."
+heroImage:
+  src: /apps/markdown-knowledge-board/hero.webp
+  alt: "Illustration of fictional notes with tags and a selected Markdown note preview containing headings and a checklist."
+  width: 1600
+  height: 900
 ---
 
 ## Overview

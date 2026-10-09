@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/matchup-lab
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "No account registration is required. Member information is stored in the browser you use, where you can add and edit members. Members are not shared through the cloud."
+heroImage:
+  src: /apps/matchup-lab/hero.webp
+  alt: "Illustration of eight fictional members and two rounds of doubles on two courts, with each member playing once per round and changing partners."
+  width: 1600
+  height: 900
 ---
 
 ## Overview
