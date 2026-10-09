@@ -526,7 +526,113 @@
         "ブラウザーでの実プレイ、実Gemini応答、個人APIキーの設定操作、通信キャプチャ、オフライン動作は未試験。",
         "個人キーなしでのサーバー側AI提供状況、ブラウザー・実機別の動作は未確認。",
         "今回の公開URL再取得はプロキシ403。HTTP200・JSハッシュと機能文字列は親側から引き継いだ静的証跡であり、成果物全体と固定SHAの同一性は未証明。"
-      ]
+      ],
+      "fiveLevelsPauseSavedPuzzlesEvidence": {
+        "proposalId": "sudoku-ai-app-2f929a1a194a-3f913ca39621-five-levels-pause-saved-puzzles",
+        "checkedAt": "2026-10-09",
+        "siteBaseCommit": "ad92c40af4b3f3da3c8dde9c84d2455ca0161e38",
+        "baseCommit": "2f929a1a194a90e733475230dd59bacde58f226d",
+        "commit": "3f913ca396210d6eb849cbdd5c2ebf09f2c1e049",
+        "commitUrl": "https://github.com/Bamboosato/sudoku-ai-app/commit/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049",
+        "compareUrl": "https://github.com/Bamboosato/sudoku-ai-app/compare/2f929a1a194a90e733475230dd59bacde58f226d...3f913ca396210d6eb849cbdd5c2ebf09f2c1e049",
+        "sourcePaths": [
+          "README.md",
+          "src/components/DifficultyBar.tsx",
+          "src/lib/sudoku/generator.ts",
+          "src/hooks/useSudokuGame.ts",
+          "src/lib/sudoku/gameReducer.ts",
+          "src/hooks/useSavedPuzzles.ts",
+          "src/lib/sudoku/savedPuzzles.ts",
+          "src/components/MyPuzzlesModal.tsx",
+          "src/App.tsx",
+          "src/components/Board.tsx",
+          "src/hooks/useTimer.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/README.md",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/components/DifficultyBar.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/lib/sudoku/generator.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/hooks/useSudokuGame.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/lib/sudoku/gameReducer.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/hooks/useSavedPuzzles.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/lib/sudoku/savedPuzzles.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/components/MyPuzzlesModal.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/App.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/components/Board.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/hooks/useTimer.ts"
+        ],
+        "releaseEvidence": {
+          "pullRequestUrl": "https://github.com/Bamboosato/sudoku-ai-app/pull/13",
+          "mergedAt": "2026-10-09T09:49:10Z",
+          "mergeCommit": "3f913ca396210d6eb849cbdd5c2ebf09f2c1e049",
+          "deploymentStatus": "success",
+          "deploymentCommit": "3f913ca396210d6eb849cbdd5c2ebf09f2c1e049",
+          "deploymentStatusAt": "2026-10-09T09:49:27Z",
+          "deploymentUrl": "https://vercel.com/bamboosato/sudoku-ai-app/DbndCoxuhV7uEHpPmdPfQ6YiJmT2",
+          "method": "今回GitHub APIで固定比較14commits、PR13のmerge SHA・日時とcombined statusのexact HEAD Vercel successを再照合。updatedAtは機能公開日の2026-10-09。"
+        },
+        "confirmed": [
+          "固定READMEは3難易度の古い説明を含むため転記せず、DifficultyBar.tsxとgenerator.tsのbeginner/easy/medium/hard/expert、入門・初級・中級・上級・エキスパートの5段階を確認。生成難易度の選択と取り込み盤面の自動難易度判定は区別する。",
+          "useSudokuGame.tsは一時停止中にタイマーを停止。gameReducer.tsは編集入力を拒否し再開に対応。Board.tsxは一時停止中の数字・候補メモを空にして盤面を覆う。",
+          "App.tsxの保存ボタンから盤面・候補メモ・経過時間・ミス数等をuseSavedPuzzles.tsとsavedPuzzles.ts経由でlocalStorageへ保存。UIからidを渡さず、明示操作ごとの新規snapshotであり、その後の自動保存はない。保存領域への書込み例外は捕捉されるため、保存成功・消去耐性は保証しない。",
+          "MyPuzzlesModal.tsxの再開は保存盤面・メモ・時間・ミス数をloadPuzzleへ渡す。最初からやり直しは初期盤面と空メモ、時間・ミス数0を読み込み、保存snapshot自体は変更しない。削除は保存一覧とlocalStorageから対象を除き、現在プレイ中の盤面は消さない。",
+          "通常のgeneratePuzzle、新規ゲーム、pause/resume、保存、保存済み問題の再開・やり直しはgradePuzzleDifficultyを呼ばない。既存の登録不要・ローカルヒント・任意Geminiアドバイスと個人キー／Google通信の利用補足を維持。クラウド同期・自動保存・オフライン利用は追加主張しない。"
+        ],
+        "productionAssetEvidence": {
+          "checkedAt": "2026-10-09",
+          "htmlUrl": "https://sudoku-ai-app.vercel.app/",
+          "url": "https://sudoku-ai-app.vercel.app/assets/index-BhObLr8O.js",
+          "httpStatus": 200,
+          "bytes": 317891,
+          "sha256": "0f5a8729ffc3fd443078d0781221aa038cb46d26215fa0f43b84080b7f6423ba",
+          "method": "親側の2026-10-09の監視・引き継ぎによる公開HTMLとJSのHTTP200・サイズ・SHA256および配信コードの静的照合。今回Codexでは固定ソースとexact HEADのVercel successを再照合。公開HTML・JSの再取得は環境プロキシの403で失敗し、HTTP200・サイズ・ハッシュは再測定していない。実プレイ・保存・AI・オフラインの操作確認、および配信成果物全体とGit commitの完全な同一性を証明するものではない。"
+        },
+        "deferredFeatures": {
+          "features": [
+            "画像取り込み",
+            "取り込み盤面の自動難易度判定"
+          ],
+          "sourcePaths": [
+            "src/lib/sudoku/difficultyClassifier.ts",
+            "src/lib/sudoku/importValidation.ts",
+            "src/components/ImportModal.tsx",
+            "src/lib/sudoku/board.ts",
+            "src/lib/sudoku/solver.ts",
+            "src/lib/sudoku/types.ts",
+            "src/lib/gemini/scanClient.ts",
+            "src/hooks/useBoardScan.ts"
+          ],
+          "sourceUrls": [
+            "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/lib/sudoku/difficultyClassifier.ts",
+            "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/lib/sudoku/importValidation.ts",
+            "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/components/ImportModal.tsx",
+            "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/lib/sudoku/board.ts",
+            "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/lib/sudoku/solver.ts",
+            "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/lib/sudoku/types.ts",
+            "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/lib/gemini/scanClient.ts",
+            "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/hooks/useBoardScan.ts"
+          ],
+          "reason": "difficultyClassifier.tsはwhile(changed)の各反復でcomputeCellCandidates(workBoard)を再実行し、ペア・交差排除の候補削除だけでchanged=trueとしてcontinueする。盤面が変わらない反復で削除結果が失われ、同じ状態を繰り返す。ImportModal.tsxのrender中useMemoからvalidateImportedBoardが呼ばれるため、停止リスクがある。",
+          "reproduction": {
+            "board": "400060805030000007000704000820000060001080400040010008000603070500200000104000000",
+            "sourceCommit": "3f913ca396210d6eb849cbdd5c2ebf09f2c1e049",
+            "method": "親側の制限時間超過と独立レビューの同一ループ状態確認を引き継ぎ。今回も固定ソースをTypeScriptからCommonJSへ一時領域で変換し、Nodeの子プロセスに3秒制限を設定。countSolutions(board,2)=1は正常終了、validateImportedBoard(board)はETIMEDOUT・SIGTERMで終了。アプリrepositoryは変更していない。",
+            "timeoutMs": 3000,
+            "countSolutions": 1,
+            "validationResult": "ETIMEDOUT"
+          },
+          "privacy": "固定scanClient.tsでは本番の画像送信に個人Gemini APIキーが必要で、Google Generative Language APIへ画像を送信する。開発用proxy分岐と区別。画像取り込みの紹介は公開本文に追加しない。",
+          "notVerified": [
+            "公開UIでの停止再現、実画像送信、Gemini OCR応答は未確認。"
+          ],
+          "action": "紹介を保留し、一般向け本文には検証都合の注記を追加しない。アプリ修正・issue投稿は今回の対象外。"
+        },
+        "notVerified": [
+          "ブラウザーでの実プレイ、5難易度生成、一時停止・再開、保存・再読込・やり直し・削除の操作は未試験。",
+          "実Gemini応答・個人キー設定・通信キャプチャ・実機／ブラウザー別・オフラインの追加試験は未実施。個人キーなしのサーバー側AI提供状況も未確認。",
+          "公開HTML・JS再取得はプロキシ403。HTTP200・サイズ・ハッシュと配信コード照合は親側の静的証跡。exact HEADのVercel successとソース確認を実操作成功や成果物全体の同一性と混同しない。"
+        ]
+      }
     },
     {
       "name": "tennis-matchup-app",
