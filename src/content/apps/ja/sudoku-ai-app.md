@@ -14,7 +14,7 @@ appUrl: https://sudoku-ai-app.vercel.app/
 githubUrl: https://github.com/Bamboosato/sudoku-ai-app
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
-usageNote: "数独ゲームとローカルヒントは、このアプリへの登録やGemini APIキーなしで利用できます。Geminiアドバイスは任意のオンライン機能です。自分のAPIキーを使う場合、キーはブラウザーに保存され、盤面・メモなどの情報とともにGoogleのAPIへの通信に使われます。キー未設定時のサーバー側AI提供状況と、オフライン動作は未確認です。"
+usageNote: "数独ゲームとローカルヒントは、このアプリへの登録やGemini APIキーなしで利用できます。Geminiアドバイスは任意のオンライン機能です。自分のAPIキーを使う場合、キーはブラウザーに保存され、盤面・メモなどの情報とともにGoogleのAPIへの通信に使われます。"
 ---
 
 ## 概要
