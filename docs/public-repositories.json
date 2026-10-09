@@ -7,6 +7,7 @@
   "repositories": [
     {
       "name": "app-reveal-lab",
+      "category": "visual-experimental",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/app-reveal-lab",
       "appUrl": "https://app-reveal-lab.vercel.app/",
@@ -19,6 +20,7 @@
     },
     {
       "name": "app-slide-puzzle-lab",
+      "category": "visual-experimental",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/app-slide-puzzle-lab",
       "appUrl": "https://app-slide-puzzle-lab.vercel.app/",
@@ -31,6 +33,7 @@
     },
     {
       "name": "bbcafe-app",
+      "category": "productivity",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/bbcafe-app",
       "appUrl": "https://bbcafe-app.vercel.app/",
@@ -43,6 +46,7 @@
     },
     {
       "name": "draw-lab",
+      "category": "sports-competition",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/draw-lab",
       "appUrl": "https://draw-lab-rho.vercel.app/",
@@ -55,6 +59,7 @@
     },
     {
       "name": "face-icon-maker",
+      "category": "visual-experimental",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/face-icon-maker",
       "appUrl": "https://face-icon-maker.vercel.app/",
@@ -67,6 +72,7 @@
     },
     {
       "name": "interactive-moire-art",
+      "category": "visual-experimental",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/interactive-moire-art",
       "appUrl": "https://interactive-moire-art.vercel.app/",
@@ -79,6 +85,7 @@
     },
     {
       "name": "local-document-preprocessor",
+      "category": "utilities",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/local-document-preprocessor",
       "appUrl": "https://local-document-preprocessor.vercel.app/",
@@ -91,6 +98,7 @@
     },
     {
       "name": "local-pii-masker",
+      "category": "utilities",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/local-pii-masker",
       "appUrl": "https://local-pii-masker.vercel.app/",
@@ -114,14 +122,15 @@
     },
     {
       "name": "markdown-knowledge-board",
+      "category": "utilities",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/markdown-knowledge-board",
       "appUrl": "https://markdown-knowledge-board.vercel.app/",
       "homepageHttpStatus": 200,
       "createdAt": "2026-07-09",
-      "updatedAt": "2026-10-02",
-      "commit": "c10cf11b2c1cf6f8ba77f85740241124e727a8a5",
-      "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/c10cf11b2c1cf6f8ba77f85740241124e727a8a5",
+      "updatedAt": "2026-10-07",
+      "commit": "2df91cac201b5de29f48dead9bd188ea8effdcc8",
+      "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/2df91cac201b5de29f48dead9bd188ea8effdcc8",
       "readmeUrl": "https://github.com/Bamboosato/markdown-knowledge-board/blob/main/README.md",
       "implementationSources": [
         "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/src/App.tsx#L1830-L1975",
@@ -137,10 +146,58 @@
         "httpStatus": 200,
         "sha256": "6499469330f51dd06e9c309afb1e569f609768d631e760f79ba6e330f50e4603",
         "method": "引き継ぎ元の公開配信JS確認。固定ソースと同じ自動選択guard・選択処理を確認済み。今回のCodex Cloud環境からの再取得は403で失敗し、HTTP200とハッシュの再測定は未実施。"
+      },
+      "boundedYamlMetadataEvidence": {
+        "proposalId": "markdown-knowledge-board-a0d6aacc8b8c-2df91cac201b-bounded-yaml-metadata",
+        "checkedAt": "2026-10-08",
+        "sourceRepository": "Bamboosato/set3-markdown-knowledge-board",
+        "canonicalRepository": "Bamboosato/markdown-knowledge-board",
+        "commit": "2df91cac201b5de29f48dead9bd188ea8effdcc8",
+        "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/2df91cac201b5de29f48dead9bd188ea8effdcc8",
+        "baseCommit": "a0d6aacc8b8cb30015152e00e11b175f54bdc85f",
+        "compareUrl": "https://github.com/Bamboosato/markdown-knowledge-board/compare/a0d6aacc8b8cb30015152e00e11b175f54bdc85f...2df91cac201b5de29f48dead9bd188ea8effdcc8",
+        "sourcePaths": [
+          "README.md",
+          "src/lib/frontmatter.ts",
+          "src/components/MetadataDialog.tsx",
+          "src/lib/cloudRestore.ts",
+          "tests/unit/frontmatter.test.ts",
+          "tests/e2e/markdown-import-current-note.spec.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/2df91cac201b5de29f48dead9bd188ea8effdcc8/README.md",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/2df91cac201b5de29f48dead9bd188ea8effdcc8/src/lib/frontmatter.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/2df91cac201b5de29f48dead9bd188ea8effdcc8/src/components/MetadataDialog.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/2df91cac201b5de29f48dead9bd188ea8effdcc8/src/lib/cloudRestore.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/2df91cac201b5de29f48dead9bd188ea8effdcc8/tests/unit/frontmatter.test.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/2df91cac201b5de29f48dead9bd188ea8effdcc8/tests/e2e/markdown-import-current-note.spec.ts"
+        ],
+        "confirmed": [
+          "指定repo名はGitHub APIで既存のmarkdown-knowledge-board（repository ID 1294924607、Public）へ解決。比較は2026-10-07の1commit・6files。既存appId、appUrl、githubUrl、利用条件、Drive・取り込みの説明と証跡を維持。",
+          "frontmatter.tsは展開後の出現数を10,000、文字列とキーの合計を1,000,000文字に制限し、循環参照を拒否。パース・コピー・比較・出力の前に検査する。小さなYAMLエイリアスは維持。",
+          "MetadataDialog.tsxは各フィールドの値と複数フィールドの合計を検査。エラー表示とApply無効化があり、キーボードによるApplyもhasErrorsで拒否。cloudRestore.tsでもcustomMetadataを検査。",
+          "固定テストの静的確認：小さなエイリアス、循環参照、展開数・文字数の上限ちょうど／超過、複数フィールド合計、復元・出力・コピーの拒否、エラー後の正常入力・Apply再有効化。テストはこの環境で実行していない。"
+        ],
+        "productionAssetEvidence": {
+          "checkedAt": "2026-10-08",
+          "urls": [
+            "https://markdown-knowledge-board.vercel.app/assets/index-2maABplJ.js",
+            "https://mkb.bamboosato.com/assets/index-2maABplJ.js"
+          ],
+          "httpStatus": 200,
+          "sha256": "0975c8c7a699282db9d76528bebc663af1fdc12a923a6f694b23bde2352dedde",
+          "method": "親側の2026-10-08の引き継ぎによる公開配信HTML・JSのHTTP200と機能文字列の静的照合。今回の固定ソース確認とは区別する。このCodex環境での再取得はプロキシの403で失敗し、HTTP200・ハッシュは再測定していない。配信成果物全体と固定Git commitの完全な対応は未証明。"
+        },
+        "notVerified": [
+          "ブラウザーでのMetadata編集、Apply、取り込み、クラウド復元の操作は未試験。",
+          "実機・ブラウザー別・オフライン・実Google Drive操作の追加確認は未実施。",
+          "今回の公開URL再取得はプロキシ403。配信コード確認は親側の静的証跡であり、UI操作や成果物全体と固定SHAの同一性を保証しない。"
+        ]
       }
     },
     {
       "name": "matchup-lab",
+      "category": "sports-competition",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/matchup-lab",
       "appUrl": "https://matchup-lab-one.vercel.app/",
@@ -158,6 +215,7 @@
     },
     {
       "name": "rsvp-manager-app",
+      "category": "productivity",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/rsvp-manager-app",
       "appUrl": "https://rsvphub.bamboosato.com/",
@@ -170,7 +228,46 @@
       "note": "2026-10-02、正式本番URLをREADME固定SHA https://github.com/Bamboosato/rsvp-manager-app/blob/1436d26a50ef320af46730967c2b004f4924b4bb/README.md と正式URL導入commit https://github.com/Bamboosato/rsvp-manager-app/commit/3a48c2ee8938d4a399e2860391d7eebcc8fe3dcc で再確認。引き継ぎ元の公開確認（2026-10-02T16:10:01+09:00、dot cloud browser、read-only）では https://rsvphub.bamboosato.com/ と https://rsvp-manager-app.vercel.app/ の両方で公開概要・チュートリアル・v1.1.0フッターを確認。旧URLはそのURLに留まり正式ドメインへリダイレクトしない。homepageHttpStatusは旧Vercel URLについての既存記録であり、今回HTTPコードを測定した値ではない。ログイン・招待作成・回答送信は未操作で、公開デプロイSHAは未確認。アプリ更新日根拠commit以降の差分は開発者向けscripts/maintenance/delete-plan.mjsのみのため、commit・updatedAtは維持。"
     },
     {
+      "name": "sudoku-ai-app",
+      "category": "visual-experimental",
+      "public": true,
+      "verifiedAt": "2026-10-08",
+      "githubUrl": "https://github.com/Bamboosato/sudoku-ai-app",
+      "appUrl": "https://sudoku-ai-app.vercel.app/",
+      "homepageHttpStatus": 200,
+      "createdAt": "2026-10-08",
+      "updatedAt": "2026-10-08",
+      "commit": "2f929a1a194a90e733475230dd59bacde58f226d",
+      "commitUrl": "https://github.com/Bamboosato/sudoku-ai-app/commit/2f929a1a194a90e733475230dd59bacde58f226d",
+      "readmeUrl": "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/README.md",
+      "implementationSources": [
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/README.md",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/App.tsx",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/lib/sudoku/generator.ts",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/lib/sudoku/gameReducer.ts",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/lib/sudoku/hints.ts",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/hooks/useSudokuGame.ts",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/hooks/useApiKey.ts",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/lib/gemini/hintClient.ts",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/lib/gemini/directClient.ts",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/vite.config.ts",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/hooks/useTheme.ts",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/package.json"
+      ],
+      "proposalId": "sudoku-ai-app-new-2f929a1a194a-initial-listing",
+      "note": "Public確認と固定ソース照合は2026-10-08。3難易度の数独、メモ、ローカルヒント、誤入力リセット、任意のGeminiアドバイスを新規掲載。homepageHttpStatusは親側の公開確認に基づく。この環境での公開URL再取得はプロキシ403。Vercel status successを今回確認。ブラウザー実プレイ・オフライン・実Gemini応答・キー未設定時のサーバー側AIは未検証。",
+      "productionAssetEvidence": {
+        "checkedAt": "2026-10-08",
+        "htmlUrl": "https://sudoku-ai-app.vercel.app/",
+        "url": "https://sudoku-ai-app.vercel.app/assets/index-Clqp-CDV.js",
+        "httpStatus": 200,
+        "sha256": "b102d48c029daa161beb086191bade7dee85aff0b026a122c00d8d2454efbda4",
+        "method": "親側の2026-10-08の引き継ぎによる公開配信HTML・JSのHTTP200と機能文字列の静的照合。今回の固定ソース確認とは区別する。このCodex環境での再取得はプロキシの403で失敗し、HTTP200・ハッシュは再測定していない。配信成果物全体と固定Git commitの完全な対応は未証明。"
+      }
+    },
+    {
       "name": "tennis-matchup-app",
+      "category": "sports-competition",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/tennis-matchup-app",
       "appUrl": "https://tennis-matchup-app.vercel.app/",
@@ -183,6 +280,7 @@
     },
     {
       "name": "tennis-organizing-app",
+      "category": "sports-competition",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/tennis-organizing-app",
       "appUrl": "https://tennis-organizing-app.vercel.app/",
@@ -195,6 +293,7 @@
     },
     {
       "name": "turing-pattern-lab",
+      "category": "visual-experimental",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/turing-pattern-lab",
       "appUrl": "https://turing-pattern-lab.vercel.app/",
