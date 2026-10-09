@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/sudoku-ai-app
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "The Sudoku game and local hints do not require an account for this app or a Gemini API key. Gemini advice is an optional online feature. If you use your own API key, it is stored in your browser and used to contact Google’s API with information such as the board and pencil notes."
+heroImage:
+  src: /apps/sudoku-ai-app/hero.webp
+  alt: "Illustration reconstructing a Sudoku board with pencil notes and a Japanese logical hint identifying 9 at row 1, column 5."
+  width: 1600
+  height: 900
 ---
 
 ## Overview

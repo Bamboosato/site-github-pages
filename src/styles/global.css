@@ -132,6 +132,12 @@ main:focus { outline: none; }
 .detail-description { font-size: 1.08rem; color: var(--muted); }
 .detail-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 .detail-actions:empty { display: none; }
+.detail-hero-with-image { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 40px; align-items: center; margin-bottom: 30px; }
+.detail-hero-with-image .detail-heading { max-width: none; min-width: 0; margin-bottom: 0; }
+.detail-hero-image { width: 100%; height: auto; border-radius: 8px; }
+@media (max-width: 1050px) {
+  .detail-hero-with-image { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+}
 .detail-grid { display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 65px; padding-top: 45px; }
 .detail-meta { border-left: 1px solid var(--line); padding-left: 26px; }
 .detail-meta dl { margin: 0; }

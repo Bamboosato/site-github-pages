@@ -12,6 +12,7 @@ const date = z.preprocess(
 const webUrl = z.url({ protocol: /^https?$/ });
 const imagePath = z.string().regex(/^\/(?!\/)(?!.*(?:\.\.|[?#]))[^\s]+$/, 'Use a site-relative public image path');
 const screenshot = z.object({ src: imagePath, alt: z.string().trim().min(1) });
+const heroImage = screenshot.extend({ width: z.number().int().positive(), height: z.number().int().positive() });
 
 export const appSchema = z.object({
   appId: identifier, locale: z.enum(['ja', 'en']), title: z.string().trim().min(1),
@@ -25,7 +26,7 @@ export const appSchema = z.object({
   usageFeatures: z.array(z.enum(['on-device-processing', 'no-registration', 'offline-after-setup']))
     .max(3).refine((features) => new Set(features).size === features.length, 'Usage features must be unique').default([]),
   usageNote: z.string().trim().min(1).optional(),
-  thumbnail: screenshot.optional(), screenshots: z.array(screenshot).optional(),
+  heroImage: heroImage.optional(), thumbnail: screenshot.optional(), screenshots: z.array(screenshot).optional(),
   version: z.string().optional(), license: z.string().optional(),
 }).superRefine((data, ctx) => {
   if (data.access === 'role-dependent' && !data.usageNote) {
