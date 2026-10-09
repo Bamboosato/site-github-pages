@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/tennis-organizing-app
 access: login-required
 usageFeatures: []
 usageNote: "Account registration is required to manage members in the cloud. Saved member information can be accessed from multiple devices and browsers. Guest sign-in lets you create matchups using participant counts, but does not provide member management. A network connection is required."
+heroImage:
+  src: /apps/tennis-organizing-app/hero.webp
+  alt: "Concept illustration of selecting four fictional registered members and using their nicknames and gender markers in a doubles matchup table."
+  width: 1600
+  height: 900
 ---
 
 ## Overview

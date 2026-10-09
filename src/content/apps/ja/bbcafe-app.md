@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/bbcafe-app
 access: login-required
 usageFeatures: []
 usageNote: "新規利用には、LINE公式アカウントの取得と、アプリ管理者によるアカウント登録が必要です。"
+heroImage:
+  src: /apps/bbcafe-app/hero.webp
+  alt: "架空の短いメッセージ本文を送信前に確認・編集する欄と、架空利用者2人の送信後の確認済み・未確認の状態を表す図案。"
+  width: 1600
+  height: 900
 ---
 
 ## 概要
