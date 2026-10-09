@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/tennis-matchup-app
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "アカウント登録は不要です。メンバー情報を保存・管理する機能はなく、当日の参加人数などの条件から組合せを作成します。"
+heroImage:
+  src: /apps/tennis-matchup-app/hero.webp
+  alt: "架空の6人で1コート・3ラウンドのダブルス組合せと休憩者を表す図案。各人2回出場し1回休憩、ペアの重複なし。"
+  width: 1600
+  height: 900
 ---
 
 ## 概要

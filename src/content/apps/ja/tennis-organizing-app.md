@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/tennis-organizing-app
 access: login-required
 usageFeatures: []
 usageNote: "メンバーをクラウドで管理するには、アカウント登録が必要です。保存したメンバー情報は複数の端末・ブラウザーから利用できます。ゲストログインでは人数指定による組合せ作成を利用できますが、メンバー管理はできません。通信が必要です。"
+heroImage:
+  src: /apps/tennis-organizing-app/hero.webp
+  alt: "架空の登録メンバー4人を参加者として選択し、ニックネームと性別表示付きのダブルス対戦表へつなぐ流れを表す図案。"
+  width: 1600
+  height: 900
 ---
 
 ## 概要

@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/tennis-matchup-app
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "No account registration is required. The app does not store or manage a member list; it creates match schedules from settings such as the participant count."
+heroImage:
+  src: /apps/tennis-matchup-app/hero.webp
+  alt: "Illustration of doubles pairings and rest players for six fictional participants across three rounds on one court. Each plays twice and rests once, with no repeated partners."
+  width: 1600
+  height: 900
 ---
 
 ## Overview

@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/bbcafe-app
 access: login-required
 usageFeatures: []
 usageNote: "To start using the app, you need to obtain a LINE Official Account and have your account registered by the app administrator."
+heroImage:
+  src: /apps/bbcafe-app/hero.webp
+  alt: "Concept illustration of reviewing and editing a fictional short message before sending, beside confirmed and unconfirmed statuses for two fictional recipients after sending."
+  width: 1600
+  height: 900
 ---
 
 ## Overview
