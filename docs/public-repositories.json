@@ -2,7 +2,9 @@
   "owner": "Bamboosato",
   "verifiedAt": "2026-10-02",
   "scope": "All owner public repositories except site-github-pages, excluded by the user; no fork or archived exclusions.",
-  "excludedRepositories": ["site-github-pages"],
+  "excludedRepositories": [
+    "site-github-pages"
+  ],
   "repository": "https://github.com/Bamboosato/site-github-pages",
   "repositories": [
     {
@@ -231,38 +233,56 @@
       "name": "sudoku-ai-app",
       "category": "visual-experimental",
       "public": true,
-      "verifiedAt": "2026-10-08",
+      "verifiedAt": "2026-10-09",
       "githubUrl": "https://github.com/Bamboosato/sudoku-ai-app",
       "appUrl": "https://sudoku-ai-app.vercel.app/",
       "homepageHttpStatus": 200,
       "createdAt": "2026-10-08",
-      "updatedAt": "2026-10-08",
-      "commit": "2f929a1a194a90e733475230dd59bacde58f226d",
-      "commitUrl": "https://github.com/Bamboosato/sudoku-ai-app/commit/2f929a1a194a90e733475230dd59bacde58f226d",
-      "readmeUrl": "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/README.md",
+      "updatedAt": "2026-10-09",
+      "commit": "3f913ca396210d6eb849cbdd5c2ebf09f2c1e049",
+      "commitUrl": "https://github.com/Bamboosato/sudoku-ai-app/commit/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049",
+      "readmeUrl": "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/README.md",
       "implementationSources": [
-        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/README.md",
-        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/App.tsx",
-        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/lib/sudoku/generator.ts",
-        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/lib/sudoku/gameReducer.ts",
-        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/lib/sudoku/hints.ts",
-        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/hooks/useSudokuGame.ts",
-        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/hooks/useApiKey.ts",
-        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/lib/gemini/hintClient.ts",
-        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/lib/gemini/directClient.ts",
-        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/vite.config.ts",
-        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/src/hooks/useTheme.ts",
-        "https://github.com/Bamboosato/sudoku-ai-app/blob/2f929a1a194a90e733475230dd59bacde58f226d/package.json"
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/README.md",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/components/DifficultyBar.tsx",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/lib/sudoku/generator.ts",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/hooks/useSudokuGame.ts",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/lib/sudoku/gameReducer.ts",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/hooks/useSavedPuzzles.ts",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/lib/sudoku/savedPuzzles.ts",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/components/MyPuzzlesModal.tsx",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/App.tsx",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/components/Board.tsx",
+        "https://github.com/Bamboosato/sudoku-ai-app/blob/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049/src/hooks/useTimer.ts"
       ],
-      "proposalId": "sudoku-ai-app-new-2f929a1a194a-initial-listing",
-      "note": "Public確認と固定ソース照合は2026-10-08。3難易度の数独、メモ、ローカルヒント、誤入力リセット、任意のGeminiアドバイスを新規掲載。homepageHttpStatusは親側の公開確認に基づく。この環境での公開URL再取得はプロキシ403。Vercel status successを今回確認。ブラウザー実プレイ・オフライン・実Gemini応答・キー未設定時のサーバー側AIは未検証。",
+      "proposalId": "sudoku-ai-app-2f929a1a194a-3f913ca39621-five-levels-pause-saved-puzzles",
+      "note": "proposalId: sudoku-ai-app-2f929a1a194a-3f913ca39621-five-levels-pause-saved-puzzles。固定比較14commitsと固定ソース、PR13のmerge（2026-10-09T09:49:10Z）、exact HEADのVercel success（09:49:27Z）を再照合。5段階の難易度、一時停止、ブラウザー内の手動snapshot保存とマイパズルからの再開・やり直し・削除を日英紹介へ反映。READMEの3難易度説明は古いため実装を優先。画像取り込みと自動難易度判定はgraderの反復停止リスクで紹介保留。公開配信の親側静的確認、今回のプロキシ403、固定ソースによる3秒timeout再確認、未試験範囲はdocs/app-usage-evidence.jsonのfiveLevelsPauseSavedPuzzlesEvidenceに記録。",
       "productionAssetEvidence": {
-        "checkedAt": "2026-10-08",
+        "checkedAt": "2026-10-09",
         "htmlUrl": "https://sudoku-ai-app.vercel.app/",
-        "url": "https://sudoku-ai-app.vercel.app/assets/index-Clqp-CDV.js",
+        "url": "https://sudoku-ai-app.vercel.app/assets/index-BhObLr8O.js",
         "httpStatus": 200,
-        "sha256": "b102d48c029daa161beb086191bade7dee85aff0b026a122c00d8d2454efbda4",
-        "method": "親側の2026-10-08の引き継ぎによる公開配信HTML・JSのHTTP200と機能文字列の静的照合。今回の固定ソース確認とは区別する。このCodex環境での再取得はプロキシの403で失敗し、HTTP200・ハッシュは再測定していない。配信成果物全体と固定Git commitの完全な対応は未証明。"
+        "bytes": 317891,
+        "sha256": "0f5a8729ffc3fd443078d0781221aa038cb46d26215fa0f43b84080b7f6423ba",
+        "method": "親側の2026-10-09の監視・引き継ぎによる公開HTMLとJSのHTTP200・サイズ・SHA256および配信コードの静的照合。今回Codexでは固定ソースとexact HEADのVercel successを再照合。公開HTML・JSの再取得は環境プロキシの403で失敗し、HTTP200・サイズ・ハッシュは再測定していない。実プレイ・保存・AI・オフラインの操作確認、および配信成果物全体とGit commitの完全な同一性を証明するものではない。"
+      },
+      "fiveLevelsPauseSavedPuzzlesEvidence": {
+        "proposalId": "sudoku-ai-app-2f929a1a194a-3f913ca39621-five-levels-pause-saved-puzzles",
+        "checkedAt": "2026-10-09",
+        "baseCommit": "2f929a1a194a90e733475230dd59bacde58f226d",
+        "commit": "3f913ca396210d6eb849cbdd5c2ebf09f2c1e049",
+        "compareUrl": "https://github.com/Bamboosato/sudoku-ai-app/compare/2f929a1a194a90e733475230dd59bacde58f226d...3f913ca396210d6eb849cbdd5c2ebf09f2c1e049",
+        "releaseEvidence": {
+          "pullRequestUrl": "https://github.com/Bamboosato/sudoku-ai-app/pull/13",
+          "mergedAt": "2026-10-09T09:49:10Z",
+          "mergeCommit": "3f913ca396210d6eb849cbdd5c2ebf09f2c1e049",
+          "deploymentStatus": "success",
+          "deploymentCommit": "3f913ca396210d6eb849cbdd5c2ebf09f2c1e049",
+          "deploymentStatusAt": "2026-10-09T09:49:27Z",
+          "deploymentUrl": "https://vercel.com/bamboosato/sudoku-ai-app/DbndCoxuhV7uEHpPmdPfQ6YiJmT2",
+          "method": "今回GitHub APIで固定比較14commits、PR13のmerge SHA・日時とcombined statusのexact HEAD Vercel successを再照合。updatedAtは機能公開日の2026-10-09。"
+        },
+        "usageEvidencePath": "docs/app-usage-evidence.json#repositories[sudoku-ai-app].fiveLevelsPauseSavedPuzzlesEvidence"
       }
     },
     {
