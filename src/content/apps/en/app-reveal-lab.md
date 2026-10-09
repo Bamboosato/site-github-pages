@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/app-reveal-lab
 access: open
 usageFeatures: ["on-device-processing","no-registration","offline-after-setup"]
 usageNote: "To render images and export animations offline, complete the initial online load in a supported browser. Available export formats depend on your browser."
+heroImage:
+  src: /apps/app-reveal-lab/hero.webp
+  alt: "Three frames illustrating the same landscape progressively revealed from a coarse mosaic through finer blocks to the original artwork."
+  width: 1600
+  height: 900
 ---
 
 ## Overview

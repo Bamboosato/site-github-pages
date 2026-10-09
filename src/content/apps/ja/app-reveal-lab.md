@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/app-reveal-lab
 access: open
 usageFeatures: ["on-device-processing","no-registration","offline-after-setup"]
 usageNote: "オフラインで画像の描画・動画出力を使うには、対応ブラウザーで初回のオンライン読み込みを完了してください。出力形式はブラウザーの対応状況によって異なります。"
+heroImage:
+  src: /apps/app-reveal-lab/hero.webp
+  alt: "同じ風景図案が粗いモザイクから細かなモザイク、元の図案へ段階的に現れる演出を表す3コマ。"
+  width: 1600
+  height: 900
 ---
 
 ## 概要

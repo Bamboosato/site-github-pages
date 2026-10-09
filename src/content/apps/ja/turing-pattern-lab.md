@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/turing-pattern-lab
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "反応拡散の描画は端末内で行います。顔・音・端末の動きを使う追加操作では、対応機能や権限が必要です。顔検出モデルの取得には通信を使います。"
+heroImage:
+  src: /apps/turing-pattern-lab/hero.webp
+  alt: "実装のGray-Scott計算で作ったZebra模様とFeed 0.0220・Kill 0.0510の設定を表す図案。配色は深緑と淡いクリーム。"
+  width: 1600
+  height: 900
 ---
 
 ## 概要
