@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/turing-pattern-lab
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "Reaction-diffusion rendering runs on your device. Optional face, audio and motion controls need supported features and permissions. Downloading the face detection model uses a network connection."
+heroImage:
+  src: /apps/turing-pattern-lab/hero.webp
+  alt: "Illustration of a Zebra pattern generated with the implemented Gray-Scott simulation, alongside Feed 0.0220 and Kill 0.0510 settings in dark green and pale cream."
+  width: 1600
+  height: 900
 ---
 
 ## Overview

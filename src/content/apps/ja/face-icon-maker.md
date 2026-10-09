@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/face-icon-maker
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "写真は端末内で処理します。顔検出・背景除去等の初回利用時には、処理用モデルや実行環境の取得にネットワーク接続が必要です。"
+heroImage:
+  src: /apps/face-icon-maker/hero.webp
+  alt: "架空人物の集合図から1人の顔を選び、円形の512×512 PNGアイコンへ切り抜く流れを表す図案。"
+  width: 1600
+  height: 900
 ---
 
 ## 概要

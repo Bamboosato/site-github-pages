@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/face-icon-maker
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "Photos are processed on your device. The first use of features such as face detection or background removal needs a network connection to download models and runtime files."
+heroImage:
+  src: /apps/face-icon-maker/hero.webp
+  alt: "Concept illustration of selecting one face from a fictional group and cropping it into a circular 512-by-512 PNG icon."
+  width: 1600
+  height: 900
 ---
 
 ## Overview

@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/app-slide-puzzle-lab
 access: open
 usageFeatures: ["on-device-processing","no-registration","offline-after-setup"]
 usageNote: "オフラインで遊ぶには、初回のオンライン利用でアプリの読み込みを完了してください。端末内の画像を選んでプレイできます。保存される記録は設定・成績・初期配置で、選んだ画像は記録に含まれません。"
+heroImage:
+  src: /apps/app-slide-puzzle-lab/hero.webp
+  alt: "元の風景図案と、それを分割した番号付き3×3スライドパズル。完成状態から合法な2手で動かした、解ける配置。"
+  width: 1600
+  height: 900
 ---
 
 ## 概要

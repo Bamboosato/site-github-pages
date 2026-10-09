@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/app-slide-puzzle-lab
 access: open
 usageFeatures: ["on-device-processing","no-registration","offline-after-setup"]
 usageNote: "To play offline, first load the app online. You can play using an image selected from your device. Saved records contain results and the starting tile layout, along with puzzle settings; they do not include the selected image."
+heroImage:
+  src: /apps/app-slide-puzzle-lab/hero.webp
+  alt: "Original landscape artwork beside a numbered 3-by-3 sliding puzzle made from it, in a solvable arrangement reached by two legal moves from completion."
+  width: 1600
+  height: 900
 ---
 
 ## Overview
