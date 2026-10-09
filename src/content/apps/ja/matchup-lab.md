@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/matchup-lab
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "アカウント登録は不要です。メンバー情報は利用中のブラウザー内に保存し、登録・編集などの管理ができます。クラウドでのメンバー共有は行いません。"
+heroImage:
+  src: /apps/matchup-lab/hero.webp
+  alt: "架空の8人のメンバーと、各人が毎ラウンド1回出場しペアを変える2コート・2ラウンドのダブルス組合せを表す図案。"
+  width: 1600
+  height: 900
 ---
 
 ## 概要

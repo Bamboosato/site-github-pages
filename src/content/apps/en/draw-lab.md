@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/draw-lab
 access: open
 usageFeatures: ["on-device-processing","no-registration","offline-after-setup"]
 usageNote: "To edit and save tournament data offline, complete the initial online load in a supported browser. Data is stored in the browser you use."
+heroImage:
+  src: /apps/draw-lab/hero.webp
+  alt: "Illustration of a four-player tournament bracket and a separate three-player league table with consistent wins and points. All entrants are fictional."
+  width: 1600
+  height: 900
 ---
 
 ## Overview
