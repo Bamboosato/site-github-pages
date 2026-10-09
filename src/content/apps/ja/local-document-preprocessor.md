@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/local-document-preprocessor
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "選択した文書と変換結果はブラウザー内で処理します。初回はアプリと変換用の実行環境を読み込むため、ネットワーク接続が必要です。"
+heroImage:
+  src: /apps/local-document-preprocessor/hero.webp
+  alt: "架空のDOCX準備メモの見出し・本文・箇条書きをMarkdownとプレーンテキストへ整える流れを表す図案。"
+  width: 1600
+  height: 900
 ---
 
 ## 概要

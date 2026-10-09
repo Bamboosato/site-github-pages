@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/local-pii-masker
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "Detection, masking and restoration run in your browser. Downloading the detection model initially requires a network connection. Mappings are encrypted and saved on your device only when you choose to save them. Review the results yourself."
+heroImage:
+  src: /apps/local-pii-masker/hero.webp
+  alt: "Concept illustration of reviewing detected candidates and masking repeated occurrences of a fictional email address with the same replacement token."
+  width: 1600
+  height: 900
 ---
 
 ## Overview
