@@ -74,6 +74,25 @@ test('boundary: no entries is valid, and optional URLs/images and empty tags are
   assert.deepEqual(validateRecords([], []), []);
   assert.deepEqual(validateRecords(pair(), []), []);
 });
+test('normal/boundary: detail hero image is optional and requires a local path, translated alt and positive integer dimensions', () => {
+  const base = pair()[0].data;
+  const heroImage = { src: '/apps/test-app/hero.webp', alt: 'Illustration', width: 1600, height: 900 };
+  assert.equal(appSchema.safeParse({ ...base, heroImage }).success, true);
+  for (const change of [{ src: '//example.org/image.webp' }, { alt: ' ' }, { width: 0 }, { height: -1 }, { width: 1.5 }, { height: undefined }]) {
+    assert.equal(appSchema.safeParse({ ...base, heroImage: { ...heroImage, ...change } }).success, false);
+  }
+});
+test('translation: hero source and dimensions must match, while alt is localized', () => {
+  const apps = pair();
+  apps[0].data.heroImage = { src: '/apps/test-app/hero.webp', alt: '図案', width: 1600, height: 900 };
+  assert.match(validateRecords(apps, []).join('\n'), /heroImage/);
+  apps[1].data.heroImage = { ...apps[0].data.heroImage, alt: 'Illustration' };
+  assert.deepEqual(validateRecords(apps, []), []);
+  for (const change of [{ src: '/other.webp' }, { width: 1200 }, { height: 675 }]) {
+    apps[1].data.heroImage = { ...apps[0].data.heroImage, ...change };
+    assert.match(validateRecords(apps, []).join('\n'), /heroImage/);
+  }
+});
 test('abnormal: missing required frontmatter is rejected', () => {
   const data = pair()[0].data;
   for (const field of ['appId', 'slug', 'locale', 'title', 'description', 'updatedAt', 'category', 'status', 'tags', 'featured']) {

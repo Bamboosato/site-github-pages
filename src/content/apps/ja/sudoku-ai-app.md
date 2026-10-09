@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/sudoku-ai-app
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "数独ゲームとローカルヒントは、このアプリへの登録やGemini APIキーなしで利用できます。Geminiアドバイスは任意のオンライン機能です。自分のAPIキーを使う場合、キーはブラウザーに保存され、盤面・メモなどの情報とともにGoogleのAPIへの通信に使われます。"
+heroImage:
+  src: /apps/sudoku-ai-app/hero.webp
+  alt: "候補メモ付きの数独盤面と、行1・列5の正解を9と示す日本語の論理ヒントを再構成した図。"
+  width: 1600
+  height: 900
 ---
 
 ## 概要

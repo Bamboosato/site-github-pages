@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/interactive-moire-art
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "模様の生成と保存は端末内で行います。WebGL 2に対応したブラウザーを使用してください。"
+heroImage:
+  src: /apps/interactive-moire-art/hero.webp
+  alt: "深緑と朱色の同心円2層をずらして重ねたモアレ模様の図案。アプリ画面ではなく、重なりの効果を表現。"
+  width: 1600
+  height: 900
 ---
 
 ## 概要

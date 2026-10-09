@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/interactive-moire-art
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "Patterns are generated and saved on your device. Use a browser with WebGL 2 support."
+heroImage:
+  src: /apps/interactive-moire-art/hero.webp
+  alt: "Illustration of moiré patterns formed by overlapping offset dark green and vermilion concentric circles, visualizing the layering effect rather than an app screenshot."
+  width: 1600
+  height: 900
 ---
 
 ## Overview

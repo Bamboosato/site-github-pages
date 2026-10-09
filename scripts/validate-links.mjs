@@ -68,6 +68,7 @@ for (const [url, { $ }] of pages) {
     const app = apps.find((entry) => entry.data.locale === locale && entry.data.appId === card.attr('data-app-id'));
     if (!app) { errors.push(`${url}: card has no content record`); return; }
     const d = app.data;
+    if (card.find('.detail-hero-image').length) errors.push(`${url}: detail hero image leaked onto a card`);
     if (card.find('.category-label').text() !== categories[d.category][locale]) errors.push(`${url}: card category label differs for ${d.appId}`);
     const expected = d.usageFeatures.map((id) => usageFeatures[id][locale]);
     const actual = card.find('.usage-features li').map((_, li) => $(li).text()).get();
@@ -85,6 +86,15 @@ for (const [url, { $ }] of pages) {
   const detailApp = apps.find((entry) => entry.data.locale === locale && url === withBase(pagePath(locale, `apps/${entry.data.slug}/`), base));
   if (detailApp) {
     const d = detailApp.data;
+    const hero = $('.detail-hero-with-image > .detail-hero-image');
+    if (hero.length !== Number(Boolean(d.heroImage)) || $('.detail-hero-image').length !== hero.length) errors.push(`${url}: missing or duplicate detail hero image`);
+    if (d.heroImage) {
+      const expected = { src: withBase(d.heroImage.src, base), alt: d.heroImage.alt, width: String(d.heroImage.width), height: String(d.heroImage.height), loading: 'eager', fetchpriority: 'high', decoding: 'async' };
+      for (const [attribute, value] of Object.entries(expected)) {
+        if (hero.attr(attribute) !== value) errors.push(`${url}: hero image ${attribute} differs`);
+      }
+      if (!$('.detail-hero-with-image > .detail-heading .detail-actions').length) errors.push(`${url}: hero actions missing`);
+    }
     if ($('.detail-heading .category-label').text() !== categories[d.category][locale]) errors.push(`${url}: detail category label differs`);
     const expectedAccess = accessLabels[d.access][locale];
     const visible = Boolean(expectedAccess || d.usageFeatures.length || d.usageNote);

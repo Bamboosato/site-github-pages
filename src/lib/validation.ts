@@ -35,6 +35,11 @@ export function validateRecords(apps: RecordEntry<AppData>[], updates: RecordEnt
   pairs(apps, 'appId', sharedAppFields);
   for (const entry of apps) {
     const translation = apps.find((other) => other.data.appId === entry.data.appId && other.data.locale !== entry.data.locale);
+    const hero = entry.data.heroImage;
+    const translatedHero = translation?.data.heroImage;
+    if (translation && (hero?.src !== translatedHero?.src || hero?.width !== translatedHero?.width || hero?.height !== translatedHero?.height)) {
+      errors.push(`${entry.file}: heroImage source or dimensions disagree for appId=${entry.data.appId}`);
+    }
     if (translation && Boolean(entry.data.usageNote) !== Boolean(translation.data.usageNote)) {
       errors.push(`${entry.file}: usageNote translation is missing for appId=${entry.data.appId}`);
     }
