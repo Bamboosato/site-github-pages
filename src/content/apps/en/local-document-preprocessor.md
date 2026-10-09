@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/local-document-preprocessor
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "Selected documents and conversion results are processed in your browser. The initial load of the app and its conversion runtime requires a network connection."
+heroImage:
+  src: /apps/local-document-preprocessor/hero.webp
+  alt: "Concept illustration of converting headings, text, and a list from a fictional DOCX preparation note into Markdown and plain text."
+  width: 1600
+  height: 900
 ---
 
 ## Overview

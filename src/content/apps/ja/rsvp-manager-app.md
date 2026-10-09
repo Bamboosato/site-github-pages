@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/rsvp-manager-app
 access: role-dependent
 usageFeatures: []
 usageNote: "主催者はアカウントでログインします。回答者は招待リンクから入り、案内に従ってニックネーム・PIN等を入力します。回答者に主催者用アカウントの作成は不要ですが、通信が必要です。"
+heroImage:
+  src: /apps/rsvp-manager-app/hero.webp
+  alt: "架空の練習会の日時・会場と、出席12人・未定3人・欠席2人を示す管理者向け出欠集計を表す図案。"
+  width: 1600
+  height: 900
 ---
 
 ## 概要

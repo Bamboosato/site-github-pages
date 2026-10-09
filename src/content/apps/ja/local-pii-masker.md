@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/local-pii-masker
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "原文の検出・マスキング・復元はブラウザー内で行います。初回の自動検出モデル取得には通信が必要です。対応表は保存操作時だけ暗号化して端末内に保存します。結果は人が確認してください。"
+heroImage:
+  src: /apps/local-pii-masker/hero.webp
+  alt: "検出候補を確認して、架空のメールアドレスの繰り返しを同じ置換トークンへマスクする流れを表す図案。"
+  width: 1600
+  height: 900
 ---
 
 ## 概要

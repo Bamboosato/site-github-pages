@@ -15,6 +15,11 @@ githubUrl: https://github.com/Bamboosato/rsvp-manager-app
 access: role-dependent
 usageFeatures: []
 usageNote: "Organizers sign in with an account. Invitees use an invitation link and follow its instructions to enter a nickname, PIN and any other required details. Invitees do not need an organizer account, but do need a network connection."
+heroImage:
+  src: /apps/rsvp-manager-app/hero.webp
+  alt: "Concept illustration of a fictional practice event with its time and venue, plus an administrator summary of 12 attending, 3 undecided, and 2 declining."
+  width: 1600
+  height: 900
 ---
 
 ## Overview
