@@ -14,7 +14,7 @@ appUrl: https://sudoku-ai-app.vercel.app/
 githubUrl: https://github.com/Bamboosato/sudoku-ai-app
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
-usageNote: "The Sudoku game and local hints do not require an account for this app or a Gemini API key. Gemini advice is an optional online feature. If you use your own API key, it is stored in your browser and used to contact Google’s API with information such as the board and pencil notes. Server-provided AI availability without a personal key and offline operation have not been verified."
+usageNote: "The Sudoku game and local hints do not require an account for this app or a Gemini API key. Gemini advice is an optional online feature. If you use your own API key, it is stored in your browser and used to contact Google’s API with information such as the board and pencil notes."
 ---
 
 ## Overview
