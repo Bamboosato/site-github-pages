@@ -632,6 +632,113 @@
           "実Gemini応答・個人キー設定・通信キャプチャ・実機／ブラウザー別・オフラインの追加試験は未実施。個人キーなしのサーバー側AI提供状況も未確認。",
           "公開HTML・JS再取得はプロキシ403。HTTP200・サイズ・ハッシュと配信コード照合は親側の静的証跡。exact HEADのVercel successとソース確認を実操作成功や成果物全体の同一性と混同しない。"
         ]
+      },
+      "twoStageHintsControlsEvidence": {
+        "proposalId": "sudoku-ai-app-3f913ca39621-07292ec79deb-two-stage-hints-controls",
+        "checkedAt": "2026-10-15",
+        "checkedAtTimezone": "Asia/Tokyo",
+        "sourceVerifiedAtUtc": "2026-10-14T21:37:36Z",
+        "siteBaseCommit": "a9e8f8274806886f0733c64a54f13fbd21d2bdfd",
+        "baseCommit": "3f913ca396210d6eb849cbdd5c2ebf09f2c1e049",
+        "commit": "07292ec79deb7e09f9f899c0687991c24e8b3663",
+        "commitUrl": "https://github.com/Bamboosato/sudoku-ai-app/commit/07292ec79deb7e09f9f899c0687991c24e8b3663",
+        "compareUrl": "https://github.com/Bamboosato/sudoku-ai-app/compare/3f913ca396210d6eb849cbdd5c2ebf09f2c1e049...07292ec79deb7e09f9f899c0687991c24e8b3663",
+        "sourcePaths": [
+          "src/App.tsx",
+          "src/components/HintPanel.tsx",
+          "src/lib/sudoku/hints.ts",
+          "src/lib/sudoku/gameReducer.ts",
+          "src/components/Board.tsx",
+          "src/components/Cell.tsx",
+          "src/components/ActionTools.tsx",
+          "src/components/Header.tsx",
+          "src/components/Numpad.tsx",
+          "src/components/DifficultyBar.tsx",
+          "src/components/NewGameModal.tsx",
+          "src/lib/sudoku/generator.ts",
+          "src/hooks/useApiKey.ts",
+          "src/lib/gemini/scanClient.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/App.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/components/HintPanel.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/lib/sudoku/hints.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/lib/sudoku/gameReducer.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/components/Board.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/components/Cell.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/components/ActionTools.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/components/Header.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/components/Numpad.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/components/DifficultyBar.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/components/NewGameModal.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/lib/sudoku/generator.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/hooks/useApiKey.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/lib/gemini/scanClient.ts"
+        ],
+        "releaseEvidence": {
+          "pullRequests": [
+            {
+              "url": "https://github.com/Bamboosato/sudoku-ai-app/pull/14",
+              "mergedAt": "2026-10-14T03:36:59Z",
+              "mergeCommit": "c2a512889bc089c6e690d8d7c926e5109c5618a9"
+            },
+            {
+              "url": "https://github.com/Bamboosato/sudoku-ai-app/pull/15",
+              "mergedAt": "2026-10-14T04:08:29Z",
+              "mergeCommit": "07292ec79deb7e09f9f899c0687991c24e8b3663"
+            }
+          ],
+          "deploymentStatus": "success",
+          "deploymentCommit": "07292ec79deb7e09f9f899c0687991c24e8b3663",
+          "deploymentStatusAt": "2026-10-14T04:08:47Z",
+          "deploymentUrl": "https://vercel.com/bamboosato/sudoku-ai-app/6c8VAWfcUCKhnYCAPeTSM9kn7QfK",
+          "method": "今回CloudでGitHub APIから固定比較4commits、PR14/15のmerge SHA・日時、exact HEADのVercel successを再照合。updatedAt=2026-10-14は利用者向け機能公開日。checkedAtは指定の日本時間の確認日で、ソースの実確認UTC日時はsourceVerifiedAtUtcに分離。"
+        },
+        "confirmed": [
+          "App.tsxはGeminiAdvisorを描画せず、操作画面のHintPanelはローカルヒントだけを表示する。AUTO_NOTESとSOLVE_ALLのreducer・hook処理は残るが、App.tsxから対応ボタンへ接続されていない。旧4段階Geminiアドバイザー・自動候補入力・全マス解答は現行の操作画面の機能として掲載しない。READMEには旧説明が残るため実装を優先。",
+          "HintPanel.tsxとgameReducer.tsのHINT/HINT_NEXT/HINT_CLOSEにより、ヒントを見るでstep1のエリア、さらに詳しくでstep2の対象マスと手がかりへ進む。Board.tsxとCell.tsxがエリアと対象マスを強調する。登録やAPIキーは不要。hints.tsのHidden Singleは数字を明記するため、答えを示さないとは保証しない。既知solutionを使うfallbackは高度な推論の実装を証明しない。",
+          "DifficultyBar.tsxの新規からNewGameModal.tsxを開き、generator.tsの入門・初級・中級・上級・達人の5段階を選択する。appId・createdAt・category・tags・access・usageFeatures・heroImageは維持し、updatedAtだけ機能公開日の2026-10-14へ進める。",
+          "Header.tsxのメニューからマイパズルに追加でhandleSaveCurrentPuzzleを呼び、マイパズル一覧から保存済み問題の再開・最初からやり直し・削除へ進む。ブラウザー内の明示操作によるsnapshot保存で、クラウド同期・自動保存・消去耐性は主張しない。従来の盤面・候補メモ・経過時間・ミス数の保存範囲を維持。",
+          "Numpad.tsxはスマートフォン幅で数字キーを1–5と6–9の2段に配置する。Cell.tsxは盤面の数字と候補メモを拡大した。手動メモ、Undo、消去、誤入力リセット、一時停止、ライト／ダークテーマは引き続き接続される。紹介サイトの英語版は、アプリ操作画面の英語対応を意味しない。",
+          "useApiKey.tsは個人キーをlocalStorageに保存する。scanClient.tsは画像をGoogle Generative Language APIへ送信し、本番で個人キーなしの場合はNO_API_KEY、オフラインではOFFLINEを返す。開発用proxy分岐と区別。送信の条件だけを利用補足に記載し、画像取り込みの成功・安全なキー保存・完全オフラインを保証しない。"
+        ],
+        "productionAssetEvidence": {
+          "checkedAt": "2026-10-15",
+          "checkedAtTimezone": "Asia/Tokyo",
+          "htmlUrl": "https://sudoku-ai-app.vercel.app/",
+          "url": "https://sudoku-ai-app.vercel.app/assets/index-DHNyklMh.js",
+          "bytes": 321217,
+          "sha256": "4beef32338b706749a99fe22361d2d6d93ce5b24b61496d8cb0ac958ffa38a61",
+          "method": "親側から引き継いだ公開JSのサイズ・SHA256と新UI文字列の静的照合。checkedAtは指定の日本時間の確認日。今回CloudのUTC確認日は2026-10-14で、公開HTML・JSの再取得はプロキシ403により失敗。HTTP status・サイズ・ハッシュは再測定していない。全配信物と固定Git commitの完全一致、および実操作成功は未証明。",
+          "cloudRetrieval": {
+            "attemptedAtUtc": "2026-10-14T21:37:36Z",
+            "result": "proxy 403; HTML and JavaScript were not retrieved"
+          }
+        },
+        "deferredFeatures": {
+          "features": [
+            "画像取り込み",
+            "取り込み盤面の自動難易度判定"
+          ],
+          "priorEvidencePath": "docs/app-usage-evidence.json#repositories[sudoku-ai-app].fiveLevelsPauseSavedPuzzlesEvidence.deferredFeatures",
+          "sourcePaths": [
+            "src/lib/sudoku/difficultyClassifier.ts",
+            "src/lib/sudoku/importValidation.ts",
+            "src/components/ImportModal.tsx"
+          ],
+          "sourceUrls": [
+            "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/lib/sudoku/difficultyClassifier.ts",
+            "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/lib/sudoku/importValidation.ts",
+            "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/components/ImportModal.tsx"
+          ],
+          "reason": "固定比較ではdifficultyClassifier.tsの変更はexpert表示名を達人にする1行のみ。while(changed)で候補削除の結果を次反復へ維持しない処理とImportModal.tsxからの同期validation呼出しは残る。既知の停止リスクの保留を維持。過去の固定SHAでの再現記録は書き換えず、現HEADの実操作で再現したとは扱わない。",
+          "action": "画像取り込みと自動難易度判定は一般向け機能本文・Updatesへ追加しない。検証都合の注記も一般向け本文へ追加しない。アプリ本体の修正やissue作成は対象外。"
+        },
+        "notVerified": [
+          "アプリ本体の実プレイ、二段階ヒント、新規ゲーム、保存・再読込・やり直し・削除のブラウザー操作は未試験。紹介サイトの生成HTML・ローカル表示確認とは区別する。",
+          "実画像送信・Gemini OCR応答・APIキー設定・通信キャプチャ・オフライン・実機・クロスブラウザー試験は未実施。",
+          "公開HTML・JSの今回再取得はプロキシ403。配信JSのサイズ・ハッシュ・新UI文字列は親側静的証跡。全配信物と固定Git commitの完全一致、およびVercel successから実操作成功への拡張は未証明。"
+        ]
       }
     },
     {
