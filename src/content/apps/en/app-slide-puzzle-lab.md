@@ -6,7 +6,7 @@ slug: app-slide-puzzle-lab
 category: visual-experimental
 description: "Make a sliding puzzle from a photo and revisit your progress through records and replays."
 createdAt: "2026-09-24"
-updatedAt: "2026-10-02"
+updatedAt: "2026-10-15"
 status: active
 tags: ["React","TypeScript","Canvas","PWA"]
 featured: false
@@ -30,6 +30,7 @@ Crop a photo into a square and play a sliding puzzle from 3×3 to 6×6. Restore 
 
 - 3×3, 4×4, 5×5, and 6×6 boards with difficulty settings
 - Tap, swipe, and arrow-key controls
+- A larger puzzle display on smartphones with reduced surrounding spacing
 - Play records, rankings, replays, and move-estimate explanations
 
 ## Design and usage

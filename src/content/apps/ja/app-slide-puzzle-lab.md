@@ -6,7 +6,7 @@ slug: app-slide-puzzle-lab
 category: visual-experimental
 description: "好きな写真をスライドパズルにして、記録やリプレイで遊び方を振り返るアプリ。"
 createdAt: "2026-09-24"
-updatedAt: "2026-10-02"
+updatedAt: "2026-10-15"
 status: active
 tags: ["React","TypeScript","Canvas","PWA"]
 featured: false
@@ -30,6 +30,7 @@ heroImage:
 
 - 3×3・4×4・5×5・6×6の盤面と難易度設定
 - タップ・スワイプ・矢印キーでの操作
+- スマートフォンでは余白を抑え、パズル盤面を大きく表示
 - プレイ記録・ランキング・リプレイ、最短手数の根拠表示
 
 ## 特徴
