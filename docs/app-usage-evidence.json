@@ -56,7 +56,123 @@
         "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
         "オフライン表示はREADMEと実装の対応に基づく。ブラウザー対応・初回準備・キャッシュ保持が前提。",
         "公開版でのオフライン起動、再読込後に保存記録から再挑戦する操作、画像の再選択が必要になる画面遷移は未確認。"
-      ]
+      ],
+      "mobileLayoutEvidence": {
+        "proposalId": "app-slide-puzzle-lab-1c675ee3b8a0-9ff186f036ba-mobile-puzzle-layout",
+        "checkedAt": "2026-10-16",
+        "checkedAtTimezone": "Asia/Tokyo",
+        "sourceVerifiedAtUtc": "2026-10-15T22:23:38.606777+00:00",
+        "siteBaseCommit": "5e44c3471b8122c996bc359f3ff2d78bf7f24148",
+        "baseCommit": "1c675ee3b8a058c744df69e76cec3b6bc31db5fb",
+        "commit": "9ff186f036ba9528e3c485b1bbddb3eb1b1904ca",
+        "commitUrl": "https://github.com/Bamboosato/app-slide-puzzle-lab/commit/9ff186f036ba9528e3c485b1bbddb3eb1b1904ca",
+        "compareUrl": "https://github.com/Bamboosato/app-slide-puzzle-lab/compare/1c675ee3b8a058c744df69e76cec3b6bc31db5fb...9ff186f036ba9528e3c485b1bbddb3eb1b1904ca",
+        "comparison": {
+          "totalCommits": 2,
+          "changedFiles": 4,
+          "method": "今回Cloudで固定比較の全差分と固定HEADの公開ソースを再照合。"
+        },
+        "sourcePaths": [
+          "src/App.tsx",
+          "src/components/puzzle-play/PuzzleBoard.tsx",
+          "src/components/puzzle-play/PuzzleHeader.tsx",
+          "src/components/puzzle-play/PuzzlePlayScreen.tsx"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/app-slide-puzzle-lab/blob/9ff186f036ba9528e3c485b1bbddb3eb1b1904ca/src/App.tsx#L96-L98",
+          "https://github.com/Bamboosato/app-slide-puzzle-lab/blob/9ff186f036ba9528e3c485b1bbddb3eb1b1904ca/src/components/puzzle-play/PuzzleBoard.tsx#L31-L40",
+          "https://github.com/Bamboosato/app-slide-puzzle-lab/blob/9ff186f036ba9528e3c485b1bbddb3eb1b1904ca/src/components/puzzle-play/PuzzleHeader.tsx#L33",
+          "https://github.com/Bamboosato/app-slide-puzzle-lab/blob/9ff186f036ba9528e3c485b1bbddb3eb1b1904ca/src/components/puzzle-play/PuzzlePlayScreen.tsx#L282-L350"
+        ],
+        "releaseEvidence": {
+          "pullRequests": [
+            {
+              "url": "https://github.com/Bamboosato/app-slide-puzzle-lab/pull/6",
+              "mergedAt": "2026-10-14T23:40:02Z",
+              "mergeCommit": "9ff186f036ba9528e3c485b1bbddb3eb1b1904ca"
+            }
+          ],
+          "deploymentStatus": "success",
+          "deploymentCommit": "9ff186f036ba9528e3c485b1bbddb3eb1b1904ca",
+          "deploymentStatusAt": "2026-10-14T23:40:22Z",
+          "deploymentUrl": "https://vercel.com/bamboosato/app-slide-puzzle-lab/5UgBmpQ5dsawA7nWRGGypxfu5JEF",
+          "method": "今回CloudでGitHub APIのPR merge・固定比較・exact HEAD combined statusを再照合。",
+          "deployment": {
+            "id": 7079934806,
+            "sha": "9ff186f036ba9528e3c485b1bbddb3eb1b1904ca",
+            "environment": "Production",
+            "production_environment": false,
+            "statusUrl": "https://api.github.com/repos/Bamboosato/app-slide-puzzle-lab/deployments/7079934806/statuses/19799382850",
+            "state": "success",
+            "statusAt": "2026-10-14T23:40:23Z"
+          }
+        },
+        "cloudRetrieval": [
+          {
+            "url": "https://app-slide-puzzle-lab.vercel.app/",
+            "attemptedAtUtc": "2026-10-15T22:23:48.296727+00:00",
+            "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+          },
+          {
+            "url": "https://app-slide-puzzle-lab.vercel.app/assets/index-CdexG2qA.js",
+            "attemptedAtUtc": "2026-10-15T22:23:48.301215+00:00",
+            "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+          },
+          {
+            "url": "https://app-slide-puzzle-lab.vercel.app/assets/index-Dm7_JdWq.css",
+            "attemptedAtUtc": "2026-10-15T22:23:48.304930+00:00",
+            "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+          }
+        ],
+        "notVerified": [
+          "公開配信成果物全体と固定Git SHAの完全な同一性は未証明。exact HEADのVercel success・公開asset静的照合は実操作成功を示さない。",
+          "公開アプリのブラウザー表示、実プレイ、パレット実操作、入力方式の保存、PWA更新ライフサイクル・インストール、AI応答・画像送信、オフライン、実機・クロスブラウザー試験は未実施。",
+          "Cloudから公開HTML・assetsの再取得はプロキシ403。親側の成功証跡と分離し、HTTP200・サイズ・ハッシュをCloudの再測定値として扱わない。"
+        ],
+        "applicationUpdateDate": {
+          "updatedAtBefore": "2026-10-02",
+          "updatedAt": "2026-10-15",
+          "timezone": "Asia/Tokyo",
+          "implementationAt": "2026-10-14T23:39:19Z",
+          "mergedAt": "2026-10-14T23:40:02Z",
+          "reason": "実装・mergeの日時をAsia/Tokyoへ換算した利用者向け変更日。確認日2026-10-16を更新日へ転用しない。"
+        },
+        "implementationCommit": "2bab45174747bbad1987bf3c3585a6c8c30f7bb4",
+        "priorManifestProvenance": {
+          "updatedAt": "2026-10-02",
+          "commit": "d838d2ec85b4e28709d2da0ef59eba57bfcd747f",
+          "commitUrl": "https://github.com/Bamboosato/app-slide-puzzle-lab/commit/d838d2ec85b4e28709d2da0ef59eba57bfcd747f",
+          "readmeUrl": "https://github.com/Bamboosato/app-slide-puzzle-lab/blob/main/README.md"
+        },
+        "confirmed": [
+          "PuzzlePlayScreen.tsx#L282-L350はスマートフォンの水平・垂直余白、盤面下と操作バーの間隔を縮小。",
+          "PuzzleBoard.tsx#L31-L40はスマートフォンの盤面padding・borderを縮小。base最大幅480px、smでは従来の最大幅を維持。",
+          "PuzzleHeader.tsx#L33は手数・時間表示の幅、padding、間隔を盤面に合わせる。App.tsx#L96-L98はmainのbase垂直paddingを縮小。"
+        ],
+        "productionAssetEvidence": {
+          "checkedAt": "2026-10-16",
+          "checkedAtTimezone": "Asia/Tokyo",
+          "checkedAtUtcStart": "2026-10-15T21:08:45Z",
+          "checkedAtUtcEnd": "2026-10-15T21:08:55Z",
+          "htmlUrl": "https://app-slide-puzzle-lab.vercel.app/",
+          "httpStatus": 200,
+          "assets": [
+            {
+              "url": "https://app-slide-puzzle-lab.vercel.app/assets/index-CdexG2qA.js",
+              "httpStatus": 200,
+              "bytes": 296796,
+              "sha256": "d5d357f97be3664c8fd3a9a3df1e219c1b78a0793db8c5b2ac0042f0fd4fd17f"
+            },
+            {
+              "url": "https://app-slide-puzzle-lab.vercel.app/assets/index-Dm7_JdWq.css",
+              "httpStatus": 200,
+              "bytes": 31670,
+              "sha256": "21e145300b5f54dea7b4c432d02cb4cdcd852a4449a456bf1cd71f226ae2a535"
+            }
+          ],
+          "method": "親側のstrict HTTPS公開HTML/JS/CSS静的照合。新mobile 8 markers・CSS 5 markers一致、旧4 markers不在。今回Cloudの403再取得失敗とは別の引き継ぎ証跡。"
+        }
+      }
     },
     {
       "name": "bbcafe-app",
@@ -739,6 +855,148 @@
           "実画像送信・Gemini OCR応答・APIキー設定・通信キャプチャ・オフライン・実機・クロスブラウザー試験は未実施。",
           "公開HTML・JSの今回再取得はプロキシ403。配信JSのサイズ・ハッシュ・新UI文字列は親側静的証跡。全配信物と固定Git commitの完全一致、およびVercel successから実操作成功への拡張は未証明。"
         ]
+      },
+      "popupInputUpdateNoticeEvidence": {
+        "proposalId": "sudoku-ai-app-07292ec79deb-7c964a47e06b-popup-input-update-notice",
+        "checkedAt": "2026-10-16",
+        "checkedAtTimezone": "Asia/Tokyo",
+        "sourceVerifiedAtUtc": "2026-10-15T22:23:38.606272+00:00",
+        "siteBaseCommit": "5e44c3471b8122c996bc359f3ff2d78bf7f24148",
+        "baseCommit": "07292ec79deb7e09f9f899c0687991c24e8b3663",
+        "commit": "7c964a47e06bb52eb1aa2715127cd1c957aeab2b",
+        "commitUrl": "https://github.com/Bamboosato/sudoku-ai-app/commit/7c964a47e06bb52eb1aa2715127cd1c957aeab2b",
+        "compareUrl": "https://github.com/Bamboosato/sudoku-ai-app/compare/07292ec79deb7e09f9f899c0687991c24e8b3663...7c964a47e06bb52eb1aa2715127cd1c957aeab2b",
+        "comparison": {
+          "totalCommits": 13,
+          "changedFiles": 11,
+          "method": "今回Cloudで固定比較の全差分と固定HEADの公開ソースを再照合。"
+        },
+        "sourcePaths": [
+          "src/App.tsx",
+          "src/components/Board.tsx",
+          "src/components/Header.tsx",
+          "src/components/NumberPalette.tsx",
+          "src/components/PwaUpdateToast.tsx",
+          "src/components/VictoryModal.tsx",
+          "src/hooks/useInputMode.ts",
+          "src/hooks/useSudokuGame.ts",
+          "src/lib/sudoku/gameReducer.ts",
+          "src/vite-env.d.ts",
+          "vite.config.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/7c964a47e06bb52eb1aa2715127cd1c957aeab2b/src/App.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/7c964a47e06bb52eb1aa2715127cd1c957aeab2b/src/components/Board.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/7c964a47e06bb52eb1aa2715127cd1c957aeab2b/src/components/Header.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/7c964a47e06bb52eb1aa2715127cd1c957aeab2b/src/components/NumberPalette.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/7c964a47e06bb52eb1aa2715127cd1c957aeab2b/src/components/PwaUpdateToast.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/7c964a47e06bb52eb1aa2715127cd1c957aeab2b/src/components/VictoryModal.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/7c964a47e06bb52eb1aa2715127cd1c957aeab2b/src/hooks/useInputMode.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/7c964a47e06bb52eb1aa2715127cd1c957aeab2b/src/hooks/useSudokuGame.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/7c964a47e06bb52eb1aa2715127cd1c957aeab2b/src/lib/sudoku/gameReducer.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/7c964a47e06bb52eb1aa2715127cd1c957aeab2b/src/vite-env.d.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/7c964a47e06bb52eb1aa2715127cd1c957aeab2b/vite.config.ts"
+        ],
+        "releaseEvidence": {
+          "pullRequests": [
+            {
+              "url": "https://github.com/Bamboosato/sudoku-ai-app/pull/16",
+              "mergedAt": "2026-10-15T02:37:26Z",
+              "mergeCommit": "a4622cc42e4593834aeabc49c33a47636470cc96"
+            },
+            {
+              "url": "https://github.com/Bamboosato/sudoku-ai-app/pull/17",
+              "mergedAt": "2026-10-15T02:54:53Z",
+              "mergeCommit": "f14a864290d286ad0906ed12c41eb321e3d81bb8"
+            },
+            {
+              "url": "https://github.com/Bamboosato/sudoku-ai-app/pull/18",
+              "mergedAt": "2026-10-15T03:12:51Z",
+              "mergeCommit": "789c4fad493cc2fe90cab8cb335d28bcd4f48f97"
+            },
+            {
+              "url": "https://github.com/Bamboosato/sudoku-ai-app/pull/19",
+              "mergedAt": "2026-10-15T03:52:13Z",
+              "mergeCommit": "2e28e005313f9192dde502202cb07ae42dd0a800"
+            },
+            {
+              "url": "https://github.com/Bamboosato/sudoku-ai-app/pull/20",
+              "mergedAt": "2026-10-15T07:33:43Z",
+              "mergeCommit": "c969bc1ff5f8c3c703a3a2a566b500ff6b66dfc6"
+            },
+            {
+              "url": "https://github.com/Bamboosato/sudoku-ai-app/pull/21",
+              "mergedAt": "2026-10-15T07:43:02Z",
+              "mergeCommit": "7c964a47e06bb52eb1aa2715127cd1c957aeab2b"
+            }
+          ],
+          "deploymentStatus": "success",
+          "deploymentCommit": "7c964a47e06bb52eb1aa2715127cd1c957aeab2b",
+          "deploymentStatusAt": "2026-10-15T07:43:28Z",
+          "deploymentUrl": "https://vercel.com/bamboosato/sudoku-ai-app/8b6X9jJFrciLfPH5PAXCxCaJVaC2",
+          "method": "今回CloudでGitHub APIのPR merge・固定比較・exact HEAD combined statusを再照合。"
+        },
+        "cloudRetrieval": [
+          {
+            "url": "https://sudoku-ai-app.vercel.app/",
+            "attemptedAtUtc": "2026-10-15T22:23:48.270756+00:00",
+            "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+          },
+          {
+            "url": "https://sudoku-ai-app.vercel.app/assets/index-VAp5JsLS.js",
+            "attemptedAtUtc": "2026-10-15T22:23:48.290946+00:00",
+            "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+          }
+        ],
+        "notVerified": [
+          "公開配信成果物全体と固定Git SHAの完全な同一性は未証明。exact HEADのVercel success・公開asset静的照合は実操作成功を示さない。",
+          "公開アプリのブラウザー表示、実プレイ、パレット実操作、入力方式の保存、PWA更新ライフサイクル・インストール、AI応答・画像送信、オフライン、実機・クロスブラウザー試験は未実施。",
+          "Cloudから公開HTML・assetsの再取得はプロキシ403。親側の成功証跡と分離し、HTTP200・サイズ・ハッシュをCloudの再測定値として扱わない。"
+        ],
+        "applicationUpdateDate": {
+          "date": "2026-10-15",
+          "reason": "利用者向け変更PR16/17/18は2026-10-15にmerge。PR19–21を含む固定最終HEADのVercel successは同日07:43:28Z。確認日2026-10-16 JSTを更新日へ転用しない。"
+        },
+        "confirmed": [
+          "App.tsx・Board.tsxは編集可能なマスの選択で3×3 NumberPaletteを表示し、Header.tsxの「入力方式」から下部Numpadへ切り替える。useInputMode.tsは初期値popup、sudoku_input_modeをlocalStorageへ保存・読込。初期盤面の固定数字・一時停止中・クリア後にはパレットを表示しない。",
+          "NumberPalette.tsxのhandleNumberClickは通常入力でcurrentValueと同じ数字ならonErase、メモ時はonInputのトグル処理へ渡す。remaining[n] === 0でも現在数字または現在メモなら無効化しない。残り0個の消去説明はポップアップに限定し、下部Numpadへ拡張しない。useSudokuGame.ts/gameReducer.tsの選択解除nullを確認。",
+          "PwaUpdateToast.tsxはneedRefresh時に新バージョン通知を表示し、「更新」からupdateServiceWorker(true)を呼ぶ。登録後は1時間ごとにr.update()で確認する。vite.config.tsはregisterType: prompt、src/vite-env.d.tsはreact登録型参照。PWA設定だけからオフライン利用を追加主張しない。",
+          "VictoryModal.tsxのクリア画面調整とvite.config.tsのmanifest修正は比較根拠として保存し、今回の公開本文・Updatesには追加しない。READMEの旧説明は転記しない。"
+        ],
+        "productionAssetEvidence": {
+          "checkedAt": "2026-10-16",
+          "checkedAtTimezone": "Asia/Tokyo",
+          "checkedAtUtcStart": "2026-10-15T21:08:34Z",
+          "checkedAtUtcEnd": "2026-10-15T21:09:34Z",
+          "htmlUrl": "https://sudoku-ai-app.vercel.app/",
+          "httpStatus": 200,
+          "url": "https://sudoku-ai-app.vercel.app/assets/index-VAp5JsLS.js",
+          "bytes": 331160,
+          "sha256": "f3ff879e9184eea05ecfedb4a3f1117a282f9b298fc587d85e30f0e44bc811ed",
+          "method": "親側がstrict HTTPSでHTML/JS/CSS/manifest/sw/dependencies/PNGを静的確認。popup default・sudoku_input_mode・現在数字/メモのremaining0例外・toggle erase・update toastのmarker一致。今回Cloudの再取得結果とは別の引き継ぎ証跡。"
+        },
+        "deferredFeatures": {
+          "features": [
+            "画像取り込み",
+            "取り込み盤面の自動難易度判定"
+          ],
+          "priorEvidencePath": "docs/app-usage-evidence.json#repositories[sudoku-ai-app].twoStageHintsControlsEvidence.deferredFeatures",
+          "blobComparison": {
+            "src/lib/sudoku/difficultyClassifier.ts": {
+              "baseBlob": "261716b6023d6fb5c016ff2d561ff714f47e2ab3",
+              "headBlob": "261716b6023d6fb5c016ff2d561ff714f47e2ab3"
+            },
+            "src/lib/sudoku/importValidation.ts": {
+              "baseBlob": "5bb6f3e840d53a45c7405ad247eb3af2c5aa7806",
+              "headBlob": "5bb6f3e840d53a45c7405ad247eb3af2c5aa7806"
+            },
+            "src/components/ImportModal.tsx": {
+              "baseBlob": "0626abe329793b21fb21fb19987269ea3c0dffdf",
+              "headBlob": "0626abe329793b21fb21fb19987269ea3c0dffdf"
+            }
+          },
+          "action": "対象3ファイルは前回固定HEADと同blob。既知の保留を維持し、公開本文・Updatesへ機能や検証都合の注記を追加しない。"
+        }
       }
     },
     {

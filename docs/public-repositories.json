@@ -28,10 +28,50 @@
       "appUrl": "https://app-slide-puzzle-lab.vercel.app/",
       "homepageHttpStatus": 200,
       "createdAt": "2026-09-24",
-      "updatedAt": "2026-10-02",
-      "commit": "d838d2ec85b4e28709d2da0ef59eba57bfcd747f",
-      "commitUrl": "https://github.com/Bamboosato/app-slide-puzzle-lab/commit/d838d2ec85b4e28709d2da0ef59eba57bfcd747f",
-      "readmeUrl": "https://github.com/Bamboosato/app-slide-puzzle-lab/blob/main/README.md"
+      "updatedAt": "2026-10-15",
+      "commit": "9ff186f036ba9528e3c485b1bbddb3eb1b1904ca",
+      "commitUrl": "https://github.com/Bamboosato/app-slide-puzzle-lab/commit/9ff186f036ba9528e3c485b1bbddb3eb1b1904ca",
+      "readmeUrl": "https://github.com/Bamboosato/app-slide-puzzle-lab/blob/main/README.md",
+      "implementationSources": [
+        "https://github.com/Bamboosato/app-slide-puzzle-lab/blob/9ff186f036ba9528e3c485b1bbddb3eb1b1904ca/src/App.tsx#L96-L98",
+        "https://github.com/Bamboosato/app-slide-puzzle-lab/blob/9ff186f036ba9528e3c485b1bbddb3eb1b1904ca/src/components/puzzle-play/PuzzleBoard.tsx#L31-L40",
+        "https://github.com/Bamboosato/app-slide-puzzle-lab/blob/9ff186f036ba9528e3c485b1bbddb3eb1b1904ca/src/components/puzzle-play/PuzzleHeader.tsx#L33",
+        "https://github.com/Bamboosato/app-slide-puzzle-lab/blob/9ff186f036ba9528e3c485b1bbddb3eb1b1904ca/src/components/puzzle-play/PuzzlePlayScreen.tsx#L282-L350"
+      ],
+      "note": "proposalId: app-slide-puzzle-lab-1c675ee3b8a0-9ff186f036ba-mobile-puzzle-layout。スマートフォンのプレイ画面の盤面余白・枠と手数/時間表示・操作ボタンの間隔調整を日英紹介と2026-10-15 Updatesに反映。PR6の実装・merge日時をAsia/Tokyoに換算した変更日を採用。従来のmanifest commitと固定比較・公開配信の親側証跡・Cloud再取得403・未試験事項はmobileLayoutEvidenceに保存。利用条件と旧usage根拠は維持。",
+      "mobileLayoutEvidence": {
+        "proposalId": "app-slide-puzzle-lab-1c675ee3b8a0-9ff186f036ba-mobile-puzzle-layout",
+        "checkedAt": "2026-10-16",
+        "checkedAtTimezone": "Asia/Tokyo",
+        "sourceVerifiedAtUtc": "2026-10-15T22:23:38.606777+00:00",
+        "baseCommit": "1c675ee3b8a058c744df69e76cec3b6bc31db5fb",
+        "commit": "9ff186f036ba9528e3c485b1bbddb3eb1b1904ca",
+        "compareUrl": "https://github.com/Bamboosato/app-slide-puzzle-lab/compare/1c675ee3b8a058c744df69e76cec3b6bc31db5fb...9ff186f036ba9528e3c485b1bbddb3eb1b1904ca",
+        "releaseEvidence": {
+          "pullRequests": [
+            {
+              "url": "https://github.com/Bamboosato/app-slide-puzzle-lab/pull/6",
+              "mergedAt": "2026-10-14T23:40:02Z",
+              "mergeCommit": "9ff186f036ba9528e3c485b1bbddb3eb1b1904ca"
+            }
+          ],
+          "deploymentStatus": "success",
+          "deploymentCommit": "9ff186f036ba9528e3c485b1bbddb3eb1b1904ca",
+          "deploymentStatusAt": "2026-10-14T23:40:22Z",
+          "deploymentUrl": "https://vercel.com/bamboosato/app-slide-puzzle-lab/5UgBmpQ5dsawA7nWRGGypxfu5JEF",
+          "method": "今回CloudでGitHub APIのPR merge・固定比較・exact HEAD combined statusを再照合。",
+          "deployment": {
+            "id": 7079934806,
+            "sha": "9ff186f036ba9528e3c485b1bbddb3eb1b1904ca",
+            "environment": "Production",
+            "production_environment": false,
+            "statusUrl": "https://api.github.com/repos/Bamboosato/app-slide-puzzle-lab/deployments/7079934806/statuses/19799382850",
+            "state": "success",
+            "statusAt": "2026-10-14T23:40:23Z"
+          }
+        },
+        "usageEvidencePath": "docs/app-usage-evidence.json#repositories[app-slide-puzzle-lab].mobileLayoutEvidence"
+      }
     },
     {
       "name": "bbcafe-app",
@@ -233,15 +273,15 @@
       "name": "sudoku-ai-app",
       "category": "visual-experimental",
       "public": true,
-      "verifiedAt": "2026-10-15",
+      "verifiedAt": "2026-10-16",
       "githubUrl": "https://github.com/Bamboosato/sudoku-ai-app",
       "appUrl": "https://sudoku-ai-app.vercel.app/",
       "homepageHttpStatus": 200,
       "createdAt": "2026-10-08",
-      "updatedAt": "2026-10-14",
-      "commit": "07292ec79deb7e09f9f899c0687991c24e8b3663",
-      "commitUrl": "https://github.com/Bamboosato/sudoku-ai-app/commit/07292ec79deb7e09f9f899c0687991c24e8b3663",
-      "readmeUrl": "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/README.md",
+      "updatedAt": "2026-10-15",
+      "commit": "7c964a47e06bb52eb1aa2715127cd1c957aeab2b",
+      "commitUrl": "https://github.com/Bamboosato/sudoku-ai-app/commit/7c964a47e06bb52eb1aa2715127cd1c957aeab2b",
+      "readmeUrl": "https://github.com/Bamboosato/sudoku-ai-app/blob/7c964a47e06bb52eb1aa2715127cd1c957aeab2b/README.md",
       "implementationSources": [
         "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/App.tsx",
         "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/components/HintPanel.tsx",
@@ -258,7 +298,7 @@
         "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/hooks/useApiKey.ts",
         "https://github.com/Bamboosato/sudoku-ai-app/blob/07292ec79deb7e09f9f899c0687991c24e8b3663/src/lib/gemini/scanClient.ts"
       ],
-      "proposalId": "sudoku-ai-app-3f913ca39621-07292ec79deb-two-stage-hints-controls",
+      "proposalId": "sudoku-ai-app-07292ec79deb-7c964a47e06b-popup-input-update-notice",
       "note": "proposalId: sudoku-ai-app-3f913ca39621-07292ec79deb-two-stage-hints-controls。固定比較4commitsと現行ソース、PR14/15のmergeとexact HEADのVercel successを再照合。2段階ローカルヒント、新規での5難易度選択、メニューの手動保存・一覧、スマートフォンの数字キーと盤面・候補メモの拡大を日英紹介と2026-10-14 Updatesに反映。旧Geminiアドバイザー・自動候補入力・全マス解答のボタンは現操作画面から除去。画像取り込みと自動難易度判定の既知保留、旧provenanceは維持。指定のcheckedAt=2026-10-15は日本時間の確認日、Cloud実確認UTC日時・公開配信の親側証跡・再取得403・未試験事項はtwoStageHintsControlsEvidenceに分離して記録。 homepageHttpStatusは既存の履歴値を保持し、今回の実測値として扱わない。",
       "productionAssetEvidence": {
         "checkedAt": "2026-10-15",
@@ -319,6 +359,55 @@
           "method": "今回CloudでGitHub APIから固定比較4commits、PR14/15のmerge SHA・日時、exact HEADのVercel successを再照合。updatedAt=2026-10-14は利用者向け機能公開日。checkedAtは指定の日本時間の確認日で、ソースの実確認UTC日時はsourceVerifiedAtUtcに分離。"
         },
         "usageEvidencePath": "docs/app-usage-evidence.json#repositories[sudoku-ai-app].twoStageHintsControlsEvidence"
+      },
+      "popupInputUpdateNoticeEvidence": {
+        "proposalId": "sudoku-ai-app-07292ec79deb-7c964a47e06b-popup-input-update-notice",
+        "checkedAt": "2026-10-16",
+        "checkedAtTimezone": "Asia/Tokyo",
+        "sourceVerifiedAtUtc": "2026-10-15T22:23:38.606272+00:00",
+        "baseCommit": "07292ec79deb7e09f9f899c0687991c24e8b3663",
+        "commit": "7c964a47e06bb52eb1aa2715127cd1c957aeab2b",
+        "compareUrl": "https://github.com/Bamboosato/sudoku-ai-app/compare/07292ec79deb7e09f9f899c0687991c24e8b3663...7c964a47e06bb52eb1aa2715127cd1c957aeab2b",
+        "releaseEvidence": {
+          "pullRequests": [
+            {
+              "url": "https://github.com/Bamboosato/sudoku-ai-app/pull/16",
+              "mergedAt": "2026-10-15T02:37:26Z",
+              "mergeCommit": "a4622cc42e4593834aeabc49c33a47636470cc96"
+            },
+            {
+              "url": "https://github.com/Bamboosato/sudoku-ai-app/pull/17",
+              "mergedAt": "2026-10-15T02:54:53Z",
+              "mergeCommit": "f14a864290d286ad0906ed12c41eb321e3d81bb8"
+            },
+            {
+              "url": "https://github.com/Bamboosato/sudoku-ai-app/pull/18",
+              "mergedAt": "2026-10-15T03:12:51Z",
+              "mergeCommit": "789c4fad493cc2fe90cab8cb335d28bcd4f48f97"
+            },
+            {
+              "url": "https://github.com/Bamboosato/sudoku-ai-app/pull/19",
+              "mergedAt": "2026-10-15T03:52:13Z",
+              "mergeCommit": "2e28e005313f9192dde502202cb07ae42dd0a800"
+            },
+            {
+              "url": "https://github.com/Bamboosato/sudoku-ai-app/pull/20",
+              "mergedAt": "2026-10-15T07:33:43Z",
+              "mergeCommit": "c969bc1ff5f8c3c703a3a2a566b500ff6b66dfc6"
+            },
+            {
+              "url": "https://github.com/Bamboosato/sudoku-ai-app/pull/21",
+              "mergedAt": "2026-10-15T07:43:02Z",
+              "mergeCommit": "7c964a47e06bb52eb1aa2715127cd1c957aeab2b"
+            }
+          ],
+          "deploymentStatus": "success",
+          "deploymentCommit": "7c964a47e06bb52eb1aa2715127cd1c957aeab2b",
+          "deploymentStatusAt": "2026-10-15T07:43:28Z",
+          "deploymentUrl": "https://vercel.com/bamboosato/sudoku-ai-app/8b6X9jJFrciLfPH5PAXCxCaJVaC2",
+          "method": "今回CloudでGitHub APIのPR merge・固定比較・exact HEAD combined statusを再照合。"
+        },
+        "usageEvidencePath": "docs/app-usage-evidence.json#repositories[sudoku-ai-app].popupInputUpdateNoticeEvidence"
       }
     },
     {
