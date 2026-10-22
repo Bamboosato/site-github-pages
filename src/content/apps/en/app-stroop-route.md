@@ -14,6 +14,11 @@ githubUrl: https://github.com/Bamboosato/app-stroop-route
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "Play in your browser without registration. Game logic runs on your device, and display and sound settings are stored in the current browser. The puzzle uses Japanese color words. An internet connection is required for the initial load."
+heroImage:
+  src: /apps/app-stroop-route/hero.webp
+  alt: "Illustration of a route through a 4×4 color-word puzzle, showing how word and ink-color matching reverses at a gate."
+  width: 1600
+  height: 900
 ---
 
 ## Overview
