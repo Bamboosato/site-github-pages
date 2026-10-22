@@ -14,6 +14,11 @@ githubUrl: https://github.com/Bamboosato/app-stroop-route
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
 usageNote: "登録せずブラウザーで遊べます。ゲーム処理は端末内で行われ、表示・音量などの設定は利用中のブラウザーに保存されます。日本語の色名を使うパズルです。初回の読み込みには通信が必要です。"
+heroImage:
+  src: /apps/app-stroop-route/hero.webp
+  alt: "4×4の色名パズルを進む経路と、反転ゲートの前後で文字とインク色の対応が切り替わる様子を示した図案。"
+  width: 1600
+  height: 900
 ---
 
 ## 概要
