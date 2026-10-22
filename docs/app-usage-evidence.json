@@ -175,6 +175,100 @@
       }
     },
     {
+      "name": "app-stroop-route",
+      "commit": "1d4e12172a570284a3ae756897639eff431d2e9b",
+      "checkedAt": "2026-10-22",
+      "proposalId": "app-stroop-route-initial-1d4e12172a57-public-listing",
+      "sourcePaths": [
+        "README.md",
+        "package.json",
+        "src/lib/gameLogic.ts",
+        "src/lib/stages.ts",
+        "src/lib/generator.ts",
+        "src/lib/constants.ts",
+        "src/store/useGameStore.ts",
+        "src/components/StageSelectModal.tsx",
+        "src/components/GameBoard.tsx",
+        "src/components/CellItem.tsx",
+        "src/components/SettingsModal.tsx",
+        "src/components/ClearModal.tsx",
+        "src/hooks/useKeyboardControls.ts",
+        "src/app/page.tsx",
+        "src/app/layout.tsx",
+        "public/sw.js",
+        "src/components/ServiceWorkerRegister.tsx"
+      ],
+      "sourceUrls": [
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/README.md",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/package.json",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/lib/gameLogic.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/lib/stages.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/lib/generator.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/lib/constants.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/store/useGameStore.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/StageSelectModal.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/GameBoard.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/CellItem.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/SettingsModal.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/ClearModal.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/hooks/useKeyboardControls.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/app/page.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/app/layout.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/public/sw.js",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/ServiceWorkerRegister.tsx"
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration"
+      ],
+      "confirmed": [
+        "Public repoの固定HEADのみを参照。page.tsxは登録なしでゲームを表示し、useGameStore.tsからgameLogic.tsとgenerator.tsの端末内処理を呼ぶ。package.jsonでNext.js・React・TypeScriptを確認。通信ゼロを意味しない。",
+        "gameLogic.tsは上下左右の隣接・再訪問禁止を検査し、通常は直前マスの文字と移動先のインク色を照合、反転時は直前のインク色と移動先の文字を照合。GATE通過数の奇偶でルールを反転する。",
+        "stages.tsのPRESET_STAGESは5件。getDailyStageは端末のローカル暦日をseedにした7×7のみ。StageSelectModal.tsxのランダム選択肢は4×4・5×5・7×7・10×10。Stage3は5×5でisScrollable=true。READMEの全世界共通・daily10×10・Stage3固定表示は転記しない。",
+        "constants.tsとCellItem.tsxでひらがな・カタカナ・漢字の色名を表示。GameBoard.tsxのpointer処理、CellItem.tsxのclick処理、useKeyboardControls.tsの矢印/WASD・Undoを確認。SettingsModal.tsxとGameBoard.tsxに候補アシストとインク色名表示の切替がある。",
+        "useGameStore.tsのlocalStorageキーstroop_route_settingsは表示・アシスト・音量・消音の設定用。経路・ゲーム進行やクラウド同期の保存は主張しない。",
+        "ClearModal.tsxのhandleShareはクリア時の時間・手数・経路絵文字を含むテキストをnavigator.clipboard.writeTextでコピーする。SNSへの直接投稿ではない。固定の認知スコアやREADMEの認知能力・前頭前野への効果は検証済みの成果として掲載しない。",
+        "ServiceWorkerRegister.tsxとpublic/sw.jsに登録・キャッシュ実装はあるが、オフライン実行・インストールは試験していないためoffline-after-setupは付与しない。"
+      ],
+      "notVerified": [
+        "公開アプリのブラウザー表示、実プレイ、日替わり切替、タッチ・キーボード・Undo・アシストの実操作、設定の再読込、結果コピー、実通信キャプチャは未試験。",
+        "オフライン、PWAインストール・更新ライフサイクル、キャッシュ保持、実機・クロスブラウザーは未試験。公開HTML・JSの静的確認やVercel successは実操作成功を示さない。",
+        "公開配信成果物全体と固定Git SHAの完全な同一性は未証明。今回Cloudからの公開HTML再取得はプロキシ403で失敗し、親側のHTTP200・サイズ・ハッシュをCloud再測定値として扱わない。"
+      ],
+      "releaseEvidence": {
+        "url": "https://github.com/Bamboosato/app-stroop-route/releases/tag/v1.00",
+        "publishedAt": "2026-10-22T06:49:48Z",
+        "tagObject": "87498168330bb2b13ab4c1377abf0944d8364a0c",
+        "resolvedCommit": "1d4e12172a570284a3ae756897639eff431d2e9b",
+        "updatedAt": "2026-10-22",
+        "reason": "v1.00の公開日（2026-10-22 15:49 JST）を採用。監視日や初回デプロイ日への読み替えは行わず、独立した根拠のないcreatedAtは省略。"
+      },
+      "deploymentStatusEvidence": {
+        "checkedAt": "2026-10-22",
+        "commit": "1d4e12172a570284a3ae756897639eff431d2e9b",
+        "context": "Vercel",
+        "state": "success",
+        "updatedAt": "2026-10-22T06:58:49Z",
+        "url": "https://vercel.com/bamboosato/stroop-route/7iGuwfqvioPDFBChDSKyq7s6aNsa",
+        "method": "今回Cloudでexact HEADのGitHub combined statusを再照合。"
+      },
+      "productionDeliveryEvidence": {
+        "source": "parent-thread handoff",
+        "checkedAtUtc": "2026-10-22T21:00:00Z",
+        "url": "https://stroop-route.vercel.app/",
+        "httpStatus": 200,
+        "bytes": 32203,
+        "sha256": "07197349ab1fd41ee468e4c00bdb5176de4310b01883a8236215698ca899ce72",
+        "method": "親スレッドがstrict HTTPSでtitle・ゲームHTML、manifest・service worker・参照JS 7件のHTTP200を確認。配信JSのsettings key・daily・色名バッジ・候補アシスト・7×7/10×10・公式共有URLを静的照合。Cloud独自の再測定ではなく、実プレイ検証でもない。"
+      },
+      "cloudRetrieval": {
+        "url": "https://stroop-route.vercel.app/",
+        "attemptedAtUtc": "2026-10-22T21:03:35.612198+00:00",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    },
+    {
       "name": "bbcafe-app",
       "commit": "6bedc6abec09cf4ce0b413a5e267be0d18d6dd37",
       "sourcePaths": [

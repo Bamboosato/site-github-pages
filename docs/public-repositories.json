@@ -74,6 +74,47 @@
       }
     },
     {
+      "name": "app-stroop-route",
+      "category": "visual-experimental",
+      "public": true,
+      "verifiedAt": "2026-10-22",
+      "githubUrl": "https://github.com/Bamboosato/app-stroop-route",
+      "appUrl": "https://stroop-route.vercel.app/",
+      "homepageHttpStatus": 200,
+      "updatedAt": "2026-10-22",
+      "commit": "1d4e12172a570284a3ae756897639eff431d2e9b",
+      "commitUrl": "https://github.com/Bamboosato/app-stroop-route/commit/1d4e12172a570284a3ae756897639eff431d2e9b",
+      "readmeUrl": "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/README.md",
+      "proposalId": "app-stroop-route-initial-1d4e12172a57-public-listing",
+      "releaseEvidence": {
+        "url": "https://github.com/Bamboosato/app-stroop-route/releases/tag/v1.00",
+        "publishedAt": "2026-10-22T06:49:48Z",
+        "tagObject": "87498168330bb2b13ab4c1377abf0944d8364a0c",
+        "resolvedCommit": "1d4e12172a570284a3ae756897639eff431d2e9b",
+        "updatedAt": "2026-10-22",
+        "reason": "v1.00の公開日（2026-10-22 15:49 JST）を採用。監視日や初回デプロイ日への読み替えは行わず、独立した根拠のないcreatedAtは省略。"
+      },
+      "implementationSources": [
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/package.json",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/lib/gameLogic.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/lib/stages.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/lib/generator.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/lib/constants.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/store/useGameStore.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/StageSelectModal.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/GameBoard.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/CellItem.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/SettingsModal.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/ClearModal.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/hooks/useKeyboardControls.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/app/page.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/app/layout.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/public/sw.js",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/ServiceWorkerRegister.tsx"
+      ],
+      "note": "Public metadata・main HEAD・annotated tagの解決先・release公開日を今回Cloudで再照合。公開一覧はsite-github-pagesを含む17件、掲載対象16件。homepageHttpStatusは親スレッドのstrict HTTPS確認の引き継ぎ値であり、今回Cloudの取得結果ではない。公開配信の証跡とCloud再取得403、利用範囲・未試験事項はdocs/app-usage-evidence.jsonのapp-stroop-routeを参照。"
+    },
+    {
       "name": "bbcafe-app",
       "category": "productivity",
       "public": true,
