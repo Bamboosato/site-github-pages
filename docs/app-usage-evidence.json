@@ -266,6 +266,160 @@
         "url": "https://stroop-route.vercel.app/",
         "attemptedAtUtc": "2026-10-22T21:03:35.612198+00:00",
         "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      },
+      "englishStagesReadabilityEvidence": {
+        "proposalId": "app-stroop-route-1d4e12172a57-a4646ea03dcc-english-stages-readability",
+        "checkedAt": "2026-10-24",
+        "checkedAtTimezone": "Asia/Tokyo",
+        "featureDate": "2026-10-23",
+        "baseCommit": "1d4e12172a570284a3ae756897639eff431d2e9b",
+        "commit": "a4646ea03dcc49579631cd70fab8c17d8d821bea",
+        "compareUrl": "https://github.com/Bamboosato/app-stroop-route/compare/1d4e12172a570284a3ae756897639eff431d2e9b...a4646ea03dcc49579631cd70fab8c17d8d821bea",
+        "sourcePaths": [
+          "README.md",
+          "docs/stroop_route_requirements_and_design.md",
+          "package.json",
+          "public/sw.js",
+          "src/components/CellItem.tsx",
+          "src/components/Header.tsx",
+          "src/components/ModeBanner.tsx",
+          "src/lib/constants.ts",
+          "src/lib/generator.ts",
+          "src/lib/stages.test.ts",
+          "src/lib/stages.ts",
+          "src/types/game.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/README.md",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/docs/stroop_route_requirements_and_design.md",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/package.json",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/public/sw.js",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/components/CellItem.tsx",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/components/Header.tsx",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/components/ModeBanner.tsx",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/lib/constants.ts",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/lib/generator.ts",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/lib/stages.test.ts",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/lib/stages.ts",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/types/game.ts"
+        ],
+        "additionalSourcePaths": [
+          "src/components/StageSelectModal.tsx"
+        ],
+        "additionalSourceUrls": [
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/components/StageSelectModal.tsx"
+        ],
+        "comparedCommits": [
+          {
+            "commit": "db16e05fa4c5f5e7ed2466d549712e85d0fe5107",
+            "committedAt": "2026-10-23T05:52:36Z",
+            "title": "feat: add English-only stage (Stage 6) and global 4-notation stage (Stage 7) (#27)"
+          },
+          {
+            "commit": "fd3097f985566b987b477da0a9cb23eb159c6f1b",
+            "committedAt": "2026-10-23T07:29:05Z",
+            "title": "refactor(ui): improve readability of header and mode banner for mobile (#28)"
+          },
+          {
+            "commit": "b6b0e9f35c41ceac904eb997699781b4e819bf8b",
+            "committedAt": "2026-10-23T07:57:34Z",
+            "title": "refactor(ui): streamline 3-tier header and maximize typography for mobile (#29)"
+          },
+          {
+            "commit": "a4646ea03dcc49579631cd70fab8c17d8d821bea",
+            "committedAt": "2026-10-23T08:35:04Z",
+            "title": "feat: maximize header font size, format move count to 3-digit, and badgeify rules (#30)"
+          }
+        ],
+        "sourceReview": {
+          "method": "このCloud環境でGitHub APIの固定比較4commits・12filesと固定HEADの実コードを再照合。README・設計文書より実装を優先。アプリのテストは実行していない。",
+          "confirmed": [
+            "stages.ts:170–263のStage 6は全マスenglish、Stage 7はひらがな・カタカナ・漢字・英語が混在。PRESET_STAGESは7件。constants.tsとtypes/game.tsが英語色名を定義し、generator.tsがenglish・mixed_globalを処理する。",
+            "stages.ts:270–310のgetDailyStageはローカル暦日seedの7×7でmixed_global。getRandomStageはsize>=7にmixed_globalを使い、StageSelectModal.tsxの選択肢7×7・10×10に英語表記が加わる。4×4・5×5はmixed_allを維持。",
+            "Header.tsxはステージ名・前後送り・一覧ボタンを統合。タイマーと手数はtext-2xl sm:text-3xlに拡大し、手数はpadStart(3, '0')で最小3桁表示。ModeBanner.tsxは通常・反転ルールバッジとtext-lg sm:text-xlの方向案内を使う。",
+            "CellItem.tsxは6文字以上の英単語を小さく表示する分岐を追加。package.jsonのlint呼出しとSW v5の変更は紹介Updateの独立項目にしない。"
+          ],
+          "excludedClaims": [
+            "READMEのStage 7全体固定表示はstages.tsのisScrollable=trueと競合するため採用しない。",
+            "READMEの日替わり10×10・全世界共通という説明は採用しない。",
+            "英語の色名追加をアプリUIの英語ローカライズと表現しない。認知能力向上、通信ゼロ、確実なオフライン動作も主張しない。"
+          ]
+        },
+        "releaseEvidence": {
+          "meaningfulChangeDate": "2026-10-23",
+          "pullRequests": [
+            {
+              "url": "https://github.com/Bamboosato/app-stroop-route/pull/27",
+              "mergedAt": "2026-10-23T05:52:36Z",
+              "mergeCommit": "db16e05fa4c5f5e7ed2466d549712e85d0fe5107"
+            },
+            {
+              "url": "https://github.com/Bamboosato/app-stroop-route/pull/30",
+              "mergedAt": "2026-10-23T08:35:05Z",
+              "mergeCommit": "a4646ea03dcc49579631cd70fab8c17d8d821bea"
+            }
+          ],
+          "deploymentStatus": {
+            "commit": "a4646ea03dcc49579631cd70fab8c17d8d821bea",
+            "context": "Vercel",
+            "state": "success",
+            "updatedAt": "2026-10-23T08:35:26Z",
+            "url": "https://vercel.com/bamboosato/stroop-route/E189pxqu48dUPskzeU1m1Z62A8nU",
+            "statusApiUrl": "https://api.github.com/repos/Bamboosato/app-stroop-route/commits/a4646ea03dcc49579631cd70fab8c17d8d821bea/status"
+          },
+          "method": "このCloud環境でPR merge時刻とexact HEADのGitHub combined statusを再照合。以前のv1.00公開記録は履歴として保持し、今回の変更日を監視日2026-10-24に置き換えない。"
+        },
+        "productionDeliveryEvidence": {
+          "source": "parent-thread handoff",
+          "checkedAtUtc": "2026-10-23T21:01:19.805779+00:00",
+          "checkedAtTimezone": "Asia/Tokyo",
+          "url": "https://stroop-route.vercel.app/",
+          "httpStatus": 200,
+          "referencedJsChunksChecked": 7,
+          "asset": {
+            "url": "https://stroop-route.vercel.app/_next/static/immutable/chunks/2lxg_6_owr14k.js",
+            "httpStatus": 200,
+            "bytes": 78809,
+            "sha256": "cc74c6c5cab3d3b4a26743269418af357660bec72bbed95806d6ce5b18a154bc"
+          },
+          "serviceWorker": {
+            "url": "https://stroop-route.vercel.app/sw.js",
+            "httpStatus": 200,
+            "cacheVersion": "v5"
+          },
+          "confirmedMarkers": [
+            "Stage 6: 英語",
+            "Stage 7: 世界交差",
+            "mixed_global",
+            "english",
+            "padStart(3",
+            "larger labels",
+            "normal/reversed rule code"
+          ],
+          "method": "親スレッドが通常のTLS検証を使うread-only HTTPSでroot・参照JS全7件・SWのHTTP200と該当配信JSを静的確認。固定ソース確認と別の公開機能コード証跡。Cloud独自のHTTP200・サイズ・ハッシュ再測定値として扱わない。"
+        },
+        "notVerified": [
+          "公開アプリのブラウザー描画、実プレイ、ステージ選択・日替わり切替・ランダム生成・Undo・アシスト・設定・結果コピーの操作は未試験。",
+          "実通信キャプチャ、オフライン、PWA更新・インストール、実機・クロスブラウザーは未試験。",
+          "公開配信成果物全体と固定Git SHAの完全なバイト同一性は未証明。Vercel successと配信コードの静的確認は操作成功を保証しない。",
+          "このCloud環境の公開root・該当JS再取得はプロキシ403で失敗。親の公開証跡を保持し、失敗を成功扱いしない。"
+        ],
+        "checkedAtUtc": "2026-10-23T21:05:34.645315+00:00",
+        "cloudRetrieval": {
+          "method": "通常のTLS検証を使うread-only urllib HTTPS。プロキシ設定の変更・TLS回避はしていない。",
+          "attempts": [
+            {
+              "url": "https://stroop-route.vercel.app/",
+              "attemptedAtUtc": "2026-10-23T21:04:18.166356+00:00",
+              "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+            },
+            {
+              "url": "https://stroop-route.vercel.app/_next/static/immutable/chunks/2lxg_6_owr14k.js",
+              "attemptedAtUtc": "2026-10-23T21:04:18.177978+00:00",
+              "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+            }
+          ]
+        }
       }
     },
     {
