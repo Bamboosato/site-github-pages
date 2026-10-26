@@ -420,6 +420,81 @@
             }
           ]
         }
+      },
+      "routeRewindThreeLivesEvidence": {
+        "checkedAt": "2026-10-26",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "28928627d223d3c656a911fb1187ddd6a630b43b",
+        "method": "このCloud環境で固定base/headのGitHub比較・参照ソース・exact headのVercel successを再照合。READMEより実装を優先。",
+        "proposalId": "app-stroop-route-a4646ea03dcc-08577d2986a8-rewind-three-lives",
+        "baseCommit": "a4646ea03dcc49579631cd70fab8c17d8d821bea",
+        "commit": "08577d2986a8569716d63acefc56808e1c828d7c",
+        "commitUrl": "https://github.com/Bamboosato/app-stroop-route/commit/08577d2986a8569716d63acefc56808e1c828d7c",
+        "compareUrl": "https://github.com/Bamboosato/app-stroop-route/compare/a4646ea03dcc49579631cd70fab8c17d8d821bea...08577d2986a8569716d63acefc56808e1c828d7c",
+        "comparison": {
+          "totalCommits": 3,
+          "changedFiles": [
+            "src/app/page.tsx",
+            "src/components/GameOverModal.tsx",
+            "src/components/Header.tsx",
+            "src/lib/generator.ts",
+            "src/store/useGameStore.test.ts",
+            "src/store/useGameStore.ts",
+            "src/types/game.ts"
+          ]
+        },
+        "sourcePaths": [
+          "src/store/useGameStore.ts",
+          "src/components/GameOverModal.tsx",
+          "src/components/Header.tsx",
+          "src/lib/generator.ts",
+          "README.md"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/app-stroop-route/blob/08577d2986a8569716d63acefc56808e1c828d7c/src/store/useGameStore.ts",
+          "https://github.com/Bamboosato/app-stroop-route/blob/08577d2986a8569716d63acefc56808e1c828d7c/src/components/GameOverModal.tsx",
+          "https://github.com/Bamboosato/app-stroop-route/blob/08577d2986a8569716d63acefc56808e1c828d7c/src/components/Header.tsx",
+          "https://github.com/Bamboosato/app-stroop-route/blob/08577d2986a8569716d63acefc56808e1c828d7c/src/lib/generator.ts",
+          "https://github.com/Bamboosato/app-stroop-route/blob/08577d2986a8569716d63acefc56808e1c828d7c/README.md"
+        ],
+        "deploymentStatusEvidence": {
+          "commit": "08577d2986a8569716d63acefc56808e1c828d7c",
+          "context": "Vercel",
+          "state": "success",
+          "target_url": "https://vercel.com/bamboosato/stroop-route/9vZ5EGb9PLZtV7XSAzde8yWteY3i"
+        },
+        "featureDate": "2026-10-26",
+        "confirmed": [
+          "useGameStore.ts:79–81・108–109・137–138は初期3ライフ。146–185で通過済みマスへの操作はrewindToへ渡し、現在の先端は何もしない。無効な移動でライフを1減らし、0でisGameOver=true。巻き戻しはミスに数えない。",
+          "useGameStore.ts:254–302は指定マスまでpathをsliceしルールを再計算。305–309のundoはrewindTo(path.length-2)を呼ぶため、HeaderのUndoボタン削除を全undo機能の削除とは記載しない。352–355はクリアまたはゲームオーバー時のタイマー加算を停止。",
+          "GameOverModal.tsx:14–30はisGameOver時に3回ミスの表示。Header.tsx:98–149は時間・手数・残りライフをまとめて表示。既存のアシスト・インク色名表示の紹介を維持。"
+        ],
+        "excludedClaims": [
+          "generator.ts:455–465は最大30回のunique-path検査後に未検証fallbackを返す。常に唯一経路・分岐ゼロ・推測不要とは記載しない。",
+          "READMEの旧Undoボタン説明は現在のHeader実装より優先しない。"
+        ],
+        "applicationUpdateDate": {
+          "date": "2026-10-26",
+          "reason": "固定headの利用者向け変更は2026-10-26T09:20:41Z。Stroopの日英updatedAtを2026-10-23から進め、同日のUpdate pairを追加。"
+        },
+        "productionDeliveryEvidence": {
+          "source": "parent-thread handoff",
+          "checkedAt": "2026-10-26",
+          "method": "親側のstrict HTTPSによるread-only確認の引き継ぎ値。このCloud環境での再測定値として扱わない。",
+          "scope": "サイト・アプリ計52 URLとゲームJS/CSS 10件が全てHTTP 200。",
+          "notVerified": "ブラウザーgameplay・再ロード・PWA・オフライン・実機操作は未試験。",
+          "url": "https://stroop-route.vercel.app/",
+          "confirmedMarkers": [
+            "lives:3",
+            "maxLives:3",
+            "isGameOver",
+            "rewind"
+          ]
+        },
+        "notVerified": [
+          "公開アプリのブラウザー描画、実プレイ、巻き戻し・ライフ・保存再読込を含む操作、PWA更新・インストール、オフライン、実機・クロスブラウザー試験は未実施。",
+          "親側公開bundleの静的照合はブラウザーでの動作実測ではない。全配信成果物と固定Git SHAの完全な同一性および実操作成功は未証明。"
+        ]
       }
     },
     {
@@ -1245,6 +1320,81 @@
           },
           "action": "対象3ファイルは前回固定HEADと同blob。既知の保留を維持し、公開本文・Updatesへ機能や検証都合の注記を追加しない。"
         }
+      },
+      "removeProgressSaveClaimEvidence": {
+        "checkedAt": "2026-10-26",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "28928627d223d3c656a911fb1187ddd6a630b43b",
+        "method": "このCloud環境で固定base/headのGitHub比較・参照ソース・exact headのVercel successを再照合。READMEより実装を優先。",
+        "proposalId": "sudoku-ai-app-27f003c4d30f-839e320aa518-remove-progress-save-claim",
+        "baseCommit": "27f003c4d30f966f9babd9d533ad11c7fae60c0b",
+        "commit": "839e320aa518c7ddc744258280718b443e0c7126",
+        "commitUrl": "https://github.com/Bamboosato/sudoku-ai-app/commit/839e320aa518c7ddc744258280718b443e0c7126",
+        "compareUrl": "https://github.com/Bamboosato/sudoku-ai-app/compare/27f003c4d30f966f9babd9d533ad11c7fae60c0b...839e320aa518c7ddc744258280718b443e0c7126",
+        "comparison": {
+          "totalCommits": 2,
+          "changedFiles": [
+            "src/App.tsx",
+            "src/components/Header.tsx",
+            "src/components/MyPuzzlesModal.tsx",
+            "src/hooks/useSavedPuzzles.ts",
+            "src/hooks/useSudokuGame.ts",
+            "src/lib/sudoku/board.ts",
+            "src/lib/sudoku/savedPuzzles.test.ts",
+            "src/lib/sudoku/savedPuzzles.ts"
+          ]
+        },
+        "sourcePaths": [
+          "src/App.tsx",
+          "src/lib/sudoku/savedPuzzles.ts",
+          "src/components/MyPuzzlesModal.tsx"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/839e320aa518c7ddc744258280718b443e0c7126/src/App.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/839e320aa518c7ddc744258280718b443e0c7126/src/lib/sudoku/savedPuzzles.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/839e320aa518c7ddc744258280718b443e0c7126/src/components/MyPuzzlesModal.tsx"
+        ],
+        "deploymentStatusEvidence": {
+          "commit": "839e320aa518c7ddc744258280718b443e0c7126",
+          "context": "Vercel",
+          "state": "success",
+          "target_url": "https://vercel.com/bamboosato/sudoku-ai-app/42vtPddD3k7hDuQte9SToDHN7GH9"
+        },
+        "scope": "紹介説明の訂正のみ。description・usageNote・機能・特徴から現在の進捗保存とMy Puzzlesでの再開・やり直し・削除の約束を除去。通常のpause/resume、入力方式の設定保存、API利用条件を維持。",
+        "confirmed": [
+          "src/App.tsx:71–105は保存を初期盤面のコピー・currentNotes:[]・elapsedSeconds:0・mistakes:0へ変更しており、現在の進捗の保存ではない。",
+          "src/lib/sudoku/savedPuzzles.ts:76–93のvalidateSavedPuzzleは86行でcurrentNotes.length!==9を拒否。96–105の読込はparsed.filter(validateSavedPuzzle)で不正エントリを除外。保存時の空配列と検証条件の不整合を静的確認した。",
+          "src/components/MyPuzzlesModal.tsx:37–50のhandlePlayは初期盤面・空メモ・時間0・ミス0から開始する。以前の進捗再開説明を維持できない。通常の一時停止/再開とは別の処理。"
+        ],
+        "applicationUpdateDate": {
+          "date": "2026-10-15",
+          "reason": "サイト紹介文の訂正のためupdatedAtとcreatedAtを据え置く。SudokuのUpdate entryは追加・変更しない。"
+        },
+        "productionDeliveryEvidence": {
+          "source": "parent-thread handoff",
+          "checkedAt": "2026-10-26",
+          "method": "親側のstrict HTTPSによるread-only確認の引き継ぎ値。このCloud環境での再測定値として扱わない。",
+          "scope": "サイト・アプリ計52 URLとゲームJS/CSS 10件が全てHTTP 200。",
+          "notVerified": "ブラウザーgameplay・再ロード・PWA・オフライン・実機操作は未試験。",
+          "url": "https://sudoku-ai-app.vercel.app/assets/index-Dqf6OPyT.js",
+          "confirmedMarkers": [
+            "currentNotes:[]",
+            "currentNotes.length!==9"
+          ],
+          "interpretation": "親側公開bundleの両markerはソースの不整合を静的に裏付ける。ブラウザー再ロード不具合の実測とは記載しない。"
+        },
+        "deferredFeatures": {
+          "features": [
+            "新しいマイパズル機能の公開紹介"
+          ],
+          "reason": "保存形式とロード検証が整合しないため公開紹介を保留。アプリ修正は対象外。画像取り込み・自動難易度判定の既存保留記録は変更しない。",
+          "priorEvidencePath": "docs/app-usage-evidence.json#repositories[sudoku-ai-app].popupInputUpdateNoticeEvidence.deferredFeatures"
+        },
+        "notVerified": [
+          "公開アプリのブラウザー描画、実プレイ、巻き戻し・ライフ・保存再読込を含む操作、PWA更新・インストール、オフライン、実機・クロスブラウザー試験は未実施。",
+          "親側公開bundleの静的照合はブラウザーでの動作実測ではない。全配信成果物と固定Git SHAの完全な同一性および実操作成功は未証明。",
+          "実画像送信・Gemini応答・APIキー設定・通信キャプチャは未試験。"
+        ]
       }
     },
     {
