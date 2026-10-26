@@ -81,9 +81,9 @@
       "githubUrl": "https://github.com/Bamboosato/app-stroop-route",
       "appUrl": "https://stroop-route.vercel.app/",
       "homepageHttpStatus": 200,
-      "updatedAt": "2026-10-23",
-      "commit": "a4646ea03dcc49579631cd70fab8c17d8d821bea",
-      "commitUrl": "https://github.com/Bamboosato/app-stroop-route/commit/a4646ea03dcc49579631cd70fab8c17d8d821bea",
+      "updatedAt": "2026-10-26",
+      "commit": "08577d2986a8569716d63acefc56808e1c828d7c",
+      "commitUrl": "https://github.com/Bamboosato/app-stroop-route/commit/08577d2986a8569716d63acefc56808e1c828d7c",
       "readmeUrl": "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/README.md",
       "proposalId": "app-stroop-route-initial-1d4e12172a57-public-listing",
       "releaseEvidence": {
@@ -266,6 +266,13 @@
             }
           ]
         }
+      },
+      "routeRewindThreeLivesEvidence": {
+        "proposalId": "app-stroop-route-a4646ea03dcc-08577d2986a8-rewind-three-lives",
+        "checkedAt": "2026-10-26",
+        "evidencePath": "docs/app-usage-evidence.json#repositories[app-stroop-route].routeRewindThreeLivesEvidence",
+        "commit": "08577d2986a8569716d63acefc56808e1c828d7c",
+        "compareUrl": "https://github.com/Bamboosato/app-stroop-route/compare/a4646ea03dcc49579631cd70fab8c17d8d821bea...08577d2986a8569716d63acefc56808e1c828d7c"
       }
     },
     {
@@ -603,6 +610,13 @@
           "method": "今回CloudでGitHub APIのPR merge・固定比較・exact HEAD combined statusを再照合。"
         },
         "usageEvidencePath": "docs/app-usage-evidence.json#repositories[sudoku-ai-app].popupInputUpdateNoticeEvidence"
+      },
+      "removeProgressSaveClaimEvidence": {
+        "proposalId": "sudoku-ai-app-27f003c4d30f-839e320aa518-remove-progress-save-claim",
+        "checkedAt": "2026-10-26",
+        "evidencePath": "docs/app-usage-evidence.json#repositories[sudoku-ai-app].removeProgressSaveClaimEvidence",
+        "commit": "839e320aa518c7ddc744258280718b443e0c7126",
+        "compareUrl": "https://github.com/Bamboosato/sudoku-ai-app/compare/27f003c4d30f966f9babd9d533ad11c7fae60c0b...839e320aa518c7ddc744258280718b443e0c7126"
       }
     },
     {

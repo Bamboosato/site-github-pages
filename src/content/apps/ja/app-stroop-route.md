@@ -5,7 +5,7 @@ title: "Stroop Route"
 slug: app-stroop-route
 category: visual-experimental
 description: "文字の意味とインク色をつなぎ、反転ゲートでルールが切り替わる一筆書きパズル。"
-updatedAt: "2026-10-23"
+updatedAt: "2026-10-26"
 status: active
 tags: ["Next.js","React","TypeScript"]
 featured: false
@@ -29,7 +29,9 @@ heroImage:
 
 - 7つのステージ、日替わりチャレンジ、4×4〜10×10のランダム迷宮
 - タッチ・マウス・キーボードでの操作
-- 進めるマスのアシスト、インク色名の表示、1手戻す操作
+- 進めるマスのアシスト、インク色名の表示
+- 通過済みのマスをタップ・クリックして、その地点まで経路を巻き戻す操作
+- 3回のミスでゲームオーバーになるライフ制。時間・手数・残りライフをまとめて表示
 - クリア後にタイム・手数・経路を含む結果テキストをコピー
 
 ## 特徴
