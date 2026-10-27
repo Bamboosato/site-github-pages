@@ -46,6 +46,8 @@ Puzzle generation, pencil notes, and two-stage hints run in the browser. Start b
 
 Popup input is the default, and your choice of input method is saved in the same browser.
 
+Use マイパズルに追加 (Add to My Puzzles) to register the initial puzzle grid in the same browser and play it again from the beginning from the list. This does not save and resume entered digits, pencil notes, or elapsed time.
+
 ## Technologies
 
 React, TypeScript, Vite, and Tailwind CSS support the app.

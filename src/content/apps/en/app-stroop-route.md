@@ -5,7 +5,7 @@ title: "Stroop Route"
 slug: app-stroop-route
 category: visual-experimental
 description: "A pathfinding puzzle that connects word meanings and ink colors, with gates that reverse the matching rule."
-updatedAt: "2026-10-26"
+updatedAt: "2026-10-27"
 status: active
 tags: ["Next.js","React","TypeScript"]
 featured: false
@@ -32,6 +32,7 @@ Connect horizontally or vertically adjacent cells to reach the goal by matching 
 - Optional move hints and ink-color labels
 - Tap or click a previously visited cell to rewind the route to that point
 - Three lives, with game over after three mistakes; time, move count, and remaining lives are shown together
+- Highlights the mistaken cell, board, and life counter, with a message showing remaining lives. Kanji color names are displayed at a larger size
 - Copy a result containing your time, move count, and route after clearing a puzzle
 
 ## Design and usage

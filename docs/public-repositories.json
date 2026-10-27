@@ -81,9 +81,9 @@
       "githubUrl": "https://github.com/Bamboosato/app-stroop-route",
       "appUrl": "https://stroop-route.vercel.app/",
       "homepageHttpStatus": 200,
-      "updatedAt": "2026-10-26",
-      "commit": "08577d2986a8569716d63acefc56808e1c828d7c",
-      "commitUrl": "https://github.com/Bamboosato/app-stroop-route/commit/08577d2986a8569716d63acefc56808e1c828d7c",
+      "updatedAt": "2026-10-27",
+      "commit": "5c3e554862402fb690aaa9bb0fb33e2878eb1fe5",
+      "commitUrl": "https://github.com/Bamboosato/app-stroop-route/commit/5c3e554862402fb690aaa9bb0fb33e2878eb1fe5",
       "readmeUrl": "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/README.md",
       "proposalId": "app-stroop-route-initial-1d4e12172a57-public-listing",
       "releaseEvidence": {
@@ -273,6 +273,14 @@
         "evidencePath": "docs/app-usage-evidence.json#repositories[app-stroop-route].routeRewindThreeLivesEvidence",
         "commit": "08577d2986a8569716d63acefc56808e1c828d7c",
         "compareUrl": "https://github.com/Bamboosato/app-stroop-route/compare/a4646ea03dcc49579631cd70fab8c17d8d821bea...08577d2986a8569716d63acefc56808e1c828d7c"
+      },
+      "mistakeFeedbackReadabilityEvidence": {
+        "proposalId": "app-stroop-route-08577d2986a8-5c3e55486240-mistake-feedback-readability",
+        "checkedAt": "2026-10-27",
+        "baseCommit": "08577d2986a8569716d63acefc56808e1c828d7c",
+        "commit": "5c3e554862402fb690aaa9bb0fb33e2878eb1fe5",
+        "compareUrl": "https://github.com/Bamboosato/app-stroop-route/compare/08577d2986a8569716d63acefc56808e1c828d7c...5c3e554862402fb690aaa9bb0fb33e2878eb1fe5",
+        "evidencePath": "docs/app-usage-evidence.json#repositories[app-stroop-route].mistakeFeedbackReadabilityEvidence"
       }
     },
     {
@@ -617,6 +625,16 @@
         "evidencePath": "docs/app-usage-evidence.json#repositories[sudoku-ai-app].removeProgressSaveClaimEvidence",
         "commit": "839e320aa518c7ddc744258280718b443e0c7126",
         "compareUrl": "https://github.com/Bamboosato/sudoku-ai-app/compare/27f003c4d30f966f9babd9d533ad11c7fae60c0b...839e320aa518c7ddc744258280718b443e0c7126"
+      },
+      "initialGridRegistrationRepairEvidence": {
+        "proposalId": "sudoku-ai-app-839e320aa518-2a7e4d4bff44-initial-grid-registration-repair",
+        "checkedAt": "2026-10-27",
+        "baseCommit": "839e320aa518c7ddc744258280718b443e0c7126",
+        "commit": "2a7e4d4bff44d2925de009cc131e57404631b166",
+        "compareUrl": "https://github.com/Bamboosato/sudoku-ai-app/compare/839e320aa518c7ddc744258280718b443e0c7126...2a7e4d4bff44d2925de009cc131e57404631b166",
+        "evidencePath": "docs/app-usage-evidence.json#repositories[sudoku-ai-app].initialGridRegistrationRepairEvidence",
+        "linkedHeldProposalId": "sudoku-ai-app-27f003c4d30f-839e320aa518-my-puzzles-initial-status",
+        "scope": "初期盤面登録と最初からプレイする説明のみ。updatedAtとUpdatesは維持し、関連する広い保留proposal全体は解消しない。"
       }
     },
     {

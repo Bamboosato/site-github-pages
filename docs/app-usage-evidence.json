@@ -495,6 +495,96 @@
           "公開アプリのブラウザー描画、実プレイ、巻き戻し・ライフ・保存再読込を含む操作、PWA更新・インストール、オフライン、実機・クロスブラウザー試験は未実施。",
           "親側公開bundleの静的照合はブラウザーでの動作実測ではない。全配信成果物と固定Git SHAの完全な同一性および実操作成功は未証明。"
         ]
+      },
+      "mistakeFeedbackReadabilityEvidence": {
+        "proposalId": "app-stroop-route-08577d2986a8-5c3e55486240-mistake-feedback-readability",
+        "checkedAt": "2026-10-27",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "0388f2624d07d770d7a5401151bd471da080ee11",
+        "baseCommit": "08577d2986a8569716d63acefc56808e1c828d7c",
+        "commit": "5c3e554862402fb690aaa9bb0fb33e2878eb1fe5",
+        "commitUrl": "https://github.com/Bamboosato/app-stroop-route/commit/5c3e554862402fb690aaa9bb0fb33e2878eb1fe5",
+        "compareUrl": "https://github.com/Bamboosato/app-stroop-route/compare/08577d2986a8569716d63acefc56808e1c828d7c...5c3e554862402fb690aaa9bb0fb33e2878eb1fe5",
+        "comparison": {
+          "totalCommits": 1,
+          "changedFiles": [
+            "src/app/globals.css",
+            "src/components/CellItem.tsx",
+            "src/components/GameBoard.tsx",
+            "src/components/Header.tsx",
+            "src/lib/stages.test.ts",
+            "src/lib/stages.ts",
+            "src/store/useGameStore.ts",
+            "src/types/game.ts"
+          ]
+        },
+        "sourcePaths": [
+          "README.md",
+          "src/components/CellItem.tsx",
+          "src/components/GameBoard.tsx",
+          "src/components/Header.tsx",
+          "src/lib/stages.ts",
+          "src/lib/generator.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/app-stroop-route/blob/5c3e554862402fb690aaa9bb0fb33e2878eb1fe5/README.md",
+          "https://github.com/Bamboosato/app-stroop-route/blob/5c3e554862402fb690aaa9bb0fb33e2878eb1fe5/src/components/CellItem.tsx",
+          "https://github.com/Bamboosato/app-stroop-route/blob/5c3e554862402fb690aaa9bb0fb33e2878eb1fe5/src/components/GameBoard.tsx",
+          "https://github.com/Bamboosato/app-stroop-route/blob/5c3e554862402fb690aaa9bb0fb33e2878eb1fe5/src/components/Header.tsx",
+          "https://github.com/Bamboosato/app-stroop-route/blob/5c3e554862402fb690aaa9bb0fb33e2878eb1fe5/src/lib/stages.ts",
+          "https://github.com/Bamboosato/app-stroop-route/blob/5c3e554862402fb690aaa9bb0fb33e2878eb1fe5/src/lib/generator.ts"
+        ],
+        "sourceReview": {
+          "method": "この保存済みsite-github-pages Cloud環境でPublic metadata、固定base/head比較、固定HEADのREADMEと指定ソース、PR merge・exact HEADのVercel successを再照合。READMEやPRの主張より実装を優先。アプリ本体のテストは今回実行していない。",
+          "confirmed": [
+            "CellItem.tsxはisMistakeで赤い背景・枠・animate-shakeを適用。漢字または1文字の色名はtext-2xl sm:text-3xl md:text-4xlで表示する。",
+            "GameBoard.tsxはmistakeTriggerとlastMistakeCellからミスしたマスを700ms強調し、盤面枠の強調・揺れと「MISS! 残りライフ {lives}」メッセージを850ms表示する。",
+            "Header.tsxはmistakeTriggerでライフ表示を強調し、ハートの拡大と浮き上がる「-1」を850ms表示する。",
+            "stages.tsの固定マス調整も比較対象として確認したが、generator.tsのgenerateStageは30回の検証付き試行の後にgenerateStageInternal(opts)を検証せず返す。全パズルで唯一経路・分岐ゼロ・推測不要とは公開紹介しない。"
+          ]
+        },
+        "releaseEvidence": {
+          "pullRequestUrl": "https://github.com/Bamboosato/app-stroop-route/pull/34",
+          "mergedAt": "2026-10-27T00:00:58Z",
+          "mergeCommit": "5c3e554862402fb690aaa9bb0fb33e2878eb1fe5"
+        },
+        "deploymentStatusEvidence": {
+          "commit": "5c3e554862402fb690aaa9bb0fb33e2878eb1fe5",
+          "context": "Vercel",
+          "state": "success",
+          "statusAt": "2026-10-27T00:01:17Z",
+          "target_url": "https://vercel.com/bamboosato/stroop-route/8fqBuZ8XUfHCs6WG3YjkVrQQt21w",
+          "method": "exact HEADのVercel successとURLは今回Cloudでも再照合。statusAtは親スレッドの固定証跡から引き継いだ時刻。"
+        },
+        "scope": "ミス時のフィードバックと漢字色名の拡大のみを日英本文へ追加。updatedAt=2026-10-27と日英Update pairを追加。既刊の巻き戻し・3ライフを新規変更として繰り返さない。",
+        "applicationUpdateDate": {
+          "date": "2026-10-27",
+          "reason": "利用者向け変更PR34のmergeは2026-10-27T00:00:58Z、固定merge SHAのVercel successは同日00:01:17Z。監視日から推測せず実変更日を採用。"
+        },
+        "productionDeliveryEvidence": {
+          "source": "parent-thread handoff",
+          "checkedAt": "2026-10-27",
+          "method": "親側のread-only公開確認を引き継ぐ。このCloudでのHTTP・ブラウザー・bundle再測定値として扱わない。",
+          "url": "https://stroop-route.vercel.app/",
+          "httpStatus": 200,
+          "browserDisplay": "親のCloud browserで公開アプリを読み込み。実プレイやミス演出の操作検証は未確立。",
+          "asset": {
+            "url": "https://stroop-route.vercel.app/_next/static/immutable/chunks/0fx8-9ot84wjg.js",
+            "httpStatus": 200,
+            "confirmedMarkers": [
+              "lastMistakeCell/mistakeTrigger",
+              "MISS! 残りライフ",
+              "life -1 animation",
+              "board/cell animate-shake",
+              "text-2xl sm:text-3xl md:text-4xl"
+            ]
+          },
+          "interpretation": "公開bundleの静的照合がexact-SHAデプロイ証跡を補強する。実際の演出動作や全配信物とGit SHAの完全な同一性の証明ではない。"
+        },
+        "notVerified": [
+          "今回Cloudでの公開アプリ再取得・ブラウザー描画・実プレイ・ミス演出・ライフ変化・漢字表示の実操作確認は未実施。",
+          "PWA更新・インストール、オフライン、実機・クロスブラウザー、通信キャプチャは未試験。公開bundleの静的照合とVercel successを操作成功の保証に拡張しない。"
+        ]
       }
     },
     {
@@ -1394,6 +1484,118 @@
           "公開アプリのブラウザー描画、実プレイ、巻き戻し・ライフ・保存再読込を含む操作、PWA更新・インストール、オフライン、実機・クロスブラウザー試験は未実施。",
           "親側公開bundleの静的照合はブラウザーでの動作実測ではない。全配信成果物と固定Git SHAの完全な同一性および実操作成功は未証明。",
           "実画像送信・Gemini応答・APIキー設定・通信キャプチャは未試験。"
+        ]
+      },
+      "initialGridRegistrationRepairEvidence": {
+        "proposalId": "sudoku-ai-app-839e320aa518-2a7e4d4bff44-initial-grid-registration-repair",
+        "checkedAt": "2026-10-27",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "0388f2624d07d770d7a5401151bd471da080ee11",
+        "baseCommit": "839e320aa518c7ddc744258280718b443e0c7126",
+        "commit": "2a7e4d4bff44d2925de009cc131e57404631b166",
+        "commitUrl": "https://github.com/Bamboosato/sudoku-ai-app/commit/2a7e4d4bff44d2925de009cc131e57404631b166",
+        "compareUrl": "https://github.com/Bamboosato/sudoku-ai-app/compare/839e320aa518c7ddc744258280718b443e0c7126...2a7e4d4bff44d2925de009cc131e57404631b166",
+        "comparison": {
+          "totalCommits": 2,
+          "changedFiles": [
+            "src/App.test.tsx",
+            "src/App.tsx",
+            "src/lib/sudoku/savedPuzzles.test.ts",
+            "src/lib/sudoku/savedPuzzles.ts"
+          ]
+        },
+        "sourcePaths": [
+          "README.md",
+          "src/App.tsx",
+          "src/lib/sudoku/savedPuzzles.ts",
+          "src/components/MyPuzzlesModal.tsx"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/2a7e4d4bff44d2925de009cc131e57404631b166/README.md",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/2a7e4d4bff44d2925de009cc131e57404631b166/src/App.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/2a7e4d4bff44d2925de009cc131e57404631b166/src/lib/sudoku/savedPuzzles.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/2a7e4d4bff44d2925de009cc131e57404631b166/src/components/MyPuzzlesModal.tsx"
+        ],
+        "sourceReview": {
+          "method": "この保存済みsite-github-pages Cloud環境でPublic metadata、固定base/head比較、固定HEADのREADMEと指定ソース、PR merge・exact HEADのVercel successを再照合。READMEやPRの主張より実装を優先。アプリ本体のテストは今回実行していない。",
+          "confirmed": [
+            "App.tsxのhandleSaveCurrentPuzzleはstate.initialをcurrentBoardへコピーし、currentNotesにserializeNotes(createEmptyNotes())、elapsedSecondsとmistakesに0を設定する。登録対象は現在の進捗ではなく問題の初期状態。",
+            "savedPuzzles.tsの保存先はlocalStorage。loadSavedPuzzlesFromStorageは既知のlegacy currentNotes:[]だけを9×9の空メモへ正規化して既存validatorを適用する。読込処理でlocalStorageへの書き戻しは行わない。",
+            "MyPuzzlesModal.tsxのhandlePlayはp.initialのコピー、空メモ、elapsedSeconds:0、mistakes:0を渡す。一覧からのプレイは最初から開始し、途中の入力・候補メモ・経過時間の保存再開ではない。"
+          ]
+        },
+        "releaseEvidence": {
+          "pullRequestUrl": "https://github.com/Bamboosato/sudoku-ai-app/pull/24",
+          "mergedAt": "2026-10-27T02:38:29Z",
+          "mergeCommit": "2a7e4d4bff44d2925de009cc131e57404631b166"
+        },
+        "deploymentStatusEvidence": {
+          "commit": "2a7e4d4bff44d2925de009cc131e57404631b166",
+          "context": "Vercel",
+          "state": "success",
+          "statusAt": "2026-10-27T02:38:43Z",
+          "target_url": "https://vercel.com/bamboosato/sudoku-ai-app/BvYsTP9hf9KWHyrG7QXbBdXck6QB",
+          "method": "exact HEADのVercel successとURLは今回Cloudでも再照合。statusAtは親スレッドの固定証跡から引き継いだ時刻。"
+        },
+        "scope": "初期盤面の同一ブラウザーへの登録と一覧から最初からプレイする説明に限定。カードdescription・利用条件は維持。進捗保存・再開と区別し、updatedAt=2026-10-15と既存Sudoku Updatesを維持。",
+        "applicationUpdateDate": {
+          "date": "2026-10-15",
+          "reason": "今回のサイト変更は狭い説明補足。アプリ修正PR24は2026-10-27にmergeされたが、サイトのupdatedAtを進めずSudoku Update entryも追加・変更しない。"
+        },
+        "productionDeliveryEvidence": {
+          "source": "parent-thread handoff",
+          "checkedAt": "2026-10-27",
+          "method": "親側のread-only公開確認を引き継ぐ。このCloudでのHTTP・ブラウザー・bundle再測定値として扱わない。",
+          "url": "https://sudoku-ai-app.vercel.app/",
+          "httpStatus": 200,
+          "browserDisplay": "親のCloud browserで公開アプリを読み込み。公開版の保存・再読込やPWA動作検証は未確立。",
+          "asset": {
+            "url": "https://sudoku-ai-app.vercel.app/assets/index-BDOuYSsd.js",
+            "httpStatus": 200,
+            "confirmedMarkers": [
+              "currentBoard:w.initial.map(e=>[...e])",
+              "currentNotes:he(S())",
+              "elapsedSeconds:0",
+              "S() creates the 9×9 notes grid",
+              "read-time empty-notes normalization"
+            ]
+          },
+          "interpretation": "静的bundle照合が初期盤面登録と空メモ正規化の公開コードを補強する。公開版のsave/reload実操作成功の証拠ではない。"
+        },
+        "priorRepairValidation": {
+          "source": "app PR24 and parent-thread handoff",
+          "pullRequestUrl": "https://github.com/Bamboosato/sudoku-ai-app/pull/24",
+          "testedHead": "0caaf3dacdf2b0b147951d15f116da99cea81c80",
+          "scope": "修正作業時のローカル開発サーバーでのPlaywrightと個別テスト。今回の紹介サイト検証や本番配信の実操作試験とは区別。",
+          "confirmed": [
+            "新規保存→reload→一覧→初期盤面loadで81マス一致と空メモを確認。",
+            "legacy空メモの正規化と、読込時にストレージへ書き戻さないことを確認。",
+            "8テストファイルを個別実行し計68 tests passed。アプリbuildとgit diff --checkも成功。"
+          ],
+          "notVerified": [
+            "単一のaggregate npm testは完走しておらず、全体一括成功とは記録しない。",
+            "公開版・配信preview・installed PWAでのsave/reload試験ではない。今回Cloudでアプリテストは再実行していない。"
+          ]
+        },
+        "linkedHeldProposal": {
+          "proposalId": "sudoku-ai-app-27f003c4d30f-839e320aa518-my-puzzles-initial-status",
+          "status": "held",
+          "promotedScope": "初期盤面登録・一覧から最初からプレイする説明のみ。保存形式修正の根拠を関連付ける。",
+          "unpromotedClaims": [
+            "completion status",
+            "filters",
+            "best time",
+            "duplicate handling",
+            "image import",
+            "automatic difficulty classification"
+          ],
+          "priorEvidencePath": "docs/app-usage-evidence.json#repositories[sudoku-ai-app].removeProgressSaveClaimEvidence",
+          "action": "広い保留proposal全体を解消済みとしない。過去の不整合・保留・画像取込根拠を履歴としてそのまま保持。"
+        },
+        "notVerified": [
+          "公開版の保存→reload→一覧→初期盤面load、PWA更新・インストール、オフライン、実機・クロスブラウザーは未検証。親側の公開browser読込とbundle静的照合を保存操作の確認と混同しない。",
+          "今回Cloudではアプリ機能テストを実行していない。completion・filter・best-time・duplicate・画像取込・自動難易度判定を公開紹介へ昇格しない。",
+          "全配信成果物と固定Git SHAの完全な同一性、実画像送信・Gemini応答・通信キャプチャは未証明・未試験。"
         ]
       }
     },
