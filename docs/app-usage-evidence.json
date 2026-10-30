@@ -804,6 +804,124 @@
           "保存・削除・読込専用復旧・モデルキャッシュ削除再取得の実操作、公開AI推論、実通信キャプチャ、実機・ブラウザー別・オフライン試験は今回未実施。引き継ぎ元の配信asset確認を操作成功と読み替えない。",
           "一覧バックアップの正式一覧への昇格、孤立ファイルの個別救出、外部バックアップは未実装。自動復旧、関連付け保存対応、オフラインAI検出の保証は主張しない。"
         ]
+      },
+      "manualSelectionOriginalClearEvidence": {
+        "proposalId": "local-pii-masker-b42980ab156a-80b235debdfb-manual-selection-original-clear",
+        "checkedAt": "2026-10-30T21:09:34.048563+00:00",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "d0649d16daa28343353e5072e8cc5c02b1a9c27e",
+        "baseCommit": "b42980ab156ad07cd3d310e27d483d978e237406",
+        "commit": "80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630",
+        "commitUrl": "https://github.com/Bamboosato/local-pii-masker/commit/80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630",
+        "compareUrl": "https://github.com/Bamboosato/local-pii-masker/compare/b42980ab156ad07cd3d310e27d483d978e237406...80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630",
+        "comparison": {
+          "status": "ahead",
+          "totalCommits": 2,
+          "changedFiles": [
+            "docs/ci.md",
+            "docs/ui-design.md",
+            "e2e/manual-selection.spec.ts",
+            "package-lock.json",
+            "package.json",
+            "playwright.config.ts",
+            "src/App.test.tsx",
+            "src/App.tsx",
+            "src/components/OriginalTextEditor.tsx",
+            "src/styles.css"
+          ]
+        },
+        "sourcePaths": [
+          "src/App.tsx",
+          "src/components/OriginalTextEditor.tsx",
+          "src/styles.css",
+          "src/app/reducer.ts",
+          "src/App.test.tsx",
+          "e2e/manual-selection.spec.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/local-pii-masker/blob/80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630/src/App.tsx",
+          "https://github.com/Bamboosato/local-pii-masker/blob/80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630/src/components/OriginalTextEditor.tsx",
+          "https://github.com/Bamboosato/local-pii-masker/blob/80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630/src/styles.css",
+          "https://github.com/Bamboosato/local-pii-masker/blob/80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630/src/app/reducer.ts",
+          "https://github.com/Bamboosato/local-pii-masker/blob/80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630/src/App.test.tsx",
+          "https://github.com/Bamboosato/local-pii-masker/blob/80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630/e2e/manual-selection.spec.ts"
+        ],
+        "sourceReview": {
+          "method": "この保存済みsite-github-pages Cloud環境でPublic metadata、固定base/head比較、固定HEADの実装・テスト定義・関連文書とexact HEADのVercel successを再照合。アプリ本体のテストは今回実行していない。",
+          "confirmed": [
+            "App.tsxとstyles.cssは空白以外の原文選択と追加ボタンを緑系で示す。手動追加完了時にclearSelectionとsetSelectedText(\"\")を呼び、OriginalTextEditorは選択を折りたたみ原文欄へfocusする。有効な登録済み箇所の青系表示を維持する。",
+            "原文タブの文字数表示行に原文を消去ボタンを配置。handleOriginalTextChange(\"\")と選択解除を実行する。setOriginalText reducerは既存stateを展開し、原文と出現数・revisionを更新するため、マスク対象・復元入力・正規化ロックを維持する。保存済み対応表の削除経路は呼ばない。",
+            "App.test.tsxとe2e/manual-selection.spec.tsには通常操作、キャンセル、空白のみ・空原文・複数行、再選択、検出中の消去と遅延応答のテスト定義がある。定義の静的確認であり今回の実行成功を意味しない。",
+            "開発依存・CI・テスト・文書の変更は別の利用者向け機能やセキュリティ修正として紹介しない。既存の利用条件・保存の制限・オフラインAI非保証・デスクトップChrome対象を維持する。"
+          ]
+        },
+        "applicationUpdateDate": {
+          "date": "2026-10-30",
+          "timezone": "Asia/Tokyo",
+          "reason": "監視日ではなく、2件の利用者向け変更の固定commit日時を根拠とする。日英共通のUpdate entry 1件にまとめる。",
+          "commits": [
+            {
+              "sha": "8f65c8169badd8b40f17bdc6fa3cebac6d23967e",
+              "committedAtUtc": "2026-10-30T01:06:57Z",
+              "committedAtJst": "2026-10-30T10:06:57+09:00"
+            },
+            {
+              "sha": "80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630",
+              "committedAtUtc": "2026-10-30T02:34:02Z",
+              "committedAtJst": "2026-10-30T11:34:02+09:00"
+            }
+          ]
+        },
+        "deploymentStatusEvidence": {
+          "commit": "80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630",
+          "context": "Vercel",
+          "state": "success",
+          "target_url": "https://vercel.com/bamboosato/local-pii-masker/CvsFoVvXJpAo8kvAsh5vUcQ4sq3g",
+          "method": "exact HEADのGitHub combined statusを今回再照合。公開alias全体とGit SHAの完全な同一性を証明するものではない。"
+        },
+        "productionDeliveryEvidence": {
+          "source": "parent-thread handoff",
+          "checkedAt": "2026-10-30T21:04:02Z",
+          "method": "親側のread-only HTTP 200 HTMLと現行linked JS/CSSの静的確認を引き継ぐ。このCloudでの再測定や実操作の結果として扱わない。",
+          "root": {
+            "url": "https://local-pii-masker.vercel.app/",
+            "httpStatus": 200
+          },
+          "assets": [
+            {
+              "url": "https://local-pii-masker.vercel.app/assets/index-BvTniJT-.js",
+              "httpStatus": 200,
+              "sha256": "d731838174fdb3c4fba25dfab43fa21ce96f4872d3b2f0460f8cf90ff655eef0"
+            },
+            {
+              "url": "https://local-pii-masker.vercel.app/assets/index-JErvG-Ga.css",
+              "httpStatus": 200,
+              "sha256": "8eab43a065a16ef102e6bc633ba2f4239b8c530239bc5a4c1ccf9ae2bd408112"
+            }
+          ],
+          "confirmedMarkers": [
+            "original-clear-button",
+            "原文だけを消去します。マスク対象と復元入力は保持します",
+            "has-text-selection",
+            "--text-selection-background:#dcfce7"
+          ],
+          "staticBehaviorCorroboration": [
+            "manual add clears selection and resets selected text",
+            "setOriginalText retains other state and recalculates occurrences"
+          ],
+          "scope": "公開配信コードの静的な裏付け。ブラウザーでの動作、保存・オフライン・AI推論試験の証拠ではない。",
+          "runtimeTest": false,
+          "browserVisualTest": false,
+          "cloudRecheck": {
+            "checkedAt": "2026-10-30",
+            "result": "公開rootのHEAD再取得はCONNECT tunnel failed, response 403。環境の許可hostに含まれず、HTML・assetのHTTP200・hash・markerはこのCloudでは再測定していない。"
+          }
+        },
+        "notVerified": [
+          "公開アプリのブラウザー描画、手動選択・追加・消去の実操作、保存・再読込、実機・クロスブラウザーは今回未試験。",
+          "オフライン動作、AIモデル取得・推論、通信キャプチャは今回未試験。公開bundleの静的確認をこれらの成功に読み替えない。",
+          "公開alias全体の成果物と固定Git SHAの完全な同一性は未証明。紹介サイトの検証とアプリの実Deploy確認を区別する。"
+        ]
       }
     },
     {
