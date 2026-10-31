@@ -6,7 +6,7 @@ slug: local-pii-masker
 category: utilities
 description: "Review potential personal information in Japanese text and mask it in the browser."
 createdAt: "2026-07-10"
-updatedAt: "2026-10-06"
+updatedAt: "2026-10-30"
 status: active
 tags: ["React","TypeScript","CodeMirror","ONNX"]
 featured: false
@@ -29,6 +29,8 @@ Detect potential personal information in Japanese text, then review candidates b
 ## Key features
 
 - Candidate detection with manual review and adjustment
+- Green highlighting for the current text selection and blue highlighting for registered mask targets; selection clears after manual addition
+- Clear only the original text while keeping mask targets and restoration input
 - Masking/restoration with longer matches taking priority
 - Explicit local saving of encrypted mappings, with storage-status information
 - Incomplete model-cache warnings and removal of model assets for downloading again
