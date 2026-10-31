@@ -31,6 +31,119 @@
       ]
     },
     {
+      "name": "app-rule_shifter",
+      "appId": "app-rule-shifter",
+      "commit": "7493df0cc04d394010dbcabd530a2ea0b6a92079",
+      "checkedAt": "2026-10-31",
+      "checkedAtTimezone": "Etc/UTC",
+      "proposalId": "app-rule-shifter-initial-7493df0cc04d-public-listing",
+      "siteBaseCommit": "d42c99b669a6319d307386c9a53a8b32d63ffb50",
+      "sourcePaths": [
+        "README.md",
+        "package.json",
+        "src/app/page.tsx",
+        "src/store/useGameStore.ts",
+        "src/lib/stages.ts",
+        "src/lib/ruleEngine.ts",
+        "src/components/SettingsModal.tsx",
+        "public/sw.js",
+        "src/components/ServiceWorkerRegister.tsx",
+        "src/components/HowToModal.tsx",
+        "src/components/StageSelectModal.tsx",
+        "src/components/ClearModal.tsx",
+        "src/hooks/useKeyboardControls.ts",
+        "src/components/GameBoard.tsx",
+        "src/components/HypothesisScratchpad.tsx",
+        "src/lib/generator.ts",
+        "src/app/layout.tsx"
+      ],
+      "sourceUrls": [
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/README.md",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/package.json",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/app/page.tsx",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/store/useGameStore.ts",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/lib/stages.ts",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/lib/ruleEngine.ts",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/components/SettingsModal.tsx",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/public/sw.js",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/components/ServiceWorkerRegister.tsx",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/components/HowToModal.tsx",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/components/StageSelectModal.tsx",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/components/ClearModal.tsx",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/hooks/useKeyboardControls.ts",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/components/GameBoard.tsx",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/components/HypothesisScratchpad.tsx",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/lib/generator.ts",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/app/layout.tsx"
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration"
+      ],
+      "method": "Initial fixed-source audit and fresh parent source recheck inherited from the parent thread. Public metadata, main HEAD and implementation-commit date also rechecked in this saved Cloud. README claims are checked against implementation; no app build or gameplay test was run here.",
+      "confirmed": [
+        "page.tsx, useGameStore.ts and ruleEngine.ts implement registration-free browser play and local game logic. Settings use localStorage; local processing does not mean zero network traffic.",
+        "stages.ts defines eight preset stages and a 7x7 daily stage seeded by the UTC calendar date. Boards range from 4x4 to 10x10; larger stages have a scrollable board. Stage 8 is size10 with three rules and two transitions.",
+        "Color, shape, count and texture are matching dimensions, with single and paired rules; SHIFTER cells switch the active rule. The UI is mainly Japanese.",
+        "Three lives, mistake feedback, route rewind, and time/move display are implemented. Keyboard and touch/pointer paths are present in source; actual device controls were not exercised.",
+        "SettingsModal.tsx includes a current-attribute guide (off by default), color abbreviations and sound settings. HypothesisScratchpad renders a guide, not an editable hypothesis memo.",
+        "ClearModal.tsx copies result text via navigator.clipboard, rather than posting automatically. Clipboard success has not been tested."
+      ],
+      "notVerified": [
+        "Browser rendering, full gameplay, daily generation runtime, clipboard success, device controls, PWA installation/update and offline behavior were not tested.",
+        "No app tests/build or network capture were run in this Cloud. Settings storage does not establish saved game progress/resume or cross-device synchronization.",
+        "Exact deployed whole-tree equivalence to the source SHA is not established. Inherited HTTP and static bundle checks do not prove runtime success."
+      ],
+      "excludedClaims": [
+        "No clinical/WCST validity, brain-function improvement, training effectiveness or medically meaningful scores.",
+        "No universal unique-solution guarantee: after 50 attempts the generator fallback returns generateSingleStage without final uniqueness or straight-run verification.",
+        "No offline-after-setup feature: service worker registration runs after load and subsequently fetched Next static assets are cached; first-visit offline completeness is not established.",
+        "No README Stage 8 size9/three-shifts claim; source and public JS use size10 with three rules/two transitions.",
+        "No editable hypothesis-memo UI, saved game progress/resume or cross-device synchronization claim."
+      ],
+      "dateEvidence": {
+        "type": "initial implementation commit",
+        "commit": "8963531a2616d6774b8c9f47f8764a859c05645f",
+        "committedAt": "2026-10-30T08:12:47Z",
+        "url": "https://github.com/Bamboosato/app-rule_shifter/commit/8963531a2616d6774b8c9f47f8764a859c05645f",
+        "note": "App implementation date, not monitoring date. Latest HEAD changes only README. createdAt omitted because an independent app creation date is not established."
+      },
+      "productionDeliveryEvidence": {
+        "source": "parent-thread handoff",
+        "url": "https://rule-shifter.vercel.app/",
+        "checkedAt": "2026-10-31",
+        "method": "Inherited read-only HTTPS static delivery evidence; not measured again in this Cloud. Official HTML and all seven linked JS assets returned HTTP 200 and were byte-identical to the prior 2026-10-30 audit. Source and bundle inspection are not browser or gameplay tests.",
+        "httpStatus": 200,
+        "linkedJavaScriptAssets": 7,
+        "asset": {
+          "url": "https://rule-shifter.vercel.app/_next/static/immutable/chunks/2yyjq7rfim7bg.js",
+          "httpStatus": 200,
+          "sha256": "5215822f287a62f214b51fa723fd663a69f7c6643e5c220f866921c291eb6c2f",
+          "markers": [
+            "rule_shifter_settings",
+            "Stage 8: グランドマスター (複合三段変異) size:10",
+            "正解属性ガイド",
+            "MATCH_COLOR_SHAPE",
+            "daily_",
+            "rewindTo",
+            "lives:3",
+            "localStorage.setItem"
+          ]
+        },
+        "deploymentStatus": {
+          "sha": "7493df0cc04d394010dbcabd530a2ea0b6a92079",
+          "context": "Vercel",
+          "state": "success",
+          "updatedAt": "2026-10-30T08:35:45Z",
+          "url": "https://vercel.com/bamboosato/rule-shifter/FQj5ShvZTgBk5nDQbrH2seErNz3E"
+        },
+        "limits": "Static delivery and success status are complementary evidence, not exhaustive whole-tree equivalence to the fixed source SHA or proof of runtime behavior.",
+        "checkedAtTime": "12:49 UTC (minute precision)"
+      },
+      "initialSourceAuditSiteCommit": "d0649d16daa28343353e5072e8cc5c02b1a9c27e"
+    },
+    {
       "name": "app-slide-puzzle-lab",
       "commit": "5a40cea9d870f329b93eb8eff3d85b278762be42",
       "sourcePaths": [
