@@ -31,6 +31,119 @@
       ]
     },
     {
+      "name": "app-rule_shifter",
+      "appId": "app-rule-shifter",
+      "commit": "7493df0cc04d394010dbcabd530a2ea0b6a92079",
+      "checkedAt": "2026-10-31",
+      "checkedAtTimezone": "Etc/UTC",
+      "proposalId": "app-rule-shifter-initial-7493df0cc04d-public-listing",
+      "siteBaseCommit": "d42c99b669a6319d307386c9a53a8b32d63ffb50",
+      "sourcePaths": [
+        "README.md",
+        "package.json",
+        "src/app/page.tsx",
+        "src/store/useGameStore.ts",
+        "src/lib/stages.ts",
+        "src/lib/ruleEngine.ts",
+        "src/components/SettingsModal.tsx",
+        "public/sw.js",
+        "src/components/ServiceWorkerRegister.tsx",
+        "src/components/HowToModal.tsx",
+        "src/components/StageSelectModal.tsx",
+        "src/components/ClearModal.tsx",
+        "src/hooks/useKeyboardControls.ts",
+        "src/components/GameBoard.tsx",
+        "src/components/HypothesisScratchpad.tsx",
+        "src/lib/generator.ts",
+        "src/app/layout.tsx"
+      ],
+      "sourceUrls": [
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/README.md",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/package.json",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/app/page.tsx",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/store/useGameStore.ts",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/lib/stages.ts",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/lib/ruleEngine.ts",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/components/SettingsModal.tsx",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/public/sw.js",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/components/ServiceWorkerRegister.tsx",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/components/HowToModal.tsx",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/components/StageSelectModal.tsx",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/components/ClearModal.tsx",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/hooks/useKeyboardControls.ts",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/components/GameBoard.tsx",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/components/HypothesisScratchpad.tsx",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/lib/generator.ts",
+        "https://github.com/Bamboosato/app-rule_shifter/blob/7493df0cc04d394010dbcabd530a2ea0b6a92079/src/app/layout.tsx"
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration"
+      ],
+      "method": "Initial fixed-source audit and fresh parent source recheck inherited from the parent thread. Public metadata, main HEAD and implementation-commit date also rechecked in this saved Cloud. README claims are checked against implementation; no app build or gameplay test was run here.",
+      "confirmed": [
+        "page.tsx, useGameStore.ts and ruleEngine.ts implement registration-free browser play and local game logic. Settings use localStorage; local processing does not mean zero network traffic.",
+        "stages.ts defines eight preset stages and a 7x7 daily stage seeded by the UTC calendar date. Boards range from 4x4 to 10x10; larger stages have a scrollable board. Stage 8 is size10 with three rules and two transitions.",
+        "Color, shape, count and texture are matching dimensions, with single and paired rules; SHIFTER cells switch the active rule. The UI is mainly Japanese.",
+        "Three lives, mistake feedback, route rewind, and time/move display are implemented. Keyboard and touch/pointer paths are present in source; actual device controls were not exercised.",
+        "SettingsModal.tsx includes a current-attribute guide (off by default), color abbreviations and sound settings. HypothesisScratchpad renders a guide, not an editable hypothesis memo.",
+        "ClearModal.tsx copies result text via navigator.clipboard, rather than posting automatically. Clipboard success has not been tested."
+      ],
+      "notVerified": [
+        "Browser rendering, full gameplay, daily generation runtime, clipboard success, device controls, PWA installation/update and offline behavior were not tested.",
+        "No app tests/build or network capture were run in this Cloud. Settings storage does not establish saved game progress/resume or cross-device synchronization.",
+        "Exact deployed whole-tree equivalence to the source SHA is not established. Inherited HTTP and static bundle checks do not prove runtime success."
+      ],
+      "excludedClaims": [
+        "No clinical/WCST validity, brain-function improvement, training effectiveness or medically meaningful scores.",
+        "No universal unique-solution guarantee: after 50 attempts the generator fallback returns generateSingleStage without final uniqueness or straight-run verification.",
+        "No offline-after-setup feature: service worker registration runs after load and subsequently fetched Next static assets are cached; first-visit offline completeness is not established.",
+        "No README Stage 8 size9/three-shifts claim; source and public JS use size10 with three rules/two transitions.",
+        "No editable hypothesis-memo UI, saved game progress/resume or cross-device synchronization claim."
+      ],
+      "dateEvidence": {
+        "type": "initial implementation commit",
+        "commit": "8963531a2616d6774b8c9f47f8764a859c05645f",
+        "committedAt": "2026-10-30T08:12:47Z",
+        "url": "https://github.com/Bamboosato/app-rule_shifter/commit/8963531a2616d6774b8c9f47f8764a859c05645f",
+        "note": "App implementation date, not monitoring date. Latest HEAD changes only README. createdAt omitted because an independent app creation date is not established."
+      },
+      "productionDeliveryEvidence": {
+        "source": "parent-thread handoff",
+        "url": "https://rule-shifter.vercel.app/",
+        "checkedAt": "2026-10-31",
+        "method": "Inherited read-only HTTPS static delivery evidence; not measured again in this Cloud. Official HTML and all seven linked JS assets returned HTTP 200 and were byte-identical to the prior 2026-10-30 audit. Source and bundle inspection are not browser or gameplay tests.",
+        "httpStatus": 200,
+        "linkedJavaScriptAssets": 7,
+        "asset": {
+          "url": "https://rule-shifter.vercel.app/_next/static/immutable/chunks/2yyjq7rfim7bg.js",
+          "httpStatus": 200,
+          "sha256": "5215822f287a62f214b51fa723fd663a69f7c6643e5c220f866921c291eb6c2f",
+          "markers": [
+            "rule_shifter_settings",
+            "Stage 8: グランドマスター (複合三段変異) size:10",
+            "正解属性ガイド",
+            "MATCH_COLOR_SHAPE",
+            "daily_",
+            "rewindTo",
+            "lives:3",
+            "localStorage.setItem"
+          ]
+        },
+        "deploymentStatus": {
+          "sha": "7493df0cc04d394010dbcabd530a2ea0b6a92079",
+          "context": "Vercel",
+          "state": "success",
+          "updatedAt": "2026-10-30T08:35:45Z",
+          "url": "https://vercel.com/bamboosato/rule-shifter/FQj5ShvZTgBk5nDQbrH2seErNz3E"
+        },
+        "limits": "Static delivery and success status are complementary evidence, not exhaustive whole-tree equivalence to the fixed source SHA or proof of runtime behavior.",
+        "checkedAtTime": "12:49 UTC (minute precision)"
+      },
+      "initialSourceAuditSiteCommit": "d0649d16daa28343353e5072e8cc5c02b1a9c27e"
+    },
+    {
       "name": "app-slide-puzzle-lab",
       "commit": "5a40cea9d870f329b93eb8eff3d85b278762be42",
       "sourcePaths": [
@@ -172,6 +285,419 @@
           ],
           "method": "親側のstrict HTTPS公開HTML/JS/CSS静的照合。新mobile 8 markers・CSS 5 markers一致、旧4 markers不在。今回Cloudの403再取得失敗とは別の引き継ぎ証跡。"
         }
+      }
+    },
+    {
+      "name": "app-stroop-route",
+      "commit": "1d4e12172a570284a3ae756897639eff431d2e9b",
+      "checkedAt": "2026-10-22",
+      "proposalId": "app-stroop-route-initial-1d4e12172a57-public-listing",
+      "sourcePaths": [
+        "README.md",
+        "package.json",
+        "src/lib/gameLogic.ts",
+        "src/lib/stages.ts",
+        "src/lib/generator.ts",
+        "src/lib/constants.ts",
+        "src/store/useGameStore.ts",
+        "src/components/StageSelectModal.tsx",
+        "src/components/GameBoard.tsx",
+        "src/components/CellItem.tsx",
+        "src/components/SettingsModal.tsx",
+        "src/components/ClearModal.tsx",
+        "src/hooks/useKeyboardControls.ts",
+        "src/app/page.tsx",
+        "src/app/layout.tsx",
+        "public/sw.js",
+        "src/components/ServiceWorkerRegister.tsx"
+      ],
+      "sourceUrls": [
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/README.md",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/package.json",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/lib/gameLogic.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/lib/stages.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/lib/generator.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/lib/constants.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/store/useGameStore.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/StageSelectModal.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/GameBoard.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/CellItem.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/SettingsModal.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/ClearModal.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/hooks/useKeyboardControls.ts",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/app/page.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/app/layout.tsx",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/public/sw.js",
+        "https://github.com/Bamboosato/app-stroop-route/blob/1d4e12172a570284a3ae756897639eff431d2e9b/src/components/ServiceWorkerRegister.tsx"
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration"
+      ],
+      "confirmed": [
+        "Public repoの固定HEADのみを参照。page.tsxは登録なしでゲームを表示し、useGameStore.tsからgameLogic.tsとgenerator.tsの端末内処理を呼ぶ。package.jsonでNext.js・React・TypeScriptを確認。通信ゼロを意味しない。",
+        "gameLogic.tsは上下左右の隣接・再訪問禁止を検査し、通常は直前マスの文字と移動先のインク色を照合、反転時は直前のインク色と移動先の文字を照合。GATE通過数の奇偶でルールを反転する。",
+        "stages.tsのPRESET_STAGESは5件。getDailyStageは端末のローカル暦日をseedにした7×7のみ。StageSelectModal.tsxのランダム選択肢は4×4・5×5・7×7・10×10。Stage3は5×5でisScrollable=true。READMEの全世界共通・daily10×10・Stage3固定表示は転記しない。",
+        "constants.tsとCellItem.tsxでひらがな・カタカナ・漢字の色名を表示。GameBoard.tsxのpointer処理、CellItem.tsxのclick処理、useKeyboardControls.tsの矢印/WASD・Undoを確認。SettingsModal.tsxとGameBoard.tsxに候補アシストとインク色名表示の切替がある。",
+        "useGameStore.tsのlocalStorageキーstroop_route_settingsは表示・アシスト・音量・消音の設定用。経路・ゲーム進行やクラウド同期の保存は主張しない。",
+        "ClearModal.tsxのhandleShareはクリア時の時間・手数・経路絵文字を含むテキストをnavigator.clipboard.writeTextでコピーする。SNSへの直接投稿ではない。固定の認知スコアやREADMEの認知能力・前頭前野への効果は検証済みの成果として掲載しない。",
+        "ServiceWorkerRegister.tsxとpublic/sw.jsに登録・キャッシュ実装はあるが、オフライン実行・インストールは試験していないためoffline-after-setupは付与しない。"
+      ],
+      "notVerified": [
+        "公開アプリのブラウザー表示、実プレイ、日替わり切替、タッチ・キーボード・Undo・アシストの実操作、設定の再読込、結果コピー、実通信キャプチャは未試験。",
+        "オフライン、PWAインストール・更新ライフサイクル、キャッシュ保持、実機・クロスブラウザーは未試験。公開HTML・JSの静的確認やVercel successは実操作成功を示さない。",
+        "公開配信成果物全体と固定Git SHAの完全な同一性は未証明。今回Cloudからの公開HTML再取得はプロキシ403で失敗し、親側のHTTP200・サイズ・ハッシュをCloud再測定値として扱わない。"
+      ],
+      "releaseEvidence": {
+        "url": "https://github.com/Bamboosato/app-stroop-route/releases/tag/v1.00",
+        "publishedAt": "2026-10-22T06:49:48Z",
+        "tagObject": "87498168330bb2b13ab4c1377abf0944d8364a0c",
+        "resolvedCommit": "1d4e12172a570284a3ae756897639eff431d2e9b",
+        "updatedAt": "2026-10-22",
+        "reason": "v1.00の公開日（2026-10-22 15:49 JST）を採用。監視日や初回デプロイ日への読み替えは行わず、独立した根拠のないcreatedAtは省略。"
+      },
+      "deploymentStatusEvidence": {
+        "checkedAt": "2026-10-22",
+        "commit": "1d4e12172a570284a3ae756897639eff431d2e9b",
+        "context": "Vercel",
+        "state": "success",
+        "updatedAt": "2026-10-22T06:58:49Z",
+        "url": "https://vercel.com/bamboosato/stroop-route/7iGuwfqvioPDFBChDSKyq7s6aNsa",
+        "method": "今回Cloudでexact HEADのGitHub combined statusを再照合。"
+      },
+      "productionDeliveryEvidence": {
+        "source": "parent-thread handoff",
+        "checkedAtUtc": "2026-10-22T21:00:00Z",
+        "url": "https://stroop-route.vercel.app/",
+        "httpStatus": 200,
+        "bytes": 32203,
+        "sha256": "07197349ab1fd41ee468e4c00bdb5176de4310b01883a8236215698ca899ce72",
+        "method": "親スレッドがstrict HTTPSでtitle・ゲームHTML、manifest・service worker・参照JS 7件のHTTP200を確認。配信JSのsettings key・daily・色名バッジ・候補アシスト・7×7/10×10・公式共有URLを静的照合。Cloud独自の再測定ではなく、実プレイ検証でもない。"
+      },
+      "cloudRetrieval": {
+        "url": "https://stroop-route.vercel.app/",
+        "attemptedAtUtc": "2026-10-22T21:03:35.612198+00:00",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      },
+      "englishStagesReadabilityEvidence": {
+        "proposalId": "app-stroop-route-1d4e12172a57-a4646ea03dcc-english-stages-readability",
+        "checkedAt": "2026-10-24",
+        "checkedAtTimezone": "Asia/Tokyo",
+        "featureDate": "2026-10-23",
+        "baseCommit": "1d4e12172a570284a3ae756897639eff431d2e9b",
+        "commit": "a4646ea03dcc49579631cd70fab8c17d8d821bea",
+        "compareUrl": "https://github.com/Bamboosato/app-stroop-route/compare/1d4e12172a570284a3ae756897639eff431d2e9b...a4646ea03dcc49579631cd70fab8c17d8d821bea",
+        "sourcePaths": [
+          "README.md",
+          "docs/stroop_route_requirements_and_design.md",
+          "package.json",
+          "public/sw.js",
+          "src/components/CellItem.tsx",
+          "src/components/Header.tsx",
+          "src/components/ModeBanner.tsx",
+          "src/lib/constants.ts",
+          "src/lib/generator.ts",
+          "src/lib/stages.test.ts",
+          "src/lib/stages.ts",
+          "src/types/game.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/README.md",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/docs/stroop_route_requirements_and_design.md",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/package.json",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/public/sw.js",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/components/CellItem.tsx",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/components/Header.tsx",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/components/ModeBanner.tsx",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/lib/constants.ts",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/lib/generator.ts",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/lib/stages.test.ts",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/lib/stages.ts",
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/types/game.ts"
+        ],
+        "additionalSourcePaths": [
+          "src/components/StageSelectModal.tsx"
+        ],
+        "additionalSourceUrls": [
+          "https://github.com/Bamboosato/app-stroop-route/blob/a4646ea03dcc49579631cd70fab8c17d8d821bea/src/components/StageSelectModal.tsx"
+        ],
+        "comparedCommits": [
+          {
+            "commit": "db16e05fa4c5f5e7ed2466d549712e85d0fe5107",
+            "committedAt": "2026-10-23T05:52:36Z",
+            "title": "feat: add English-only stage (Stage 6) and global 4-notation stage (Stage 7) (#27)"
+          },
+          {
+            "commit": "fd3097f985566b987b477da0a9cb23eb159c6f1b",
+            "committedAt": "2026-10-23T07:29:05Z",
+            "title": "refactor(ui): improve readability of header and mode banner for mobile (#28)"
+          },
+          {
+            "commit": "b6b0e9f35c41ceac904eb997699781b4e819bf8b",
+            "committedAt": "2026-10-23T07:57:34Z",
+            "title": "refactor(ui): streamline 3-tier header and maximize typography for mobile (#29)"
+          },
+          {
+            "commit": "a4646ea03dcc49579631cd70fab8c17d8d821bea",
+            "committedAt": "2026-10-23T08:35:04Z",
+            "title": "feat: maximize header font size, format move count to 3-digit, and badgeify rules (#30)"
+          }
+        ],
+        "sourceReview": {
+          "method": "このCloud環境でGitHub APIの固定比較4commits・12filesと固定HEADの実コードを再照合。README・設計文書より実装を優先。アプリのテストは実行していない。",
+          "confirmed": [
+            "stages.ts:170–263のStage 6は全マスenglish、Stage 7はひらがな・カタカナ・漢字・英語が混在。PRESET_STAGESは7件。constants.tsとtypes/game.tsが英語色名を定義し、generator.tsがenglish・mixed_globalを処理する。",
+            "stages.ts:270–310のgetDailyStageはローカル暦日seedの7×7でmixed_global。getRandomStageはsize>=7にmixed_globalを使い、StageSelectModal.tsxの選択肢7×7・10×10に英語表記が加わる。4×4・5×5はmixed_allを維持。",
+            "Header.tsxはステージ名・前後送り・一覧ボタンを統合。タイマーと手数はtext-2xl sm:text-3xlに拡大し、手数はpadStart(3, '0')で最小3桁表示。ModeBanner.tsxは通常・反転ルールバッジとtext-lg sm:text-xlの方向案内を使う。",
+            "CellItem.tsxは6文字以上の英単語を小さく表示する分岐を追加。package.jsonのlint呼出しとSW v5の変更は紹介Updateの独立項目にしない。"
+          ],
+          "excludedClaims": [
+            "READMEのStage 7全体固定表示はstages.tsのisScrollable=trueと競合するため採用しない。",
+            "READMEの日替わり10×10・全世界共通という説明は採用しない。",
+            "英語の色名追加をアプリUIの英語ローカライズと表現しない。認知能力向上、通信ゼロ、確実なオフライン動作も主張しない。"
+          ]
+        },
+        "releaseEvidence": {
+          "meaningfulChangeDate": "2026-10-23",
+          "pullRequests": [
+            {
+              "url": "https://github.com/Bamboosato/app-stroop-route/pull/27",
+              "mergedAt": "2026-10-23T05:52:36Z",
+              "mergeCommit": "db16e05fa4c5f5e7ed2466d549712e85d0fe5107"
+            },
+            {
+              "url": "https://github.com/Bamboosato/app-stroop-route/pull/30",
+              "mergedAt": "2026-10-23T08:35:05Z",
+              "mergeCommit": "a4646ea03dcc49579631cd70fab8c17d8d821bea"
+            }
+          ],
+          "deploymentStatus": {
+            "commit": "a4646ea03dcc49579631cd70fab8c17d8d821bea",
+            "context": "Vercel",
+            "state": "success",
+            "updatedAt": "2026-10-23T08:35:26Z",
+            "url": "https://vercel.com/bamboosato/stroop-route/E189pxqu48dUPskzeU1m1Z62A8nU",
+            "statusApiUrl": "https://api.github.com/repos/Bamboosato/app-stroop-route/commits/a4646ea03dcc49579631cd70fab8c17d8d821bea/status"
+          },
+          "method": "このCloud環境でPR merge時刻とexact HEADのGitHub combined statusを再照合。以前のv1.00公開記録は履歴として保持し、今回の変更日を監視日2026-10-24に置き換えない。"
+        },
+        "productionDeliveryEvidence": {
+          "source": "parent-thread handoff",
+          "checkedAtUtc": "2026-10-23T21:01:19.805779+00:00",
+          "checkedAtTimezone": "Asia/Tokyo",
+          "url": "https://stroop-route.vercel.app/",
+          "httpStatus": 200,
+          "referencedJsChunksChecked": 7,
+          "asset": {
+            "url": "https://stroop-route.vercel.app/_next/static/immutable/chunks/2lxg_6_owr14k.js",
+            "httpStatus": 200,
+            "bytes": 78809,
+            "sha256": "cc74c6c5cab3d3b4a26743269418af357660bec72bbed95806d6ce5b18a154bc"
+          },
+          "serviceWorker": {
+            "url": "https://stroop-route.vercel.app/sw.js",
+            "httpStatus": 200,
+            "cacheVersion": "v5"
+          },
+          "confirmedMarkers": [
+            "Stage 6: 英語",
+            "Stage 7: 世界交差",
+            "mixed_global",
+            "english",
+            "padStart(3",
+            "larger labels",
+            "normal/reversed rule code"
+          ],
+          "method": "親スレッドが通常のTLS検証を使うread-only HTTPSでroot・参照JS全7件・SWのHTTP200と該当配信JSを静的確認。固定ソース確認と別の公開機能コード証跡。Cloud独自のHTTP200・サイズ・ハッシュ再測定値として扱わない。"
+        },
+        "notVerified": [
+          "公開アプリのブラウザー描画、実プレイ、ステージ選択・日替わり切替・ランダム生成・Undo・アシスト・設定・結果コピーの操作は未試験。",
+          "実通信キャプチャ、オフライン、PWA更新・インストール、実機・クロスブラウザーは未試験。",
+          "公開配信成果物全体と固定Git SHAの完全なバイト同一性は未証明。Vercel successと配信コードの静的確認は操作成功を保証しない。",
+          "このCloud環境の公開root・該当JS再取得はプロキシ403で失敗。親の公開証跡を保持し、失敗を成功扱いしない。"
+        ],
+        "checkedAtUtc": "2026-10-23T21:05:34.645315+00:00",
+        "cloudRetrieval": {
+          "method": "通常のTLS検証を使うread-only urllib HTTPS。プロキシ設定の変更・TLS回避はしていない。",
+          "attempts": [
+            {
+              "url": "https://stroop-route.vercel.app/",
+              "attemptedAtUtc": "2026-10-23T21:04:18.166356+00:00",
+              "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+            },
+            {
+              "url": "https://stroop-route.vercel.app/_next/static/immutable/chunks/2lxg_6_owr14k.js",
+              "attemptedAtUtc": "2026-10-23T21:04:18.177978+00:00",
+              "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+            }
+          ]
+        }
+      },
+      "routeRewindThreeLivesEvidence": {
+        "checkedAt": "2026-10-26",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "28928627d223d3c656a911fb1187ddd6a630b43b",
+        "method": "このCloud環境で固定base/headのGitHub比較・参照ソース・exact headのVercel successを再照合。READMEより実装を優先。",
+        "proposalId": "app-stroop-route-a4646ea03dcc-08577d2986a8-rewind-three-lives",
+        "baseCommit": "a4646ea03dcc49579631cd70fab8c17d8d821bea",
+        "commit": "08577d2986a8569716d63acefc56808e1c828d7c",
+        "commitUrl": "https://github.com/Bamboosato/app-stroop-route/commit/08577d2986a8569716d63acefc56808e1c828d7c",
+        "compareUrl": "https://github.com/Bamboosato/app-stroop-route/compare/a4646ea03dcc49579631cd70fab8c17d8d821bea...08577d2986a8569716d63acefc56808e1c828d7c",
+        "comparison": {
+          "totalCommits": 3,
+          "changedFiles": [
+            "src/app/page.tsx",
+            "src/components/GameOverModal.tsx",
+            "src/components/Header.tsx",
+            "src/lib/generator.ts",
+            "src/store/useGameStore.test.ts",
+            "src/store/useGameStore.ts",
+            "src/types/game.ts"
+          ]
+        },
+        "sourcePaths": [
+          "src/store/useGameStore.ts",
+          "src/components/GameOverModal.tsx",
+          "src/components/Header.tsx",
+          "src/lib/generator.ts",
+          "README.md"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/app-stroop-route/blob/08577d2986a8569716d63acefc56808e1c828d7c/src/store/useGameStore.ts",
+          "https://github.com/Bamboosato/app-stroop-route/blob/08577d2986a8569716d63acefc56808e1c828d7c/src/components/GameOverModal.tsx",
+          "https://github.com/Bamboosato/app-stroop-route/blob/08577d2986a8569716d63acefc56808e1c828d7c/src/components/Header.tsx",
+          "https://github.com/Bamboosato/app-stroop-route/blob/08577d2986a8569716d63acefc56808e1c828d7c/src/lib/generator.ts",
+          "https://github.com/Bamboosato/app-stroop-route/blob/08577d2986a8569716d63acefc56808e1c828d7c/README.md"
+        ],
+        "deploymentStatusEvidence": {
+          "commit": "08577d2986a8569716d63acefc56808e1c828d7c",
+          "context": "Vercel",
+          "state": "success",
+          "target_url": "https://vercel.com/bamboosato/stroop-route/9vZ5EGb9PLZtV7XSAzde8yWteY3i"
+        },
+        "featureDate": "2026-10-26",
+        "confirmed": [
+          "useGameStore.ts:79–81・108–109・137–138は初期3ライフ。146–185で通過済みマスへの操作はrewindToへ渡し、現在の先端は何もしない。無効な移動でライフを1減らし、0でisGameOver=true。巻き戻しはミスに数えない。",
+          "useGameStore.ts:254–302は指定マスまでpathをsliceしルールを再計算。305–309のundoはrewindTo(path.length-2)を呼ぶため、HeaderのUndoボタン削除を全undo機能の削除とは記載しない。352–355はクリアまたはゲームオーバー時のタイマー加算を停止。",
+          "GameOverModal.tsx:14–30はisGameOver時に3回ミスの表示。Header.tsx:98–149は時間・手数・残りライフをまとめて表示。既存のアシスト・インク色名表示の紹介を維持。"
+        ],
+        "excludedClaims": [
+          "generator.ts:455–465は最大30回のunique-path検査後に未検証fallbackを返す。常に唯一経路・分岐ゼロ・推測不要とは記載しない。",
+          "READMEの旧Undoボタン説明は現在のHeader実装より優先しない。"
+        ],
+        "applicationUpdateDate": {
+          "date": "2026-10-26",
+          "reason": "固定headの利用者向け変更は2026-10-26T09:20:41Z。Stroopの日英updatedAtを2026-10-23から進め、同日のUpdate pairを追加。"
+        },
+        "productionDeliveryEvidence": {
+          "source": "parent-thread handoff",
+          "checkedAt": "2026-10-26",
+          "method": "親側のstrict HTTPSによるread-only確認の引き継ぎ値。このCloud環境での再測定値として扱わない。",
+          "scope": "サイト・アプリ計52 URLとゲームJS/CSS 10件が全てHTTP 200。",
+          "notVerified": "ブラウザーgameplay・再ロード・PWA・オフライン・実機操作は未試験。",
+          "url": "https://stroop-route.vercel.app/",
+          "confirmedMarkers": [
+            "lives:3",
+            "maxLives:3",
+            "isGameOver",
+            "rewind"
+          ]
+        },
+        "notVerified": [
+          "公開アプリのブラウザー描画、実プレイ、巻き戻し・ライフ・保存再読込を含む操作、PWA更新・インストール、オフライン、実機・クロスブラウザー試験は未実施。",
+          "親側公開bundleの静的照合はブラウザーでの動作実測ではない。全配信成果物と固定Git SHAの完全な同一性および実操作成功は未証明。"
+        ]
+      },
+      "mistakeFeedbackReadabilityEvidence": {
+        "proposalId": "app-stroop-route-08577d2986a8-5c3e55486240-mistake-feedback-readability",
+        "checkedAt": "2026-10-27",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "0388f2624d07d770d7a5401151bd471da080ee11",
+        "baseCommit": "08577d2986a8569716d63acefc56808e1c828d7c",
+        "commit": "5c3e554862402fb690aaa9bb0fb33e2878eb1fe5",
+        "commitUrl": "https://github.com/Bamboosato/app-stroop-route/commit/5c3e554862402fb690aaa9bb0fb33e2878eb1fe5",
+        "compareUrl": "https://github.com/Bamboosato/app-stroop-route/compare/08577d2986a8569716d63acefc56808e1c828d7c...5c3e554862402fb690aaa9bb0fb33e2878eb1fe5",
+        "comparison": {
+          "totalCommits": 1,
+          "changedFiles": [
+            "src/app/globals.css",
+            "src/components/CellItem.tsx",
+            "src/components/GameBoard.tsx",
+            "src/components/Header.tsx",
+            "src/lib/stages.test.ts",
+            "src/lib/stages.ts",
+            "src/store/useGameStore.ts",
+            "src/types/game.ts"
+          ]
+        },
+        "sourcePaths": [
+          "README.md",
+          "src/components/CellItem.tsx",
+          "src/components/GameBoard.tsx",
+          "src/components/Header.tsx",
+          "src/lib/stages.ts",
+          "src/lib/generator.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/app-stroop-route/blob/5c3e554862402fb690aaa9bb0fb33e2878eb1fe5/README.md",
+          "https://github.com/Bamboosato/app-stroop-route/blob/5c3e554862402fb690aaa9bb0fb33e2878eb1fe5/src/components/CellItem.tsx",
+          "https://github.com/Bamboosato/app-stroop-route/blob/5c3e554862402fb690aaa9bb0fb33e2878eb1fe5/src/components/GameBoard.tsx",
+          "https://github.com/Bamboosato/app-stroop-route/blob/5c3e554862402fb690aaa9bb0fb33e2878eb1fe5/src/components/Header.tsx",
+          "https://github.com/Bamboosato/app-stroop-route/blob/5c3e554862402fb690aaa9bb0fb33e2878eb1fe5/src/lib/stages.ts",
+          "https://github.com/Bamboosato/app-stroop-route/blob/5c3e554862402fb690aaa9bb0fb33e2878eb1fe5/src/lib/generator.ts"
+        ],
+        "sourceReview": {
+          "method": "この保存済みsite-github-pages Cloud環境でPublic metadata、固定base/head比較、固定HEADのREADMEと指定ソース、PR merge・exact HEADのVercel successを再照合。READMEやPRの主張より実装を優先。アプリ本体のテストは今回実行していない。",
+          "confirmed": [
+            "CellItem.tsxはisMistakeで赤い背景・枠・animate-shakeを適用。漢字または1文字の色名はtext-2xl sm:text-3xl md:text-4xlで表示する。",
+            "GameBoard.tsxはmistakeTriggerとlastMistakeCellからミスしたマスを700ms強調し、盤面枠の強調・揺れと「MISS! 残りライフ {lives}」メッセージを850ms表示する。",
+            "Header.tsxはmistakeTriggerでライフ表示を強調し、ハートの拡大と浮き上がる「-1」を850ms表示する。",
+            "stages.tsの固定マス調整も比較対象として確認したが、generator.tsのgenerateStageは30回の検証付き試行の後にgenerateStageInternal(opts)を検証せず返す。全パズルで唯一経路・分岐ゼロ・推測不要とは公開紹介しない。"
+          ]
+        },
+        "releaseEvidence": {
+          "pullRequestUrl": "https://github.com/Bamboosato/app-stroop-route/pull/34",
+          "mergedAt": "2026-10-27T00:00:58Z",
+          "mergeCommit": "5c3e554862402fb690aaa9bb0fb33e2878eb1fe5"
+        },
+        "deploymentStatusEvidence": {
+          "commit": "5c3e554862402fb690aaa9bb0fb33e2878eb1fe5",
+          "context": "Vercel",
+          "state": "success",
+          "statusAt": "2026-10-27T00:01:17Z",
+          "target_url": "https://vercel.com/bamboosato/stroop-route/8fqBuZ8XUfHCs6WG3YjkVrQQt21w",
+          "method": "exact HEADのVercel successとURLは今回Cloudでも再照合。statusAtは親スレッドの固定証跡から引き継いだ時刻。"
+        },
+        "scope": "ミス時のフィードバックと漢字色名の拡大のみを日英本文へ追加。updatedAt=2026-10-27と日英Update pairを追加。既刊の巻き戻し・3ライフを新規変更として繰り返さない。",
+        "applicationUpdateDate": {
+          "date": "2026-10-27",
+          "reason": "利用者向け変更PR34のmergeは2026-10-27T00:00:58Z、固定merge SHAのVercel successは同日00:01:17Z。監視日から推測せず実変更日を採用。"
+        },
+        "productionDeliveryEvidence": {
+          "source": "parent-thread handoff",
+          "checkedAt": "2026-10-27",
+          "method": "親側のread-only公開確認を引き継ぐ。このCloudでのHTTP・ブラウザー・bundle再測定値として扱わない。",
+          "url": "https://stroop-route.vercel.app/",
+          "httpStatus": 200,
+          "browserDisplay": "親のCloud browserで公開アプリを読み込み。実プレイやミス演出の操作検証は未確立。",
+          "asset": {
+            "url": "https://stroop-route.vercel.app/_next/static/immutable/chunks/0fx8-9ot84wjg.js",
+            "httpStatus": 200,
+            "confirmedMarkers": [
+              "lastMistakeCell/mistakeTrigger",
+              "MISS! 残りライフ",
+              "life -1 animation",
+              "board/cell animate-shake",
+              "text-2xl sm:text-3xl md:text-4xl"
+            ]
+          },
+          "interpretation": "公開bundleの静的照合がexact-SHAデプロイ証跡を補強する。実際の演出動作や全配信物とGit SHAの完全な同一性の証明ではない。"
+        },
+        "notVerified": [
+          "今回Cloudでの公開アプリ再取得・ブラウザー描画・実プレイ・ミス演出・ライフ変化・漢字表示の実操作確認は未実施。",
+          "PWA更新・インストール、オフライン、実機・クロスブラウザー、通信キャプチャは未試験。公開bundleの静的照合とVercel successを操作成功の保証に拡張しない。"
+        ]
       }
     },
     {
@@ -390,6 +916,124 @@
           "公開alias全体の配信成果物と固定Git commitの完全な同一性は未証明。機能に関わる配信assetの静的確認に限る。",
           "保存・削除・読込専用復旧・モデルキャッシュ削除再取得の実操作、公開AI推論、実通信キャプチャ、実機・ブラウザー別・オフライン試験は今回未実施。引き継ぎ元の配信asset確認を操作成功と読み替えない。",
           "一覧バックアップの正式一覧への昇格、孤立ファイルの個別救出、外部バックアップは未実装。自動復旧、関連付け保存対応、オフラインAI検出の保証は主張しない。"
+        ]
+      },
+      "manualSelectionOriginalClearEvidence": {
+        "proposalId": "local-pii-masker-b42980ab156a-80b235debdfb-manual-selection-original-clear",
+        "checkedAt": "2026-10-30T21:09:34.048563+00:00",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "d0649d16daa28343353e5072e8cc5c02b1a9c27e",
+        "baseCommit": "b42980ab156ad07cd3d310e27d483d978e237406",
+        "commit": "80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630",
+        "commitUrl": "https://github.com/Bamboosato/local-pii-masker/commit/80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630",
+        "compareUrl": "https://github.com/Bamboosato/local-pii-masker/compare/b42980ab156ad07cd3d310e27d483d978e237406...80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630",
+        "comparison": {
+          "status": "ahead",
+          "totalCommits": 2,
+          "changedFiles": [
+            "docs/ci.md",
+            "docs/ui-design.md",
+            "e2e/manual-selection.spec.ts",
+            "package-lock.json",
+            "package.json",
+            "playwright.config.ts",
+            "src/App.test.tsx",
+            "src/App.tsx",
+            "src/components/OriginalTextEditor.tsx",
+            "src/styles.css"
+          ]
+        },
+        "sourcePaths": [
+          "src/App.tsx",
+          "src/components/OriginalTextEditor.tsx",
+          "src/styles.css",
+          "src/app/reducer.ts",
+          "src/App.test.tsx",
+          "e2e/manual-selection.spec.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/local-pii-masker/blob/80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630/src/App.tsx",
+          "https://github.com/Bamboosato/local-pii-masker/blob/80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630/src/components/OriginalTextEditor.tsx",
+          "https://github.com/Bamboosato/local-pii-masker/blob/80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630/src/styles.css",
+          "https://github.com/Bamboosato/local-pii-masker/blob/80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630/src/app/reducer.ts",
+          "https://github.com/Bamboosato/local-pii-masker/blob/80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630/src/App.test.tsx",
+          "https://github.com/Bamboosato/local-pii-masker/blob/80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630/e2e/manual-selection.spec.ts"
+        ],
+        "sourceReview": {
+          "method": "この保存済みsite-github-pages Cloud環境でPublic metadata、固定base/head比較、固定HEADの実装・テスト定義・関連文書とexact HEADのVercel successを再照合。アプリ本体のテストは今回実行していない。",
+          "confirmed": [
+            "App.tsxとstyles.cssは空白以外の原文選択と追加ボタンを緑系で示す。手動追加完了時にclearSelectionとsetSelectedText(\"\")を呼び、OriginalTextEditorは選択を折りたたみ原文欄へfocusする。有効な登録済み箇所の青系表示を維持する。",
+            "原文タブの文字数表示行に原文を消去ボタンを配置。handleOriginalTextChange(\"\")と選択解除を実行する。setOriginalText reducerは既存stateを展開し、原文と出現数・revisionを更新するため、マスク対象・復元入力・正規化ロックを維持する。保存済み対応表の削除経路は呼ばない。",
+            "App.test.tsxとe2e/manual-selection.spec.tsには通常操作、キャンセル、空白のみ・空原文・複数行、再選択、検出中の消去と遅延応答のテスト定義がある。定義の静的確認であり今回の実行成功を意味しない。",
+            "開発依存・CI・テスト・文書の変更は別の利用者向け機能やセキュリティ修正として紹介しない。既存の利用条件・保存の制限・オフラインAI非保証・デスクトップChrome対象を維持する。"
+          ]
+        },
+        "applicationUpdateDate": {
+          "date": "2026-10-30",
+          "timezone": "Asia/Tokyo",
+          "reason": "監視日ではなく、2件の利用者向け変更の固定commit日時を根拠とする。日英共通のUpdate entry 1件にまとめる。",
+          "commits": [
+            {
+              "sha": "8f65c8169badd8b40f17bdc6fa3cebac6d23967e",
+              "committedAtUtc": "2026-10-30T01:06:57Z",
+              "committedAtJst": "2026-10-30T10:06:57+09:00"
+            },
+            {
+              "sha": "80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630",
+              "committedAtUtc": "2026-10-30T02:34:02Z",
+              "committedAtJst": "2026-10-30T11:34:02+09:00"
+            }
+          ]
+        },
+        "deploymentStatusEvidence": {
+          "commit": "80b235debdfbf5eaeb5f64cbaa4cc29f7e1fb630",
+          "context": "Vercel",
+          "state": "success",
+          "target_url": "https://vercel.com/bamboosato/local-pii-masker/CvsFoVvXJpAo8kvAsh5vUcQ4sq3g",
+          "method": "exact HEADのGitHub combined statusを今回再照合。公開alias全体とGit SHAの完全な同一性を証明するものではない。"
+        },
+        "productionDeliveryEvidence": {
+          "source": "parent-thread handoff",
+          "checkedAt": "2026-10-30T21:04:02Z",
+          "method": "親側のread-only HTTP 200 HTMLと現行linked JS/CSSの静的確認を引き継ぐ。このCloudでの再測定や実操作の結果として扱わない。",
+          "root": {
+            "url": "https://local-pii-masker.vercel.app/",
+            "httpStatus": 200
+          },
+          "assets": [
+            {
+              "url": "https://local-pii-masker.vercel.app/assets/index-BvTniJT-.js",
+              "httpStatus": 200,
+              "sha256": "d731838174fdb3c4fba25dfab43fa21ce96f4872d3b2f0460f8cf90ff655eef0"
+            },
+            {
+              "url": "https://local-pii-masker.vercel.app/assets/index-JErvG-Ga.css",
+              "httpStatus": 200,
+              "sha256": "8eab43a065a16ef102e6bc633ba2f4239b8c530239bc5a4c1ccf9ae2bd408112"
+            }
+          ],
+          "confirmedMarkers": [
+            "original-clear-button",
+            "原文だけを消去します。マスク対象と復元入力は保持します",
+            "has-text-selection",
+            "--text-selection-background:#dcfce7"
+          ],
+          "staticBehaviorCorroboration": [
+            "manual add clears selection and resets selected text",
+            "setOriginalText retains other state and recalculates occurrences"
+          ],
+          "scope": "公開配信コードの静的な裏付け。ブラウザーでの動作、保存・オフライン・AI推論試験の証拠ではない。",
+          "runtimeTest": false,
+          "browserVisualTest": false,
+          "cloudRecheck": {
+            "checkedAt": "2026-10-30",
+            "result": "公開rootのHEAD再取得はCONNECT tunnel failed, response 403。環境の許可hostに含まれず、HTML・assetのHTTP200・hash・markerはこのCloudでは再測定していない。"
+          }
+        },
+        "notVerified": [
+          "公開アプリのブラウザー描画、手動選択・追加・消去の実操作、保存・再読込、実機・クロスブラウザーは今回未試験。",
+          "オフライン動作、AIモデル取得・推論、通信キャプチャは今回未試験。公開bundleの静的確認をこれらの成功に読み替えない。",
+          "公開alias全体の成果物と固定Git SHAの完全な同一性は未証明。紹介サイトの検証とアプリの実Deploy確認を区別する。"
         ]
       }
     },
@@ -997,6 +1641,193 @@
           },
           "action": "対象3ファイルは前回固定HEADと同blob。既知の保留を維持し、公開本文・Updatesへ機能や検証都合の注記を追加しない。"
         }
+      },
+      "removeProgressSaveClaimEvidence": {
+        "checkedAt": "2026-10-26",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "28928627d223d3c656a911fb1187ddd6a630b43b",
+        "method": "このCloud環境で固定base/headのGitHub比較・参照ソース・exact headのVercel successを再照合。READMEより実装を優先。",
+        "proposalId": "sudoku-ai-app-27f003c4d30f-839e320aa518-remove-progress-save-claim",
+        "baseCommit": "27f003c4d30f966f9babd9d533ad11c7fae60c0b",
+        "commit": "839e320aa518c7ddc744258280718b443e0c7126",
+        "commitUrl": "https://github.com/Bamboosato/sudoku-ai-app/commit/839e320aa518c7ddc744258280718b443e0c7126",
+        "compareUrl": "https://github.com/Bamboosato/sudoku-ai-app/compare/27f003c4d30f966f9babd9d533ad11c7fae60c0b...839e320aa518c7ddc744258280718b443e0c7126",
+        "comparison": {
+          "totalCommits": 2,
+          "changedFiles": [
+            "src/App.tsx",
+            "src/components/Header.tsx",
+            "src/components/MyPuzzlesModal.tsx",
+            "src/hooks/useSavedPuzzles.ts",
+            "src/hooks/useSudokuGame.ts",
+            "src/lib/sudoku/board.ts",
+            "src/lib/sudoku/savedPuzzles.test.ts",
+            "src/lib/sudoku/savedPuzzles.ts"
+          ]
+        },
+        "sourcePaths": [
+          "src/App.tsx",
+          "src/lib/sudoku/savedPuzzles.ts",
+          "src/components/MyPuzzlesModal.tsx"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/839e320aa518c7ddc744258280718b443e0c7126/src/App.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/839e320aa518c7ddc744258280718b443e0c7126/src/lib/sudoku/savedPuzzles.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/839e320aa518c7ddc744258280718b443e0c7126/src/components/MyPuzzlesModal.tsx"
+        ],
+        "deploymentStatusEvidence": {
+          "commit": "839e320aa518c7ddc744258280718b443e0c7126",
+          "context": "Vercel",
+          "state": "success",
+          "target_url": "https://vercel.com/bamboosato/sudoku-ai-app/42vtPddD3k7hDuQte9SToDHN7GH9"
+        },
+        "scope": "紹介説明の訂正のみ。description・usageNote・機能・特徴から現在の進捗保存とMy Puzzlesでの再開・やり直し・削除の約束を除去。通常のpause/resume、入力方式の設定保存、API利用条件を維持。",
+        "confirmed": [
+          "src/App.tsx:71–105は保存を初期盤面のコピー・currentNotes:[]・elapsedSeconds:0・mistakes:0へ変更しており、現在の進捗の保存ではない。",
+          "src/lib/sudoku/savedPuzzles.ts:76–93のvalidateSavedPuzzleは86行でcurrentNotes.length!==9を拒否。96–105の読込はparsed.filter(validateSavedPuzzle)で不正エントリを除外。保存時の空配列と検証条件の不整合を静的確認した。",
+          "src/components/MyPuzzlesModal.tsx:37–50のhandlePlayは初期盤面・空メモ・時間0・ミス0から開始する。以前の進捗再開説明を維持できない。通常の一時停止/再開とは別の処理。"
+        ],
+        "applicationUpdateDate": {
+          "date": "2026-10-15",
+          "reason": "サイト紹介文の訂正のためupdatedAtとcreatedAtを据え置く。SudokuのUpdate entryは追加・変更しない。"
+        },
+        "productionDeliveryEvidence": {
+          "source": "parent-thread handoff",
+          "checkedAt": "2026-10-26",
+          "method": "親側のstrict HTTPSによるread-only確認の引き継ぎ値。このCloud環境での再測定値として扱わない。",
+          "scope": "サイト・アプリ計52 URLとゲームJS/CSS 10件が全てHTTP 200。",
+          "notVerified": "ブラウザーgameplay・再ロード・PWA・オフライン・実機操作は未試験。",
+          "url": "https://sudoku-ai-app.vercel.app/assets/index-Dqf6OPyT.js",
+          "confirmedMarkers": [
+            "currentNotes:[]",
+            "currentNotes.length!==9"
+          ],
+          "interpretation": "親側公開bundleの両markerはソースの不整合を静的に裏付ける。ブラウザー再ロード不具合の実測とは記載しない。"
+        },
+        "deferredFeatures": {
+          "features": [
+            "新しいマイパズル機能の公開紹介"
+          ],
+          "reason": "保存形式とロード検証が整合しないため公開紹介を保留。アプリ修正は対象外。画像取り込み・自動難易度判定の既存保留記録は変更しない。",
+          "priorEvidencePath": "docs/app-usage-evidence.json#repositories[sudoku-ai-app].popupInputUpdateNoticeEvidence.deferredFeatures"
+        },
+        "notVerified": [
+          "公開アプリのブラウザー描画、実プレイ、巻き戻し・ライフ・保存再読込を含む操作、PWA更新・インストール、オフライン、実機・クロスブラウザー試験は未実施。",
+          "親側公開bundleの静的照合はブラウザーでの動作実測ではない。全配信成果物と固定Git SHAの完全な同一性および実操作成功は未証明。",
+          "実画像送信・Gemini応答・APIキー設定・通信キャプチャは未試験。"
+        ]
+      },
+      "initialGridRegistrationRepairEvidence": {
+        "proposalId": "sudoku-ai-app-839e320aa518-2a7e4d4bff44-initial-grid-registration-repair",
+        "checkedAt": "2026-10-27",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "0388f2624d07d770d7a5401151bd471da080ee11",
+        "baseCommit": "839e320aa518c7ddc744258280718b443e0c7126",
+        "commit": "2a7e4d4bff44d2925de009cc131e57404631b166",
+        "commitUrl": "https://github.com/Bamboosato/sudoku-ai-app/commit/2a7e4d4bff44d2925de009cc131e57404631b166",
+        "compareUrl": "https://github.com/Bamboosato/sudoku-ai-app/compare/839e320aa518c7ddc744258280718b443e0c7126...2a7e4d4bff44d2925de009cc131e57404631b166",
+        "comparison": {
+          "totalCommits": 2,
+          "changedFiles": [
+            "src/App.test.tsx",
+            "src/App.tsx",
+            "src/lib/sudoku/savedPuzzles.test.ts",
+            "src/lib/sudoku/savedPuzzles.ts"
+          ]
+        },
+        "sourcePaths": [
+          "README.md",
+          "src/App.tsx",
+          "src/lib/sudoku/savedPuzzles.ts",
+          "src/components/MyPuzzlesModal.tsx"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/2a7e4d4bff44d2925de009cc131e57404631b166/README.md",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/2a7e4d4bff44d2925de009cc131e57404631b166/src/App.tsx",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/2a7e4d4bff44d2925de009cc131e57404631b166/src/lib/sudoku/savedPuzzles.ts",
+          "https://github.com/Bamboosato/sudoku-ai-app/blob/2a7e4d4bff44d2925de009cc131e57404631b166/src/components/MyPuzzlesModal.tsx"
+        ],
+        "sourceReview": {
+          "method": "この保存済みsite-github-pages Cloud環境でPublic metadata、固定base/head比較、固定HEADのREADMEと指定ソース、PR merge・exact HEADのVercel successを再照合。READMEやPRの主張より実装を優先。アプリ本体のテストは今回実行していない。",
+          "confirmed": [
+            "App.tsxのhandleSaveCurrentPuzzleはstate.initialをcurrentBoardへコピーし、currentNotesにserializeNotes(createEmptyNotes())、elapsedSecondsとmistakesに0を設定する。登録対象は現在の進捗ではなく問題の初期状態。",
+            "savedPuzzles.tsの保存先はlocalStorage。loadSavedPuzzlesFromStorageは既知のlegacy currentNotes:[]だけを9×9の空メモへ正規化して既存validatorを適用する。読込処理でlocalStorageへの書き戻しは行わない。",
+            "MyPuzzlesModal.tsxのhandlePlayはp.initialのコピー、空メモ、elapsedSeconds:0、mistakes:0を渡す。一覧からのプレイは最初から開始し、途中の入力・候補メモ・経過時間の保存再開ではない。"
+          ]
+        },
+        "releaseEvidence": {
+          "pullRequestUrl": "https://github.com/Bamboosato/sudoku-ai-app/pull/24",
+          "mergedAt": "2026-10-27T02:38:29Z",
+          "mergeCommit": "2a7e4d4bff44d2925de009cc131e57404631b166"
+        },
+        "deploymentStatusEvidence": {
+          "commit": "2a7e4d4bff44d2925de009cc131e57404631b166",
+          "context": "Vercel",
+          "state": "success",
+          "statusAt": "2026-10-27T02:38:43Z",
+          "target_url": "https://vercel.com/bamboosato/sudoku-ai-app/BvYsTP9hf9KWHyrG7QXbBdXck6QB",
+          "method": "exact HEADのVercel successとURLは今回Cloudでも再照合。statusAtは親スレッドの固定証跡から引き継いだ時刻。"
+        },
+        "scope": "初期盤面の同一ブラウザーへの登録と一覧から最初からプレイする説明に限定。カードdescription・利用条件は維持。進捗保存・再開と区別し、updatedAt=2026-10-15と既存Sudoku Updatesを維持。",
+        "applicationUpdateDate": {
+          "date": "2026-10-15",
+          "reason": "今回のサイト変更は狭い説明補足。アプリ修正PR24は2026-10-27にmergeされたが、サイトのupdatedAtを進めずSudoku Update entryも追加・変更しない。"
+        },
+        "productionDeliveryEvidence": {
+          "source": "parent-thread handoff",
+          "checkedAt": "2026-10-27",
+          "method": "親側のread-only公開確認を引き継ぐ。このCloudでのHTTP・ブラウザー・bundle再測定値として扱わない。",
+          "url": "https://sudoku-ai-app.vercel.app/",
+          "httpStatus": 200,
+          "browserDisplay": "親のCloud browserで公開アプリを読み込み。公開版の保存・再読込やPWA動作検証は未確立。",
+          "asset": {
+            "url": "https://sudoku-ai-app.vercel.app/assets/index-BDOuYSsd.js",
+            "httpStatus": 200,
+            "confirmedMarkers": [
+              "currentBoard:w.initial.map(e=>[...e])",
+              "currentNotes:he(S())",
+              "elapsedSeconds:0",
+              "S() creates the 9×9 notes grid",
+              "read-time empty-notes normalization"
+            ]
+          },
+          "interpretation": "静的bundle照合が初期盤面登録と空メモ正規化の公開コードを補強する。公開版のsave/reload実操作成功の証拠ではない。"
+        },
+        "priorRepairValidation": {
+          "source": "app PR24 and parent-thread handoff",
+          "pullRequestUrl": "https://github.com/Bamboosato/sudoku-ai-app/pull/24",
+          "testedHead": "0caaf3dacdf2b0b147951d15f116da99cea81c80",
+          "scope": "修正作業時のローカル開発サーバーでのPlaywrightと個別テスト。今回の紹介サイト検証や本番配信の実操作試験とは区別。",
+          "confirmed": [
+            "新規保存→reload→一覧→初期盤面loadで81マス一致と空メモを確認。",
+            "legacy空メモの正規化と、読込時にストレージへ書き戻さないことを確認。",
+            "8テストファイルを個別実行し計68 tests passed。アプリbuildとgit diff --checkも成功。"
+          ],
+          "notVerified": [
+            "単一のaggregate npm testは完走しておらず、全体一括成功とは記録しない。",
+            "公開版・配信preview・installed PWAでのsave/reload試験ではない。今回Cloudでアプリテストは再実行していない。"
+          ]
+        },
+        "linkedHeldProposal": {
+          "proposalId": "sudoku-ai-app-27f003c4d30f-839e320aa518-my-puzzles-initial-status",
+          "status": "held",
+          "promotedScope": "初期盤面登録・一覧から最初からプレイする説明のみ。保存形式修正の根拠を関連付ける。",
+          "unpromotedClaims": [
+            "completion status",
+            "filters",
+            "best time",
+            "duplicate handling",
+            "image import",
+            "automatic difficulty classification"
+          ],
+          "priorEvidencePath": "docs/app-usage-evidence.json#repositories[sudoku-ai-app].removeProgressSaveClaimEvidence",
+          "action": "広い保留proposal全体を解消済みとしない。過去の不整合・保留・画像取込根拠を履歴としてそのまま保持。"
+        },
+        "notVerified": [
+          "公開版の保存→reload→一覧→初期盤面load、PWA更新・インストール、オフライン、実機・クロスブラウザーは未検証。親側の公開browser読込とbundle静的照合を保存操作の確認と混同しない。",
+          "今回Cloudではアプリ機能テストを実行していない。completion・filter・best-time・duplicate・画像取込・自動難易度判定を公開紹介へ昇格しない。",
+          "全配信成果物と固定Git SHAの完全な同一性、実画像送信・Gemini応答・通信キャプチャは未証明・未試験。"
+        ]
       }
     },
     {

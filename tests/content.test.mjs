@@ -37,27 +37,40 @@ test('normal: published content has complete translations and valid references',
   assert.deepEqual(validateRecords(content.apps, content.updates), []);
 });
 
-test('normal: both languages cover the complete verified public repository inventory', () => {
-  const inventory = JSON.parse(readFileSync(new URL('../docs/public-repositories.json', import.meta.url), 'utf8'));
-  const { apps, updates, errors } = readContent();
-  assert.deepEqual(errors, []);
-  const expected = inventory.repositories.map((repo) => repo.name).sort();
-  assert.equal(new Set(expected).size, expected.length, 'inventory names must be unique');
+function assertRepositoryIdentities(repositories) {
+  const names = repositories.map((repo) => repo.name);
+  const ids = repositories.map((repo) => repo.appId ?? repo.name);
+  assert.equal(new Set(names).size, names.length, 'repository names must be unique');
+  assert.equal(new Set(ids).size, ids.length, 'effective app IDs must be unique');
+  for (const id of ids) assert.ok(appSchema.shape.appId.safeParse(id).success, `invalid effective app ID: ${id}`);
+}
+
+function assertPublicInventory(inventory, apps, updates) {
+  const expected = inventory.repositories.map((repo) => repo.appId ?? repo.name).sort();
+  assertRepositoryIdentities(inventory.repositories);
   for (const locale of ['ja', 'en']) {
     const entries = apps.filter((entry) => entry.data.locale === locale);
     assertInventoryIds(entries.map((entry) => entry.data.appId), expected, locale);
     for (const repo of inventory.repositories) {
-      const entry = entries.find((entry) => entry.data.appId === repo.name).data;
+      const entry = entries.find((entry) => entry.data.appId === (repo.appId ?? repo.name)).data;
       assert.equal(repo.public, true, `${repo.name}: public source required`);
       assert.equal(entry.sample, false, `${repo.name}: real content required`);
+      assert.equal(repo.githubUrl, `https://github.com/${inventory.owner}/${repo.name}`);
       assert.equal(entry.githubUrl, `https://github.com/${inventory.owner}/${repo.name}`);
       assert.equal(entry.appUrl, repo.appUrl);
       assert.equal(entry.createdAt, repo.createdAt);
       assert.equal(entry.updatedAt, repo.updatedAt);
       assert.match(repo.commit, /^[a-f0-9]{40}$/, `${repo.name}: update evidence required`);
-      assert.ok(updates.some((update) => update.data.locale === locale && update.data.appId === repo.name && update.data.date === repo.updatedAt), `${repo.name}: translated update required`);
+      assert.ok(updates.some((update) => update.data.locale === locale && update.data.appId === (repo.appId ?? repo.name) && update.data.date === repo.updatedAt), `${repo.name}: translated update required`);
     }
   }
+}
+
+test('normal: both languages cover the complete verified public repository inventory', () => {
+  const inventory = JSON.parse(readFileSync(new URL('../docs/public-repositories.json', import.meta.url), 'utf8'));
+  const { apps, updates, errors } = readContent();
+  assert.deepEqual(errors, []);
+  assertPublicInventory(inventory, apps, updates);
 });
 test('scope: the site repository stays excluded from apps and updates even when public', () => {
   const inventory = JSON.parse(readFileSync(new URL('../docs/public-repositories.json', import.meta.url), 'utf8'));
@@ -189,26 +202,97 @@ test('translation: usage IDs must match and notes must exist in both languages w
   assert.deepEqual(validateRecords(apps, []), []);
 });
 
+function assertUsageEvidence(inventory, audit, apps) {
+  assertRepositoryIdentities(inventory.repositories);
+  assertRepositoryIdentities(audit.repositories);
+  const expectedNames = inventory.repositories.map((repo) => repo.name);
+  const expectedIds = inventory.repositories.map((repo) => repo.appId ?? repo.name);
+  assertInventoryIds(audit.repositories.map((repo) => repo.name), expectedNames, 'usage evidence');
+  for (const locale of ['ja', 'en']) {
+    assertInventoryIds(apps.filter((app) => app.data.locale === locale).map((app) => app.data.appId), expectedIds, locale);
+  }
+  for (const repo of audit.repositories) {
+    const inventoryRepo = inventory.repositories.find((item) => item.name === repo.name);
+    const appId = repo.appId ?? repo.name;
+    assert.equal(appId, inventoryRepo.appId ?? inventoryRepo.name, `${repo.name}: evidence app ID must match inventory`);
+    assert.match(repo.commit, /^[a-f0-9]{40}$/);
+    assert.ok(repo.sourcePaths.includes('README.md'));
+    assert.ok(repo.confirmed.length > 0 && repo.notVerified.length > 0);
+    for (const app of apps.filter((app) => app.data.appId === appId)) {
+      assert.equal(app.data.access, repo.access);
+      assert.deepEqual(app.data.usageFeatures, repo.usageFeatures);
+    }
+  }
+}
+
 test('evidence: all published usage metadata matches its pinned source audit', () => {
   const inventory = JSON.parse(readFileSync(new URL('../docs/public-repositories.json', import.meta.url), 'utf8'));
   const audit = JSON.parse(readFileSync(new URL('../docs/app-usage-evidence.json', import.meta.url), 'utf8'));
   const { apps, errors } = readContent();
   assert.deepEqual(errors, []);
-  const expected = inventory.repositories.map((repo) => repo.name);
-  assertInventoryIds(audit.repositories.map((repo) => repo.name), expected, 'usage evidence');
-  for (const locale of ['ja', 'en']) {
-    assertInventoryIds(apps.filter((app) => app.data.locale === locale).map((app) => app.data.appId), expected, locale);
-  }
-  for (const repo of audit.repositories) {
-    assert.match(repo.commit, /^[a-f0-9]{40}$/);
-    assert.ok(repo.sourcePaths.includes('README.md'));
-    assert.ok(repo.confirmed.length > 0 && repo.notVerified.length > 0);
-    for (const app of apps.filter((app) => app.data.appId === repo.name)) {
-      assert.equal(app.data.access, repo.access);
-      assert.deepEqual(app.data.usageFeatures, repo.usageFeatures);
-    }
-  }
+  assertUsageEvidence(inventory, audit, apps);
   const bbcafe = audit.repositories.find((repo) => repo.name === 'bbcafe-app');
   assert.equal(bbcafe.operationalConfirmation.source, 'user');
   assert.equal(bbcafe.operationalConfirmation.date, '2026-10-02');
+});
+
+// Fixtures exercise the same inventory/evidence checks as the published records.
+function inventoryFixture() {
+  const repositories = [
+    { name: 'alpha_repo', appId: 'alpha-app' },
+    { name: 'beta' },
+  ].map((repo) => ({ ...repo, public: true, githubUrl: `https://github.com/owner/${repo.name}`,
+    updatedAt: '2026-10-02', commit: 'a'.repeat(40) }));
+  const apps = repositories.flatMap((repo) => pair(repo.appId ?? repo.name).map((entry) => ({
+    ...entry, data: { ...entry.data, githubUrl: repo.githubUrl },
+  })));
+  const updateEntries = apps.map(({ data }) => ({ data: { locale: data.locale, appId: data.appId, date: data.updatedAt } }));
+  const evidence = repositories.map(({ name, appId, commit }) => ({ name, ...(appId ? { appId } : {}), commit,
+    sourcePaths: ['README.md'], confirmed: ['Source review'], notVerified: ['Runtime'], access: 'unknown', usageFeatures: [] }));
+  return { inventory: { owner: 'owner', repositories }, audit: { repositories: evidence }, apps, updates: updateEntries };
+}
+
+test('normal/data: explicit aliases and legacy names retain independent inventory, evidence and translated app coverage', () => {
+  const fixture = inventoryFixture();
+  assertPublicInventory(fixture.inventory, fixture.apps, fixture.updates);
+  fixture.audit.repositories.reverse();
+  assertUsageEvidence(fixture.inventory, fixture.audit, fixture.apps);
+});
+
+test('abnormal/data: repository aliases reject collisions, duplicate names, invalid IDs and incorrect real GitHub URLs', () => {
+  const changes = [
+    (f) => { f.inventory.repositories[1].appId = 'alpha-app'; },
+    (f) => { f.inventory.repositories[1].appId = 'beta'; f.inventory.repositories[0].appId = 'beta'; },
+    (f) => { f.inventory.repositories[1].name = 'alpha_repo'; },
+    ...['alpha_repo', 'Alpha', '', 'alpha--app', 42].map((id) => (f) => { f.inventory.repositories[0].appId = id; }),
+    (f) => { delete f.inventory.repositories[0].appId; },
+    (f) => { f.apps[0].data.githubUrl = 'https://github.com/owner/alpha-app'; },
+    (f) => { f.inventory.repositories[0].githubUrl = 'https://github.com/owner/alpha-app'; },
+    (f) => { f.updates = f.updates.filter((entry) => entry.data.locale !== 'en'); },
+    (f) => { f.apps = f.apps.filter((entry) => entry.data.locale !== 'en'); },
+  ];
+  for (const change of changes) {
+    const f = inventoryFixture(); change(f);
+    assert.throws(() => assertPublicInventory(f.inventory, f.apps, f.updates), assert.AssertionError);
+  }
+});
+
+test('abnormal/data: independent evidence coverage rejects missing, extra, duplicate, renamed and mismatched alias records', () => {
+  const changes = [
+    (f) => { f.audit.repositories.pop(); },
+    (f) => { f.audit.repositories.push({ ...f.audit.repositories[1], name: 'gamma' }); },
+    (f) => { f.audit.repositories[1].name = 'alpha_repo'; },
+    (f) => { f.audit.repositories[0].name = 'alpha-app'; },
+    (f) => { f.audit.repositories[0].appId = 'another-app'; },
+    (f) => { f.audit.repositories[0].appId = 'alpha_repo'; },
+    (f) => { delete f.audit.repositories[0].appId; },
+    (f) => { f.audit.repositories[1].appId = 'alpha-app'; },
+    (f) => { f.apps = f.apps.filter((entry) => entry.data.locale !== 'en'); },
+    (f) => { f.apps[0].data.access = 'open'; },
+    (f) => { f.apps[0].data.usageFeatures = ['no-registration']; },
+  ];
+  for (const change of changes) {
+    const f = inventoryFixture(); change(f);
+    assert.throws(() => assertUsageEvidence(f.inventory, f.audit, f.apps), assert.AssertionError);
+  }
 });

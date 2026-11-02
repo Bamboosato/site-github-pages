@@ -6,7 +6,7 @@ slug: local-pii-masker
 category: utilities
 description: "日本語テキストの個人情報候補を確認し、ブラウザー内でマスキングするツール。"
 createdAt: "2026-07-10"
-updatedAt: "2026-10-06"
+updatedAt: "2026-10-30"
 status: active
 tags: ["React","TypeScript","CodeMirror","ONNX"]
 featured: false
@@ -29,6 +29,8 @@ heroImage:
 ## 主な機能
 
 - 個人情報候補の検出と手動確認・調整
+- 原文の選択範囲を緑、登録済みのマスク対象を青で表示し、手動追加後に選択を解除
+- マスク対象と復元入力を残したまま、原文だけを消去
 - マスキングと復元、長い一致を優先した置換
 - 明示操作による暗号化済み対応表のローカル保存と、保存領域の状態確認
 - モデルキャッシュ未完了の案内と、モデル資材だけの削除・再取得
