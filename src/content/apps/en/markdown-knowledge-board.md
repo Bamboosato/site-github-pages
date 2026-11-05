@@ -6,7 +6,7 @@ slug: markdown-knowledge-board
 category: utilities
 description: "Organize Markdown notes with search, editing, previews, and export."
 createdAt: "2026-07-09"
-updatedAt: "2026-10-07"
+updatedAt: "2026-11-05"
 status: active
 tags: ["React","TypeScript","IndexedDB","Markdown"]
 featured: true
@@ -43,6 +43,10 @@ The Edit/Preview view and search/tag filters stay unchanged. If the selected not
 ## Loading and editing metadata
 
 YAML frontmatter and Metadata processing are limited to 10,000 expanded values and 1,000,000 characters across strings and keys. Circular references and expansion beyond these limits are rejected with an error. Metadata also checks the combined fields and disables Apply while an error remains. Small YAML aliases within the limits remain supported.
+
+## Printing and saving PDFs
+
+In-app print/PDF output wraps long code and URLs and improves pagination for tables and large blocks. Tall images are split for printing when needed, and Mermaid diagrams that may not fit use a source-code fallback with a warning. Save PDFs through your browser or OS print dialog, and check the print preview before saving.
 
 ## Design and usage
 
