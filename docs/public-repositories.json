@@ -439,9 +439,9 @@
       "appUrl": "https://markdown-knowledge-board.vercel.app/",
       "homepageHttpStatus": 200,
       "createdAt": "2026-07-09",
-      "updatedAt": "2026-10-07",
-      "commit": "2df91cac201b5de29f48dead9bd188ea8effdcc8",
-      "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/2df91cac201b5de29f48dead9bd188ea8effdcc8",
+      "updatedAt": "2026-11-05",
+      "commit": "320a765f9356cfe18cba9d979deac7c59de7d1d9",
+      "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/320a765f9356cfe18cba9d979deac7c59de7d1d9",
       "readmeUrl": "https://github.com/Bamboosato/markdown-knowledge-board/blob/main/README.md",
       "implementationSources": [
         "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/src/App.tsx#L1830-L1975",
@@ -504,6 +504,28 @@
           "実機・ブラウザー別・オフライン・実Google Drive操作の追加確認は未実施。",
           "今回の公開URL再取得はプロキシ403。配信コード確認は親側の静的証跡であり、UI操作や成果物全体と固定SHAの同一性を保証しない。"
         ]
+      },
+      "printPdfPhase1Evidence": {
+        "proposalId": "markdown-knowledge-board-f708207fee46-320a765f9356-print-pdf-phase1",
+        "checkedAt": "2026-11-05",
+        "checkedAtTimezone": "Etc/UTC",
+        "sourceVerifiedAtUtc": "2026-11-05T21:07:02+00:00",
+        "siteBaseCommit": "cf160e5ed198086fc66da62ecb2fef2b45333c77",
+        "baseCommit": "f708207fee464485e3958a9cb6bceb91e6168f27",
+        "commit": "320a765f9356cfe18cba9d979deac7c59de7d1d9",
+        "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/320a765f9356cfe18cba9d979deac7c59de7d1d9",
+        "compareUrl": "https://github.com/Bamboosato/markdown-knowledge-board/compare/f708207fee464485e3958a9cb6bceb91e6168f27...320a765f9356cfe18cba9d979deac7c59de7d1d9",
+        "releaseEvidence": {
+          "pullRequestUrl": "https://github.com/Bamboosato/markdown-knowledge-board/pull/56",
+          "mergeCommit": "4f87abc3386a2fa66f6fc7815867d0a625976861",
+          "committedAt": "2026-11-05T06:55:59Z",
+          "mergedAt": "2026-11-05T06:56:00Z",
+          "applicationUpdateDate": "2026-11-05",
+          "dateTimezone": "Asia/Tokyo",
+          "note": "Use the Phase 1 implementation date, not the monitoring date. GitHub commit time and PR mergedAt differ by one second. The three later commits change only two Phase 2 design documents."
+        },
+        "usageEvidencePath": "docs/app-usage-evidence.json#repositories[markdown-knowledge-board].printPdfPhase1Evidence",
+        "scope": "In-app print/PDF pagination, tall-image slicing, warned Mermaid source fallback and preparation failure/timeout handling. Public static delivery evidence and limits are recorded in the usage evidence; no interactive success or full deployment-SHA equivalence claimed."
       }
     },
     {

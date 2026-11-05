@@ -1191,6 +1191,94 @@
           "実機・ブラウザー別・オフライン・実Google Drive操作の追加確認は未実施。",
           "今回の公開URL再取得はプロキシ403。配信コード確認は親側の静的証跡であり、UI操作や成果物全体と固定SHAの同一性を保証しない。"
         ]
+      },
+      "printPdfPhase1Evidence": {
+        "proposalId": "markdown-knowledge-board-f708207fee46-320a765f9356-print-pdf-phase1",
+        "checkedAt": "2026-11-05",
+        "checkedAtTimezone": "Etc/UTC",
+        "sourceVerifiedAtUtc": "2026-11-05T21:07:02+00:00",
+        "siteBaseCommit": "cf160e5ed198086fc66da62ecb2fef2b45333c77",
+        "baseCommit": "f708207fee464485e3958a9cb6bceb91e6168f27",
+        "commit": "320a765f9356cfe18cba9d979deac7c59de7d1d9",
+        "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/320a765f9356cfe18cba9d979deac7c59de7d1d9",
+        "compareUrl": "https://github.com/Bamboosato/markdown-knowledge-board/compare/f708207fee464485e3958a9cb6bceb91e6168f27...320a765f9356cfe18cba9d979deac7c59de7d1d9",
+        "releaseEvidence": {
+          "pullRequestUrl": "https://github.com/Bamboosato/markdown-knowledge-board/pull/56",
+          "mergeCommit": "4f87abc3386a2fa66f6fc7815867d0a625976861",
+          "committedAt": "2026-11-05T06:55:59Z",
+          "mergedAt": "2026-11-05T06:56:00Z",
+          "applicationUpdateDate": "2026-11-05",
+          "dateTimezone": "Asia/Tokyo",
+          "note": "Use the Phase 1 implementation date, not the monitoring date. GitHub commit time and PR mergedAt differ by one second. The three later commits change only two Phase 2 design documents."
+        },
+        "sourcePaths": [
+          "src/App.tsx",
+          "src/App.css",
+          "src/components/StyledExportView.tsx",
+          "src/components/MermaidBlock.tsx",
+          "src/components/StyledDocument.tsx",
+          "src/lib/mermaidPrint.ts",
+          "src/lib/printImageSlices.ts",
+          "src/lib/printReadiness.ts",
+          "src/lib/styledExport/document.css"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/320a765f9356cfe18cba9d979deac7c59de7d1d9/src/App.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/320a765f9356cfe18cba9d979deac7c59de7d1d9/src/App.css",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/320a765f9356cfe18cba9d979deac7c59de7d1d9/src/components/StyledExportView.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/320a765f9356cfe18cba9d979deac7c59de7d1d9/src/components/MermaidBlock.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/320a765f9356cfe18cba9d979deac7c59de7d1d9/src/components/StyledDocument.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/320a765f9356cfe18cba9d979deac7c59de7d1d9/src/lib/mermaidPrint.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/320a765f9356cfe18cba9d979deac7c59de7d1d9/src/lib/printImageSlices.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/320a765f9356cfe18cba9d979deac7c59de7d1d9/src/lib/printReadiness.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/320a765f9356cfe18cba9d979deac7c59de7d1d9/src/lib/styledExport/document.css"
+        ],
+        "method": "Rechecked public owner repository enumeration through empty page 2, latest site main, site PRs, fixed source range, PR56 and the nine fixed source files in the configured site-github-pages Cloud. Source review only; no app tests or interactive printing were run.",
+        "confirmed": [
+          "Print CSS wraps long code and URLs, allows large blocks and tables to paginate, and repeats table headers. These rules improve pagination; they do not guarantee that every document fits without clipping.",
+          "In-app normal and Styled Export print handlers wait for fonts, Mermaid and image decoding before calling window.print(). Failure or timeout stops printing; Mermaid source fallback can continue. Styled Export document preparation failures/timeouts expose Retry preparation.",
+          "printImageSlices.ts divides images only when estimated print height exceeds two printable A4 pages. It uses temporary canvases with bounds: at most 100 slices, 32,000,000 document pixels, 16,000,000 pixels per canvas and 8192 pixels per canvas edge. Preparation errors clean up temporary output and prevent printing.",
+          "mermaidPrint.ts falls back when viewBox dimensions are missing, invalid or estimated too tall; both print views display a warning and Mermaid source for oversized diagrams.",
+          "Dynamic image slicing runs in the in-app print handlers. Downloaded HTML contains static markup and CSS without scripts and does not rerun this slicing. PDF saving uses the browser/OS print dialog.",
+          "Preserve the independently grounded local-editing/storage, optional cloud authentication/transmission, encryption and initial online offline-preparation conditions. This release introduces no new cloud or offline capability."
+        ],
+        "productionAssetEvidence": {
+          "source": "parent-thread handoff",
+          "checkedAt": "2026-11-06",
+          "checkedAtTimezone": "Asia/Tokyo",
+          "method": "Parent read-only static audit of assets referenced by live HTML. These HTTP statuses, hashes and marker matches were not remeasured in this Cloud; the Vercel app host is outside its configured destination list.",
+          "assets": [
+            {
+              "url": "https://markdown-knowledge-board.vercel.app/assets/index-f4a6U3ZQ.js",
+              "httpStatus": 200,
+              "sha256": "f3e127298c6ffaab2d698e70a4e654b314bbca311d6f174dcbc7f3a2c5fd7fec",
+              "confirmedMarkers": [
+                "Print preparation was canceled.",
+                "Images exceed the safe total print preparation limit.",
+                "Diagram may not fit a printed page; Mermaid source follows.",
+                "Preparing diagrams and images timed out. Please try again.",
+                "Retry preparation"
+              ]
+            },
+            {
+              "url": "https://markdown-knowledge-board.vercel.app/assets/index-BWyFBZ4T.css",
+              "httpStatus": 200,
+              "sha256": "f44336ace95fd8cbf8b6ac40c563210e1e1af46b743877473bf043eac912bfd3",
+              "confirmedMarkers": [
+                "print-image-slices",
+                "print-image-source",
+                "vercel-live-feedback"
+              ]
+            }
+          ],
+          "interpretation": "Static delivery supports presence of the Phase 1 code and styles. It does not prove interactive print/PDF success or full deployment equivalence to the fixed Git SHA."
+        },
+        "scope": "Bilingual app paragraph and 2026-11-05 update only, plus bounded evidence. No Phase 2 paper/orientation/cover/TOC claims. Existing privacy/offline and other release evidence remains at its original commits.",
+        "notVerified": [
+          "Browser rendering of the changed site, actual print preview, PDF saving, cancellation/retry behavior, clipping/pagination across real documents, devices and browsers were not tested in this task.",
+          "App unit/E2E tests, actual network/offline behavior and cloud operations were not run.",
+          "Public asset hashes are inherited parent measurements; full deployment-to-Git-SHA equivalence is unproven."
+        ]
       }
     },
     {

@@ -6,7 +6,7 @@ slug: markdown-knowledge-board
 category: utilities
 description: "Markdownのメモを整理し、検索・編集・プレビュー・出力まで行うノートアプリ。"
 createdAt: "2026-07-09"
-updatedAt: "2026-10-07"
+updatedAt: "2026-11-05"
 status: active
 tags: ["React","TypeScript","IndexedDB","Markdown"]
 featured: true
@@ -43,6 +43,10 @@ Edit／Previewの表示や検索・タグの絞り込みは維持されます。
 ## メタデータの読み込みと編集
 
 YAMLフロントマターとMetadataの処理に、展開後の要素数10,000、文字列とキーの合計1,000,000文字の上限を設けています。循環参照や上限を超える展開はエラーとして拒否します。Metadataでは複数フィールドの合計も検査し、問題がある間はApplyできません。上限内の小さなYAMLエイリアスは利用できます。
+
+## 印刷とPDF保存
+
+アプリ内の印刷／PDF出力では、長いコードやURLを折り返し、表や大きなブロックのページ分割を調整します。縦長画像は必要に応じて印刷用に分割し、ページに収まりにくいMermaid図は警告付きでソース表示に切り替えます。PDF保存にはブラウザー／OSの印刷画面を使い、保存前にプレビューを確認してください。
 
 ## 特徴
 
