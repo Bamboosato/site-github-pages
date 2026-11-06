@@ -1992,6 +1992,288 @@
         "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
         "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。"
       ]
+    },
+    {
+      "name": "3d-rain-viewer",
+      "appId": "3d-rain-viewer",
+      "commit": "a273745c67c7bc53737d1f708e87a875e7dc8f0c",
+      "checkedAt": "2026-11-07",
+      "checkedAtTimezone": "Asia/Tokyo",
+      "proposalId": "3d-rain-viewer-initial-a273745c67c7-public-listing",
+      "siteBaseCommit": "ba32ab6090f25360361b4b6db6115ea5fa08f420",
+      "sourcePaths": [
+        "README.md",
+        "vercel.json",
+        "public/manifest.webmanifest",
+        "vite.config.ts",
+        "src/lib/maplibreHelper.ts",
+        "package.json",
+        "src/lib/favoritesStorage.ts",
+        "src/components/PresetNav.tsx",
+        "src/lib/jaxaClient.ts",
+        "src/components/MapViewer.tsx",
+        "src/components/LayerMenu.tsx",
+        "src/App.tsx",
+        "src/components/Inspector.tsx",
+        "src/lib/hyakumeizanData.ts",
+        "src/main.tsx",
+        "public/sw.js",
+        "src/lib/jmaNowcastClient.ts",
+        "index.html",
+        "src/components/TimelineBar.tsx"
+      ],
+      "sourceUrls": [
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/README.md",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/vercel.json",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/public/manifest.webmanifest",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/vite.config.ts",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/lib/maplibreHelper.ts",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/package.json",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/lib/favoritesStorage.ts",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/components/PresetNav.tsx",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/lib/jaxaClient.ts",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/components/MapViewer.tsx",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/components/LayerMenu.tsx",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/App.tsx",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/components/Inspector.tsx",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/lib/hyakumeizanData.ts",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/main.tsx",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/public/sw.js",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/lib/jmaNowcastClient.ts",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/index.html",
+        "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/components/TimelineBar.tsx"
+      ],
+      "sourceBlobs": [
+        {
+          "path": "README.md",
+          "blobSha": "6a0f9617e40ab239b0627860bcee076b5e66f52f",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/README.md"
+        },
+        {
+          "path": "vercel.json",
+          "blobSha": "5d5429aa944fe115145f0d193d4527c2f4538671",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/vercel.json"
+        },
+        {
+          "path": "public/manifest.webmanifest",
+          "blobSha": "221dfe017b7ffa1bcc997b7cff5a6cc80d1c6159",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/public/manifest.webmanifest"
+        },
+        {
+          "path": "vite.config.ts",
+          "blobSha": "e308bba8514a5a69f4e9e6a1eb033a4acb052b34",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/vite.config.ts"
+        },
+        {
+          "path": "src/lib/maplibreHelper.ts",
+          "blobSha": "7ef92cb5e6a42251fe730da730bbf96f48e75dd0",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/lib/maplibreHelper.ts"
+        },
+        {
+          "path": "package.json",
+          "blobSha": "3fba1b287dfcb90a1edb5ce8f4c85229ce12b8b1",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/package.json"
+        },
+        {
+          "path": "src/lib/favoritesStorage.ts",
+          "blobSha": "3102aee0affcb785e96426f4ef25c225096eb188",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/lib/favoritesStorage.ts"
+        },
+        {
+          "path": "src/components/PresetNav.tsx",
+          "blobSha": "ffc1704d21e3f214e69511575ca67f0827dad9e6",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/components/PresetNav.tsx"
+        },
+        {
+          "path": "src/lib/jaxaClient.ts",
+          "blobSha": "f602efc4ea1057495fb9bc82824fa1af2a534681",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/lib/jaxaClient.ts"
+        },
+        {
+          "path": "src/components/MapViewer.tsx",
+          "blobSha": "8fb08f39130d17d9ff628ed81d54e8d48e7593ce",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/components/MapViewer.tsx"
+        },
+        {
+          "path": "src/components/LayerMenu.tsx",
+          "blobSha": "7babc7f06dd8f6a2740380ddd5d266aed1d5c6df",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/components/LayerMenu.tsx"
+        },
+        {
+          "path": "src/App.tsx",
+          "blobSha": "7cfe181bcb26098b156ee9c8a0ba9b978544a24c",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/App.tsx"
+        },
+        {
+          "path": "src/components/Inspector.tsx",
+          "blobSha": "b80dde2d7e7342e44304eb29b3b6670a709e5bd7",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/components/Inspector.tsx"
+        },
+        {
+          "path": "src/lib/hyakumeizanData.ts",
+          "blobSha": "5fb57a8eff6d8416dd201db672af2c2023dd3f9e",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/lib/hyakumeizanData.ts"
+        },
+        {
+          "path": "src/main.tsx",
+          "blobSha": "21a92ace56d4f7df0dd65d500854c76d81bf6784",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/main.tsx"
+        },
+        {
+          "path": "public/sw.js",
+          "blobSha": "5b44ecbb27d5133232b7c905f4fb36303061c7a1",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/public/sw.js"
+        },
+        {
+          "path": "src/lib/jmaNowcastClient.ts",
+          "blobSha": "cabf1af216a99ecf5c8352ff0b19f10a78cbc6b9",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/lib/jmaNowcastClient.ts"
+        },
+        {
+          "path": "index.html",
+          "blobSha": "ebb8242c12eda8d0e00e7e5f51b9971d1bcf8d7d",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/index.html"
+        },
+        {
+          "path": "src/components/TimelineBar.tsx",
+          "blobSha": "aa5ca664499ac9af1091a4c7b7c269d62427e098",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/components/TimelineBar.tsx"
+        }
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "no-registration"
+      ],
+      "method": "Read-only GitHub connector inspection of public metadata, default-branch HEAD, complete tree, README, implementation and configuration at the fixed commit, inherited from the parent thread. The fixed source, tree blobs and meaningful implementation date were independently rechecked in this Cloud using a read-only clone. Source behavior is separate from deployed behavior. No app build, browser interaction, weather accuracy validation, network capture or offline device test performed.",
+      "confirmed": [
+        "MapLibre 3D terrain using JAXA AW3D30 DSM converted to Terrain-RGB; terrain exaggeration, opacity and three base map choices.",
+        "JMA previous two-hour observations and available nowcast/longer forecast catalog combined into timeline; observed and near forecasts primarily sampled every 10 minutes, not README's 5-minute claim. Forecast extent depends on returned upstream catalog.",
+        "GSMaP catalog latest 24-hour window, at most 25 hourly frames; playback, seeking and 1x/2x speed.",
+        "100 preset mountain entries (counted literal id fields, excluding the map transformation), regional/prefecture filtering and name/kana search.",
+        "Favorite coordinates/name and zoom/pitch/bearing stored in browser localStorage; star map markers; map location inspector with rain/elevation and current-location control.",
+        "PWA manifest, icons and service worker registration implemented; network-first HTML and map/weather response cache fallback, same-origin assets cache-first.",
+        "No application login/auth/account flow or app backend found in inspected source/tree; no account requirement apparent at source level.",
+        "rain3d_favorite_locations_v1 stores location names, coordinates and camera settings locally.",
+        "getCurrentPosition invoked on initial MapViewer mount (lines 123-148), not solely after a button click; button requests again in App.tsx lines 445-495. Browser permission still applies.",
+        "Direct requests to JMA (jma.go.jp), JAXA module (data.earth.jaxa.jp) and AW3D30/GSMaP collection/data at Wasabi (s3.ap-northeast-1.wasabisys.com), plus visible base tiles from OSM, GSI or Esri. Geographic viewport/tile/data requests leave the browser. No analytics code found in inspected first-party files; no blanket tracking guarantee.",
+        "Partial cache fallback only. Runtime weather/map cache capped at 160 entries. JAXA data hosts not handled by service worker external-cache list. Fresh weather and uncached terrain/maps require network; not a full offline mountain/navigation app."
+      ],
+      "notVerified": [
+        "Whole-tree equivalence between the public deployment and this source commit is not established.",
+        "Interactive rendering, data-provider availability, live forecasts, geolocation, PWA installation, offline behavior and device/browser compatibility were not exercised."
+      ],
+      "excludedClaims": [
+        "WebGPU map rendering: MapLibre initialization explicitly requests WebGL2; the WebGPU path only detects/warms up a device.",
+        "Fully local processing, zero external traffic, or full offline use.",
+        "Exact point rainfall measurements, weather accuracy or climbing safety guarantees.",
+        "Guaranteed 15-hour forecasts, automatic live catalog refresh, or 5-minute timeline sampling."
+      ],
+      "dateEvidence": {
+        "type": "latest meaningful implementation commit",
+        "commit": "dadcccfbce6e438dd818cd21b8064d75e6555275",
+        "committedAt": "2026-11-06T08:22:17Z",
+        "url": "https://github.com/Bamboosato/3d-rain-viewer/commit/dadcccfbce6e438dd818cd21b8064d75e6555275",
+        "note": "Direct parent of documentation-only HEAD. Changes App.tsx and MapViewer.tsx to block map interaction behind open top panels and handle Escape. updatedAt/date use the implementation date, not monitoring date. createdAt omitted because an independent app creation date is not established."
+      },
+      "productionDeliveryEvidence": {
+        "checkedAt": "2026-11-06T21:07:15.522553+00:00",
+        "html": {
+          "repo": "Bamboosato/3d-rain-viewer",
+          "source": "public repository metadata",
+          "url": "https://3d-rain-viewer.vercel.app/",
+          "status": 200,
+          "finalUrl": "https://3d-rain-viewer.vercel.app/",
+          "bytes": 1138,
+          "sha256": "6bc44eca8a51887ed677f6d7a22ba639e9fc7a9d7f5febfc1002dd2c96c0ab52",
+          "pageTitle": "3D RainScape | リアルタイム雨雲×3D山岳地形ビューア",
+          "sameAsPrior": null,
+          "assets": [
+            "https://3d-rain-viewer.vercel.app/assets/index-0WNpdIAR.js",
+            "https://3d-rain-viewer.vercel.app/assets/index-JtyZ91pk.css"
+          ]
+        },
+        "assets": [
+          {
+            "url": "https://3d-rain-viewer.vercel.app/assets/index-0WNpdIAR.js",
+            "status": 200,
+            "bytes": 1505626,
+            "sha256": "d3c0f572cdb052e9343afa887b29a19a6a65ec86c2074cde35c3a5acc40c77e8"
+          },
+          {
+            "url": "https://3d-rain-viewer.vercel.app/assets/index-JtyZ91pk.css",
+            "status": 200,
+            "bytes": 103654,
+            "sha256": "66a4f1e2c01cc772879c84c5d5c8f2fa66ad3abaacfb099d08de5431d94cffa7"
+          }
+        ],
+        "staticDeliveryVerified": true,
+        "interactiveVerified": false,
+        "exactWholeTreeDeploymentVerified": false,
+        "bundleMarkers": {
+          "contextType:\"webgl2\"": true,
+          "rain3d_favorite_locations_v1": true,
+          "JAXA.EORC_ALOS.PRISM_AW3D30.v3.2_global": true,
+          "JAXA.EORC_GSMaP_standard.Gauge.v6_hourly": true,
+          "https://www.jma.go.jp/bosai/jmatile/data/nowc/targetTimes_N1.json": true,
+          "top-panel-backdrop": true
+        },
+        "mountainPresetIds": {
+          "sourceCount": 100,
+          "allIdsInPublicBundle": true
+        },
+        "limitations": [
+          "Static source-correspondence only; no browser/weather/elevation/offline behavior test.",
+          "No full repository-to-deployment equality proof."
+        ]
+      },
+      "executionRecheck": {
+        "checkedAt": "2026-11-06T21:13:08.035204+00:00",
+        "siteMain": "ba32ab6090f25360361b4b6db6115ea5fa08f420",
+        "sourceMain": "a273745c67c7bc53737d1f708e87a875e7dc8f0c",
+        "publicMetadata": "GitHub connector freshly confirmed public visibility, owner Bamboosato and repository ID 1447817634.",
+        "sourceBlobs": "All 19 source blob hashes rederived from fixed commit tree; literal mountain id count is 100.",
+        "duplicateCheck": "No open site PRs or matching branch, app entry, update entry or proposalId found before execution.",
+        "workflowSafety": "Only .github/workflows/deploy.yml exists. Push trigger targets main; PR build uploads an artifact but deploy requires refs/heads/main and event_name != pull_request. No workflow/config changes or manual dispatch.",
+        "publicUrlRecheck": {
+          "url": "https://3d-rain-viewer.vercel.app/",
+          "method": "web.open",
+          "result": "URL is not accessible via this tool; no fresh HTTP status established.",
+          "cloudNetworkPolicy": "The app host is outside the Cloud environment allowed hosts; no proxy bypass or alternate credential attempted.",
+          "inheritedEvidence": "productionDeliveryEvidence retains the parent HTTP 200 HTML/JS/CSS hashes and bundle-marker checks; these are not claimed as fresh Cloud measurements."
+        },
+        "siteValidation": {
+          "checkedAt": "2026-11-06T21:15:20.054625+00:00",
+          "environment": "Linux; Node.js v24.19.0; npm ci with unchanged lockfile. CI requests Node.js 24.22.1.",
+          "plan": {
+            "functional": "New detail, category card and update entries; same-app JA -> EN -> JA language navigation.",
+            "nonfunctional": "Static output, metadata, base paths, keyboard focus and no horizontal overflow.",
+            "data": "Normal complete translation/inventory/date matching; existing tests cover invalid/missing/duplicate IDs, unknown category, dangling references and boundary inputs.",
+            "ui": "New JA/EN detail at 1440x1000, 390x844 and 320x844; representative card/list/updates at 390x844. Shared UI untouched; no full cross-browser/app-interaction suite."
+          },
+          "commands": {
+            "npm run verify": "Passed: 33 tests, zero Astro errors/warnings/hints; 52 generated pages and 1048 local links/assets.",
+            "npm run verify:bases": "Passed sequential root / and project /site-github-pages builds: 52 pages and 1048 local links/assets at each base.",
+            "npm run verify:markdown": "Passed addition/modification in both languages; temporary fixtures removed and original site rebuilt/validated.",
+            "git diff --check": "Passed.",
+            "priorEvidencePreservation": "Parsed comparison confirms all unrelated repository entries and top-level metadata unchanged."
+          },
+          "browser": {
+            "environment": "Headless Chromium on Linux, local built project-base site",
+            "passed": "JA/EN detail at all three widths; no horizontal overflow; category card -> detail -> EN detail -> JA detail; JA/EN apps/category/updates; keyboard visible focus and skip link; no console/page errors.",
+            "visualInspection": "Viewed JA desktop/mobile, EN desktop/320px and JA card screenshots. Text and actions fit. EN shared external-link arrow glyphs appear as fallback boxes in this environment; shared UI source is unchanged and no UI fix is included.",
+            "artifacts": "Ignored local artifacts/rain-listing/: browser-results.json, detail-{ja,en}-{1440,390,320}.png and card-ja-390.png."
+          },
+          "toolingNotes": [
+            "Initial npm ci could not create the default /home/agent/.npm cache; rerun with --cache /tmp/rain-site-npm-cache succeeded without a dependency/lockfile change.",
+            "Fresh public URL web.open returned unavailable; parent static HTTP/hash evidence retained separately."
+          ],
+          "notVerified": [
+            "Real devices, other browsers/OS, production rendering of this unmerged listing.",
+            "Rain app interactive behavior, data availability, weather accuracy, geolocation, PWA/offline behavior and whole-tree deployment equivalence."
+          ],
+          "deploy": "Not performed. Branch/PR workflow permits validation/build artifact only; deployment job requires main and a non-PR event."
+        }
+      }
     }
   ]
 }
