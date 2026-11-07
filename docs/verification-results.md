@@ -88,3 +88,23 @@ E2E範囲は共有部品と代表的な主要遷移に絞りました。全ル�
 - 全画面の視覚チェック、スクリーンリーダーによる読み上げ、JavaScript無効設定での実操作。生成HTMLと通常リンクはJavaScript不要の構成です。
 
 公開先確定後はREADMEの手順で `site`／`base` を設定し、PagesのSourceをGitHub Actionsにして、実Deployと両言語の公開サイト動作を確認してください。
+
+## 2026-11-07：3D RainScape の地点検索・視点共有の紹介更新
+
+対象proposalId：`3d-rain-viewer-a273745c67c7-544546f3da6f-search-sharing-domain`。サイト基準は `bef5a89110d86ac91fcf3fbdfc2625520244b247`、アプリ差分は `a273745c67c7bc53737d1f708e87a875e7dc8f0c` → `544546f3da6f9da33a040f746bf81d2c3097872a`。日英紹介・Updates・このアプリの根拠記録のみを更新し、初回掲載と他アプリの記録を維持した。
+
+前提：Linux、Node.js v24.19.0、npm 11.9.0、既存lockfileと依存。CIのNode.js指定は24.22.1。機能は詳細・一覧・カテゴリ・Updatesと言語遷移、非機能は静的HTML・metadata・base・focus、データは翻訳・日付・既存根拠の保持、UIは長い利用条件の折り返しを対象とした。正常系は今回の内容、異常系は既存テストの必須欠落・重複・不正値、境界はroot/project baseと320px、状態遷移は日→英→日とMarkdown追加・変更を確認。Buildとブラウザー操作は逐次実行した。
+
+| 検証 | 結果 |
+| --- | --- |
+| `npm run verify` | 33テスト成功、Astro check 38ファイルでerror／warning／hintなし。52ページ、1,052件のローカルリンク／資産参照を検証 |
+| `npm run verify:bases` | `/` と `/site-github-pages` で各52ページ・1,052参照のBuild／リンク検証成功 |
+| `npm run verify:markdown` | 日英の追加・変更反映に成功。一時fixtureを除去し元のサイトを再Build／検証 |
+| JSONの意味比較・`git diff --check` | 他アプリとトップレベルmetadataの保持、差分の空白検証に成功 |
+| ローカルChromium | 日英詳細1440×1000／390×844／320×844、日英一覧・カテゴリ・Updatesを390pxで確認。計12ケース、カード→詳細、日→英→日、Tabのvisible focusと本文skip成功。横はみ出し・console/page errorなし |
+
+日英Desktop、日本語390px、英語320pxの画像を目視確認し、本文・利用条件・更新履歴が収まることを確認した。英語ページの共有UIの外部リンク矢印はこの環境で代替字形になっている（初回掲載時にも記録済み）。UI変更は含めていない。証跡はGit管理外の `artifacts/rainscape-search-sharing/` にログ、`browser-results.json`、`detail-{ja,en}-{1440,390,320}.png` を保存。
+
+初回verifyは根拠JSON更新前の途中状態でURL不一致を検出し、同アプリの根拠更新後の再実行で成功した。ブラウザー初回は検証スクリプトの誤ったカテゴリパスで404となり、既存の `/apps/category/visual-experimental/` に修正後、全対象で成功した。アプリやサイト実装の修正は不要だった。表示分岐を変えていないため `verify:usage` は対象外。
+
+公開アプリのREADY／HTTP／bundle証拠は親タスクから引き継いだ静的配信証拠であり、今回のCloudでの公開アプリ対話試験とは区別する。実検索と精度、clipboard／native share、共有時刻再現、PWA起動、実機・他ブラウザー、オフライン、未マージ紹介内容の公開表示は未検証。詳細は `docs/app-usage-evidence.json` の当該アプリ `searchSharingUpdate`。PRでは検証とartifact生成のみで、Deploy jobはmainかつ非PRを要求する。Merge／Deploy／auto-merge／mainへの直接pushは行わない。
