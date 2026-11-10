@@ -762,22 +762,23 @@
       "appId": "3d-rain-viewer",
       "category": "visual-experimental",
       "public": true,
-      "verifiedAt": "2026-11-07",
+      "verifiedAt": "2026-11-10",
       "githubUrl": "https://github.com/Bamboosato/3d-rain-viewer",
       "appUrl": "https://3d-rain-viewer.bamboosato.com/",
-      "updatedAt": "2026-11-07",
-      "commit": "544546f3da6f9da33a040f746bf81d2c3097872a",
-      "commitUrl": "https://github.com/Bamboosato/3d-rain-viewer/commit/544546f3da6f9da33a040f746bf81d2c3097872a",
+      "updatedAt": "2026-11-09",
+      "commit": "dda9efc2de216ca9f93efcee7418034db6c10ac4",
+      "commitUrl": "https://github.com/Bamboosato/3d-rain-viewer/commit/dda9efc2de216ca9f93efcee7418034db6c10ac4",
       "readmeUrl": "https://github.com/Bamboosato/3d-rain-viewer/blob/544546f3da6f9da33a040f746bf81d2c3097872a/README.md",
       "proposalId": "3d-rain-viewer-a273745c67c7-544546f3da6f-search-sharing-domain",
       "repositoryId": 1447817634,
       "dateEvidence": {
-        "type": "meaningful app changes, not monitoring date",
-        "applicationUpdateDate": "2026-11-07",
+        "type": "meaningful app features; not maintenance or monitoring date",
+        "applicationUpdateDate": "2026-11-09",
         "timezone": "Asia/Tokyo",
-        "commit": "544546f3da6f9da33a040f746bf81d2c3097872a",
-        "url": "https://github.com/Bamboosato/3d-rain-viewer/commit/544546f3da6f9da33a040f746bf81d2c3097872a",
-        "note": "Parent analysis verified all 11 commits in this range were committed 2026-11-07 JST; exact HEAD production deployment was READY at 2026-11-07T08:56:21.074Z. No unrelated dates or initial listing date changed."
+        "commit": "dda9efc2de216ca9f93efcee7418034db6c10ac4",
+        "committedAt": "2026-11-09T09:14:06Z",
+        "url": "https://github.com/Bamboosato/3d-rain-viewer/commit/dda9efc2de216ca9f93efcee7418034db6c10ac4",
+        "note": "The supplied feature range is reflected as 2026-11-09. Subsequent maintenance is recorded separately and does not advance updatedAt."
       },
       "implementationSources": [
         "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/README.md",
@@ -800,7 +801,7 @@
         "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/index.html",
         "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/src/components/TimelineBar.tsx"
       ],
-      "note": "Initial implementationSources remain at the initial listing commit. searchSharingUpdate adds bounded fixed-commit evidence for search, sharing and the preferred custom-domain appUrl. Parent production READY metadata and static HTTP/bundle checks are inherited, not fresh Cloud measurements or interactive validation. Old vercel.app remains HTTP 200 without redirect. Detailed scope, limitations and verification are in app-usage-evidence.json.",
+      "note": "Initial implementationSources, searchSharingUpdate and their fixed dates remain historical evidence. favoritesTransferUpdate adds the 2026-11-09 features with source pin dda9efc and a separate maintenance review at 260c1fef. The preferred URL is unchanged. Static HTTP/bundle evidence is inherited from monitoring on Nov9, not a fresh Cloud or interactive test; exact deployment identity is not established. A later monitor HTTP recheck was rejected; Cloud did not retry. No other application evidence changed.",
       "homepageHttpStatus": 200,
       "initialListingDateEvidence": {
         "type": "latest meaningful implementation commit",
@@ -829,6 +830,44 @@
           "https://github.com/Bamboosato/3d-rain-viewer/blob/544546f3da6f9da33a040f746bf81d2c3097872a/src/lib/urlSync.ts"
         ],
         "evidenceRecord": "docs/app-usage-evidence.json#repositories[appId=3d-rain-viewer].searchSharingUpdate"
+      },
+      "searchSharingDateEvidence": {
+        "type": "meaningful app changes, not monitoring date",
+        "applicationUpdateDate": "2026-11-07",
+        "timezone": "Asia/Tokyo",
+        "commit": "544546f3da6f9da33a040f746bf81d2c3097872a",
+        "url": "https://github.com/Bamboosato/3d-rain-viewer/commit/544546f3da6f9da33a040f746bf81d2c3097872a",
+        "note": "Parent analysis verified all 11 commits in this range were committed 2026-11-07 JST; exact HEAD production deployment was READY at 2026-11-07T08:56:21.074Z. No unrelated dates or initial listing date changed."
+      },
+      "favoritesTransferUpdate": {
+        "proposalId": "3d-rain-viewer-544546f3da6f-dda9efc2de21-favorites-backup-transfer",
+        "fromCommit": "544546f3da6f9da33a040f746bf81d2c3097872a",
+        "commit": "dda9efc2de216ca9f93efcee7418034db6c10ac4",
+        "checkedAt": "2026-11-10",
+        "siteBaseCommit": "bef5a89110d86ac91fcf3fbdfc2625520244b247",
+        "previousPrHead": "00f067eec36c502f3dc4e6e08c46b03d32f53b23",
+        "maintenanceRecheck": {
+          "commit": "260c1fef7b201f5c130e216e611348d339fb0ae1",
+          "committedAt": "2026-11-09T23:54:48Z",
+          "dateJst": "2026-11-10",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/commit/260c1fef7b201f5c130e216e611348d339fb0ae1",
+          "scope": "Map-cache IO, persistence deferral and internal cache-warning removal. Changed paths do not include favoritesTransfer, FavoritesSyncDialog, favoritesStorage, PresetNav, osmPlaceClient, Legend, Inspector or jmaNowcastClient. App.tsx patch removes memoryOnly state and UI only; rainError/catalogNotice/partial notices remain.",
+          "impactOnListing": "No new user-facing performance or correctness guarantee. Removed map-cache persistence warning omitted; 2026-11-09 feature date retained.",
+          "verification": "GitHub source review only; not deployment verification."
+        },
+        "sourceUrls": [
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/lib/favoritesTransfer.ts",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/components/FavoritesSyncDialog.tsx",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/components/QrCode.tsx",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/lib/favoritesStorage.ts",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/components/PresetNav.tsx",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/lib/osmPlaceClient.ts",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/components/Legend.tsx",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/components/Inspector.tsx",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/App.tsx",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/lib/jmaNowcastClient.ts"
+        ],
+        "evidenceRecord": "docs/app-usage-evidence.json: 3d-rain-viewer.favoritesTransferUpdate"
       }
     }
   ]

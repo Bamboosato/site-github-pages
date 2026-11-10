@@ -2445,6 +2445,161 @@
             "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/544546f3da6f9da33a040f746bf81d2c3097872a/src/components/ShareButton.tsx"
           }
         ]
+      },
+      "favoritesTransferUpdate": {
+        "proposalId": "3d-rain-viewer-544546f3da6f-dda9efc2de21-favorites-backup-transfer",
+        "fromCommit": "544546f3da6f9da33a040f746bf81d2c3097872a",
+        "commit": "dda9efc2de216ca9f93efcee7418034db6c10ac4",
+        "checkedAt": "2026-11-10",
+        "siteBaseCommit": "bef5a89110d86ac91fcf3fbdfc2625520244b247",
+        "previousPrHead": "00f067eec36c502f3dc4e6e08c46b03d32f53b23",
+        "pr": 29,
+        "dateEvidence": {
+          "type": "meaningful app features; not maintenance or monitoring date",
+          "applicationUpdateDate": "2026-11-09",
+          "timezone": "Asia/Tokyo",
+          "commit": "dda9efc2de216ca9f93efcee7418034db6c10ac4",
+          "committedAt": "2026-11-09T09:14:06Z",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/commit/dda9efc2de216ca9f93efcee7418034db6c10ac4",
+          "note": "The supplied feature range is reflected as 2026-11-09. Subsequent maintenance is recorded separately and does not advance updatedAt."
+        },
+        "method": "Read ten fixed-commit source files through GitHub tools, including transfer/preview/undo/storage, GPS/search ordering, legend, missing-rain and saved-catalog notices. Reviewed the subsequent maintenance commit's source paths and App.tsx patch. No rain-app interaction or new public HTTP requests.",
+        "sourceBlobs": [
+          {
+            "path": "src/lib/favoritesTransfer.ts",
+            "blobSha": "5c13a1dc1198df91ad714c257975da1803aca9da",
+            "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/lib/favoritesTransfer.ts"
+          },
+          {
+            "path": "src/components/FavoritesSyncDialog.tsx",
+            "blobSha": "0bf9c760a664ecd5e7e2b3cd5dd5a6a21d403cd9",
+            "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/components/FavoritesSyncDialog.tsx"
+          },
+          {
+            "path": "src/components/QrCode.tsx",
+            "blobSha": "9b2240f241b1d54a56704484568c077816549b81",
+            "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/components/QrCode.tsx"
+          },
+          {
+            "path": "src/lib/favoritesStorage.ts",
+            "blobSha": "efec95985c5cfc42ed29a843d2d91fa9c62e7c3f",
+            "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/lib/favoritesStorage.ts"
+          },
+          {
+            "path": "src/components/PresetNav.tsx",
+            "blobSha": "71e9aef03b520df8663f9787ec3124351a87867f",
+            "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/components/PresetNav.tsx"
+          },
+          {
+            "path": "src/lib/osmPlaceClient.ts",
+            "blobSha": "370563f5d079051df5775817f8e04fe0f88d0671",
+            "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/lib/osmPlaceClient.ts"
+          },
+          {
+            "path": "src/components/Legend.tsx",
+            "blobSha": "76a139bf4ce8d3a3e15d94296c3e68b2a5f8d9e6",
+            "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/components/Legend.tsx"
+          },
+          {
+            "path": "src/components/Inspector.tsx",
+            "blobSha": "6eb83cf0af70c505a18a2e120d3153b3172cb39b",
+            "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/components/Inspector.tsx"
+          },
+          {
+            "path": "src/App.tsx",
+            "blobSha": "a373eaee9514a3882982ce4b70f4b8eda0724ae7",
+            "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/App.tsx"
+          },
+          {
+            "path": "src/lib/jmaNowcastClient.ts",
+            "blobSha": "cac49482aa27c3671edf0558134e2eaab90a1d15",
+            "url": "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/lib/jmaNowcastClient.ts"
+          }
+        ],
+        "confirmed": [
+          "Favorites JSON backup/restore preserves names, coordinates and camera settings. Merge/replace preview and undo of the most recent import are implemented.",
+          "QR/URL manually transfers favorites to another device; links encode full favorite names, coordinates and viewpoints. Anyone with the link can import the list. This is not automatic or cloud synchronization.",
+          "Source favoritesStorage.ts limits new favorites to 100 and names to 50 characters; favoritesTransfer uses these constants. Legacy overflow compatibility is not a new 500-favorite guarantee; no numeric capacity claim was added to the listing.",
+          "PresetNav requests geolocation when the search tab opens; its reference location prefers GPS, then map center/reference, then selected preset. External results use name-match/category tiers followed by distance; local matches prefer favorites and then name-match/distance. Lists show distances.",
+          "Mobile Legend.tsx provides a vertical rainfall-intensity scale. Inspector/JMA data handling distinguishes unavailable values; App.tsx displays partial/missing-rain and saved-catalog notices.",
+          "Existing registration-free access, category, app ID/slug, custom-domain link, per-origin storage, weather/safety, historic rainfall and offline limitations are retained."
+        ],
+        "maintenanceRecheck": {
+          "commit": "260c1fef7b201f5c130e216e611348d339fb0ae1",
+          "committedAt": "2026-11-09T23:54:48Z",
+          "dateJst": "2026-11-10",
+          "url": "https://github.com/Bamboosato/3d-rain-viewer/commit/260c1fef7b201f5c130e216e611348d339fb0ae1",
+          "scope": "Map-cache IO, persistence deferral and internal cache-warning removal. Changed paths do not include favoritesTransfer, FavoritesSyncDialog, favoritesStorage, PresetNav, osmPlaceClient, Legend, Inspector or jmaNowcastClient. App.tsx patch removes memoryOnly state and UI only; rainError/catalogNotice/partial notices remain.",
+          "impactOnListing": "No new user-facing performance or correctness guarantee. Removed map-cache persistence warning omitted; 2026-11-09 feature date retained.",
+          "verification": "GitHub source review only; not deployment verification."
+        },
+        "productionDeliveryEvidence": {
+          "source": "Inherited monitoring worker static checks from 2026-11-09T21:07-21:09Z, not fresh Cloud measurements",
+          "urls": [
+            "https://3d-rain-viewer.bamboosato.com/",
+            "https://3d-rain-viewer.vercel.app/"
+          ],
+          "status": 200,
+          "comparison": "Monitoring worker reported identical HTML, main JS, CSS, QR chunk and service worker at both origins.",
+          "mainJs": {
+            "path": "/assets/index-BLeJ0zfN.js",
+            "sha256": "2b3aa90669c0c7608b90b4aa2127594545553af84875b15ff1453c1d44e9171e"
+          },
+          "markers": [
+            "backup/restore",
+            "QR/URL",
+            "undo",
+            "link privacy",
+            "missing data",
+            "saved catalog",
+            "vertical scale",
+            "search distance"
+          ],
+          "staticAvailabilityVerifiedByMonitor": true,
+          "exactCommitBuildIdentityVerified": false,
+          "interactiveVerified": false,
+          "latestHttpRecheck": {
+            "status": "not established",
+            "reason": "Monitoring worker's later HTTP retrieval was rejected by permission review; its outcome was reported unknown. Per parent instruction, no retry or alternate public-fetch method was attempted in this Cloud task."
+          }
+        },
+        "notVerified": [
+          "Exact deployment/build identity for dda9efc or 260c1fef; no deployment inferred from commit metadata.",
+          "Live app rendering, real JSON/QR transfer and restore, clipboard/native sharing, undo, real search results or distance accuracy, geolocation permissions, PWA launch and offline behavior; no app end-to-end tests.",
+          "Real devices, other browsers/OS, long-session behavior, weather accuracy or performance guarantees, production rendering of this unmerged portfolio content."
+        ],
+        "executionRecheck": {
+          "executor": "Same attached executor as existing PR29 work; /workspace/site-github-pages, origin Bamboosato/site-github-pages, original branch/head verified before edits.",
+          "duplicateCheck": "Fresh main fetch and all remote heads; open PRs paginated: PR29 and dependency PR26 only. Existing PR29 head/base matched supplied fixed SHAs. New proposal/update ID absent in checkout; append existing PR only.",
+          "workflowSafety": "Only deploy.yml: push targets main; pull_request validates/builds/uploads artifacts. Deploy requires refs/heads/main and non-pull_request event. No workflow/settings/UI/schema/dependency edits, dispatch, merge or deployment.",
+          "plan": {
+            "functional": "Affected JA/EN details, app/category lists, Updates, same-app language round trip and keyboard skip.",
+            "data": "Normal translation/date/URL/inventory consistency; existing tests cover invalid/missing/duplicate references. Preserve every Nov7 Update and previous searchSharingUpdate plus unrelated JSON records.",
+            "nonfunctional": "Sequential root/project-base builds, static links/assets/metadata.",
+            "boundaryAndUi": "JA/EN details at 1440x1000, 390x844 and 320x844; representative lists/Updates at 390px; visual inspection and horizontal-overflow checks.",
+            "selection": "Content-only change; representative affected site routes, no rain-app interaction or full cross-browser matrix."
+          },
+          "siteValidation": {
+            "dateUtc": "2026-11-10",
+            "environment": "Linux, Node.js v24.19.0, npm 11.9.0, existing dependency tree and lockfile; CI node 24.22.1. Playwright installed only in /tmp.",
+            "commands": {
+              "npm run verify": "Passed: 33 tests, Astro check 38 files with no errors/warnings/hints, 52 pages and 1056 local links/assets.",
+              "npm run verify:bases": "Passed sequential root / and project /site-github-pages; each 52 pages and 1056 links/assets.",
+              "npm run verify:markdown": "Passed both locales add/edit; fixtures removed and original site rebuilt/validated.",
+              "git diff --check": "Passed.",
+              "preservation": "Unrelated app records/top-level metadata and previous searchSharingUpdate unchanged; both Nov7 Updates byte-identical to original PR head.",
+              "verify:usage": "Not selected; no usage display-branch changes."
+            },
+            "browser": {
+              "environment": "Headless Chromium; local built portfolio only",
+              "result": "12 cases passed: JA/EN detail at 1440x1000, 390x844, 320x844; JA/EN apps/category/Updates at 390px. Cards and update links to detail, JA/EN round trip, visible keyboard skip focus and dates Nov9/Nov7/Nov6 passed. No overflow or console/page errors.",
+              "visualInspection": "Viewed JA/EN desktop, JA390 and EN320 screenshots; content fits. Existing EN shared external-link arrow fallback glyph remains; UI unchanged.",
+              "artifacts": "Ignored artifacts/rainscape-favorites-transfer/: verify logs, browser-results.json, detail-{ja,en}-{1440,390,320}.png"
+            },
+            "report": "docs/verification-results.md: 2026-11-10 section",
+            "deployment": "Not performed; PR validation only. Public-app static evidence is inherited separately."
+          }
+        }
       }
     }
   ]
