@@ -88,3 +88,43 @@ E2E範囲は共有部品と代表的な主要遷移に絞りました。全ル�
 - 全画面の視覚チェック、スクリーンリーダーによる読み上げ、JavaScript無効設定での実操作。生成HTMLと通常リンクはJavaScript不要の構成です。
 
 公開先確定後はREADMEの手順で `site`／`base` を設定し、PagesのSourceをGitHub Actionsにして、実Deployと両言語の公開サイト動作を確認してください。
+
+## 2026-11-07：3D RainScape の地点検索・視点共有の紹介更新
+
+対象proposalId：`3d-rain-viewer-a273745c67c7-544546f3da6f-search-sharing-domain`。サイト基準は `bef5a89110d86ac91fcf3fbdfc2625520244b247`、アプリ差分は `a273745c67c7bc53737d1f708e87a875e7dc8f0c` → `544546f3da6f9da33a040f746bf81d2c3097872a`。日英紹介・Updates・このアプリの根拠記録のみを更新し、初回掲載と他アプリの記録を維持した。
+
+前提：Linux、Node.js v24.19.0、npm 11.9.0、既存lockfileと依存。CIのNode.js指定は24.22.1。機能は詳細・一覧・カテゴリ・Updatesと言語遷移、非機能は静的HTML・metadata・base・focus、データは翻訳・日付・既存根拠の保持、UIは長い利用条件の折り返しを対象とした。正常系は今回の内容、異常系は既存テストの必須欠落・重複・不正値、境界はroot/project baseと320px、状態遷移は日→英→日とMarkdown追加・変更を確認。Buildとブラウザー操作は逐次実行した。
+
+| 検証 | 結果 |
+| --- | --- |
+| `npm run verify` | 33テスト成功、Astro check 38ファイルでerror／warning／hintなし。52ページ、1,052件のローカルリンク／資産参照を検証 |
+| `npm run verify:bases` | `/` と `/site-github-pages` で各52ページ・1,052参照のBuild／リンク検証成功 |
+| `npm run verify:markdown` | 日英の追加・変更反映に成功。一時fixtureを除去し元のサイトを再Build／検証 |
+| JSONの意味比較・`git diff --check` | 他アプリとトップレベルmetadataの保持、差分の空白検証に成功 |
+| ローカルChromium | 日英詳細1440×1000／390×844／320×844、日英一覧・カテゴリ・Updatesを390pxで確認。計12ケース、カード→詳細、日→英→日、Tabのvisible focusと本文skip成功。横はみ出し・console/page errorなし |
+
+日英Desktop、日本語390px、英語320pxの画像を目視確認し、本文・利用条件・更新履歴が収まることを確認した。英語ページの共有UIの外部リンク矢印はこの環境で代替字形になっている（初回掲載時にも記録済み）。UI変更は含めていない。証跡はGit管理外の `artifacts/rainscape-search-sharing/` にログ、`browser-results.json`、`detail-{ja,en}-{1440,390,320}.png` を保存。
+
+初回verifyは根拠JSON更新前の途中状態でURL不一致を検出し、同アプリの根拠更新後の再実行で成功した。ブラウザー初回は検証スクリプトの誤ったカテゴリパスで404となり、既存の `/apps/category/visual-experimental/` に修正後、全対象で成功した。アプリやサイト実装の修正は不要だった。表示分岐を変えていないため `verify:usage` は対象外。
+
+公開アプリのREADY／HTTP／bundle証拠は親タスクから引き継いだ静的配信証拠であり、今回のCloudでの公開アプリ対話試験とは区別する。実検索と精度、clipboard／native share、共有時刻再現、PWA起動、実機・他ブラウザー、オフライン、未マージ紹介内容の公開表示は未検証。詳細は `docs/app-usage-evidence.json` の当該アプリ `searchSharingUpdate`。PRでは検証とartifact生成のみで、Deploy jobはmainかつ非PRを要求する。Merge／Deploy／auto-merge／mainへの直接pushは行わない。
+
+## 2026-11-10：3D RainScape のお気に入りバックアップ・引き継ぎ紹介の追記
+
+既存draft PR #29と作業branch `content/3d-rainscape-search-sharing-20261107` を継続。新proposalIdは `3d-rain-viewer-544546f3da6f-dda9efc2de21-favorites-backup-transfer`。旧proposalId `3d-rain-viewer-a273745c67c7-544546f3da6f-search-sharing-domain` と11月7日のUpdates・根拠は保持した。編集前にmain `bef5a89110d86ac91fcf3fbdfc2625520244b247`、PR head `00f067eec36c502f3dc4e6e08c46b03d32f53b23`、全remote headsとopen PR全ページを照合し、PR29と依存PR26以外の重複なしを確認。
+
+機能根拠はアプリ `544546f3da6f9da33a040f746bf81d2c3097872a` → `dda9efc2de216ca9f93efcee7418034db6c10ac4`。固定commitの10ソースを読み、JSON保存・復元、QR／URL手動引き継ぎ、プレビューと取り消し、距離表示と位置情報の条件、縦型スケール、欠測・保存済みカタログの案内を確認した。`updatedAt` と新Updatesは機能変更日2026-11-09。後続 `260c1fef7b201f5c130e216e611348d339fb0ae1`（2026-11-10 JST）はキャッシュ保守として別記し、削除された内部地図キャッシュ警告や速度保証を紹介せず、日付を進めていない。お気に入り新規上限は実装で100件であり、READMEの500件は採用していない。
+
+前提は既存依存・lockfile、Linux、Node.js v24.19.0、npm 11.9.0。CIのNode.js指定は24.22.1。機能は日英詳細・一覧・カテゴリ・Updatesと言語遷移、データは正常な翻訳・日付一致と既存記録保持、異常系は既存テストの不正／欠落／重複検出、非機能と境界はmetadata・root/project base・320px表示を選定した。共有UIの変更がないため対象ページに絞り、同じ出力・ブラウザーで逐次実行した。
+
+| 検証 | 結果 |
+| --- | --- |
+| `npm run verify` | 33テスト成功。Astro check 38ファイル、error／warning／hintなし。52ページ・1,056件のローカルリンク／資産参照を検証 |
+| `npm run verify:bases` | root `/` と `/site-github-pages` の各52ページ・1,056参照で成功 |
+| `npm run verify:markdown` | 日英追加・変更の反映、一時fixture除去、元サイトの再Build／検証に成功 |
+| 意味比較・`git diff --check` | 他アプリとトップレベルJSON metadata、旧 `searchSharingUpdate` を保持。11月7日の両Updatesはbyte一致。空白検証成功 |
+| ローカルChromium | 日英詳細1440×1000／390×844／320×844、一覧・カテゴリ・Updatesを390pxで確認（12ケース）。各カード・Updates→詳細、日→英→日、キーボード本文skipとvisible focus、更新日順11/9→11/7→11/6に成功。横はみ出し・console/page errorなし |
+
+日英Desktop、日本語390px、英語320pxの画像を目視確認し、長い利用条件・本文・更新履歴の折り返しを確認した。英語UIの既存外部リンク矢印の代替字形はこの環境でも見られる。UI修正は含めていない。ログ・`browser-results.json`・`detail-{ja,en}-{1440,390,320}.png` はGit管理外の `artifacts/rainscape-favorites-transfer/`。一時Playwrightは `/tmp` のみに導入し、サイト依存を変更していない。表示分岐無変更のため `verify:usage` は対象外。
+
+公開証拠は監視workerの2026-11-09T21:07–21:09Zの両ドメインHTTP200と静的bundle照合を引き継いだもの。後の公開HTTP再取得は監視側の許可審査で拒否され結果不明と連絡されており、本Cloudでは別手段も含め再試行していない。固定ソース確認と静的配信証拠は、exact commitのbuild同一性や公開アプリ対話試験を証明しない。実JSON／QR移行・復元・取り消し、clipboard／native share、実検索と距離精度、位置許可、PWA・オフライン、実機・他ブラウザー、性能、未マージ紹介の公開表示は未検証。根拠JSONの `favoritesTransferUpdate` に範囲を記録した。workflowを再確認し、作業branch／PRは検証のみ、Deployはmainかつ非PRに限定される。Merge・Deploy・auto-mergeは実施しない。
