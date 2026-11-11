@@ -4,9 +4,9 @@ locale: en
 title: "Local Document Preprocessor"
 slug: local-document-preprocessor
 category: utilities
-description: "Convert document files into Markdown or text inside the browser."
+description: "Convert documents and JSON into Markdown or text inside the browser."
 createdAt: "2026-08-06"
-updatedAt: "2026-08-14"
+updatedAt: "2026-11-11"
 status: active
 tags: ["React","TypeScript","WebAssembly","PDFium"]
 featured: true
@@ -14,7 +14,7 @@ appUrl: https://local-document-preprocessor.vercel.app/
 githubUrl: https://github.com/Bamboosato/local-document-preprocessor
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
-usageNote: "Selected documents and conversion results are processed in your browser. The initial load of the app and its conversion runtime requires a network connection."
+usageNote: "Selected documents, JSON, and conversion results are processed in your browser. The initial load requires a network connection. Offline use is available after the app has loaded and required static assets have finished caching. Inputs and results are not stored and are cleared when you reload or close the tab."
 heroImage:
   src: /apps/local-document-preprocessor/hero.webp
   alt: "Concept illustration of converting headings, text, and a list from a fictional DOCX preparation note into Markdown and plain text."
@@ -31,8 +31,11 @@ Convert Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, and text-based PD
 - Queued document processing with per-file settings
 - PDF page, slide, and sheet selection
 - Markdown/text downloads and document metadata
+- Convert an entire JSON document or one selected array or object into item tables, list tables, or Mermaid text
 
 ## Design and usage
+
+JSON is parsed in the browser and exported as Markdown or plain text. The offline cache stores static app assets, not input documents or conversion results. Input size, depth, node count, and output-format limits apply.
 
 Documents are processed in the browser without persistent document storage. PDF output is checked against an independent extraction path. OCR and PII masking are outside its scope, and image-only scanned PDFs are unsupported. Review converted output before use.
 

@@ -815,7 +815,68 @@
       "notVerified": [
         "公開配信の実際の通信、端末・ブラウザー別の動作、およびオフライン実機試験は未確認。",
         "主要機能のオフライン完結は確定表示しない。PWAやキャッシュ採用だけでは判断しない。"
-      ]
+      ],
+      "jsonOfflineUpdate": {
+        "proposalId": "local-document-preprocessor-4ad89476a4ad-a6642c3bcc0b-json-input-pwa-generation",
+        "fromCommit": "37ec3d3b09624a7efe53e8faa3ba4fa2560bac27",
+        "commit": "12cf9d4c440fbc070329cf2c147eb62475791b01",
+        "checkedAt": "2026-11-11",
+        "siteBaseCommit": "f526175b360400e9b3d610c73b0d637b35490ec9",
+        "applicationUpdateDate": "2026-11-11",
+        "sourceUrls": [
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/12cf9d4c440fbc070329cf2c147eb62475791b01/src/json/JsonWorkerClient.ts",
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/12cf9d4c440fbc070329cf2c147eb62475791b01/src/json/jsonWorkerRuntime.ts",
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/12cf9d4c440fbc070329cf2c147eb62475791b01/src/json/tinyLoader.mjs",
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/12cf9d4c440fbc070329cf2c147eb62475791b01/docs/distribution-closeout-register.md"
+        ],
+        "confirmed": [
+          "JSON whole-document or one-array/object conversion to item tables, list tables or Mermaid text; Markdown/plain-text export. Same-origin Mermaid Tiny loader uses strict security and disables HTML labels.",
+          "Offline use requires initial loading and completed required static-asset caching. Inputs/results are not persisted; reload/tab closure clears them. Input/output limits apply.",
+          "Existing JSON/PWA proposal is reused with production evidence. Metadata-key/consumer-compatibility claim remains withheld; source presence is not proof of exported key compatibility."
+        ],
+        "productionDeliveryEvidence": {
+          "method": "Inherited independent static GET evidence from the monitoring task, distinct from project-recorded browser tests; not rerun in this Cloud content task.",
+          "releaseDate": "2026-11-11",
+          "deployedSource": "db29c664aa1f95bf7bded28d1356c652e43480e3",
+          "sourceCiUrl": "https://github.com/Bamboosato/local-document-preprocessor/actions/runs/42943591722",
+          "sourceCiConclusion": "success",
+          "urls": [
+            "https://ldp.bamboosato.com/",
+            "https://local-document-preprocessor.vercel.app/"
+          ],
+          "httpStatus": 200,
+          "htmlSha256": "fd63874ab705841b5dc1e0f352ba86a2427ab29d21c931dc67c3b18a73bc49f4",
+          "generation": "a20ffe18e49d87bc8f6895e2",
+          "assets": [
+            {
+              "path": "/assets/index-D7qOaFf2.js",
+              "bytes": 423936,
+              "sha256": "eda64058c814b3cc82594a29dcb40c92bb1ae6c622b0eadec5689508129df81c"
+            },
+            {
+              "path": "/assets/json.worker-CAJiq6hk.js",
+              "bytes": 168140,
+              "sha256": "6e75d910874ee7f850cdd0a681e700018eb4068ef81b3aebfa015d09e3cf9aca"
+            },
+            {
+              "path": "/assets/mermaid.tiny-B1X2HQuM.js",
+              "bytes": 2852578,
+              "sha256": "c41f5236091b83f524c4940f97a16b2b14a76f21ff84aea4fd6b66421d8a2a9a"
+            }
+          ],
+          "scope": "HTML, service worker and three assets fetched independently; three asset sizes/hashes match SW list. This task did not verify all 474 resources or app interaction.",
+          "projectRecordedTests": {
+            "source": "https://github.com/Bamboosato/local-document-preprocessor/blob/12cf9d4c440fbc070329cf2c147eb62475791b01/docs/distribution-closeout-register.md",
+            "scope": "Project records production selected-object /a~1b MD/TXT outputs preserving Japanese/halfwidth/large integer/-0 without outside-target contamination, PWA old-to-new transition, offline startup and missing-asset recovery. Project also reports 474 asset matches. These were not independently rerun."
+          }
+        },
+        "notVerified": [
+          "No independent browser interaction, fresh actual Markdown export, whole-source reproduction or all-474-asset matching. Windows Playwright evidence is not owner physical-device acceptance. OS clipboard, install, screenreader/zoom, touch, maximum load and untested browsers remain unverified.",
+          "Actual originalUpdatedAt export and old consumer compatibility are untested; the separate metadata compatibility hold remains. No backward-compatibility claim.",
+          "E-01 provenance remains unresolved; release records do not establish license compliance. Package/license legal compliance and a full application audit are outside this content task."
+        ],
+        "method": "Pinned-source analysis and independent static delivery evidence supplied by monitoring task; fixed-commit JsonWorkerClient, jsonWorkerRuntime, tinyLoader and distribution closeout register re-read in Cloud. The old offline uncertainty above describes the earlier b43d source review and is superseded only within the bounded new evidence below."
+      }
     },
     {
       "name": "local-pii-masker",
@@ -2600,6 +2661,50 @@
             "deployment": "Not performed; PR validation only. Public-app static evidence is inherited separately."
           }
         }
+      },
+      "favoritesCategoriesChartUpdate": {
+        "proposalId": "3d-rain-viewer-260c1fef7b20-1647467fbde2-favorites-categories-jma-chart",
+        "fromCommit": "260c1fef7b201f5c130e216e611348d339fb0ae1",
+        "commit": "1647467fbde201f19d27067adcc45933efb361c7",
+        "checkedAt": "2026-11-11",
+        "siteBaseCommit": "f526175b360400e9b3d610c73b0d637b35490ec9",
+        "applicationUpdateDate": "2026-11-11",
+        "sourceUrls": [
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/lib/favoriteCategories.ts",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/components/PresetNav.tsx",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/components/Inspector.tsx",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/components/MapViewer.tsx",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/lib/favoritesStorage.ts",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/lib/pointTimeseriesClient.ts",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/components/TimelineBar.tsx",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/App.tsx"
+        ],
+        "confirmed": [
+          "Favorites: four categories, filtering, category markers, distance/registration ordering and pinning; favorites tab also requests geolocation with GPS/reference fallback.",
+          "JMA map-center chart is linked to timeline selection. Values are tile color-class representatives, not exact point observations. GSMaP fallback is a zero placeholder and is not advertised as a rainfall time series.",
+          "Autoplay stops at the final frame. Removed general missing-rain/saved-catalog status lines are no longer claimed in the current app description. Historical Updates are retained."
+        ],
+        "productionDeliveryEvidence": {
+          "method": "Monitoring task read-only GitHub commit status and Vercel get_deployment metadata; no new public app HTTP GET.",
+          "deploymentId": "dpl_ENhGwFwDprbQMP9WGsKzm9HSH15P",
+          "inspectorUrl": "https://vercel.com/bamboosato/3d-rain-viewer/ENhGwFwDprbQMP9WGsKzm9HSH15P",
+          "sha": "1647467fbde201f19d27067adcc45933efb361c7",
+          "state": "READY",
+          "target": "production",
+          "aliases": [
+            "3d-rain-viewer.bamboosato.com",
+            "3d-rain-viewer.vercel.app"
+          ],
+          "aliasError": null,
+          "githubStatus": "success",
+          "githubStatusAt": "2026-11-11T06:41:57Z",
+          "interactiveVerified": false
+        },
+        "notVerified": [
+          "Production READY/alias metadata establishes deployment association, not interactive success or exact browser-rendered bytes. No app interaction, fresh public HTTP retrieval, performance/weather accuracy, accessibility, offline or device/browser validation in this task.",
+          "Prior denied public-app retrieval was not retried or bypassed. No WebGPU, 500-favorite, automatic-sync or precise-measurement claims adopted."
+        ],
+        "method": "Pinned-source analysis supplied by monitoring task; selected fixed-commit PresetNav, MapViewer, pointTimeseriesClient, TimelineBar and App paths re-read in Cloud. Earlier source and delivery records above remain historical at their own commits/dates."
       }
     }
   ]
