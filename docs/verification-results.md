@@ -128,3 +128,33 @@ E2E範囲は共有部品と代表的な主要遷移に絞りました。全ル�
 日英Desktop、日本語390px、英語320pxの画像を目視確認し、長い利用条件・本文・更新履歴の折り返しを確認した。英語UIの既存外部リンク矢印の代替字形はこの環境でも見られる。UI修正は含めていない。ログ・`browser-results.json`・`detail-{ja,en}-{1440,390,320}.png` はGit管理外の `artifacts/rainscape-favorites-transfer/`。一時Playwrightは `/tmp` のみに導入し、サイト依存を変更していない。表示分岐無変更のため `verify:usage` は対象外。
 
 公開証拠は監視workerの2026-11-09T21:07–21:09Zの両ドメインHTTP200と静的bundle照合を引き継いだもの。後の公開HTTP再取得は監視側の許可審査で拒否され結果不明と連絡されており、本Cloudでは別手段も含め再試行していない。固定ソース確認と静的配信証拠は、exact commitのbuild同一性や公開アプリ対話試験を証明しない。実JSON／QR移行・復元・取り消し、clipboard／native share、実検索と距離精度、位置許可、PWA・オフライン、実機・他ブラウザー、性能、未マージ紹介の公開表示は未検証。根拠JSONの `favoritesTransferUpdate` に範囲を記録した。workflowを再確認し、作業branch／PRは検証のみ、Deployはmainかつ非PRに限定される。Merge・Deploy・auto-mergeは実施しない。
+
+## 2026-11-11: RainScape categories/JMA chart and LDP JSON/offline content
+
+Scope: paired JA/EN app introductions and 2026-11-11 Updates, app-specific entries in the two evidence JSON files, and this verification record. Existing app IDs, slugs, categories, URLs, access and usageFeatures are preserved. Existing Updates are byte-identical; unrelated JSON entries and top-level metadata are semantically unchanged. No UI/schema/dependency/configuration/workflow or application implementation change.
+
+Preparation: saved Cloud environment checkout `/workspace/site-github-pages`, remote `https://github.com/Bamboosato/site-github-pages.git`. Latest main fetched as `f526175b360400e9b3d610c73b0d637b35490ec9`. Open PR search returned dependency PR26 only. PR29 is merged at that main SHA; its branch was not reused. New branch: `content/rainscape-ldp-20261111`.
+
+Validation plan, before execution:
+- Functional/normal: both affected JA/EN details and their feature/usage text, app/category lists and Updates; same-app language switching.
+- Data/abnormal: existing tests cover missing translations, invalid IDs, duplicate IDs and dates, dangling references, invalid usage values. Preserve all unrelated entries, prior published proposal records, existing Updates, stable frontmatter and unrelated dates.
+- Nonfunctional/boundary: static metadata/links/assets, sequential root `/` and project `/site-github-pages` builds, widths 1440×1000, 390×844 and 320×844, visible keyboard focus and horizontal overflow.
+- State transitions: JA→EN→JA for both apps; Markdown fixture add→edit→cleanup→original-site rebuild. No shared display branches changed, so `verify:usage` was not selected.
+- E2E selection: representative affected portfolio routes only; application interaction and a full device/browser matrix are outside this content-only task.
+
+Results:
+- `npm run verify`: passed, 33 tests; Astro check 38 files with zero errors/warnings/hints; 52 generated pages and 1,064 local links/assets.
+- `npm run verify:bases`: passed sequential `/` and `/site-github-pages` builds, each 52 pages and 1,064 local references.
+- `npm run verify:markdown`: bilingual fixture addition and editing passed; fixtures removed and original site rebuilt/validated.
+- `git diff --check`: passed. Parsed frontmatter preservation and unrelated JSON/prior-proposal comparison passed. All previously existing Updates remained byte-identical.
+- Browser: Linux headless Chromium against local built project-base portfolio, 20 page/viewport cases: two apps × two languages × three detail widths (12), plus JA/EN apps, two affected categories and Updates at 390px (8). Correct locale, new features/usage notes, 2026-11-11 detail metadata, exactly one of each new Update, keyboard focus and no horizontal overflow passed. Two same-app language round trips passed. Zero console/page errors.
+- Viewed screenshots: RainScape JA desktop and EN320, LDP JA390 and EN desktop; added content fits. Existing English shared external-link arrow fallback glyph remains in this environment. No UI change was made.
+- Environment: Node.js v24.19.0, npm 11.9.0; CI specifies Node.js 24.22.1. Existing dependencies/lockfile retained. Temporary Playwright installed only under `/tmp/site-browser` with cache under `/tmp/site-npm-cache`; initial default-cache attempt failed because the home cache was unavailable, then installation with writable temporary cache succeeded.
+- Initial browser assertion selected `.detail-heading` for the date; corrected the test to existing `.detail-meta time[datetime]`. Final browser run passed; no implementation fix required.
+- Ignored artifacts: `artifacts/rainscape-ldp-20261111/` (12 detail screenshots and browser-results.json); command logs copied there. Browser traffic was limited to the local portfolio.
+
+Public application evidence is separate from portfolio validation:
+- RainScape source `260c1fef7b201f5c130e216e611348d339fb0ae1`→`1647467fbde201f19d27067adcc45933efb361c7`; GitHub success status and exact-SHA production READY/alias metadata supplied by monitoring task. These establish deployment association, not interactive success or exact rendered bytes. No public HTTP re-fetch or alternate fetch method was attempted. JMA chart values are tile color-class representatives; GSMaP zero fallback is not advertised as measured time series. WebGL2, privacy/manual transfer and weather/offline caveats retained.
+- LDP analysis `37ec3d3b09624a7efe53e8faa3ba4fa2560bac27`→`12cf9d4c440fbc070329cf2c147eb62475791b01`; project records 2026-11-11 production release of `db29c664aa1f95bf7bded28d1356c652e43480e3` and source CI success. Monitoring task independently fetched HTML/SW and three assets, distinct from project-recorded JSON/export/PWA/offline/recovery interaction tests. All-474-resource matching is a project claim, not independently performed here. Existing JSON/PWA proposal reused; exact exported metadata-key/consumer compatibility remains unverified. E-01 provenance remains unresolved; no license-compliance conclusion.
+- No application interaction was independently rerun. Physical-device acceptance, OS clipboard/install, screenreader/zoom/touch, maximum load, untested browsers and exact exported-key compatibility remain unverified.
+- Portfolio production rendering is unverified until an authorized future publication. This work stops at a draft PR. Workflow push trigger targets main only; PR builds validate/build/upload artifacts, while deploy requires `github.ref == 'refs/heads/main' && github.event_name != 'pull_request'`. No manual dispatch, merge, deploy, auto-merge or main push.

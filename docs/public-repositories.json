@@ -386,10 +386,32 @@
       "appUrl": "https://local-document-preprocessor.vercel.app/",
       "homepageHttpStatus": 200,
       "createdAt": "2026-08-06",
-      "updatedAt": "2026-08-14",
-      "commit": "e239046a273b72defb56b9cbc66757d7b084bd96",
-      "commitUrl": "https://github.com/Bamboosato/local-document-preprocessor/commit/e239046a273b72defb56b9cbc66757d7b084bd96",
-      "readmeUrl": "https://github.com/Bamboosato/local-document-preprocessor/blob/main/README.md"
+      "updatedAt": "2026-11-11",
+      "commit": "12cf9d4c440fbc070329cf2c147eb62475791b01",
+      "commitUrl": "https://github.com/Bamboosato/local-document-preprocessor/commit/12cf9d4c440fbc070329cf2c147eb62475791b01",
+      "readmeUrl": "https://github.com/Bamboosato/local-document-preprocessor/blob/main/README.md",
+      "jsonOfflineUpdate": {
+        "proposalId": "local-document-preprocessor-4ad89476a4ad-a6642c3bcc0b-json-input-pwa-generation",
+        "fromCommit": "37ec3d3b09624a7efe53e8faa3ba4fa2560bac27",
+        "commit": "12cf9d4c440fbc070329cf2c147eb62475791b01",
+        "checkedAt": "2026-11-11",
+        "siteBaseCommit": "f526175b360400e9b3d610c73b0d637b35490ec9",
+        "applicationUpdateDate": "2026-11-11",
+        "sourceUrls": [
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/12cf9d4c440fbc070329cf2c147eb62475791b01/src/json/JsonWorkerClient.ts",
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/12cf9d4c440fbc070329cf2c147eb62475791b01/src/json/jsonWorkerRuntime.ts",
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/12cf9d4c440fbc070329cf2c147eb62475791b01/src/json/tinyLoader.mjs",
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/12cf9d4c440fbc070329cf2c147eb62475791b01/docs/distribution-closeout-register.md"
+        ]
+      },
+      "verifiedAt": "2026-11-11",
+      "dateEvidence": {
+        "type": "meaningful production feature update",
+        "applicationUpdateDate": "2026-11-11",
+        "source": "https://github.com/Bamboosato/local-document-preprocessor/blob/12cf9d4c440fbc070329cf2c147eb62475791b01/docs/distribution-closeout-register.md",
+        "note": "Production release date; not content-edit or monitoring date. Deployment/interaction scope is recorded separately in docs/app-usage-evidence.json.",
+        "deployedSource": "db29c664aa1f95bf7bded28d1356c652e43480e3"
+      }
     },
     {
       "name": "local-pii-masker",
@@ -762,23 +784,20 @@
       "appId": "3d-rain-viewer",
       "category": "visual-experimental",
       "public": true,
-      "verifiedAt": "2026-11-10",
+      "verifiedAt": "2026-11-11",
       "githubUrl": "https://github.com/Bamboosato/3d-rain-viewer",
       "appUrl": "https://3d-rain-viewer.bamboosato.com/",
-      "updatedAt": "2026-11-09",
-      "commit": "dda9efc2de216ca9f93efcee7418034db6c10ac4",
-      "commitUrl": "https://github.com/Bamboosato/3d-rain-viewer/commit/dda9efc2de216ca9f93efcee7418034db6c10ac4",
+      "updatedAt": "2026-11-11",
+      "commit": "1647467fbde201f19d27067adcc45933efb361c7",
+      "commitUrl": "https://github.com/Bamboosato/3d-rain-viewer/commit/1647467fbde201f19d27067adcc45933efb361c7",
       "readmeUrl": "https://github.com/Bamboosato/3d-rain-viewer/blob/544546f3da6f9da33a040f746bf81d2c3097872a/README.md",
       "proposalId": "3d-rain-viewer-a273745c67c7-544546f3da6f-search-sharing-domain",
       "repositoryId": 1447817634,
       "dateEvidence": {
-        "type": "meaningful app features; not maintenance or monitoring date",
-        "applicationUpdateDate": "2026-11-09",
-        "timezone": "Asia/Tokyo",
-        "commit": "dda9efc2de216ca9f93efcee7418034db6c10ac4",
-        "committedAt": "2026-11-09T09:14:06Z",
-        "url": "https://github.com/Bamboosato/3d-rain-viewer/commit/dda9efc2de216ca9f93efcee7418034db6c10ac4",
-        "note": "The supplied feature range is reflected as 2026-11-09. Subsequent maintenance is recorded separately and does not advance updatedAt."
+        "type": "meaningful production feature update",
+        "applicationUpdateDate": "2026-11-11",
+        "source": "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/App.tsx",
+        "note": "Production release date; not content-edit or monitoring date. Deployment/interaction scope is recorded separately in docs/app-usage-evidence.json."
       },
       "implementationSources": [
         "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/README.md",
@@ -868,6 +887,33 @@
           "https://github.com/Bamboosato/3d-rain-viewer/blob/dda9efc2de216ca9f93efcee7418034db6c10ac4/src/lib/jmaNowcastClient.ts"
         ],
         "evidenceRecord": "docs/app-usage-evidence.json: 3d-rain-viewer.favoritesTransferUpdate"
+      },
+      "favoritesCategoriesChartUpdate": {
+        "proposalId": "3d-rain-viewer-260c1fef7b20-1647467fbde2-favorites-categories-jma-chart",
+        "fromCommit": "260c1fef7b201f5c130e216e611348d339fb0ae1",
+        "commit": "1647467fbde201f19d27067adcc45933efb361c7",
+        "checkedAt": "2026-11-11",
+        "siteBaseCommit": "f526175b360400e9b3d610c73b0d637b35490ec9",
+        "applicationUpdateDate": "2026-11-11",
+        "sourceUrls": [
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/lib/favoriteCategories.ts",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/components/PresetNav.tsx",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/components/Inspector.tsx",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/components/MapViewer.tsx",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/lib/favoritesStorage.ts",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/lib/pointTimeseriesClient.ts",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/components/TimelineBar.tsx",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/App.tsx"
+        ]
+      },
+      "previousDateEvidence": {
+        "type": "meaningful app features; not maintenance or monitoring date",
+        "applicationUpdateDate": "2026-11-09",
+        "timezone": "Asia/Tokyo",
+        "commit": "dda9efc2de216ca9f93efcee7418034db6c10ac4",
+        "committedAt": "2026-11-09T09:14:06Z",
+        "url": "https://github.com/Bamboosato/3d-rain-viewer/commit/dda9efc2de216ca9f93efcee7418034db6c10ac4",
+        "note": "The supplied feature range is reflected as 2026-11-09. Subsequent maintenance is recorded separately and does not advance updatedAt."
       }
     }
   ]

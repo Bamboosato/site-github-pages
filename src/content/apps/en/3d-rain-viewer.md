@@ -5,7 +5,7 @@ title: "3D RainScape"
 slug: 3d-rain-viewer
 category: visual-experimental
 description: "A map viewer that overlays JMA and JAXA rain data on 3D mountain terrain to explore Japan's 100 famous mountains and favorite locations."
-updatedAt: "2026-11-09"
+updatedAt: "2026-11-11"
 status: active
 tags: ["React", "TypeScript", "Vite", "MapLibre GL JS", "WebGL2"]
 featured: false
@@ -13,7 +13,7 @@ appUrl: https://3d-rain-viewer.bamboosato.com/
 githubUrl: https://github.com/Bamboosato/3d-rain-viewer
 access: open
 usageFeatures: ["no-registration"]
-usageNote: "Use the app in your browser without registration. Favorites are stored per browser and site origin; they are not automatically transferred from the old URL to the new one. Loading maps, terrain, and weather data requires requests to external services. The browser may request location permission at startup, when using the current-location button, and when opening the search tab. Place and facility searches send the search term to GSI and OpenStreetMap services. Favorite-name suggestions send the selected coordinates to OpenStreetMap services. Shared URLs include location coordinates and, when specified, a place name. Favorite-transfer links contain the list's names, coordinates, and viewpoints. Anyone with the link can import the list, so choose recipients carefully. Transfers are manual, with no automatic synchronization. Distances use the current location when available, otherwise a reference such as the map center."
+usageNote: "Use the app in your browser without registration. Favorites are stored per browser and site origin; they are not automatically transferred from the old URL to the new one. Loading maps, terrain, and weather data requires requests to external services. The browser may request location permission at startup, when using the current-location button, and when opening the search or favorites tab. Place and facility searches send the search term to GSI and OpenStreetMap services. Favorite-name suggestions send the selected coordinates to OpenStreetMap services. Shared URLs include location coordinates and, when specified, a place name. Favorite-transfer links contain the list's names, coordinates, and viewpoints. Anyone with the link can import the list, so choose recipients carefully. Transfers are manual, with no automatic synchronization. Distances use the current location when available, otherwise a reference such as the map center."
 ---
 
 ## Overview
@@ -24,22 +24,24 @@ A map viewer that overlays Japan Meteorological Agency rain data and JAXA satell
 
 - A timeline combining the previous two hours of JMA observations with available forecast data
 - JAXA GSMaP satellite precipitation for a 24-hour window ending at the latest time in its catalog
-- Timeline playback, frame stepping, time selection, and 1x or 2x playback speed
+- Timeline playback, frame stepping, time selection, and 1x or 2x playback speed; autoplay stops at the final frame
+- Open a timeline-linked chart of JMA rainfall intensity at the map center and select a time from the chart
 - Three tabs for mountain presets, favorites, and place or facility search, with regional and prefectural filters for Japan's 100 famous mountains
 - Keyword search for places and facilities, plus nearby name suggestions when saving favorites
 - Share the current 3D viewpoint or a named location, and load a shared URL
 - Favorites that save a location's name, coordinates, zoom, pitch, and bearing
+- Organize and filter favorites by Nature, Tourism, Lifestyle, or Other, with category-specific map markers, distance or registration ordering, and pinned locations
 - Back up and restore favorites as JSON, or transfer them manually to another device with a QR code or URL. Preview merging or replacing the list, and undo the most recent import
 - Search results ordered by name match, category, and distance from the reference location, with distances shown in the list
 - Elevation and rainfall inspection for map locations, plus a current-location control
 - Terrain exaggeration, rain opacity, and standard map, shaded-relief, or aerial-imagery backgrounds
-- A vertical rainfall-intensity scale for mobile screens, plus notices for missing rain data and saved catalogs
+- A vertical rainfall-intensity scale for mobile screens
 
 ## Design and usage
 
 The app is designed for visually comparing terrain and rainfall patterns. Map rendering uses WebGL2. The interface is mainly in Japanese.
 
-Rainfall intensity derived from JMA tiles is a representative value for each color band, not a precise observation at the selected point. Check the displayed time and data coverage. The app does not guarantee weather accuracy or climbing safety.
+Rainfall intensity derived from JMA tiles, including chart values, is a representative value for each color band, not a precise observation at the selected point. Check the displayed time and data coverage. The app does not guarantee weather accuracy or climbing safety.
 
 Rain data for a shared time depends on the available data window; old links may not reproduce the same time.
 
