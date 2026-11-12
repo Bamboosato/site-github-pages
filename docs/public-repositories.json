@@ -915,6 +915,45 @@
         "url": "https://github.com/Bamboosato/3d-rain-viewer/commit/dda9efc2de216ca9f93efcee7418034db6c10ac4",
         "note": "The supplied feature range is reflected as 2026-11-09. Subsequent maintenance is recorded separately and does not advance updatedAt."
       }
+    },
+    {
+      "name": "mogura_panic",
+      "appId": "mogura-panic",
+      "category": "visual-experimental",
+      "public": true,
+      "verifiedAt": "2026-11-12",
+      "githubUrl": "https://github.com/Bamboosato/mogura_panic",
+      "appUrl": "https://mogura-panic.vercel.app/",
+      "homepageHttpStatus": 200,
+      "updatedAt": "2026-11-12",
+      "commit": "617201aad98e2cb41377cb2e3f3a355d3b6ad729",
+      "commitUrl": "https://github.com/Bamboosato/mogura_panic/commit/617201aad98e2cb41377cb2e3f3a355d3b6ad729",
+      "readmeUrl": "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/README.md",
+      "proposalId": "mogura-panic-initial-617201aad98e-public-listing",
+      "repositoryId": 1454914037,
+      "dateEvidence": {
+        "type": "meaningful user-facing application update",
+        "applicationUpdateDate": "2026-11-12",
+        "pullRequestUrl": "https://github.com/Bamboosato/mogura_panic/pull/1",
+        "mergedAt": "2026-11-12T07:35:22Z",
+        "mergeCommitSha": "617201aad98e2cb41377cb2e3f3a355d3b6ad729",
+        "note": "PR #1 iOS safe-area, touch-target and brighter-icon changes. Initial listing includes this release once. Not the monitoring date; independent createdAt is not established."
+      },
+      "implementationSources": [
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/README.md",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/App.tsx",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/hooks/useGameEngine.ts",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/utils/brainRules.ts",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/utils/ranking.ts",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/components/Mole.tsx",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/components/FooterControls.tsx",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/components/ResultScreen.tsx",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/utils/sound.ts",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/vite.config.ts",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/index.html",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/index.css"
+      ],
+      "note": "Public visibility/default main rechecked through GitHub tools in Cloud. Monitoring task checked all 20 owner public repositories through the empty terminal page, excluding the site itself (19 apps). Only Mogura is added; previous entries and historical verifiedAt are retained. HTTP status and production deployment evidence are inherited; Cloud did not run the application."
     }
   ]
 }
