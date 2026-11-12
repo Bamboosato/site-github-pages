@@ -2706,6 +2706,152 @@
         ],
         "method": "Pinned-source analysis supplied by monitoring task; selected fixed-commit PresetNav, MapViewer, pointTimeseriesClient, TimelineBar and App paths re-read in Cloud. Earlier source and delivery records above remain historical at their own commits/dates."
       }
+    },
+    {
+      "name": "mogura_panic",
+      "appId": "mogura-panic",
+      "commit": "617201aad98e2cb41377cb2e3f3a355d3b6ad729",
+      "checkedAt": "2026-11-12",
+      "checkedAtTimezone": "Etc/UTC",
+      "proposalId": "mogura-panic-initial-617201aad98e-public-listing",
+      "siteBaseCommit": "e77cf91b224f73c1f96015653b33dbff47042f87",
+      "sourcePaths": [
+        "README.md",
+        "src/App.tsx",
+        "src/hooks/useGameEngine.ts",
+        "src/utils/brainRules.ts",
+        "src/utils/ranking.ts",
+        "src/components/Mole.tsx",
+        "src/components/FooterControls.tsx",
+        "src/components/ResultScreen.tsx",
+        "src/utils/sound.ts",
+        "vite.config.ts",
+        "index.html",
+        "src/index.css"
+      ],
+      "sourceUrls": [
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/README.md",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/App.tsx",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/hooks/useGameEngine.ts",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/utils/brainRules.ts",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/utils/ranking.ts",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/components/Mole.tsx",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/components/FooterControls.tsx",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/components/ResultScreen.tsx",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/utils/sound.ts",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/vite.config.ts",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/index.html",
+        "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/index.css"
+      ],
+      "sourceBlobs": [
+        {
+          "path": "README.md",
+          "blobSha": "f2274028bd3e8edfe963ec6d49e5123483479d00"
+        },
+        {
+          "path": "src/App.tsx",
+          "blobSha": "5cd1134645c8101099250195045955b6fb372d92"
+        },
+        {
+          "path": "src/hooks/useGameEngine.ts",
+          "blobSha": "94473d4dbdb033fc8bb286383fe88482bf707cb1"
+        },
+        {
+          "path": "src/utils/brainRules.ts",
+          "blobSha": "6333b6fcf4edefcc4903a66dc166532c5c376d6b"
+        },
+        {
+          "path": "src/utils/ranking.ts",
+          "blobSha": "fb99efb690eb8958fa4a7e18eaceb7d09eebd354"
+        },
+        {
+          "path": "src/components/Mole.tsx",
+          "blobSha": "dad0d823b7631fea8a5b8c70388dc2f85f643844"
+        },
+        {
+          "path": "src/components/FooterControls.tsx",
+          "blobSha": "5131b3ef0830e4c1f97bfec59082ba937c023949"
+        },
+        {
+          "path": "src/components/ResultScreen.tsx",
+          "blobSha": "be35d5145c7e4837a0f6aca17716e26e274ee380"
+        },
+        {
+          "path": "src/utils/sound.ts",
+          "blobSha": "9897cee1260888fe78d2b54e61c7ef4dc8ecb53e"
+        },
+        {
+          "path": "vite.config.ts",
+          "blobSha": "327e5800650df8519d9042097ade2ec7d0d20bee"
+        },
+        {
+          "path": "index.html",
+          "blobSha": "3491a332765a823d89222fbe240c9aef03b2c707"
+        },
+        {
+          "path": "src/index.css",
+          "blobSha": "66f3f67bb3ed00d73159ca7a4bf894daea0f6d9a"
+        }
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration"
+      ],
+      "method": "Pinned-source audit supplied by the monitoring task, with all listed source paths re-read through GitHub tools in Cloud. No application build, gameplay, network capture or offline restart test in this Cloud.",
+      "confirmed": [
+        "Registration-free browser play, local game state and 3x3 field are implemented in App/useGameEngine. Mole uses pointer-down events for mouse/touch input; actual device behavior is untested.",
+        "Engine implements 45-second games, slow/normal/fast speed presets, classic and number/color-rule modes, gold/helmet/bomb moles, and a 1.5-second grace pause. brainRules defines even/odd, >=5/<=4 and blue/yellow/green/pink rules (eight total).",
+        "ResultScreen displays score/hits/misses/max combo and top 10 records. ranking.ts writes only the top ten to localStorage key mogura_panic_top10_v1; no cross-device synchronization is implemented.",
+        "Sound effects are generated with Web Audio API, with an enabled toggle. Japanese UI, retro visuals and diorama CSS animations are present.",
+        "Vite uses React, Tailwind CSS and VitePWA, with Japanese standalone manifest/home-screen icons. index.html requests Google Fonts; local processing does not imply zero network traffic."
+      ],
+      "notVerified": [
+        "Application gameplay, input reliability, localStorage behavior at runtime, audio playback, PWA installation/update, real iOS safe-area acceptance and offline restart were not exercised.",
+        "No physical-device, cross-browser, accessibility, performance or network-capture testing of the application. Initial loading and Google Fonts require a connection.",
+        "Production metadata associates the fixed SHA with READY and the canonical alias; static delivery observations do not prove interactive success or exhaustive deployed whole-tree byte equivalence.",
+        "Unmerged portfolio production rendering remains unverified."
+      ],
+      "excludedClaims": [
+        "No offline-after-setup feature: PWA precache alone is insufficient to establish offline restart completeness.",
+        "Brain-training is the application's mode name; no cognitive-function improvement or clinical efficacy claim.",
+        "No cloud ranking, cross-device synchronization or universal device/browser guarantee."
+      ],
+      "dateEvidence": {
+        "type": "meaningful user-facing application update",
+        "applicationUpdateDate": "2026-11-12",
+        "pullRequestUrl": "https://github.com/Bamboosato/mogura_panic/pull/1",
+        "mergedAt": "2026-11-12T07:35:22Z",
+        "mergeCommitSha": "617201aad98e2cb41377cb2e3f3a355d3b6ad729",
+        "note": "PR #1 iOS safe-area, touch-target and brighter-icon changes. Initial listing includes this release once. Not the monitoring date; independent createdAt is not established."
+      },
+      "productionDeliveryEvidence": {
+        "source": "inherited monitoring-task handoff; not a fresh Cloud measurement",
+        "checkedAt": "2026-11-12",
+        "url": "https://mogura-panic.vercel.app/",
+        "httpStatus": 200,
+        "deployment": {
+          "inspectorUrl": "https://vercel.com/bamboosato/mogura-panic/6Ln854fUvMbGx9RsbtinnTCRASXr",
+          "sha": "617201aad98e2cb41377cb2e3f3a355d3b6ad729",
+          "state": "READY",
+          "target": "production",
+          "canonicalAlias": "mogura-panic.vercel.app",
+          "exactShaAndCanonicalAliasVerifiedByMonitor": true
+        },
+        "staticChecks": {
+          "javascriptPath": "/assets/index-BBhkAxVM.js",
+          "markers": [
+            "number/color rules",
+            "speed presets",
+            "local top 10 persistence"
+          ],
+          "serviceWorkerPath": "/sw.js",
+          "precacheObserved": true
+        },
+        "interactiveVerified": false,
+        "offlineRestartVerified": false
+      },
+      "verificationReport": "docs/mogura-panic-verification.md"
     }
   ]
 }
