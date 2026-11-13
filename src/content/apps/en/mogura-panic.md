@@ -5,7 +5,7 @@ title: "Mogura Panic"
 slug: mogura-panic
 category: visual-experimental
 description: "A retro whack-a-mole game with classic arcade play and changing number-and-color target rules."
-updatedAt: "2026-11-12"
+updatedAt: "2026-11-13"
 status: active
 tags: ["React", "TypeScript", "Vite", "PWA"]
 featured: false
@@ -28,6 +28,7 @@ Tap or click moles appearing in a 3×3 field to aim for a high score. Choose cla
 - A brief pause to read each rule
 - Score, hits, misses, maximum combo, and browser-local top 10 history
 - Retro display, diorama-style animation, and optional sound effects
+- A stacked layout on phones, with the playfield and score/control panels side by side on wider screens
 - Home-screen installation in supported browsers
 
 ## Highlights
