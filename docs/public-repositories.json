@@ -925,9 +925,9 @@
       "githubUrl": "https://github.com/Bamboosato/mogura_panic",
       "appUrl": "https://mogura-panic.vercel.app/",
       "homepageHttpStatus": 200,
-      "updatedAt": "2026-11-12",
-      "commit": "617201aad98e2cb41377cb2e3f3a355d3b6ad729",
-      "commitUrl": "https://github.com/Bamboosato/mogura_panic/commit/617201aad98e2cb41377cb2e3f3a355d3b6ad729",
+      "updatedAt": "2026-11-13",
+      "commit": "44a3037f0846c47d43c6a6cc825f14b2692d52ce",
+      "commitUrl": "https://github.com/Bamboosato/mogura_panic/commit/44a3037f0846c47d43c6a6cc825f14b2692d52ce",
       "readmeUrl": "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/README.md",
       "proposalId": "mogura-panic-initial-617201aad98e-public-listing",
       "repositoryId": 1454914037,
@@ -953,7 +953,42 @@
         "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/index.html",
         "https://github.com/Bamboosato/mogura_panic/blob/617201aad98e2cb41377cb2e3f3a355d3b6ad729/src/index.css"
       ],
-      "note": "Public visibility/default main rechecked through GitHub tools in Cloud. Monitoring task checked all 20 owner public repositories through the empty terminal page, excluding the site itself (19 apps). Only Mogura is added; previous entries and historical verifiedAt are retained. HTTP status and production deployment evidence are inherited; Cloud did not run the application."
+      "note": "Public visibility/default main rechecked through GitHub tools in Cloud. Monitoring task checked all 20 owner public repositories through the empty terminal page, excluding the site itself (19 apps). Only Mogura is added; previous entries and historical verifiedAt are retained. HTTP status and production deployment evidence are inherited; Cloud did not run the application.",
+      "desktopLayoutUpdate": {
+        "proposalId": "mogura-panic-617201aad98e-44a3037f0846-desktop-layout-guide",
+        "fromCommit": "617201aad98e2cb41377cb2e3f3a355d3b6ad729",
+        "commit": "44a3037f0846c47d43c6a6cc825f14b2692d52ce",
+        "checkedAt": "2026-11-13",
+        "siteBaseCommit": "bcdc872bfdb7be6cbca57ea404d1b6de12914b83",
+        "dateEvidence": {
+          "applicationUpdateDate": "2026-11-13",
+          "basis": "Merged user-facing layout and guide improvements; not monitoring date.",
+          "pullRequests": [
+            {
+              "url": "https://github.com/Bamboosato/mogura_panic/pull/2",
+              "mergedAt": "2026-11-13T04:52:40Z",
+              "mergeCommitSha": "13fe9e99a322aa7937336fdd7e823332738316d8"
+            },
+            {
+              "url": "https://github.com/Bamboosato/mogura_panic/pull/3",
+              "mergedAt": "2026-11-13T05:08:07Z",
+              "mergeCommitSha": "44a3037f0846c47d43c6a6cc825f14b2692d52ce"
+            }
+          ]
+        },
+        "sourceUrls": [
+          "https://github.com/Bamboosato/mogura_panic/blob/44a3037f0846c47d43c6a6cc825f14b2692d52ce/README.md",
+          "https://github.com/Bamboosato/mogura_panic/blob/44a3037f0846c47d43c6a6cc825f14b2692d52ce/src/index.css",
+          "https://github.com/Bamboosato/mogura_panic/blob/44a3037f0846c47d43c6a6cc825f14b2692d52ce/src/App.tsx",
+          "https://github.com/Bamboosato/mogura_panic/blob/44a3037f0846c47d43c6a6cc825f14b2692d52ce/src/components/ResultScreen.tsx",
+          "https://github.com/Bamboosato/mogura_panic/blob/44a3037f0846c47d43c6a6cc825f14b2692d52ce/src/components/HelpModal.tsx"
+        ],
+        "comparison": {
+          "url": "https://github.com/Bamboosato/mogura_panic/compare/617201aad98e2cb41377cb2e3f3a355d3b6ad729...44a3037f0846c47d43c6a6cc825f14b2692d52ce",
+          "commits": 4,
+          "files": 9
+        }
+      }
     }
   ]
 }

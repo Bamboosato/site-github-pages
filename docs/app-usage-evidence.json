@@ -2851,7 +2851,113 @@
         "interactiveVerified": false,
         "offlineRestartVerified": false
       },
-      "verificationReport": "docs/mogura-panic-verification.md"
+      "verificationReport": "docs/mogura-panic-verification.md",
+      "desktopLayoutUpdate": {
+        "proposalId": "mogura-panic-617201aad98e-44a3037f0846-desktop-layout-guide",
+        "fromCommit": "617201aad98e2cb41377cb2e3f3a355d3b6ad729",
+        "commit": "44a3037f0846c47d43c6a6cc825f14b2692d52ce",
+        "checkedAt": "2026-11-13",
+        "siteBaseCommit": "bcdc872bfdb7be6cbca57ea404d1b6de12914b83",
+        "dateEvidence": {
+          "applicationUpdateDate": "2026-11-13",
+          "basis": "Merged user-facing layout and guide improvements; not monitoring date.",
+          "pullRequests": [
+            {
+              "url": "https://github.com/Bamboosato/mogura_panic/pull/2",
+              "mergedAt": "2026-11-13T04:52:40Z",
+              "mergeCommitSha": "13fe9e99a322aa7937336fdd7e823332738316d8"
+            },
+            {
+              "url": "https://github.com/Bamboosato/mogura_panic/pull/3",
+              "mergedAt": "2026-11-13T05:08:07Z",
+              "mergeCommitSha": "44a3037f0846c47d43c6a6cc825f14b2692d52ce"
+            }
+          ]
+        },
+        "sourcePaths": [
+          "README.md",
+          "src/index.css",
+          "src/App.tsx",
+          "src/components/ResultScreen.tsx",
+          "src/components/HelpModal.tsx"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/mogura_panic/blob/44a3037f0846c47d43c6a6cc825f14b2692d52ce/README.md",
+          "https://github.com/Bamboosato/mogura_panic/blob/44a3037f0846c47d43c6a6cc825f14b2692d52ce/src/index.css",
+          "https://github.com/Bamboosato/mogura_panic/blob/44a3037f0846c47d43c6a6cc825f14b2692d52ce/src/App.tsx",
+          "https://github.com/Bamboosato/mogura_panic/blob/44a3037f0846c47d43c6a6cc825f14b2692d52ce/src/components/ResultScreen.tsx",
+          "https://github.com/Bamboosato/mogura_panic/blob/44a3037f0846c47d43c6a6cc825f14b2692d52ce/src/components/HelpModal.tsx"
+        ],
+        "sourceBlobs": [
+          {
+            "path": "README.md",
+            "blobSha": "f2274028bd3e8edfe963ec6d49e5123483479d00"
+          },
+          {
+            "path": "src/index.css",
+            "blobSha": "b258b3cdc3077a6d89e8ad572a357d016b6b6f05"
+          },
+          {
+            "path": "src/App.tsx",
+            "blobSha": "d1bd21d5c6eb86184b17752bd03336da7155dad6"
+          },
+          {
+            "path": "src/components/ResultScreen.tsx",
+            "blobSha": "372ccb172e7e78f68b688e5db9362786123f3995"
+          },
+          {
+            "path": "src/components/HelpModal.tsx",
+            "blobSha": "c589d24e298016d8307b1c63395c4cc833dde4a4"
+          }
+        ],
+        "comparison": {
+          "url": "https://github.com/Bamboosato/mogura_panic/compare/617201aad98e2cb41377cb2e3f3a355d3b6ad729...44a3037f0846c47d43c6a6cc825f14b2692d52ce",
+          "commits": 4,
+          "files": 9
+        },
+        "method": "Re-read all five fixed-commit files through GitHub tools and all nine cumulative file patches through the public GitHub compare API. Initial source/usage/delivery records above remain historical at their own commits and dates.",
+        "confirmed": [
+          "src/index.css uses min-width:900px for playfield on the left and score/control panels on the right; narrower screens keep a vertical layout. A min-width:900px/max-height:700px branch adjusts spacing/board size and hides decorative elements. No universal no-clipping guarantee is inferred.",
+          "ResultScreen.tsx switches to two columns at 900px and aligns history rows with grid columns, right-aligned numeric scores and no-wrap timestamps. HelpModal.tsx adjusts text sizes, spacing, parenthetical wrapping and wide-screen guide layout.",
+          "The complete 4-commit/9-file diff changes presentation components and CSS only. README, game engine, ranking persistence, authentication and PWA configuration are unchanged. Existing local processing, registration-free access, Japanese UI, font-network and no-sync caveats are retained."
+        ],
+        "productionDeliveryEvidence": {
+          "source": "inherited monitoring-task static/deployment audit, not freshly fetched or exercised in Cloud",
+          "checkedAt": "2026-11-13",
+          "url": "https://mogura-panic.vercel.app/",
+          "deployment": {
+            "id": "dpl_EjDHyRHD8F7TpfHWXfZ54Gqa3DjT",
+            "inspectorUrl": "https://vercel.com/bamboosato/mogura-panic/EjDHyRHD8F7TpfHWXfZ54Gqa3DjT",
+            "sha": "44a3037f0846c47d43c6a6cc825f14b2692d52ce",
+            "state": "READY",
+            "target": "production",
+            "canonicalAlias": "mogura-panic.vercel.app",
+            "exactShaAndCanonicalAliasVerifiedByMonitor": true
+          },
+          "staticChecks": {
+            "htmlChecked": true,
+            "javascriptPath": "/assets/index-S9YAaBo8.js",
+            "cssPath": "/assets/index-Dq_Qjtl5.css",
+            "markers": [
+              "900px width boundary",
+              "700px height adjustment",
+              "two-column results",
+              "parenthetical no-wrap"
+            ]
+          },
+          "interactiveVerified": false,
+          "deviceAppearanceVerified": false
+        },
+        "notVerified": [
+          "Game interaction, device-specific app appearance and low-height clipping behavior; no application browser tests or fresh public-app HTTP retrieval in this Cloud.",
+          "Real mouse/touch, audio, ranking persistence at runtime, physical devices, PWA installation/update and offline restart; source/static delivery observations are not interactive validation.",
+          "Production rendering of this unmerged portfolio update; local portfolio rendering is verified separately."
+        ],
+        "excludedClaims": [
+          "No gameplay/storage/access changes, clinical or cognitive-improvement claims, universal device-fit guarantee or offline-after-setup feature."
+        ],
+        "verificationReport": "docs/mogura-panic-desktop-layout-verification.md"
+      }
     }
   ]
 }
