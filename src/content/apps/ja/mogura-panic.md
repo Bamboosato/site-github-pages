@@ -5,7 +5,7 @@ title: "元祖モグラパニック！"
 slug: mogura-panic
 category: visual-experimental
 description: "レトロなモグラ叩きと、数字・色のお題に合わせて狙うルール切替モードを楽しめるゲーム。"
-updatedAt: "2026-11-12"
+updatedAt: "2026-11-13"
 status: active
 tags: ["React", "TypeScript", "Vite", "PWA"]
 featured: false
@@ -28,6 +28,7 @@ usageNote: "登録せずブラウザーで遊べます。ゲーム処理は端�
 - お題の変更時に内容を確認できる短い猶予ポーズ
 - 得点・ヒット・ミス・最大コンボと、ブラウザー内のTop 10スコア履歴
 - レトロな表示、ジオラマ風アニメーション、切り替え可能な効果音
+- スマートフォンでは縦並び、幅の広い画面では盤面と得点・操作を左右に配置する画面レイアウト
 - 対応ブラウザーでのホーム画面への追加
 
 ## 特徴
