@@ -461,9 +461,9 @@
       "appUrl": "https://markdown-knowledge-board.vercel.app/",
       "homepageHttpStatus": 200,
       "createdAt": "2026-07-09",
-      "updatedAt": "2026-11-05",
-      "commit": "320a765f9356cfe18cba9d979deac7c59de7d1d9",
-      "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/320a765f9356cfe18cba9d979deac7c59de7d1d9",
+      "updatedAt": "2026-11-16",
+      "commit": "5fd916285d81d8aed09455ccaf96c000ed6b59e0",
+      "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/5fd916285d81d8aed09455ccaf96c000ed6b59e0",
       "readmeUrl": "https://github.com/Bamboosato/markdown-knowledge-board/blob/main/README.md",
       "implementationSources": [
         "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/src/App.tsx#L1830-L1975",
@@ -548,6 +548,20 @@
         },
         "usageEvidencePath": "docs/app-usage-evidence.json#repositories[markdown-knowledge-board].printPdfPhase1Evidence",
         "scope": "In-app print/PDF pagination, tall-image slicing, warned Mermaid source fallback and preparation failure/timeout handling. Public static delivery evidence and limits are recorded in the usage evidence; no interactive success or full deployment-SHA equivalence claimed."
+      },
+      "printLocalMcpEvidence": {
+        "proposalId": "markdown-knowledge-board-88adadfef26f-5fd916285d81-print-local-mcp",
+        "checkedAt": "2026-11-16",
+        "baseCommit": "88adadfef26f64b917807fd67228b6ecd8c9cb6f",
+        "commit": "5fd916285d81d8aed09455ccaf96c000ed6b59e0",
+        "compareUrl": "https://github.com/Bamboosato/markdown-knowledge-board/compare/88adadfef26f64b917807fd67228b6ecd8c9cb6f...5fd916285d81d8aed09455ccaf96c000ed6b59e0",
+        "comparison": {
+          "commits": 10,
+          "changedFiles": 61
+        },
+        "applicationUpdateDate": "2026-11-16",
+        "verificationRecord": "docs/markdown-knowledge-board-print-local-mcp-verification.md",
+        "usageEvidencePath": "docs/app-usage-evidence.json#repositories[markdown-knowledge-board].printLocalMcpEvidence"
       }
     },
     {

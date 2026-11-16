@@ -1340,6 +1340,107 @@
           "App unit/E2E tests, actual network/offline behavior and cloud operations were not run.",
           "Public asset hashes are inherited parent measurements; full deployment-to-Git-SHA equivalence is unproven."
         ]
+      },
+      "printLocalMcpEvidence": {
+        "proposalId": "markdown-knowledge-board-88adadfef26f-5fd916285d81-print-local-mcp",
+        "checkedAt": "2026-11-16",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "a6bc5b793a57da49fcaa91a69a0159fc46d4ce4f",
+        "baseCommit": "88adadfef26f64b917807fd67228b6ecd8c9cb6f",
+        "commit": "5fd916285d81d8aed09455ccaf96c000ed6b59e0",
+        "compareUrl": "https://github.com/Bamboosato/markdown-knowledge-board/compare/88adadfef26f64b917807fd67228b6ecd8c9cb6f...5fd916285d81d8aed09455ccaf96c000ed6b59e0",
+        "comparison": {
+          "commits": 10,
+          "changedFiles": 61
+        },
+        "applicationUpdateDate": "2026-11-16",
+        "sourcePaths": [
+          "README.md",
+          "tools/local-mcp/README.md",
+          "tools/local-mcp/windows/README.md",
+          "src/components/LocalMcpPanel.tsx",
+          "src/lib/localMcpConnection.ts",
+          "src/lib/localMcpNote.ts",
+          "src/lib/db.ts",
+          "src/components/StyledExportView.tsx",
+          "src/components/StyledDocument.tsx",
+          "src/lib/styledExport/printLayout.ts",
+          "src/lib/styledExport/markdown.ts",
+          "src/lib/styledExport/document.css",
+          "src/components/MermaidPrintDialog.tsx",
+          "src/lib/mermaidPrint.ts",
+          "src/components/MermaidBlock.tsx"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/README.md",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/tools/local-mcp/README.md",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/tools/local-mcp/windows/README.md",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/src/components/LocalMcpPanel.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/src/lib/localMcpConnection.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/src/lib/localMcpNote.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/src/lib/db.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/src/components/StyledExportView.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/src/components/StyledDocument.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/src/lib/styledExport/printLayout.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/src/lib/styledExport/markdown.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/src/lib/styledExport/document.css",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/src/components/MermaidPrintDialog.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/src/lib/mermaidPrint.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/src/components/MermaidBlock.tsx"
+        ],
+        "method": "Pinned public source and README review plus independent exact-SHA CI status checks. Production deployment/alias/asset observations below are inherited from the coordinating audit, not remeasured here. Local portfolio display checks are recorded separately.",
+        "confirmed": [
+          "Styled output adds A4/Letter, portrait/landscape, cover and H2/H3 table-of-contents options. The TOC contains no page numbers; browser print settings can override the requested paper size and orientation.",
+          "Mermaid print choice applies to in-app printing. Valid diagrams fit within printable geometry while retaining their aspect ratio, with small-text warnings. Missing/invalid geometry and render failures still allow source fallback. The choice is not passed into downloaded HTML.",
+          "Long code/URLs wrap, tables and large blocks can paginate, and tall images are split for printing as needed. Actual PDF saving uses the browser/OS print dialog; preview readability and settings must be checked.",
+          "Local MCP requires PC setup and an explicit app connection. It creates new Markdown notes in the connected browser profile/origin's IndexedDB; it does not list/edit existing notes or automatically sync PCs. Identical request retries can reuse a note; conflicting content is rejected without overwrite.",
+          "Windows setup instructions require Windows PowerShell 5.1, Node.js 24+, npm, Codex and an installed Chrome MKB PWA. The setup kit and its isolated Windows CI test are not proof of second-PC acceptance.",
+          "Existing import-selection, bounded-YAML, optional Drive/cloud, and initial online preparation/offline conditions are preserved."
+        ],
+        "ci": [
+          {
+            "url": "https://github.com/Bamboosato/markdown-knowledge-board/actions/runs/43838012365",
+            "headSha": "5fd916285d81d8aed09455ccaf96c000ed6b59e0",
+            "conclusion": "success",
+            "jobs": [
+              "Verify",
+              "Dependency audit",
+              "Browser smoke",
+              "PWA"
+            ]
+          },
+          {
+            "url": "https://github.com/Bamboosato/markdown-knowledge-board/actions/runs/43838012483",
+            "headSha": "5fd916285d81d8aed09455ccaf96c000ed6b59e0",
+            "conclusion": "success",
+            "jobs": [
+              "Windows setup kit"
+            ]
+          }
+        ],
+        "productionEvidence": {
+          "source": "coordinating audit handoff, 2026-11-16",
+          "deploymentId": "dpl_F9pewbykx1KNfB8osv6hh8YFiupQ",
+          "url": "https://vercel.com/bamboosato/markdown-knowledge-board/F9pewbykx1KNfB8osv6hh8YFiupQ",
+          "commit": "5fd916285d81d8aed09455ccaf96c000ed6b59e0",
+          "exactSha": true,
+          "state": "READY",
+          "target": "production",
+          "readyAt": "2026-11-16T09:15:54Z",
+          "aliases": [
+            "https://mkb.bamboosato.com/",
+            "https://markdown-knowledge-board.vercel.app/"
+          ],
+          "staticDelivery": "Both alias HTML documents reference index-Bj4BYecC.js. The main bundle contains print/Mermaid/Local MCP markers; LocalMcpPanel-B5Ar410Q.js returned HTTP 200 with connection-setup UI. These are inherited static observations, not interaction tests.",
+          "interactionTested": false
+        },
+        "verificationRecord": "docs/markdown-knowledge-board-print-local-mcp-verification.md",
+        "notVerified": [
+          "No physical print preview/PDF readability, pagination or browser/OS override test.",
+          "No PC setup, native Codex connection/pairing/new-note save, existing PWA acceptance or second-PC test in this task.",
+          "No new offline, actual cloud-operation or cross-browser/device test. Upstream README test reports and CI success do not establish those outcomes here.",
+          "The unmerged portfolio change has not been published."
+        ]
       }
     },
     {
