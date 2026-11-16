@@ -6,7 +6,7 @@ slug: markdown-knowledge-board
 category: utilities
 description: "Markdownのメモを整理し、検索・編集・プレビュー・出力まで行うノートアプリ。"
 createdAt: "2026-07-09"
-updatedAt: "2026-11-05"
+updatedAt: "2026-11-16"
 status: active
 tags: ["React","TypeScript","IndexedDB","Markdown"]
 featured: true
@@ -46,7 +46,11 @@ YAMLフロントマターとMetadataの処理に、展開後の要素数10,000�
 
 ## 印刷とPDF保存
 
-アプリ内の印刷／PDF出力では、長いコードやURLを折り返し、表や大きなブロックのページ分割を調整します。縦長画像は必要に応じて印刷用に分割し、ページに収まりにくいMermaid図は警告付きでソース表示に切り替えます。PDF保存にはブラウザー／OSの印刷画面を使い、保存前にプレビューを確認してください。
+アプリ内の印刷／PDF出力では、長いコードやURLを折り返し、表や大きなブロックのページ分割を調整します。Styled出力では、A4／Letter、縦／横向き、表紙、目次を選べます。Mermaid図を含む場合は印刷時に図／ソースコードを選択でき、図は縦横比を保って印刷領域に収めます。縦長画像は必要に応じて印刷用に分割します。PDF保存にはブラウザー／OSの印刷画面を使い、保存前に文字の読みやすさとページ設定をプレビューで確認してください。
+
+## Local MCP連携
+
+任意のLocal MCP連携では、PC側のセットアップとアプリ内での接続操作を行うことで、Codexから新しいMarkdownノートを保存できます。既存ノートの一覧取得・編集や、PC間の自動同期は行いません。[Windows向けのセットアップキットと手順](https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/tools/local-mcp/windows/README.md)も用意されています。
 
 ## 特徴
 

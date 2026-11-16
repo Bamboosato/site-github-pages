@@ -6,7 +6,7 @@ slug: markdown-knowledge-board
 category: utilities
 description: "Organize Markdown notes with search, editing, previews, and export."
 createdAt: "2026-07-09"
-updatedAt: "2026-11-05"
+updatedAt: "2026-11-16"
 status: active
 tags: ["React","TypeScript","IndexedDB","Markdown"]
 featured: true
@@ -46,7 +46,11 @@ YAML frontmatter and Metadata processing are limited to 10,000 expanded values a
 
 ## Printing and saving PDFs
 
-In-app print/PDF output wraps long code and URLs and improves pagination for tables and large blocks. Tall images are split for printing when needed, and Mermaid diagrams that may not fit use a source-code fallback with a warning. Save PDFs through your browser or OS print dialog, and check the print preview before saving.
+In-app printing and PDF output wrap long code and URLs and adjust page breaks for tables and large blocks. Styled output offers A4 or Letter paper, portrait or landscape orientation, an optional cover page, and a table of contents. When a document contains Mermaid diagrams, you can choose diagrams or source code before printing; diagrams are fitted to the printable area while preserving their aspect ratio. Tall images are split for printing when needed. PDF saving uses the browser or operating system print dialog, so check text readability and page settings in the preview before saving.
+
+## Local MCP integration
+
+Optional Local MCP integration lets Codex save new Markdown notes after setup on your PC and an explicit connection in the app. It does not list or edit existing notes or automatically sync between PCs. [A Windows setup kit and instructions](https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/tools/local-mcp/windows/README.md) are also available.
 
 ## Design and usage
 
