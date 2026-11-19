@@ -3059,6 +3059,194 @@
         ],
         "verificationReport": "docs/mogura-panic-desktop-layout-verification.md"
       }
+    },
+    {
+      "name": "clip-tray",
+      "appId": "clip-tray",
+      "commit": "95dfc7229d2e3e9924ce304c5f17dfb336366943",
+      "checkedAt": "2026-11-20",
+      "checkedAtTimezone": "Asia/Tokyo",
+      "proposalId": "clip-tray-initial-95dfc7229d2e-public-listing",
+      "siteBaseCommit": "9b9d854c288bb275e2354014fcb348470967adb9",
+      "sourcePaths": [
+        "README.md",
+        "src/App.tsx",
+        "src/db/database.ts",
+        "src/hooks/useSettings.ts",
+        "src/hooks/useOcrQueue.ts",
+        "src/utils/ocrEngine.ts",
+        "src/utils/barcodeDecoder.ts",
+        "src/utils/imageProcessor.ts",
+        "src/utils/imageEditor.ts",
+        "src/components/EditorToolbar.tsx",
+        "src/components/ImageEditorOverlay.tsx",
+        "src/components/SettingsModal.tsx",
+        "src/components/PwaUpdatePrompt.tsx",
+        "vite.config.ts",
+        "package.json"
+      ],
+      "sourceUrls": [
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/README.md",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/App.tsx",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/db/database.ts",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/hooks/useSettings.ts",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/hooks/useOcrQueue.ts",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/utils/ocrEngine.ts",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/utils/barcodeDecoder.ts",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/utils/imageProcessor.ts",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/utils/imageEditor.ts",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/components/EditorToolbar.tsx",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/components/ImageEditorOverlay.tsx",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/components/SettingsModal.tsx",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/components/PwaUpdatePrompt.tsx",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/vite.config.ts",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/package.json"
+      ],
+      "sourceBlobs": [
+        {
+          "path": "README.md",
+          "blobSha": "b01aefe2039f2a9fb177e69fdd0c59104bb78dd7"
+        },
+        {
+          "path": "package.json",
+          "blobSha": "b08345960c1fbc5db785c13b706556d0371be3d5"
+        },
+        {
+          "path": "src/App.tsx",
+          "blobSha": "ae041d23683b7ff07bd06cb4862571430ceacf12"
+        },
+        {
+          "path": "src/components/EditorToolbar.tsx",
+          "blobSha": "27ec260845b65fa8937365ab2eae3ffbffe0e92b"
+        },
+        {
+          "path": "src/components/ImageEditorOverlay.tsx",
+          "blobSha": "2dcbf9e7cfef7cde88fd34126c4e4814e72ed9d7"
+        },
+        {
+          "path": "src/components/PwaUpdatePrompt.tsx",
+          "blobSha": "000bc8e4bd4bae2fa0f3b8e7234c3b6b33e16a41"
+        },
+        {
+          "path": "src/components/SettingsModal.tsx",
+          "blobSha": "a21a72e6bbf008615cf926029a2c627ccb6d235c"
+        },
+        {
+          "path": "src/db/database.ts",
+          "blobSha": "ceacc4847f9864adcac2fe72bb9b6710f29da262"
+        },
+        {
+          "path": "src/hooks/useOcrQueue.ts",
+          "blobSha": "6fd2510b6af6a19a1981015e548597bf98d482bd"
+        },
+        {
+          "path": "src/hooks/useSettings.ts",
+          "blobSha": "64e4851f6b47deea0daefa2e40167b292510beb7"
+        },
+        {
+          "path": "src/utils/barcodeDecoder.ts",
+          "blobSha": "b47ff9d0499e0429d1a61c1b4a272de269d92200"
+        },
+        {
+          "path": "src/utils/imageEditor.ts",
+          "blobSha": "36b4ef665830b731d7d765b19a3a49797809cf0b"
+        },
+        {
+          "path": "src/utils/imageProcessor.ts",
+          "blobSha": "3199894f80af264a57d198efd805ecbf70fb0b14"
+        },
+        {
+          "path": "src/utils/ocrEngine.ts",
+          "blobSha": "c67db8b0c84e1fb62fe4aa047565220e8a47a8ca"
+        },
+        {
+          "path": "vite.config.ts",
+          "blobSha": "e7a45b1f2dd0a1665a591c082b4cfbc205b3f795"
+        }
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "on-device-processing",
+        "no-registration"
+      ],
+      "method": "Full fixed-source review and local build. Public HTTP observations are inherited from parent Dot; production alias/SHA metadata and the source build were independently checked. No application interaction was performed.",
+      "confirmed": [
+        "App.tsx, database.ts and useSettings.ts implement registration-free browser-local image/group storage in IndexedDB/Dexie, grouping, notes/search, clipboard/file/drop import, pinning and configurable retention. No cloud synchronization is implemented.",
+        "Retention defaults to seven days; 24-hour, three-day, seven-day, 30-day and unlimited settings exist. Cleanup runs on app startup, on a 60-second interval while running, and after retention changes. Pinning excludes expiry and clear-unpinned deletion, but not individual or group deletion.",
+        "Tesseract.js runs Japanese/English OCR with automatic processing enabled by default and a manual option. ZXing WASM reads barcodes/QR codes. OCR worker/model resources require network loading and caching; local processing does not mean zero network traffic.",
+        "Image processing resizes/compresses imports. Canvas/editor code implements crop, rectangles, arrows, mosaic and text, preview, PNG clipboard copy, downloads, new-image save and overwrite. Overwrite is invoked directly; no confirmation dialog is claimed.",
+        "PWA installation/update code is present. Offline completeness, browser/device acceptance and OCR accuracy have not been tested; no offline-after-setup badge is assigned."
+      ],
+      "notVerified": [
+        "Public response hashes were not provided; no claim of byte-for-byte remote payload identity.",
+        "Application import/edit/copy, OCR/barcode results, expiry/pinning behavior, persistence, browser compatibility, native PWA and offline restart were not exercised.",
+        "Portfolio production appearance is pending review/merge/deploy; this change does not deploy."
+      ],
+      "excludedClaims": [
+        "No verified offline-after-setup feature badge yet",
+        "No guarantee of OCR accuracy or irreversible privacy redaction by mosaic",
+        "No assertion that pinning prevents every deletion",
+        "No guarantee of original image fidelity",
+        "No claim of tested cross-browser clipboard or native PWA behavior",
+        "No assertion of an overwrite confirmation dialog; the toolbar directly invokes overwrite."
+      ],
+      "dateEvidence": {
+        "featureCommit": "08704195b122f5038b67c7c976a9f476ed7bc71b",
+        "featureCommitDate": "2026-11-19T07:35:04Z",
+        "reason": "Initial implementation and implemented text annotation feature date, not monitoring date. Final source includes same-day toolbar wrapping correction."
+      },
+      "productionDeliveryEvidence": {
+        "checkedAt": "2026-11-20T06:15:09+09:00",
+        "parentObservation": {
+          "observer": "parent Dot independent ordinary public HTTP retrieval",
+          "observedDate": "2026-11-20",
+          "url": "https://clip-tray.bamboosato.com/",
+          "httpStatus": 200,
+          "htmlBytes": 1348,
+          "title": "ClipTray",
+          "javascriptPath": "/assets/index-B5XTJkov.js",
+          "javascriptHttpStatus": 200,
+          "javascriptBytes": 396742,
+          "markers": [
+            "tesseract/OCR",
+            "Barcode",
+            "IndexedDB",
+            "pinning",
+            "crop",
+            "annotations"
+          ],
+          "interactionTested": false,
+          "bodyHashProvided": false
+        },
+        "independentChecks": {
+          "deployment": {
+            "source": "Read-only production deployment metadata, corroborated by public GitHub commit status",
+            "sha": "95dfc7229d2e3e9924ce304c5f17dfb336366943",
+            "state": "READY",
+            "target": "production",
+            "canonicalAlias": "clip-tray.bamboosato.com",
+            "githubStatusUrl": "https://api.github.com/repos/Bamboosato/clip-tray/commits/95dfc7229d2e3e9924ce304c5f17dfb336366943/status"
+          },
+          "ordinaryPublicRetrieval": "Tunnel connection failed: 403 Forbidden; no application response obtained; not evidence of outage.",
+          "sourceBuild": {
+            "command": "npm ci --ignore-scripts; npm run build",
+            "sourceSha": "95dfc7229d2e3e9924ce304c5f17dfb336366943",
+            "node": "24.19.0",
+            "npm": "11.9.0",
+            "htmlBytes": 1348,
+            "htmlSha256": "969610c5ae658453c456bb800efa404c2e4f8fb169401bb00bc2e02f9d381c3e",
+            "javascriptPath": "/assets/index-B5XTJkov.js",
+            "javascriptBytes": 396742,
+            "javascriptSha256": "e9cbe075243142cacf75480f2c9f1c3ede5ed710e0e6fe4ea296f73a06da93f7",
+            "parentAssetNameAndSizesMatch": true
+          }
+        },
+        "conclusion": "Ready for the saved bounded initial listing: canonical public HTTP observation, exact-source production metadata and independently reproduced hashed asset name and byte sizes agree. This is static delivery/source correspondence, not interactive acceptance or a cryptographic comparison with the remotely served bytes.",
+        "notVerified": [
+          "Public response hashes were not provided; no claim of byte-for-byte remote payload identity.",
+          "Application import/edit/copy, OCR/barcode results, expiry/pinning behavior, persistence, browser compatibility, native PWA and offline restart were not exercised."
+        ]
+      }
     }
   ]
 }
