@@ -1003,6 +1003,47 @@
           "files": 9
         }
       }
+    },
+    {
+      "name": "clip-tray",
+      "appId": "clip-tray",
+      "category": "utilities",
+      "public": true,
+      "verifiedAt": "2026-11-20",
+      "githubUrl": "https://github.com/Bamboosato/clip-tray",
+      "appUrl": "https://clip-tray.bamboosato.com/",
+      "homepageHttpStatus": 200,
+      "homepageHttpStatusSource": "Parent Dot independent HTTP observation; Cloud retrieval remained blocked by its tunnel.",
+      "updatedAt": "2026-11-19",
+      "commit": "08704195b122f5038b67c7c976a9f476ed7bc71b",
+      "commitUrl": "https://github.com/Bamboosato/clip-tray/commit/08704195b122f5038b67c7c976a9f476ed7bc71b",
+      "readmeUrl": "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/README.md",
+      "proposalId": "clip-tray-initial-95dfc7229d2e-public-listing",
+      "repositoryId": 1463637760,
+      "sourceHead": "95dfc7229d2e3e9924ce304c5f17dfb336366943",
+      "dateEvidence": {
+        "featureCommit": "08704195b122f5038b67c7c976a9f476ed7bc71b",
+        "featureCommitDate": "2026-11-19T07:35:04Z",
+        "reason": "Initial implementation and implemented text annotation feature date, not monitoring date. Final source includes same-day toolbar wrapping correction."
+      },
+      "implementationSources": [
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/README.md",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/App.tsx",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/db/database.ts",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/hooks/useSettings.ts",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/hooks/useOcrQueue.ts",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/utils/ocrEngine.ts",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/utils/barcodeDecoder.ts",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/utils/imageProcessor.ts",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/utils/imageEditor.ts",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/components/EditorToolbar.tsx",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/components/ImageEditorOverlay.tsx",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/components/SettingsModal.tsx",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/src/components/PwaUpdatePrompt.tsx",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/vite.config.ts",
+        "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/package.json"
+      ],
+      "note": "All 21 owner public repositories were enumerated through the terminal empty page for the 2026-11-20 monitoring run; only the site itself is excluded (20 apps). Initial ClipTray source snapshot and eight-commit history were completely reviewed. Existing inventory entries and their dates are retained."
     }
   ]
 }
