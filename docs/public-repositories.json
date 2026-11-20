@@ -461,9 +461,9 @@
       "appUrl": "https://markdown-knowledge-board.vercel.app/",
       "homepageHttpStatus": 200,
       "createdAt": "2026-07-09",
-      "updatedAt": "2026-11-16",
-      "commit": "5fd916285d81d8aed09455ccaf96c000ed6b59e0",
-      "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/5fd916285d81d8aed09455ccaf96c000ed6b59e0",
+      "updatedAt": "2026-11-17",
+      "commit": "ea80747c3f94690e062d031e2dbcd6107b1814da",
+      "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/ea80747c3f94690e062d031e2dbcd6107b1814da",
       "readmeUrl": "https://github.com/Bamboosato/markdown-knowledge-board/blob/main/README.md",
       "implementationSources": [
         "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/src/App.tsx#L1830-L1975",
@@ -562,6 +562,48 @@
         "applicationUpdateDate": "2026-11-16",
         "verificationRecord": "docs/markdown-knowledge-board-print-local-mcp-verification.md",
         "usageEvidencePath": "docs/app-usage-evidence.json#repositories[markdown-knowledge-board].printLocalMcpEvidence"
+      },
+      "localMcpNoteMetadataEvidence": {
+        "proposalId": "markdown-knowledge-board-5fd916285d81-ea80747c3f94-local-mcp-note-metadata",
+        "checkedAt": "2026-11-20",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "4279ec447063f2c32196d284c5e5dfcaa6cf5210",
+        "commit": "ea80747c3f94690e062d031e2dbcd6107b1814da",
+        "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/ea80747c3f94690e062d031e2dbcd6107b1814da",
+        "sourcePaths": [
+          "README.md",
+          "src/components/LocalMcpPanel.tsx",
+          "src/lib/localMcpAccess.ts",
+          "src/lib/localMcpMetadata.ts",
+          "docs/local-mcp-note-access-spec.md",
+          "docs/local-mcp-custom-metadata-spec.md",
+          "tools/local-mcp/windows/README.md"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/ea80747c3f94690e062d031e2dbcd6107b1814da/README.md",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/ea80747c3f94690e062d031e2dbcd6107b1814da/src/components/LocalMcpPanel.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/ea80747c3f94690e062d031e2dbcd6107b1814da/src/lib/localMcpAccess.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/ea80747c3f94690e062d031e2dbcd6107b1814da/src/lib/localMcpMetadata.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/ea80747c3f94690e062d031e2dbcd6107b1814da/docs/local-mcp-note-access-spec.md",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/ea80747c3f94690e062d031e2dbcd6107b1814da/docs/local-mcp-custom-metadata-spec.md",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/ea80747c3f94690e062d031e2dbcd6107b1814da/tools/local-mcp/windows/README.md"
+        ],
+        "usageEvidencePath": "docs/app-usage-evidence.json#repositories[markdown-knowledge-board].localMcpNoteMetadataEvidence",
+        "previousInventory": {
+          "appUrl": "https://markdown-knowledge-board.vercel.app/",
+          "updatedAt": "2026-11-16",
+          "commit": "5fd916285d81d8aed09455ccaf96c000ed6b59e0",
+          "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/5fd916285d81d8aed09455ccaf96c000ed6b59e0"
+        },
+        "applicationUpdateDate": "2026-11-17",
+        "dateEvidence": {
+          "noteAccessCommit": "b99e63d4b3f01e5e24907f3689fb554b67b9f574",
+          "noteAccessCommittedAt": "2026-11-17T01:05:42Z",
+          "metadataCommit": "537e4be0501e52d3101c548e4099419b6680d02f",
+          "metadataCommittedAt": "2026-11-17T04:42:12Z",
+          "removeCommittedAt": "2026-11-17T05:32:30Z",
+          "reason": "Feature commits, not the monitoring date; compared seven commits across 42 files."
+        }
       }
     },
     {
@@ -759,13 +801,35 @@
       "category": "sports-competition",
       "public": true,
       "githubUrl": "https://github.com/Bamboosato/tennis-matchup-app",
-      "appUrl": "https://tennis-matchup-app.vercel.app/",
+      "appUrl": "https://tennis-matchup-app.bamboosato.com/",
       "homepageHttpStatus": 200,
       "createdAt": "2026-04-20",
       "updatedAt": "2026-05-29",
       "commit": "768f17aa66c28824f8eb50c72d55ad518eee53cb",
       "commitUrl": "https://github.com/Bamboosato/tennis-matchup-app/commit/768f17aa66c28824f8eb50c72d55ad518eee53cb",
-      "readmeUrl": "https://github.com/Bamboosato/tennis-matchup-app/blob/main/README.md"
+      "readmeUrl": "https://github.com/Bamboosato/tennis-matchup-app/blob/main/README.md",
+      "publicUrlEvidence": {
+        "proposalId": "tennis-matchup-app-32d0ec5ffa05-public-url",
+        "checkedAt": "2026-11-20",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "4279ec447063f2c32196d284c5e5dfcaa6cf5210",
+        "commit": "32d0ec5ffa056be47102ef6ede33fe8dcb836368",
+        "commitUrl": "https://github.com/Bamboosato/tennis-matchup-app/commit/32d0ec5ffa056be47102ef6ede33fe8dcb836368",
+        "sourcePaths": [
+          "README.md"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/tennis-matchup-app/blob/32d0ec5ffa056be47102ef6ede33fe8dcb836368/README.md"
+        ],
+        "usageEvidencePath": "docs/app-usage-evidence.json#repositories[tennis-matchup-app].publicUrlEvidence",
+        "previousInventory": {
+          "appUrl": "https://tennis-matchup-app.vercel.app/",
+          "updatedAt": "2026-05-29",
+          "commit": "768f17aa66c28824f8eb50c72d55ad518eee53cb",
+          "commitUrl": "https://github.com/Bamboosato/tennis-matchup-app/commit/768f17aa66c28824f8eb50c72d55ad518eee53cb"
+        },
+        "scope": "Canonical link correction only. Previous URL remains a working alias; feature date and Updates unchanged."
+      }
     },
     {
       "name": "tennis-organizing-app",
@@ -1014,13 +1078,13 @@
       "appUrl": "https://clip-tray.bamboosato.com/",
       "homepageHttpStatus": 200,
       "homepageHttpStatusSource": "Parent Dot independent HTTP observation; Cloud retrieval remained blocked by its tunnel.",
-      "updatedAt": "2026-11-19",
-      "commit": "08704195b122f5038b67c7c976a9f476ed7bc71b",
-      "commitUrl": "https://github.com/Bamboosato/clip-tray/commit/08704195b122f5038b67c7c976a9f476ed7bc71b",
+      "updatedAt": "2026-11-20",
+      "commit": "5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a",
+      "commitUrl": "https://github.com/Bamboosato/clip-tray/commit/5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a",
       "readmeUrl": "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/README.md",
       "proposalId": "clip-tray-initial-95dfc7229d2e-public-listing",
       "repositoryId": 1463637760,
-      "sourceHead": "95dfc7229d2e3e9924ce304c5f17dfb336366943",
+      "sourceHead": "5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a",
       "dateEvidence": {
         "featureCommit": "08704195b122f5038b67c7c976a9f476ed7bc71b",
         "featureCommitDate": "2026-11-19T07:35:04Z",
@@ -1043,7 +1107,43 @@
         "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/vite.config.ts",
         "https://github.com/Bamboosato/clip-tray/blob/95dfc7229d2e3e9924ce304c5f17dfb336366943/package.json"
       ],
-      "note": "All 21 owner public repositories were enumerated through the terminal empty page for the 2026-11-20 monitoring run; only the site itself is excluded (20 apps). Initial ClipTray source snapshot and eight-commit history were completely reviewed. Existing inventory entries and their dates are retained."
+      "note": "All 21 owner public repositories were enumerated through the terminal empty page for the 2026-11-20 monitoring run; only the site itself is excluded (20 apps). Initial ClipTray source snapshot and eight-commit history were completely reviewed. Existing inventory entries and their dates are retained.",
+      "ellipseFrameEvidence": {
+        "proposalId": "clip-tray-95dfc7229d2e-5c7f91c79afd-ellipse-frame",
+        "checkedAt": "2026-11-20",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "4279ec447063f2c32196d284c5e5dfcaa6cf5210",
+        "commit": "5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a",
+        "commitUrl": "https://github.com/Bamboosato/clip-tray/commit/5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a",
+        "sourcePaths": [
+          "src/components/EditorToolbar.tsx",
+          "src/components/ImageEditorOverlay.tsx",
+          "src/components/LightboxModal.tsx",
+          "src/types/editor.ts",
+          "src/utils/imageEditor.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/clip-tray/blob/5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a/src/components/EditorToolbar.tsx",
+          "https://github.com/Bamboosato/clip-tray/blob/5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a/src/components/ImageEditorOverlay.tsx",
+          "https://github.com/Bamboosato/clip-tray/blob/5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a/src/components/LightboxModal.tsx",
+          "https://github.com/Bamboosato/clip-tray/blob/5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a/src/types/editor.ts",
+          "https://github.com/Bamboosato/clip-tray/blob/5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a/src/utils/imageEditor.ts"
+        ],
+        "usageEvidencePath": "docs/app-usage-evidence.json#repositories[clip-tray].ellipseFrameEvidence",
+        "previousInventory": {
+          "appUrl": "https://clip-tray.bamboosato.com/",
+          "updatedAt": "2026-11-19",
+          "commit": "08704195b122f5038b67c7c976a9f476ed7bc71b",
+          "commitUrl": "https://github.com/Bamboosato/clip-tray/commit/08704195b122f5038b67c7c976a9f476ed7bc71b",
+          "sourceHead": "95dfc7229d2e3e9924ce304c5f17dfb336366943"
+        },
+        "applicationUpdateDate": "2026-11-20",
+        "dateEvidence": {
+          "featureCommit": "5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a",
+          "featureCommittedAt": "2026-11-20T08:16:03Z",
+          "reason": "Ellipse/circle frame implementation commit date, not monitoring date."
+        }
+      }
     }
   ]
 }

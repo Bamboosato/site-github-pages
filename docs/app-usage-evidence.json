@@ -1441,6 +1441,86 @@
           "No new offline, actual cloud-operation or cross-browser/device test. Upstream README test reports and CI success do not establish those outcomes here.",
           "The unmerged portfolio change has not been published."
         ]
+      },
+      "localMcpNoteMetadataEvidence": {
+        "proposalId": "markdown-knowledge-board-5fd916285d81-ea80747c3f94-local-mcp-note-metadata",
+        "checkedAt": "2026-11-20",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "4279ec447063f2c32196d284c5e5dfcaa6cf5210",
+        "commit": "ea80747c3f94690e062d031e2dbcd6107b1814da",
+        "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/ea80747c3f94690e062d031e2dbcd6107b1814da",
+        "sourcePaths": [
+          "README.md",
+          "src/components/LocalMcpPanel.tsx",
+          "src/lib/localMcpAccess.ts",
+          "src/lib/localMcpMetadata.ts",
+          "docs/local-mcp-note-access-spec.md",
+          "docs/local-mcp-custom-metadata-spec.md",
+          "tools/local-mcp/windows/README.md"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/ea80747c3f94690e062d031e2dbcd6107b1814da/README.md",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/ea80747c3f94690e062d031e2dbcd6107b1814da/src/components/LocalMcpPanel.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/ea80747c3f94690e062d031e2dbcd6107b1814da/src/lib/localMcpAccess.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/ea80747c3f94690e062d031e2dbcd6107b1814da/src/lib/localMcpMetadata.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/ea80747c3f94690e062d031e2dbcd6107b1814da/docs/local-mcp-note-access-spec.md",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/ea80747c3f94690e062d031e2dbcd6107b1814da/docs/local-mcp-custom-metadata-spec.md",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/ea80747c3f94690e062d031e2dbcd6107b1814da/tools/local-mcp/windows/README.md"
+        ],
+        "method": "Fixed public source independently reviewed in this task. Anonymous HTTP measurements and production READY/alias observations are inherited from the coordinating audit handoff; exact-SHA GitHub Vercel statuses were independently rechecked for MKB and ClipTray.",
+        "cloudPublicRetrieval": "2026-11-20: all five app hosts failed at the Cloud proxy with Tunnel connection failed: 403 Forbidden. No application HTTP response or new asset hash was obtained; this is not an application outage.",
+        "baseCommit": "5fd916285d81d8aed09455ccaf96c000ed6b59e0",
+        "compareUrl": "https://github.com/Bamboosato/markdown-knowledge-board/compare/5fd916285d81d8aed09455ccaf96c000ed6b59e0...ea80747c3f94690e062d031e2dbcd6107b1814da",
+        "applicationUpdateDate": "2026-11-17",
+        "dateEvidence": {
+          "noteAccessCommit": "b99e63d4b3f01e5e24907f3689fb554b67b9f574",
+          "noteAccessCommittedAt": "2026-11-17T01:05:42Z",
+          "metadataCommit": "537e4be0501e52d3101c548e4099419b6680d02f",
+          "metadataCommittedAt": "2026-11-17T04:42:12Z",
+          "removeCommittedAt": "2026-11-17T05:32:30Z",
+          "reason": "Feature commits, not the monitoring date; compared seven commits across 42 files."
+        },
+        "setupReleaseUrl": "https://github.com/Bamboosato/markdown-knowledge-board/releases/tag/mkb-windows-setup-v1.4.0",
+        "confirmed": [
+          "PC setup and an explicit app connection remain required. Local MCP > Advanced settings > Allow reading and updating notes gates search_notes, get_note and update_note. Retrieved bodies are passed to Codex; this is not PC-to-PC automatic synchronization.",
+          "Custom metadata changes require the same permission and a preview plan: Add only missing keys, Update only existing keys, Upsert update-or-add, Remove top-level keys and values, not entire notes. Apply uses the fixed preview targets and checks revisions; content/title/tags/Marp/Pin remain unchanged by metadata-only operations.",
+          "Remove requires compatible runtime and PWA; Windows Setup 1.4.0 bundles runtime 0.7.0. The fixed README and release point to this version. Restart Codex, update the app and reconnect after upgrading.",
+          "Supersedes only the no-existing-note-access statement in the historical printLocalMcpEvidence at 5fd916285d81; that historical evidence and its original date remain intact."
+        ],
+        "productionEvidence": {
+          "source": "coordinating audit handoff, 2026-11-20",
+          "commit": "ea80747c3f94690e062d031e2dbcd6107b1814da",
+          "target": "production",
+          "state": "READY",
+          "aliases": [
+            "https://markdown-knowledge-board.vercel.app/",
+            "https://mkb.bamboosato.com/"
+          ],
+          "anonymousHtmlStatus": 200,
+          "mainAssetPath": "/assets/index-BRfZlVUl.js",
+          "localMcpAssetPath": "/assets/LocalMcpPanel-Bc4AXKEU.js",
+          "localMcpAssetSha256": "1e56f2f37023732185c71b4304073b32f13fa786d01d9ffe4f785187cbb4e37e",
+          "sameAssetsOnBothHosts": true,
+          "markers": [
+            "Allow reading and updating notes",
+            "search_notes",
+            "get_note",
+            "update_note",
+            "noteAccess",
+            "removed_fields"
+          ],
+          "interactionTested": false
+        },
+        "independentGithubStatus": {
+          "url": "https://api.github.com/repos/Bamboosato/markdown-knowledge-board/commits/ea80747c3f94690e062d031e2dbcd6107b1814da/status",
+          "context": "Vercel",
+          "state": "success",
+          "targetUrl": "https://vercel.com/bamboosato/markdown-knowledge-board/6rSvs6TNm9FguS2CM18gzGcH2D12"
+        },
+        "notVerified": [
+          "No PC setup, real Codex/PWA pairing, existing-note search/read/write, metadata preview/apply/removal or real-note connection was performed.",
+          "No new print/PDF, cloud/Drive, offline, physical-device or cross-browser acceptance test. Source and static asset markers are not interactive validation or proof of whole-build byte identity."
+        ]
       }
     },
     {
@@ -2105,6 +2185,43 @@
         "date": "2026-10-02",
         "reference": "docs/site-github-pages-tennis-app-comparison-instructions.md",
         "condition": "アカウント登録不要。継続利用するメンバー情報の保存・管理機能はない。組合せ作成後にラウンドを追加し参加人数を調整できる。メンバー管理までは必要なく当日の参加人数に合わせて組合せを作りたい人におすすめ。他2アプリの対応有無や過去ラウンドの保持挙動は判断しない。紹介内容の確認日でありアプリのリリース日ではない。"
+      },
+      "publicUrlEvidence": {
+        "proposalId": "tennis-matchup-app-32d0ec5ffa05-public-url",
+        "checkedAt": "2026-11-20",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "4279ec447063f2c32196d284c5e5dfcaa6cf5210",
+        "commit": "32d0ec5ffa056be47102ef6ede33fe8dcb836368",
+        "commitUrl": "https://github.com/Bamboosato/tennis-matchup-app/commit/32d0ec5ffa056be47102ef6ede33fe8dcb836368",
+        "sourcePaths": [
+          "README.md"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/tennis-matchup-app/blob/32d0ec5ffa056be47102ef6ede33fe8dcb836368/README.md"
+        ],
+        "method": "Fixed public source independently reviewed in this task. Anonymous HTTP measurements and production READY/alias observations are inherited from the coordinating audit handoff; exact-SHA GitHub Vercel statuses were independently rechecked for MKB and ClipTray.",
+        "cloudPublicRetrieval": "2026-11-20: all five app hosts failed at the Cloud proxy with Tunnel connection failed: 403 Forbidden. No application HTTP response or new asset hash was obtained; this is not an application outage.",
+        "canonicalAppUrl": "https://tennis-matchup-app.bamboosato.com/",
+        "previousAppUrl": "https://tennis-matchup-app.vercel.app/",
+        "confirmed": [
+          "Pinned README names the custom domain as the public URL. Both language app links use that URL.",
+          "Only a link correction; updatedAt and Updates remain unchanged. The former URL is a working alias, not an outage."
+        ],
+        "productionEvidence": {
+          "source": "coordinating audit handoff, 2026-11-20",
+          "urls": [
+            "https://tennis-matchup-app.bamboosato.com/",
+            "https://tennis-matchup-app.vercel.app/"
+          ],
+          "anonymousGetStatus": 200,
+          "redirects": false,
+          "htmlIdentical": true,
+          "sameVercelProject": true,
+          "aliasesVerified": true
+        },
+        "notVerified": [
+          "No new matchup generation, account/API, PWA, offline or device interaction tests. Public measurements were not reproduced in this Cloud."
+        ]
       }
     },
     {
@@ -3245,6 +3362,69 @@
         "notVerified": [
           "Public response hashes were not provided; no claim of byte-for-byte remote payload identity.",
           "Application import/edit/copy, OCR/barcode results, expiry/pinning behavior, persistence, browser compatibility, native PWA and offline restart were not exercised."
+        ]
+      },
+      "ellipseFrameEvidence": {
+        "proposalId": "clip-tray-95dfc7229d2e-5c7f91c79afd-ellipse-frame",
+        "checkedAt": "2026-11-20",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "4279ec447063f2c32196d284c5e5dfcaa6cf5210",
+        "commit": "5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a",
+        "commitUrl": "https://github.com/Bamboosato/clip-tray/commit/5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a",
+        "sourcePaths": [
+          "src/components/EditorToolbar.tsx",
+          "src/components/ImageEditorOverlay.tsx",
+          "src/components/LightboxModal.tsx",
+          "src/types/editor.ts",
+          "src/utils/imageEditor.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/clip-tray/blob/5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a/src/components/EditorToolbar.tsx",
+          "https://github.com/Bamboosato/clip-tray/blob/5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a/src/components/ImageEditorOverlay.tsx",
+          "https://github.com/Bamboosato/clip-tray/blob/5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a/src/components/LightboxModal.tsx",
+          "https://github.com/Bamboosato/clip-tray/blob/5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a/src/types/editor.ts",
+          "https://github.com/Bamboosato/clip-tray/blob/5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a/src/utils/imageEditor.ts"
+        ],
+        "method": "Fixed public source independently reviewed in this task. Anonymous HTTP measurements and production READY/alias observations are inherited from the coordinating audit handoff; exact-SHA GitHub Vercel statuses were independently rechecked for MKB and ClipTray.",
+        "cloudPublicRetrieval": "2026-11-20: all five app hosts failed at the Cloud proxy with Tunnel connection failed: 403 Forbidden. No application HTTP response or new asset hash was obtained; this is not an application outage.",
+        "baseCommit": "95dfc7229d2e3e9924ce304c5f17dfb336366943",
+        "applicationUpdateDate": "2026-11-20",
+        "dateEvidence": {
+          "featureCommit": "5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a",
+          "featureCommittedAt": "2026-11-20T08:16:03Z",
+          "reason": "Ellipse/circle frame implementation commit date, not monitoring date."
+        },
+        "confirmed": [
+          "EditorToolbar adds the ellipse tool labeled 円枠 and renames the rectangle label to 四角枠. ImageEditorOverlay creates elliptical annotations; Shift drag constrains natural-image pixel dimensions to a circle.",
+          "Editor types and remembered draw-tool state include ellipse. drawEllipseAnnotation uses Canvas ellipse; both the preview overlay and renderEditedCanvas output use it. Edited-image copy/save includes frames.",
+          "Existing registration, browser-local storage, retention, pinning, OCR/network, PWA and offline caveats remain unchanged."
+        ],
+        "productionEvidence": {
+          "source": "coordinating audit handoff, 2026-11-20",
+          "commit": "5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a",
+          "target": "production",
+          "state": "READY",
+          "url": "https://clip-tray.bamboosato.com/",
+          "htmlReferencedAsset": "/assets/index-DM-uEcPJ.js",
+          "assetHttpStatus": 200,
+          "assetSha256": "16813cf655a820aa76083c680cc5d588c0e9e71a94d5cfd5a59c1bf21517126c",
+          "markers": [
+            "円枠",
+            "四角枠",
+            "Shift + ドラッグで真円",
+            "ellipse drawing implementation"
+          ],
+          "interactionTested": false
+        },
+        "independentGithubStatus": {
+          "url": "https://api.github.com/repos/Bamboosato/clip-tray/commits/5c7f91c79afd290e9fe73fc5b1193d2dcb3c297a/status",
+          "context": "Vercel",
+          "state": "success",
+          "targetUrl": "https://vercel.com/bamboosato/clip-tray/HbbeaunLUKcwnNCUuDuzNUUSpBKc"
+        },
+        "notVerified": [
+          "No public-app ellipse/Shift drag, edit/copy/save, OCR/barcode, retention/storage, native PWA, offline, cross-browser or physical-device test.",
+          "Static delivery hashes are inherited measurements. This Cloud did not remeasure public bytes or prove whole-build equivalence. Historical initial-listing evidence remains at its original source."
         ]
       }
     }

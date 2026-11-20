@@ -10,7 +10,7 @@ updatedAt: "2026-05-29"
 status: active
 tags: ["Next.js","TypeScript","jsPDF","PWA"]
 featured: false
-appUrl: https://tennis-matchup-app.vercel.app/
+appUrl: https://tennis-matchup-app.bamboosato.com/
 githubUrl: https://github.com/Bamboosato/tennis-matchup-app
 access: open
 usageFeatures: ["on-device-processing","no-registration"]
