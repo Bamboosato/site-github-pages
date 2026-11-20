@@ -6,7 +6,7 @@ slug: markdown-knowledge-board
 category: utilities
 description: "Markdownのメモを整理し、検索・編集・プレビュー・出力まで行うノートアプリ。"
 createdAt: "2026-07-09"
-updatedAt: "2026-11-16"
+updatedAt: "2026-11-17"
 status: active
 tags: ["React","TypeScript","IndexedDB","Markdown"]
 featured: true
@@ -50,7 +50,9 @@ YAMLフロントマターとMetadataの処理に、展開後の要素数10,000�
 
 ## Local MCP連携
 
-任意のLocal MCP連携では、PC側のセットアップとアプリ内での接続操作を行うことで、Codexから新しいMarkdownノートを保存できます。既存ノートの一覧取得・編集や、PC間の自動同期は行いません。[Windows向けのセットアップキットと手順](https://github.com/Bamboosato/markdown-knowledge-board/blob/5fd916285d81d8aed09455ccaf96c000ed6b59e0/tools/local-mcp/windows/README.md)も用意されています。
+任意のLocal MCP連携では、PC側のセットアップとアプリ内での明示的な接続により、Codexから新しいMarkdownノートを保存できます。さらに、Local MCPの詳細設定（Advanced settings）で「Allow reading and updating notes」を有効にすると、Codexが既存ノートを検索・取得・更新できます。取得した本文はCodexへ渡されます。PC間の自動同期とは別の機能です。
+
+同じ許可のもとで、条件に合うノートのCustom metadataを、対象と変更内容のプレビュー後にまとめて変更できます。キーがない場合だけ追加するAdd、既存キーだけを更新するUpdate、既存なら更新・なければ追加するUpsert、キーと値を削除するRemoveに対応します。Removeはノート自体を削除しません。削除にはローカルMCPサービスとアプリの両方が対応している必要があります。[Windows Setup v1.4.0](https://github.com/Bamboosato/markdown-knowledge-board/releases/tag/mkb-windows-setup-v1.4.0)と[導入手順](https://github.com/Bamboosato/markdown-knowledge-board/blob/ea80747c3f94690e062d031e2dbcd6107b1814da/tools/local-mcp/windows/README.md)を参照し、更新後はCodexを再起動してアプリを更新・再接続してください。
 
 ## 特徴
 
