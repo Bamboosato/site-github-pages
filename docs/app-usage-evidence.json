@@ -3590,17 +3590,202 @@
         "note": "README was absent in the initial inspected tree and exists at the current pinned SHA. No application implementation changed."
       },
       "latestProductionDeliveryEvidence": {
-        "source": "Parent Dot handoff on 2026-11-23; not freshly measured in this Cloud task.",
+        "source": "Parent Dot delegation on 2026-11-23; not freshly measured in this Cloud task.",
         "observedDate": "2026-11-23",
-        "commit": "cca8228d6c7be6744b0e5dcb8ac2acfafda759ca",
-        "deploymentId": "dpl_7qaGUow2bregh9kNMXWPT5NtkbCy",
+        "commit": "59c71f845227929e41818bb216f9749fd389f47b",
+        "deploymentId": "dpl_E6ksSkJZWW3t6Szsvrm7gcBMB8PV",
         "target": "production",
         "state": "READY",
         "url": "https://3d-visit-record.bamboosato.com/",
         "homepageHttpStatus": 200,
-        "javascriptObservation": "Same JS asset as previously verified, according to parent observation; no asset path or hash supplied.",
+        "javascriptObservation": "Parent observed index-BOYBwP8l.js with photo UI and map cluster markers; anonymous response was HTTP 200.",
+        "javascriptHttpStatus": 200,
+        "markers": [
+          "photo UI",
+          "getClusterExpansionZoom",
+          "point_count"
+        ],
         "interactionTested": false,
-        "note": "Latest deployment provenance is separate from the historical November 20 feature/initial-delivery evidence above."
+        "note": "Official custom-domain production delivery corroborates availability, not runtime acceptance. No public-app interaction, provider request, OAuth flow, network capture or byte-for-byte remote build comparison was performed in this Cloud task."
+      },
+      "photoProposalsMapClustersEvidence": {
+        "proposalId": "3d-visit-record-cca8228d6c7b-59c71f845227-photo-proposals-map-clusters",
+        "checkedAt": "2026-11-23",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "5527bc088143060d5b0eaa0d56eec392c3f908ec",
+        "baseCommit": "cca8228d6c7be6744b0e5dcb8ac2acfafda759ca",
+        "commit": "59c71f845227929e41818bb216f9749fd389f47b",
+        "commitUrl": "https://github.com/Bamboosato/3d-visit-record/commit/59c71f845227929e41818bb216f9749fd389f47b",
+        "compareUrl": "https://github.com/Bamboosato/3d-visit-record/compare/cca8228d6c7be6744b0e5dcb8ac2acfafda759ca...59c71f845227929e41818bb216f9749fd389f47b",
+        "applicationUpdateDate": "2026-11-23",
+        "dateEvidence": {
+          "featureCommits": [
+            {
+              "commit": "f331982077d30293cc0bffedc5ef3cf565eae5d9",
+              "committedAt": "2026-11-23T06:19:46Z",
+              "feature": "Photo proposals from EXIF GPS and capture date"
+            },
+            {
+              "commit": "bf1b2303be3e71a8e35d8c1fc1eda23615db3ac6",
+              "committedAt": "2026-11-23T08:42:50Z",
+              "feature": "Map clusters with count badges and tap-to-zoom"
+            }
+          ],
+          "applicationUpdateDate": "2026-11-23",
+          "timezone": "Asia/Tokyo",
+          "reason": "Both user-facing feature commits are dated November 23 JST. The observation date and later privacy-only PR #1 merge are not used to derive the feature date. November 20 initial-listing evidence is retained separately."
+        },
+        "sourcePaths": [
+          "README.md",
+          "src/App.tsx",
+          "src/components/PhotoProposalCard.tsx",
+          "src/lib/photoExif.ts",
+          "src/lib/osmPlaceClient.ts",
+          "src/components/MapViewer.tsx",
+          "src/components/StaticPolicyPage.tsx"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/README.md",
+          "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/App.tsx",
+          "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/components/PhotoProposalCard.tsx",
+          "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/lib/photoExif.ts",
+          "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/lib/osmPlaceClient.ts",
+          "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/components/MapViewer.tsx",
+          "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/components/StaticPolicyPage.tsx"
+        ],
+        "sourceBlobs": [
+          {
+            "path": "README.md",
+            "blobSha": "ecbe5f7b2ef283d3fa71e475a925086e94e09c45"
+          },
+          {
+            "path": "src/App.tsx",
+            "blobSha": "75105662609b7acaf5ba41ea89eb4866e0ac0105"
+          },
+          {
+            "path": "src/components/PhotoProposalCard.tsx",
+            "blobSha": "00b7e0d071de58f6a740f5fa2d5bc460c98ce918"
+          },
+          {
+            "path": "src/lib/photoExif.ts",
+            "blobSha": "1a880a3152e9e907bdc129f8f3b70168163354d8"
+          },
+          {
+            "path": "src/lib/osmPlaceClient.ts",
+            "blobSha": "c5c8d215f82103cbcf0a100b1dbbf26564a129e9"
+          },
+          {
+            "path": "src/components/MapViewer.tsx",
+            "blobSha": "4739457d2452663deddb1de38d7cbc83de22994c"
+          },
+          {
+            "path": "src/components/StaticPolicyPage.tsx",
+            "blobSha": "b49f2a951b94d4b4a726ae07c40ae2575c2d618e"
+          }
+        ],
+        "method": "Seven fixed public-source paths and the eight-commit comparison were independently retrieved with GitHub tools. Feature commit metadata and merged privacy-only PR #1 were separately reviewed. The top-level usage source snapshot remains the historical initial listing; this section records the new features. Static source review and inherited delivery observations are not runtime acceptance.",
+        "confirmed": [
+          "photoExif.ts reads a local Blob and parses capture dates and GPS metadata in JPEG and WebP. App.tsx uses those values for nearby saved-place matches or a new-place proposal; it prepares a draft for review before saving.",
+          "PhotoProposalCard.tsx offers adding a visit to a nearby saved place or creating a new place. When GPS is absent or unreadable it instructs the user to close the proposal, choose a place on the map and attach photos in the normal form.",
+          "MapViewer.tsx enables GeoJSON clustering, displays point_count badges (99+ above 99) and handles cluster clicks with getClusterExpansionZoom and easeTo.",
+          "App.tsx may call fetchOsmPlaceContext with photo-derived GPS before saving when no saved-place or preset-mountain match exists. osmPlaceClient.ts sends coordinates to external Nominatim/Overpass services. Map movement can also load map/terrain data. Local metadata extraction does not mean all proposal processing is offline.",
+          "StaticPolicyPage.tsx at the pinned head clarifies external coordinate lookup. Privacy-only PR #1 is merged into this head; it is explanatory evidence, not a separate feature or update entry.",
+          "Existing registration-free ordinary use, browser/origin-specific storage, optional Google sign-in and manual Drive backup/restore, local JSON photo omission and viewpoint-only sharing boundaries remain unchanged."
+        ],
+        "notVerified": [
+          "No user photos, live coordinates, provider calls, batch import, physical-device behavior, network capture, Drive or OAuth actions were used.",
+          "Photo proposal creation/saving, missing-metadata handling and map cluster interactions were reviewed in source only; public runtime acceptance and provider-policy compliance were not tested.",
+          "No claim that every photo format supports EXIF, multiple selected photos create multiple visits, no coordinates are sent, all work is offline, or Google verification has completed.",
+          "Portfolio production appearance remains pending review/merge; this task does not deploy."
+        ],
+        "sourceComparison": {
+          "base": "cca8228d6c7be6744b0e5dcb8ac2acfafda759ca",
+          "head": "59c71f845227929e41818bb216f9749fd389f47b",
+          "url": "https://github.com/Bamboosato/3d-visit-record/compare/cca8228d6c7be6744b0e5dcb8ac2acfafda759ca...59c71f845227929e41818bb216f9749fd389f47b",
+          "commits": 8,
+          "files": [
+            {
+              "path": "README.md",
+              "status": "modified"
+            },
+            {
+              "path": "src/App.tsx",
+              "status": "modified"
+            },
+            {
+              "path": "src/components/MapViewer.tsx",
+              "status": "modified"
+            },
+            {
+              "path": "src/components/PhotoProposalCard.tsx",
+              "status": "added"
+            },
+            {
+              "path": "src/components/SpotDetailSheet.tsx",
+              "status": "modified"
+            },
+            {
+              "path": "src/components/SpotForm.tsx",
+              "status": "modified"
+            },
+            {
+              "path": "src/components/StaticPolicyPage.tsx",
+              "status": "modified"
+            },
+            {
+              "path": "src/lib/photoExif.ts",
+              "status": "modified"
+            },
+            {
+              "path": "src/lib/spotCategories.ts",
+              "status": "modified"
+            },
+            {
+              "path": "src/lib/spotDomain.ts",
+              "status": "modified"
+            },
+            {
+              "path": "tests/photo_exif.test.ts",
+              "status": "modified"
+            },
+            {
+              "path": "tests/photo_spot_match.test.ts",
+              "status": "added"
+            }
+          ]
+        },
+        "productionDeliveryEvidence": {
+          "source": "Parent Dot delegation on 2026-11-23; not freshly measured in this Cloud task.",
+          "observedDate": "2026-11-23",
+          "commit": "59c71f845227929e41818bb216f9749fd389f47b",
+          "deploymentId": "dpl_E6ksSkJZWW3t6Szsvrm7gcBMB8PV",
+          "target": "production",
+          "state": "READY",
+          "url": "https://3d-visit-record.bamboosato.com/",
+          "homepageHttpStatus": 200,
+          "javascriptObservation": "Parent observed index-BOYBwP8l.js with photo UI and map cluster markers; anonymous response was HTTP 200.",
+          "javascriptHttpStatus": 200,
+          "markers": [
+            "photo UI",
+            "getClusterExpansionZoom",
+            "point_count"
+          ],
+          "interactionTested": false,
+          "note": "Official custom-domain production delivery corroborates availability, not runtime acceptance. No public-app interaction, provider request, OAuth flow, network capture or byte-for-byte remote build comparison was performed in this Cloud task."
+        },
+        "previousProductionDeliveryEvidence": {
+          "source": "Parent Dot handoff on 2026-11-23; not freshly measured in this Cloud task.",
+          "observedDate": "2026-11-23",
+          "commit": "cca8228d6c7be6744b0e5dcb8ac2acfafda759ca",
+          "deploymentId": "dpl_7qaGUow2bregh9kNMXWPT5NtkbCy",
+          "target": "production",
+          "state": "READY",
+          "url": "https://3d-visit-record.bamboosato.com/",
+          "homepageHttpStatus": 200,
+          "javascriptObservation": "Same JS asset as previously verified, according to parent observation; no asset path or hash supplied.",
+          "interactionTested": false,
+          "note": "Latest deployment provenance is separate from the historical November 20 feature/initial-delivery evidence above."
+        }
       }
     }
   ]
