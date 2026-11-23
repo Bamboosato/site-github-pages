@@ -1,0 +1,39 @@
+---
+appId: "3d-visit-record"
+locale: "ja"
+title: "3D Visit Record"
+slug: "3d-visit-record"
+category: "utilities"
+description: "訪れた場所や行きたい場所を3D地形の地図に記録。訪問済みの記録には写真も添付できます。"
+updatedAt: "2026-11-20"
+status: "active"
+tags: ["React", "TypeScript", "MapLibre GL JS", "IndexedDB"]
+featured: false
+appUrl: "https://3d-visit-record.bamboosato.com/"
+githubUrl: "https://github.com/Bamboosato/3d-visit-record"
+access: "open"
+usageFeatures: ["no-registration"]
+usageNote: "通常の利用に登録は不要です。記録と写真は利用中のブラウザーの IndexedDB に保存されます。任意の Google Drive 連携には Google ログインと通信が必要で、本人の操作でバックアップ・復元します。地図・地形の読み込みや外部の地名・施設検索にも通信を使います。保存先はブラウザーとオリジンごとに分かれ、独自ドメインと vercel.app の別 URL 間で記録は自動共有されません。"
+---
+
+## 概要
+
+訪問済みの場所やこれから訪れたい場所を3D地形の地図に記録し、日付や期間・メモをまとめて振り返るアプリです。訪問済みの記録には写真も添付できます。旅行や散策の記録と、次に行きたい場所の整理に使えます。
+
+## 主な機能
+
+- 地図上で訪問済み・訪問予定の地点を管理
+- 同じ地点に複数の訪問記録や予定を追加し、日付・期間とメモを記入
+- 訪問済みの記録に写真を添付し、詳細画面のサムネイルや拡大表示で振り返る
+- 訪問予定を訪問済みに切り替えて、日付や感想を残す
+- 地図の視点をリンクで共有
+
+## 特徴と使い方
+
+通常の保存先はブラウザーの IndexedDB です。必要に応じて本人の Google Drive へ手動でバックアップし、復元する機能を備えています。変更が常時自動同期される仕組みではありません。ローカル JSON の書き出しには写真ファイル本体は含まれません。
+
+地図視点リンクには座標、ズーム・傾き・方角などのカメラ設定、任意の地点名が含まれます。記録の日付・期間・メモ・写真は含まれないため、訪問記録そのものを共有するリンクではありません。
+
+## 技術構成
+
+React、TypeScript、MapLibre GL JS、IndexedDB を使用しています。

@@ -3427,6 +3427,181 @@
           "Static delivery hashes are inherited measurements. This Cloud did not remeasure public bytes or prove whole-build equivalence. Historical initial-listing evidence remains at its original source."
         ]
       }
+    },
+    {
+      "name": "3d-visit-record",
+      "appId": "3d-visit-record",
+      "commit": "cca8228d6c7be6744b0e5dcb8ac2acfafda759ca",
+      "checkedAt": "2026-11-23",
+      "checkedAtTimezone": "Etc/UTC",
+      "proposalId": "3d-visit-record-initial-9ffea4ac685a-public-listing",
+      "siteBaseCommit": "199cdb1b27c43b76ae19c80e2c1dec24d8a07699",
+      "sourcePaths": [
+        "README.md",
+        "docs/requirements.md",
+        "docs/requirements_v2_photos.md",
+        "src/App.tsx",
+        "src/components/SpotDetailSheet.tsx",
+        "src/lib/visitStorage.ts",
+        "src/lib/photoStorage.ts",
+        "src/lib/urlSync.ts",
+        "src/components/CloudSyncDialog.tsx",
+        "src/lib/googleAuth.ts",
+        "src/components/StaticPolicyPage.tsx",
+        "package.json",
+        "src/components/SpotForm.tsx"
+      ],
+      "sourceUrls": [
+        "https://github.com/Bamboosato/3d-visit-record/blob/cca8228d6c7be6744b0e5dcb8ac2acfafda759ca/README.md",
+        "https://github.com/Bamboosato/3d-visit-record/blob/cca8228d6c7be6744b0e5dcb8ac2acfafda759ca/docs/requirements.md",
+        "https://github.com/Bamboosato/3d-visit-record/blob/cca8228d6c7be6744b0e5dcb8ac2acfafda759ca/docs/requirements_v2_photos.md",
+        "https://github.com/Bamboosato/3d-visit-record/blob/cca8228d6c7be6744b0e5dcb8ac2acfafda759ca/src/App.tsx",
+        "https://github.com/Bamboosato/3d-visit-record/blob/cca8228d6c7be6744b0e5dcb8ac2acfafda759ca/src/components/SpotDetailSheet.tsx",
+        "https://github.com/Bamboosato/3d-visit-record/blob/cca8228d6c7be6744b0e5dcb8ac2acfafda759ca/src/lib/visitStorage.ts",
+        "https://github.com/Bamboosato/3d-visit-record/blob/cca8228d6c7be6744b0e5dcb8ac2acfafda759ca/src/lib/photoStorage.ts",
+        "https://github.com/Bamboosato/3d-visit-record/blob/cca8228d6c7be6744b0e5dcb8ac2acfafda759ca/src/lib/urlSync.ts",
+        "https://github.com/Bamboosato/3d-visit-record/blob/cca8228d6c7be6744b0e5dcb8ac2acfafda759ca/src/components/CloudSyncDialog.tsx",
+        "https://github.com/Bamboosato/3d-visit-record/blob/cca8228d6c7be6744b0e5dcb8ac2acfafda759ca/src/lib/googleAuth.ts",
+        "https://github.com/Bamboosato/3d-visit-record/blob/cca8228d6c7be6744b0e5dcb8ac2acfafda759ca/src/components/StaticPolicyPage.tsx",
+        "https://github.com/Bamboosato/3d-visit-record/blob/cca8228d6c7be6744b0e5dcb8ac2acfafda759ca/package.json",
+        "https://github.com/Bamboosato/3d-visit-record/blob/cca8228d6c7be6744b0e5dcb8ac2acfafda759ca/src/components/SpotForm.tsx"
+      ],
+      "sourceBlobs": [
+        {
+          "path": "README.md",
+          "blobSha": "56e4f21d55b0e6eed502653a638ded8c104ebe54"
+        },
+        {
+          "path": "docs/requirements.md",
+          "blobSha": "aaa40290c99570ee69cd299a979cdee96e4a7a30"
+        },
+        {
+          "path": "docs/requirements_v2_photos.md",
+          "blobSha": "be90ee82e98c496e3454ae2714cd4dfbfe198a2c"
+        },
+        {
+          "path": "src/App.tsx",
+          "blobSha": "9486dd5878a4dcf501abc667801bf676ec526b6b"
+        },
+        {
+          "path": "src/components/SpotDetailSheet.tsx",
+          "blobSha": "5ff254184c9970524ed5ed4c7570a482f3dc3cc5"
+        },
+        {
+          "path": "src/lib/visitStorage.ts",
+          "blobSha": "0ee321105e90cb3653306ac9ae8c34a77ce41b02"
+        },
+        {
+          "path": "src/lib/photoStorage.ts",
+          "blobSha": "7eb24454052487cae88192d859aa06c53788a94e"
+        },
+        {
+          "path": "src/lib/urlSync.ts",
+          "blobSha": "85aed6ee2a8ddea429dae9c355460c4771b3bd98"
+        },
+        {
+          "path": "src/components/CloudSyncDialog.tsx",
+          "blobSha": "5fa5cd12d2dcba45236ef5d1503226b2c8eecefe"
+        },
+        {
+          "path": "src/lib/googleAuth.ts",
+          "blobSha": "6eb41e28d3ecabc378b4a97ca7d0dbe05ab2eb02"
+        },
+        {
+          "path": "src/components/StaticPolicyPage.tsx",
+          "blobSha": "bfe29d6e2ffb0404c5fc97f2c231a1e4859b5b2f"
+        },
+        {
+          "path": "package.json",
+          "blobSha": "4934be9560e15e2bee12005aeba447ef09f1b33d"
+        },
+        {
+          "path": "src/components/SpotForm.tsx",
+          "blobSha": "1cca48ef4dd4d483ed433b65b153de92a89e69e4"
+        }
+      ],
+      "access": "open",
+      "usageFeatures": [
+        "no-registration"
+      ],
+      "method": "Fixed public source independently retrieved at the latest SHA through GitHub tools. Public visibility, repository ID, main SHA and README-only compare independently checked through GitHub API. Initial implementation and dates remain anchored to the earlier feature commit. Production READY/alias and HTTP observations are inherited from the parent task, not a fresh Cloud app test.",
+      "confirmed": [
+        "App.tsx and SpotDetailSheet.tsx implement visited/planned places, repeated visit/plan entries, conversion from planned to visited, and photo thumbnails/enlarged viewing. SpotForm.tsx shows the photo picker only for visited entries; this is source verification, not a photo operation test.",
+        "visitStorage.ts and photoStorage.ts persist ordinary records and photo blobs in IndexedDB (visit3d_db, app_state and photos). Ordinary use has no registration gate; storage is separate for each browser and origin.",
+        "CloudSyncDialog.tsx provides explicit Drive save and restore actions with optional Google authentication in googleAuth.ts. This is manual backup/restore, not continuous automatic synchronization; authentication and end-to-end restore success have not been tested.",
+        "urlSync.ts builds viewpoint URLs with coordinates, camera settings, optional place name, background map and terrain exaggeration. Recorded dates, date ranges, notes and photos are absent.",
+        "StaticPolicyPage.tsx describes map/terrain and external place-search requests, and optional Google Drive storage. This corroborates network-use disclosure, not a claim of zero traffic, legal compliance certification or fully local operation.",
+        "CloudSyncDialog.tsx explicitly states that local JSON exports omit photo-file binaries. No complete photo migration or verified Drive restore is claimed."
+      ],
+      "requirementsContext": {
+        "paths": [
+          "docs/requirements.md",
+          "docs/requirements_v2_photos.md"
+        ],
+        "note": "README and design requirements are context, not proof of tested behavior. README-only commit cca8228d6c7be6744b0e5dcb8ac2acfafda759ca adds documentation without changing implementation. Offline and version claims from documentation are not adopted; photo attachment scope follows SpotForm.tsx."
+      },
+      "dateEvidence": {
+        "initialCommit": "ccab4d8dbd1603001f904c66d85a0bb0caad9f75",
+        "initialCommittedAt": "2026-11-20T01:50:01Z",
+        "featureCommit": "9ffea4ac685a652928765bd1980060d99ee65895",
+        "featureCommittedAt": "2026-11-20T08:15:09Z",
+        "applicationUpdateDate": "2026-11-20",
+        "timezone": "Asia/Tokyo",
+        "reason": "Initial source, photo implementation and inherited public delivery observations are dated 2026-11-20 JST. This is the confirmed public-source/delivery evidence date, not an exact first-publication time or a formal version. New listing; no comparison base."
+      },
+      "productionDeliveryEvidence": {
+        "source": "Parent Dot delegation: previously verified public production alias and anonymous HTTP observations; not remeasured by this Cloud task.",
+        "observedDate": "2026-11-20",
+        "observedDateTimezone": "Asia/Tokyo",
+        "commit": "9ffea4ac685a652928765bd1980060d99ee65895",
+        "target": "production",
+        "state": "READY",
+        "url": "https://3d-visit-record.bamboosato.com/",
+        "homepageHttpStatus": 200,
+        "javascriptHttpStatus": 200,
+        "alternateUrl": "https://3d-visit-record.vercel.app/",
+        "note": "Parent confirmed READY production alias matches the fixed application SHA; both origins return the same HTML. Browser storage is origin-specific and not automatically shared. No asset path/hash or deployment ID was supplied; do not infer byte-for-byte build identity.",
+        "interactionTested": false
+      },
+      "notVerified": [
+        "Google OAuth, consent configuration, Drive backup/restore and cross-device transfer were not exercised.",
+        "Photo add/edit/delete, lightbox interaction, persistence and application behavior on physical devices or other browsers were not exercised.",
+        "No offline test or full application network capture; no on-device-processing or offline-after-setup badge is claimed.",
+        "No fresh public-app HTTP measurements, asset hashes or full deployed-build byte equivalence in this Cloud task.",
+        "Production appearance of the portfolio changes remains pending review/merge; this task does not deploy.",
+        "Google OAuth publication/review status and successful end-to-end synchronization are not established by the README or static delivery observations."
+      ],
+      "excludedClaims": [
+        "Exact first-publication timestamp, formal version, creation date, license and images are omitted for insufficient evidence.",
+        "No continuous sync, proven synchronization outcome, offline guarantee or fully local processing claim.",
+        "3D Visit Record is a separate app, not あしあと手帳 or 3D RainScape."
+      ],
+      "sourceComparison": {
+        "base": "9ffea4ac685a652928765bd1980060d99ee65895",
+        "head": "cca8228d6c7be6744b0e5dcb8ac2acfafda759ca",
+        "url": "https://github.com/Bamboosato/3d-visit-record/compare/9ffea4ac685a652928765bd1980060d99ee65895...cca8228d6c7be6744b0e5dcb8ac2acfafda759ca",
+        "commits": 1,
+        "files": [
+          {
+            "path": "README.md",
+            "status": "added"
+          }
+        ],
+        "note": "README was absent in the initial inspected tree and exists at the current pinned SHA. No application implementation changed."
+      },
+      "latestProductionDeliveryEvidence": {
+        "source": "Parent Dot handoff on 2026-11-23; not freshly measured in this Cloud task.",
+        "observedDate": "2026-11-23",
+        "commit": "cca8228d6c7be6744b0e5dcb8ac2acfafda759ca",
+        "deploymentId": "dpl_7qaGUow2bregh9kNMXWPT5NtkbCy",
+        "target": "production",
+        "state": "READY",
+        "url": "https://3d-visit-record.bamboosato.com/",
+        "homepageHttpStatus": 200,
+        "javascriptObservation": "Same JS asset as previously verified, according to parent observation; no asset path or hash supplied.",
+        "interactionTested": false,
+        "note": "Latest deployment provenance is separate from the historical November 20 feature/initial-delivery evidence above."
+      }
     }
   ]
 }
