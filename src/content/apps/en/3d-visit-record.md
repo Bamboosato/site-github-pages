@@ -5,7 +5,7 @@ title: "3D Visit Record"
 slug: "3d-visit-record"
 category: "utilities"
 description: "Log places you’ve visited or plan to visit on a 3D terrain map. Attach photos to completed visits."
-updatedAt: "2026-11-20"
+updatedAt: "2026-11-23"
 status: "active"
 tags: ["React", "TypeScript", "MapLibre GL JS", "IndexedDB"]
 featured: false
@@ -13,7 +13,7 @@ appUrl: "https://3d-visit-record.bamboosato.com/"
 githubUrl: "https://github.com/Bamboosato/3d-visit-record"
 access: "open"
 usageFeatures: ["no-registration"]
-usageNote: "No registration is required for everyday use. Records and photos are stored in IndexedDB in the current browser. Optional Google Drive integration requires Google sign-in and a network connection, with backup and restore initiated by you. Loading maps and terrain and searching external place-name and facility services also use the network. Storage is separate for each browser and origin; records are not automatically shared between the custom domain and the separate vercel.app URL."
+usageNote: "No registration is required for everyday use. Records and photos are stored in IndexedDB in the current browser. Optional Google Drive integration requires Google sign-in and a network connection, with backup and restore initiated by you. Loading maps and terrain and searching external place-name and facility services also use the network. Storage is separate for each browser and origin; records are not automatically shared between the custom domain and the separate vercel.app URL. Photo metadata is extracted locally, but when looking up place candidates for a photo, the app may query external map or place services with a photo-derived location before saving."
 ---
 
 ## Overview
@@ -23,6 +23,8 @@ Record places you have visited or plan to visit on a 3D terrain map, then look b
 ## Key features
 
 - Manage visited places and planned visits on the map
+- Nearby pins are grouped with a count when zoomed out; tap a group to zoom in.
+- Create a visit from a photo: Use capture dates and location metadata in JPEG and WebP photos to suggest adding a visit to a nearby saved place or creating a new place. Review before saving. If no location metadata is available, choose a place on the map.
 - Add multiple visit records or plans to the same place, with dates, date ranges, and notes
 - Attach photos to completed visit records and revisit them through thumbnails or an enlarged view on the detail screen
 - Change a planned visit to a completed visit and add the date and your impressions
