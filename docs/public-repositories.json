@@ -386,9 +386,9 @@
       "appUrl": "https://local-document-preprocessor.vercel.app/",
       "homepageHttpStatus": 200,
       "createdAt": "2026-08-06",
-      "updatedAt": "2026-11-11",
-      "commit": "12cf9d4c440fbc070329cf2c147eb62475791b01",
-      "commitUrl": "https://github.com/Bamboosato/local-document-preprocessor/commit/12cf9d4c440fbc070329cf2c147eb62475791b01",
+      "updatedAt": "2026-11-24",
+      "commit": "9386c99ea42c90b92516035522d9a076fc0fb7d4",
+      "commitUrl": "https://github.com/Bamboosato/local-document-preprocessor/commit/9386c99ea42c90b92516035522d9a076fc0fb7d4",
       "readmeUrl": "https://github.com/Bamboosato/local-document-preprocessor/blob/main/README.md",
       "jsonOfflineUpdate": {
         "proposalId": "local-document-preprocessor-4ad89476a4ad-a6642c3bcc0b-json-input-pwa-generation",
@@ -404,13 +404,41 @@
           "https://github.com/Bamboosato/local-document-preprocessor/blob/12cf9d4c440fbc070329cf2c147eb62475791b01/docs/distribution-closeout-register.md"
         ]
       },
-      "verifiedAt": "2026-11-11",
+      "verifiedAt": "2026-11-24",
       "dateEvidence": {
-        "type": "meaningful production feature update",
-        "applicationUpdateDate": "2026-11-11",
-        "source": "https://github.com/Bamboosato/local-document-preprocessor/blob/12cf9d4c440fbc070329cf2c147eb62475791b01/docs/distribution-closeout-register.md",
-        "note": "Production release date; not content-edit or monitoring date. Deployment/interaction scope is recorded separately in docs/app-usage-evidence.json.",
-        "deployedSource": "db29c664aa1f95bf7bded28d1356c652e43480e3"
+        "applicationUpdateDate": "2026-11-24",
+        "timezone": "Asia/Tokyo",
+        "source": "Approved monitoring handoff: user-facing features integrated and publicly delivered on November 24 JST; not the portfolio editing date."
+      },
+      "jsonArrayElementsMermaidDirectionEvidence": {
+        "proposalId": "local-document-preprocessor-12cf9d4c440f-9386c99ea42c-json-array-elements-mermaid-direction",
+        "updateId": "local-document-preprocessor-json-array-elements-mermaid-direction-2026-11-24",
+        "checkedAt": "2026-11-24",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "ba32c34aa78bc90b33bdfa3f5cc7ad2c71671215",
+        "baseCommit": "12cf9d4c440fbc070329cf2c147eb62475791b01",
+        "commit": "9386c99ea42c90b92516035522d9a076fc0fb7d4",
+        "compareUrl": "https://github.com/Bamboosato/local-document-preprocessor/compare/12cf9d4c440fbc070329cf2c147eb62475791b01...9386c99ea42c90b92516035522d9a076fc0fb7d4",
+        "applicationUpdateDate": "2026-11-24",
+        "dateEvidence": {
+          "applicationUpdateDate": "2026-11-24",
+          "timezone": "Asia/Tokyo",
+          "source": "Approved monitoring handoff: user-facing features integrated and publicly delivered on November 24 JST; not the portfolio editing date."
+        },
+        "usageEvidencePath": "docs/app-usage-evidence.json#repositories[local-document-preprocessor].jsonArrayElementsMermaidDirectionEvidence",
+        "previousInventory": {
+          "updatedAt": "2026-11-11",
+          "verifiedAt": "2026-11-11",
+          "commit": "12cf9d4c440fbc070329cf2c147eb62475791b01",
+          "commitUrl": "https://github.com/Bamboosato/local-document-preprocessor/commit/12cf9d4c440fbc070329cf2c147eb62475791b01",
+          "dateEvidence": {
+            "type": "meaningful production feature update",
+            "applicationUpdateDate": "2026-11-11",
+            "source": "https://github.com/Bamboosato/local-document-preprocessor/blob/12cf9d4c440fbc070329cf2c147eb62475791b01/docs/distribution-closeout-register.md",
+            "note": "Production release date; not content-edit or monitoring date. Deployment/interaction scope is recorded separately in docs/app-usage-evidence.json.",
+            "deployedSource": "db29c664aa1f95bf7bded28d1356c652e43480e3"
+          }
+        }
       }
     },
     {
@@ -1150,45 +1178,30 @@
       "appId": "3d-visit-record",
       "category": "utilities",
       "public": true,
-      "verifiedAt": "2026-11-23",
+      "verifiedAt": "2026-11-24",
       "githubUrl": "https://github.com/Bamboosato/3d-visit-record",
       "appUrl": "https://3d-visit-record.bamboosato.com/",
       "homepageHttpStatus": 200,
       "homepageHttpStatusSource": "Parent Dot anonymous HTTP observation on 2026-11-23; not remeasured by this Cloud task.",
-      "updatedAt": "2026-11-23",
-      "commit": "59c71f845227929e41818bb216f9749fd389f47b",
-      "commitUrl": "https://github.com/Bamboosato/3d-visit-record/commit/59c71f845227929e41818bb216f9749fd389f47b",
-      "proposalId": "3d-visit-record-cca8228d6c7b-59c71f845227-photo-proposals-map-clusters",
+      "updatedAt": "2026-11-24",
+      "commit": "7bf929f64cc7a25119235f0eb4e53f9d08c0b465",
+      "commitUrl": "https://github.com/Bamboosato/3d-visit-record/commit/7bf929f64cc7a25119235f0eb4e53f9d08c0b465",
+      "proposalId": "3d-visit-record-59c71f845227-7bf929f64cc7-prefecture-visit-progress",
       "repositoryId": 1464862786,
-      "sourceHead": "59c71f845227929e41818bb216f9749fd389f47b",
-      "siteBaseCommit": "5527bc088143060d5b0eaa0d56eec392c3f908ec",
+      "sourceHead": "7bf929f64cc7a25119235f0eb4e53f9d08c0b465",
+      "siteBaseCommit": "ba32c34aa78bc90b33bdfa3f5cc7ad2c71671215",
       "dateEvidence": {
-        "featureCommits": [
-          {
-            "commit": "f331982077d30293cc0bffedc5ef3cf565eae5d9",
-            "committedAt": "2026-11-23T06:19:46Z",
-            "feature": "Photo proposals from EXIF GPS and capture date"
-          },
-          {
-            "commit": "bf1b2303be3e71a8e35d8c1fc1eda23615db3ac6",
-            "committedAt": "2026-11-23T08:42:50Z",
-            "feature": "Map clusters with count badges and tap-to-zoom"
-          }
-        ],
-        "applicationUpdateDate": "2026-11-23",
+        "applicationUpdateDate": "2026-11-24",
         "timezone": "Asia/Tokyo",
-        "reason": "Both user-facing feature commits are dated November 23 JST. The observation date and later privacy-only PR #1 merge are not used to derive the feature date. November 20 initial-listing evidence is retained separately."
+        "source": "Approved monitoring handoff: user-facing features integrated and publicly delivered on November 24 JST; not the portfolio editing date."
       },
       "implementationSources": [
-        "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/README.md",
-        "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/App.tsx",
-        "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/components/PhotoProposalCard.tsx",
-        "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/lib/photoExif.ts",
-        "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/lib/osmPlaceClient.ts",
-        "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/components/MapViewer.tsx",
-        "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/components/StaticPolicyPage.tsx"
+        "https://github.com/Bamboosato/3d-visit-record/blob/7bf929f64cc7a25119235f0eb4e53f9d08c0b465/src/App.tsx",
+        "https://github.com/Bamboosato/3d-visit-record/blob/7bf929f64cc7a25119235f0eb4e53f9d08c0b465/src/lib/prefectureStats.ts",
+        "https://github.com/Bamboosato/3d-visit-record/blob/7bf929f64cc7a25119235f0eb4e53f9d08c0b465/src/components/LayerMenu.tsx",
+        "https://github.com/Bamboosato/3d-visit-record/blob/7bf929f64cc7a25119235f0eb4e53f9d08c0b465/src/components/PrefectureSummaryLegend.tsx"
       ],
-      "note": "Photo proposals and map clustering are the November 23 user-facing changes. Fixed source and feature dates were independently reviewed; inherited production observations corroborate delivery only. Initial November 20 evidence is preserved in previousInventory and app-usage-evidence.json; the initial update entry is unchanged.",
+      "note": "November 24 prefecture visit progress is recorded in prefectureVisitProgressEvidence. Prior photo, map-cluster and initial-listing evidence is retained unchanged.",
       "readmeUrl": "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/README.md",
       "photoProposalsMapClustersEvidence": {
         "proposalId": "3d-visit-record-cca8228d6c7b-59c71f845227-photo-proposals-map-clusters",
@@ -1248,6 +1261,59 @@
           ],
           "note": "Public visibility, repository ID and main SHA rechecked in the same dedicated site Cloud task on 2026-11-23 UTC. The sole change since the initial feature snapshot is README.md added; all selected paths were independently retrieved at the latest SHA. November 20 remains the initial feature/public-delivery evidence date, not an exact launch date. Requirements and README claims are not treated as tested behavior. Existing inventory entries and dates are preserved.",
           "readmeUrl": "https://github.com/Bamboosato/3d-visit-record/blob/cca8228d6c7be6744b0e5dcb8ac2acfafda759ca/README.md"
+        }
+      },
+      "prefectureVisitProgressEvidence": {
+        "proposalId": "3d-visit-record-59c71f845227-7bf929f64cc7-prefecture-visit-progress",
+        "updateId": "3d-visit-record-prefecture-visit-progress-2026-11-24",
+        "checkedAt": "2026-11-24",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "ba32c34aa78bc90b33bdfa3f5cc7ad2c71671215",
+        "baseCommit": "59c71f845227929e41818bb216f9749fd389f47b",
+        "commit": "7bf929f64cc7a25119235f0eb4e53f9d08c0b465",
+        "compareUrl": "https://github.com/Bamboosato/3d-visit-record/compare/59c71f845227929e41818bb216f9749fd389f47b...7bf929f64cc7a25119235f0eb4e53f9d08c0b465",
+        "applicationUpdateDate": "2026-11-24",
+        "dateEvidence": {
+          "applicationUpdateDate": "2026-11-24",
+          "timezone": "Asia/Tokyo",
+          "source": "Approved monitoring handoff: user-facing features integrated and publicly delivered on November 24 JST; not the portfolio editing date."
+        },
+        "usageEvidencePath": "docs/app-usage-evidence.json#repositories[3d-visit-record].prefectureVisitProgressEvidence",
+        "previousInventory": {
+          "updatedAt": "2026-11-23",
+          "verifiedAt": "2026-11-23",
+          "commit": "59c71f845227929e41818bb216f9749fd389f47b",
+          "commitUrl": "https://github.com/Bamboosato/3d-visit-record/commit/59c71f845227929e41818bb216f9749fd389f47b",
+          "dateEvidence": {
+            "featureCommits": [
+              {
+                "commit": "f331982077d30293cc0bffedc5ef3cf565eae5d9",
+                "committedAt": "2026-11-23T06:19:46Z",
+                "feature": "Photo proposals from EXIF GPS and capture date"
+              },
+              {
+                "commit": "bf1b2303be3e71a8e35d8c1fc1eda23615db3ac6",
+                "committedAt": "2026-11-23T08:42:50Z",
+                "feature": "Map clusters with count badges and tap-to-zoom"
+              }
+            ],
+            "applicationUpdateDate": "2026-11-23",
+            "timezone": "Asia/Tokyo",
+            "reason": "Both user-facing feature commits are dated November 23 JST. The observation date and later privacy-only PR #1 merge are not used to derive the feature date. November 20 initial-listing evidence is retained separately."
+          },
+          "proposalId": "3d-visit-record-cca8228d6c7b-59c71f845227-photo-proposals-map-clusters",
+          "sourceHead": "59c71f845227929e41818bb216f9749fd389f47b",
+          "siteBaseCommit": "5527bc088143060d5b0eaa0d56eec392c3f908ec",
+          "implementationSources": [
+            "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/README.md",
+            "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/App.tsx",
+            "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/components/PhotoProposalCard.tsx",
+            "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/lib/photoExif.ts",
+            "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/lib/osmPlaceClient.ts",
+            "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/components/MapViewer.tsx",
+            "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/components/StaticPolicyPage.tsx"
+          ],
+          "note": "Photo proposals and map clustering are the November 23 user-facing changes. Fixed source and feature dates were independently reviewed; inherited production observations corroborate delivery only. Initial November 20 evidence is preserved in previousInventory and app-usage-evidence.json; the initial update entry is unchanged."
         }
       }
     }

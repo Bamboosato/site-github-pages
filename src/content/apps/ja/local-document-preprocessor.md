@@ -6,7 +6,7 @@ slug: local-document-preprocessor
 category: utilities
 description: "文書やJSONをブラウザー内で処理し、Markdownやテキストに変換するツール。"
 createdAt: "2026-08-06"
-updatedAt: "2026-11-11"
+updatedAt: "2026-11-24"
 status: active
 tags: ["React","TypeScript","WebAssembly","PDFium"]
 featured: true
@@ -34,6 +34,8 @@ Word・PowerPoint・Excel・OpenDocument・RTF・EPUB・CSV・テキストを含
 - JSON全体または一つの配列・オブジェクトを選び、項目表・一覧表・Mermaid形式へ変換
 
 ## 特徴
+
+JSON配列の直下から必要な要素だけを選んで変換できます。表やMermaid構造図では元の順序と配列内の位置が保たれます。Mermaid構造図は上下（既定）と左右から選べ、Markdownとプレーンテキストの出力にも反映されます。
 
 JSONはブラウザー内で解析し、Markdownまたはプレーンテキストで出力します。オフライン用のキャッシュに保存するのはアプリの静的資産で、入力文書や変換結果ではありません。入力サイズ・深さ・ノード数や出力形式ごとの上限があります。
 

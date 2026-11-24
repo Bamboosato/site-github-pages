@@ -876,6 +876,71 @@
           "E-01 provenance remains unresolved; release records do not establish license compliance. Package/license legal compliance and a full application audit are outside this content task."
         ],
         "method": "Pinned-source analysis and independent static delivery evidence supplied by monitoring task; fixed-commit JsonWorkerClient, jsonWorkerRuntime, tinyLoader and distribution closeout register re-read in Cloud. The old offline uncertainty above describes the earlier b43d source review and is superseded only within the bounded new evidence below."
+      },
+      "jsonArrayElementsMermaidDirectionEvidence": {
+        "proposalId": "local-document-preprocessor-12cf9d4c440f-9386c99ea42c-json-array-elements-mermaid-direction",
+        "updateId": "local-document-preprocessor-json-array-elements-mermaid-direction-2026-11-24",
+        "checkedAt": "2026-11-24",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "ba32c34aa78bc90b33bdfa3f5cc7ad2c71671215",
+        "baseCommit": "12cf9d4c440fbc070329cf2c147eb62475791b01",
+        "commit": "9386c99ea42c90b92516035522d9a076fc0fb7d4",
+        "compareUrl": "https://github.com/Bamboosato/local-document-preprocessor/compare/12cf9d4c440fbc070329cf2c147eb62475791b01...9386c99ea42c90b92516035522d9a076fc0fb7d4",
+        "applicationUpdateDate": "2026-11-24",
+        "dateEvidence": {
+          "applicationUpdateDate": "2026-11-24",
+          "timezone": "Asia/Tokyo",
+          "source": "Approved monitoring handoff: user-facing features integrated and publicly delivered on November 24 JST; not the portfolio editing date."
+        },
+        "sourcePaths": [
+          "src/components/JsonSelectionDialog.tsx",
+          "src/json/core.mjs",
+          "src/json/pipeline.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/9386c99ea42c90b92516035522d9a076fc0fb7d4/src/components/JsonSelectionDialog.tsx",
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/9386c99ea42c90b92516035522d9a076fc0fb7d4/src/json/core.mjs",
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/9386c99ea42c90b92516035522d9a076fc0fb7d4/src/json/pipeline.ts"
+        ],
+        "sourceBlobs": [
+          {
+            "path": "src/components/JsonSelectionDialog.tsx",
+            "blobSha": "3f94393ee57271f3d201cfceb6cb53c158313063"
+          },
+          {
+            "path": "src/json/core.mjs",
+            "blobSha": "25f9404aef52d5747dadeec47878dd7981a8f394"
+          },
+          {
+            "path": "src/json/pipeline.ts",
+            "blobSha": "ce5434220ed40851ae4c4b2e628568c85ec27d6a"
+          }
+        ],
+        "method": "Public repository visibility, pinned comparison and selected implementation files independently checked in this Cloud task. Production observations below are inherited from the approved monitoring handoff, not a fresh Cloud runtime test.",
+        "confirmed": [
+          "JsonSelectionDialog.tsx selects only direct array elements in the left target tree; the right side previews values. No nested-field selection is claimed.",
+          "core.mjs filters direct children in original order and retains their original keys/array positions in tables and Mermaid diagrams.",
+          "The Mermaid direction defaults to TD and can be changed to LR. pipeline.ts passes the selected direction into Markdown generation and derives plain text from that Markdown.",
+          "Copy describes features from PRs #58/#59 as implemented at the pinned head including #60/#61. Small PWA display changes are not a separate feature update."
+        ],
+        "productionDeliveryEvidence": {
+          "source": "Approved parent monitoring handoff on 2026-11-24; not remeasured by this Cloud task.",
+          "observedDate": "2026-11-24",
+          "observedDateTimezone": "Asia/Tokyo",
+          "commit": "9386c99ea42c90b92516035522d9a076fc0fb7d4",
+          "deploymentUrl": "https://vercel.com/bamboosato/local-document-preprocessor/3czyDfm1JWWfuhH6DXpcRPApD8xP",
+          "target": "production",
+          "state": "READY",
+          "url": "https://local-document-preprocessor.vercel.app/",
+          "homepageHttpStatus": 200,
+          "interactionTested": false,
+          "note": "Monitoring confirmed deployment source SHA matches the pinned comparison head. Anonymous HTTP 200 and READY establish delivery observations, not feature-operation success or byte-for-byte deployed-build equivalence."
+        },
+        "notVerified": [
+          "No public-app feature interaction, export operation, physical-device, cross-browser or offline test was performed.",
+          "No nested-field selection or external metadata interoperability is claimed. Existing access, storage and offline-preparation conditions remain unchanged.",
+          "Portfolio production appearance is unverified; this task creates a draft PR without publishing."
+        ]
       }
     },
     {
@@ -3786,6 +3851,77 @@
           "interactionTested": false,
           "note": "Latest deployment provenance is separate from the historical November 20 feature/initial-delivery evidence above."
         }
+      },
+      "prefectureVisitProgressEvidence": {
+        "proposalId": "3d-visit-record-59c71f845227-7bf929f64cc7-prefecture-visit-progress",
+        "updateId": "3d-visit-record-prefecture-visit-progress-2026-11-24",
+        "checkedAt": "2026-11-24",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "ba32c34aa78bc90b33bdfa3f5cc7ad2c71671215",
+        "baseCommit": "59c71f845227929e41818bb216f9749fd389f47b",
+        "commit": "7bf929f64cc7a25119235f0eb4e53f9d08c0b465",
+        "compareUrl": "https://github.com/Bamboosato/3d-visit-record/compare/59c71f845227929e41818bb216f9749fd389f47b...7bf929f64cc7a25119235f0eb4e53f9d08c0b465",
+        "applicationUpdateDate": "2026-11-24",
+        "dateEvidence": {
+          "applicationUpdateDate": "2026-11-24",
+          "timezone": "Asia/Tokyo",
+          "source": "Approved monitoring handoff: user-facing features integrated and publicly delivered on November 24 JST; not the portfolio editing date."
+        },
+        "sourcePaths": [
+          "src/App.tsx",
+          "src/lib/prefectureStats.ts",
+          "src/components/LayerMenu.tsx",
+          "src/components/PrefectureSummaryLegend.tsx"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/3d-visit-record/blob/7bf929f64cc7a25119235f0eb4e53f9d08c0b465/src/App.tsx",
+          "https://github.com/Bamboosato/3d-visit-record/blob/7bf929f64cc7a25119235f0eb4e53f9d08c0b465/src/lib/prefectureStats.ts",
+          "https://github.com/Bamboosato/3d-visit-record/blob/7bf929f64cc7a25119235f0eb4e53f9d08c0b465/src/components/LayerMenu.tsx",
+          "https://github.com/Bamboosato/3d-visit-record/blob/7bf929f64cc7a25119235f0eb4e53f9d08c0b465/src/components/PrefectureSummaryLegend.tsx"
+        ],
+        "sourceBlobs": [
+          {
+            "path": "src/App.tsx",
+            "blobSha": "11687f4a4cd4bdbe082399d77614406b1ce1a2ad"
+          },
+          {
+            "path": "src/lib/prefectureStats.ts",
+            "blobSha": "6a7ca0312649426af3027319e4766f533d6e2ab3"
+          },
+          {
+            "path": "src/components/LayerMenu.tsx",
+            "blobSha": "21f4828b9b545d89b86069308b48fbd11d681ed1"
+          },
+          {
+            "path": "src/components/PrefectureSummaryLegend.tsx",
+            "blobSha": "3b9d6e7d8b755b68960edd371328c74e235b21a0"
+          }
+        ],
+        "method": "Public repository visibility, pinned comparison and selected implementation files independently checked in this Cloud task. Production observations below are inherited from the approved monitoring handoff, not a fresh Cloud runtime test.",
+        "confirmed": [
+          "LayerMenu.tsx enables the 47-prefecture layer. prefectureStats.ts classifies each prefecture as visited if it has a completed visit, planned-only if it has a planned visit but no completed visit, and neither otherwise.",
+          "PrefectureSummaryLegend.tsx shows counts for the three groups; App.tsx supplies the classified GeoJSON to the map.",
+          "App.tsx loads boundary data only when the prefecture layer is first enabled; prefectureStats.ts fetches the GeoJSON. First-use offline availability and full-map offline operation are not guaranteed.",
+          "Existing Drive integration, authentication, photo functionality and publication conditions are unchanged."
+        ],
+        "productionDeliveryEvidence": {
+          "source": "Approved parent monitoring handoff on 2026-11-24; not remeasured by this Cloud task.",
+          "observedDate": "2026-11-24",
+          "observedDateTimezone": "Asia/Tokyo",
+          "commit": "7bf929f64cc7a25119235f0eb4e53f9d08c0b465",
+          "deploymentUrl": "https://vercel.com/bamboosato/3d-visit-record/G65WBo9LECeTohhuRM7snVUYcQf7",
+          "target": "production",
+          "state": "READY",
+          "url": "https://3d-visit-record.bamboosato.com/",
+          "homepageHttpStatus": 200,
+          "interactionTested": false,
+          "note": "Monitoring confirmed deployment source SHA matches the pinned comparison head. Anonymous HTTP 200 and READY establish delivery observations, not feature-operation success or byte-for-byte deployed-build equivalence."
+        },
+        "notVerified": [
+          "No public-app layer toggle, live-record classification, physical-device, cross-browser or offline test was performed.",
+          "No Google OAuth, Drive backup/restore, photo operation or full application network capture was performed.",
+          "Portfolio production appearance is unverified; this task creates a draft PR without publishing."
+        ]
       }
     }
   ]

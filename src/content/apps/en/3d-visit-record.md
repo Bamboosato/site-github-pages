@@ -5,7 +5,7 @@ title: "3D Visit Record"
 slug: "3d-visit-record"
 category: "utilities"
 description: "Log places you’ve visited or plan to visit on a 3D terrain map. Attach photos to completed visits."
-updatedAt: "2026-11-23"
+updatedAt: "2026-11-24"
 status: "active"
 tags: ["React", "TypeScript", "MapLibre GL JS", "IndexedDB"]
 featured: false
@@ -23,6 +23,7 @@ Record places you have visited or plan to visit on a 3D terrain map, then look b
 ## Key features
 
 - Manage visited places and planned visits on the map
+- Enable the prefecture layer to color Japan’s 47 prefectures by whether they contain a completed visit, only a planned visit, or neither. A legend shows how many prefectures are in each group.
 - Nearby pins are grouped with a count when zoomed out; tap a group to zoom in.
 - Create a visit from a photo: Use capture dates and location metadata in JPEG and WebP photos to suggest adding a visit to a nearby saved place or creating a new place. Review before saving. If no location metadata is available, choose a place on the map.
 - Add multiple visit records or plans to the same place, with dates, date ranges, and notes
