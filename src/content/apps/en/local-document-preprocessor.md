@@ -6,7 +6,7 @@ slug: local-document-preprocessor
 category: utilities
 description: "Convert documents and JSON into Markdown or text inside the browser."
 createdAt: "2026-08-06"
-updatedAt: "2026-11-11"
+updatedAt: "2026-11-24"
 status: active
 tags: ["React","TypeScript","WebAssembly","PDFium"]
 featured: true
@@ -34,6 +34,8 @@ Convert Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, and text-based PD
 - Convert an entire JSON document or one selected array or object into item tables, list tables, or Mermaid text
 
 ## Design and usage
+
+Convert just the direct elements you select from a JSON array. Tables and Mermaid diagrams preserve their original order and array positions. Choose a top-down (default) or left-to-right Mermaid layout; the selected direction is retained in Markdown and plain-text output.
 
 JSON is parsed in the browser and exported as Markdown or plain text. The offline cache stores static app assets, not input documents or conversion results. Input size, depth, node count, and output-format limits apply.
 
