@@ -13,7 +13,7 @@
 
 ## ローカル実行
 
-Node.js 24 LTSを使用してください。依存関係はlockfileに固定しています。
+Node.js 24 LTSを推奨します（Node.js 22 LTSを使う場合は22.23.4以上が必要です）。依存関係はlockfileに固定しています。
 
 ```sh
 npm ci
