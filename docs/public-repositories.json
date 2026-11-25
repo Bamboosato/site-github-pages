@@ -1178,30 +1178,30 @@
       "appId": "3d-visit-record",
       "category": "utilities",
       "public": true,
-      "verifiedAt": "2026-11-24",
+      "verifiedAt": "2026-11-25",
       "githubUrl": "https://github.com/Bamboosato/3d-visit-record",
       "appUrl": "https://3d-visit-record.bamboosato.com/",
       "homepageHttpStatus": 200,
-      "homepageHttpStatusSource": "Parent Dot anonymous HTTP observation on 2026-11-23; not remeasured by this Cloud task.",
-      "updatedAt": "2026-11-24",
-      "commit": "7bf929f64cc7a25119235f0eb4e53f9d08c0b465",
-      "commitUrl": "https://github.com/Bamboosato/3d-visit-record/commit/7bf929f64cc7a25119235f0eb4e53f9d08c0b465",
-      "proposalId": "3d-visit-record-59c71f845227-7bf929f64cc7-prefecture-visit-progress",
+      "homepageHttpStatusSource": "Parent handoff anonymous HTTP observation on 2026-11-25; not remeasured by this Cloud task.",
+      "updatedAt": "2026-11-25",
+      "commit": "723c136fe26ed4b7fd64692f1ca9e45067dfcccc",
+      "commitUrl": "https://github.com/Bamboosato/3d-visit-record/commit/723c136fe26ed4b7fd64692f1ca9e45067dfcccc",
       "repositoryId": 1464862786,
-      "sourceHead": "7bf929f64cc7a25119235f0eb4e53f9d08c0b465",
-      "siteBaseCommit": "ba32c34aa78bc90b33bdfa3f5cc7ad2c71671215",
+      "sourceHead": "723c136fe26ed4b7fd64692f1ca9e45067dfcccc",
+      "siteBaseCommit": "6a88a7c27f4ff40348a3ca3ccb9657e2fca1f0fd",
       "dateEvidence": {
-        "applicationUpdateDate": "2026-11-24",
+        "applicationUpdateDate": "2026-11-25",
         "timezone": "Asia/Tokyo",
-        "source": "Approved monitoring handoff: user-facing features integrated and publicly delivered on November 24 JST; not the portfolio editing date."
+        "source": "Parent handoff identifies the implementation at November 25, 09:47 JST and confirms production delivery on November 25 JST; not the portfolio editing date."
       },
       "implementationSources": [
-        "https://github.com/Bamboosato/3d-visit-record/blob/7bf929f64cc7a25119235f0eb4e53f9d08c0b465/src/App.tsx",
-        "https://github.com/Bamboosato/3d-visit-record/blob/7bf929f64cc7a25119235f0eb4e53f9d08c0b465/src/lib/prefectureStats.ts",
-        "https://github.com/Bamboosato/3d-visit-record/blob/7bf929f64cc7a25119235f0eb4e53f9d08c0b465/src/components/LayerMenu.tsx",
-        "https://github.com/Bamboosato/3d-visit-record/blob/7bf929f64cc7a25119235f0eb4e53f9d08c0b465/src/components/PrefectureSummaryLegend.tsx"
+        "https://github.com/Bamboosato/3d-visit-record/blob/723c136fe26ed4b7fd64692f1ca9e45067dfcccc/src/components/ExportDialog.tsx",
+        "https://github.com/Bamboosato/3d-visit-record/blob/723c136fe26ed4b7fd64692f1ca9e45067dfcccc/src/lib/exportData.ts",
+        "https://github.com/Bamboosato/3d-visit-record/blob/723c136fe26ed4b7fd64692f1ca9e45067dfcccc/src/components/CloudSyncDialog.tsx",
+        "https://github.com/Bamboosato/3d-visit-record/blob/723c136fe26ed4b7fd64692f1ca9e45067dfcccc/tests/export_data.test.ts",
+        "https://github.com/Bamboosato/3d-visit-record/blob/723c136fe26ed4b7fd64692f1ca9e45067dfcccc/tests/export_dialog.test.tsx"
       ],
-      "note": "November 24 prefecture visit progress is recorded in prefectureVisitProgressEvidence. Prior photo, map-cluster and initial-listing evidence is retained unchanged.",
+      "note": "November 25 data export is recorded in dataExportEvidence. Initial listing, photo proposals, map clusters and prefecture progress evidence is retained unchanged.",
       "readmeUrl": "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/README.md",
       "photoProposalsMapClustersEvidence": {
         "proposalId": "3d-visit-record-cca8228d6c7b-59c71f845227-photo-proposals-map-clusters",
@@ -1314,6 +1314,43 @@
             "https://github.com/Bamboosato/3d-visit-record/blob/59c71f845227929e41818bb216f9749fd389f47b/src/components/StaticPolicyPage.tsx"
           ],
           "note": "Photo proposals and map clustering are the November 23 user-facing changes. Fixed source and feature dates were independently reviewed; inherited production observations corroborate delivery only. Initial November 20 evidence is preserved in previousInventory and app-usage-evidence.json; the initial update entry is unchanged."
+        }
+      },
+      "dataExportEvidence": {
+        "updateId": "3d-visit-record-data-export-2026-11-25",
+        "checkedAt": "2026-11-25",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "6a88a7c27f4ff40348a3ca3ccb9657e2fca1f0fd",
+        "baseCommit": "7bf929f64cc7a25119235f0eb4e53f9d08c0b465",
+        "commit": "723c136fe26ed4b7fd64692f1ca9e45067dfcccc",
+        "compareUrl": "https://github.com/Bamboosato/3d-visit-record/compare/7bf929f64cc7a25119235f0eb4e53f9d08c0b465...723c136fe26ed4b7fd64692f1ca9e45067dfcccc",
+        "applicationUpdateDate": "2026-11-25",
+        "dateEvidence": {
+          "applicationUpdateDate": "2026-11-25",
+          "timezone": "Asia/Tokyo",
+          "source": "Parent handoff identifies the implementation at November 25, 09:47 JST and confirms production delivery on November 25 JST; not the portfolio editing date."
+        },
+        "usageEvidencePath": "docs/app-usage-evidence.json#repositories[3d-visit-record].dataExportEvidence",
+        "previousInventory": {
+          "updatedAt": "2026-11-24",
+          "verifiedAt": "2026-11-24",
+          "commit": "7bf929f64cc7a25119235f0eb4e53f9d08c0b465",
+          "commitUrl": "https://github.com/Bamboosato/3d-visit-record/commit/7bf929f64cc7a25119235f0eb4e53f9d08c0b465",
+          "sourceHead": "7bf929f64cc7a25119235f0eb4e53f9d08c0b465",
+          "siteBaseCommit": "ba32c34aa78bc90b33bdfa3f5cc7ad2c71671215",
+          "dateEvidence": {
+            "applicationUpdateDate": "2026-11-24",
+            "timezone": "Asia/Tokyo",
+            "source": "Approved monitoring handoff: user-facing features integrated and publicly delivered on November 24 JST; not the portfolio editing date."
+          },
+          "implementationSources": [
+            "https://github.com/Bamboosato/3d-visit-record/blob/7bf929f64cc7a25119235f0eb4e53f9d08c0b465/src/App.tsx",
+            "https://github.com/Bamboosato/3d-visit-record/blob/7bf929f64cc7a25119235f0eb4e53f9d08c0b465/src/lib/prefectureStats.ts",
+            "https://github.com/Bamboosato/3d-visit-record/blob/7bf929f64cc7a25119235f0eb4e53f9d08c0b465/src/components/LayerMenu.tsx",
+            "https://github.com/Bamboosato/3d-visit-record/blob/7bf929f64cc7a25119235f0eb4e53f9d08c0b465/src/components/PrefectureSummaryLegend.tsx"
+          ],
+          "note": "November 24 prefecture visit progress is recorded in prefectureVisitProgressEvidence. Prior photo, map-cluster and initial-listing evidence is retained unchanged.",
+          "homepageHttpStatusSource": "Parent Dot anonymous HTTP observation on 2026-11-23; not remeasured by this Cloud task."
         }
       }
     }
