@@ -3922,6 +3922,68 @@
           "No Google OAuth, Drive backup/restore, photo operation or full application network capture was performed.",
           "Portfolio production appearance is unverified; this task creates a draft PR without publishing."
         ]
+      },
+      "dataExportEvidence": {
+        "updateId": "3d-visit-record-data-export-2026-11-25",
+        "checkedAt": "2026-11-25",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "6a88a7c27f4ff40348a3ca3ccb9657e2fca1f0fd",
+        "baseCommit": "7bf929f64cc7a25119235f0eb4e53f9d08c0b465",
+        "commit": "723c136fe26ed4b7fd64692f1ca9e45067dfcccc",
+        "commitUrl": "https://github.com/Bamboosato/3d-visit-record/commit/723c136fe26ed4b7fd64692f1ca9e45067dfcccc",
+        "compareUrl": "https://github.com/Bamboosato/3d-visit-record/compare/7bf929f64cc7a25119235f0eb4e53f9d08c0b465...723c136fe26ed4b7fd64692f1ca9e45067dfcccc",
+        "applicationUpdateDate": "2026-11-25",
+        "dateEvidence": {
+          "applicationUpdateDate": "2026-11-25",
+          "timezone": "Asia/Tokyo",
+          "source": "Parent handoff identifies the implementation at November 25, 09:47 JST and confirms production delivery on November 25 JST; not the portfolio editing date."
+        },
+        "sourcePaths": [
+          "src/components/ExportDialog.tsx",
+          "src/lib/exportData.ts",
+          "src/components/CloudSyncDialog.tsx",
+          "tests/export_data.test.ts",
+          "tests/export_dialog.test.tsx"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/3d-visit-record/blob/723c136fe26ed4b7fd64692f1ca9e45067dfcccc/src/components/ExportDialog.tsx",
+          "https://github.com/Bamboosato/3d-visit-record/blob/723c136fe26ed4b7fd64692f1ca9e45067dfcccc/src/lib/exportData.ts",
+          "https://github.com/Bamboosato/3d-visit-record/blob/723c136fe26ed4b7fd64692f1ca9e45067dfcccc/src/components/CloudSyncDialog.tsx",
+          "https://github.com/Bamboosato/3d-visit-record/blob/723c136fe26ed4b7fd64692f1ca9e45067dfcccc/tests/export_data.test.ts",
+          "https://github.com/Bamboosato/3d-visit-record/blob/723c136fe26ed4b7fd64692f1ca9e45067dfcccc/tests/export_dialog.test.tsx"
+        ],
+        "method": "Public repository visibility, pinned comparison, three implementation files and two test files independently read in this Cloud task. Application tests were reviewed, not executed. Production delivery observations are inherited from the parent handoff.",
+        "confirmed": [
+          "ExportDialog.tsx offers all places or places selected by visit status and category, with GeoJSON, CSV, KML and photo ZIP export.",
+          "filterSpotsForExport selects whole places. Their associated entries remain included; status/category do not independently filter individual visit logs.",
+          "buildExportZipArchive includes visits.geojson, visits.csv, visits.kml, readable photo binaries from browser storage, and manifest.json listing missing photos. Missing or unreadable stored photos are skipped, not guaranteed to be included.",
+          "CloudSyncDialog.tsx retains manual Google Drive backup/restore and local JSON backup without photo binaries. Data export is a separate function; ZIP restoration and third-party import compatibility are not established.",
+          "The pinned tests cover format generation, CSV expansion per entry and empty-entry places, status/category selection, missing photos in the ZIP manifest, cancellation, empty-target controls and duplicate-click prevention.",
+          "Low-zoom prefecture boundary rendering also changed in this comparison; it does not create a separate Update or alter the November 24 history."
+        ],
+        "productionDeliveryEvidence": {
+          "source": "Parent handoff on 2026-11-25; not remeasured in this Cloud task.",
+          "observedDate": "2026-11-25",
+          "commit": "723c136fe26ed4b7fd64692f1ca9e45067dfcccc",
+          "deploymentUrl": "https://vercel.com/bamboosato/3d-visit-record/6aDgLiXuzEiPzZ68vPZsVQP4JRGN",
+          "target": "production",
+          "state": "READY",
+          "url": "https://3d-visit-record.bamboosato.com/",
+          "homepageHttpStatus": 200,
+          "javascriptPath": "/assets/index-D5K07CJF.js",
+          "javascriptHttpStatus": 200,
+          "markers": [
+            "GeoJSON",
+            "photo ZIP"
+          ],
+          "interactionTested": false,
+          "note": "Parent verified the deployment source SHA, production custom-domain alias, anonymous HTML/asset responses and static feature markers. These observations do not establish successful downloads, imports or byte-for-byte build equivalence."
+        },
+        "notVerified": [
+          "No public-app export/download, output re-import, external-app compatibility, real-photo, physical-device or offline operation was exercised.",
+          "No Google OAuth or Drive backup/restore operation was exercised. No claim that every photo is included, that ZIP restores records, that CSV is one row per place, or that full offline use is possible.",
+          "Portfolio production appearance remains unverified; this task prepares a draft PR without deploying."
+        ]
       }
     }
   ]

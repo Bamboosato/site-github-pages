@@ -5,7 +5,7 @@ title: "3D Visit Record"
 slug: "3d-visit-record"
 category: "utilities"
 description: "Log places you’ve visited or plan to visit on a 3D terrain map. Attach photos to completed visits."
-updatedAt: "2026-11-24"
+updatedAt: "2026-11-25"
 status: "active"
 tags: ["React", "TypeScript", "MapLibre GL JS", "IndexedDB"]
 featured: false
@@ -34,6 +34,8 @@ Record places you have visited or plan to visit on a 3D terrain map, then look b
 ## Design and usage
 
 Records are normally stored in the browser's IndexedDB. The app includes manual backup to and restore from your own Google Drive when needed. Changes are not continuously synchronized in the background. Local JSON exports do not include the photo files themselves.
+
+Data export is separate from backup and restore. Export records for all places, or choose places by visit status or category, as GeoJSON, CSV, or KML. A ZIP bundles all three formats and photos available in this browser, with a list of photos that could not be included.
 
 A map viewpoint link includes coordinates, camera settings such as zoom, tilt, and bearing, and an optional place name. It does not include recorded dates, date ranges, notes, or photos, so it does not share the visit records themselves.
 
