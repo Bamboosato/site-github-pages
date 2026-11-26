@@ -941,6 +941,68 @@
           "No nested-field selection or external metadata interoperability is claimed. Existing access, storage and offline-preparation conditions remain unchanged.",
           "Portfolio production appearance is unverified; this task creates a draft PR without publishing."
         ]
+      },
+      "windowsLocalMcpPwaEvidence": {
+        "proposalId": "local-document-preprocessor-9386c99ea42c-077083ab5065-windows-local-mcp-pwa-update",
+        "updateId": "local-document-preprocessor-windows-local-mcp-pwa-update-2026-11-26",
+        "checkedAt": "2026-11-26",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "c4fe611e3958e2b3f6102a9f7cc7bc87e3bb9938",
+        "baseCommit": "9386c99ea42c90b92516035522d9a076fc0fb7d4",
+        "commit": "077083ab5065f5b09c866aaa51ebf584e9e72a67",
+        "compareUrl": "https://github.com/Bamboosato/local-document-preprocessor/compare/9386c99ea42c90b92516035522d9a076fc0fb7d4...077083ab5065f5b09c866aaa51ebf584e9e72a67",
+        "applicationUpdateDate": "2026-11-26",
+        "dateEvidence": {
+          "applicationUpdateDate": "2026-11-26",
+          "timezone": "Asia/Tokyo",
+          "source": "Approved monitoring handoff: user-facing feature date on November 26 JST, not the portfolio editing date."
+        },
+        "sourcePaths": [
+          "tools/local-mcp/README.md",
+          "src/components/AboutApp.tsx",
+          "tools/local-mcp/save.mjs",
+          "public/sw.js"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/077083ab5065f5b09c866aaa51ebf584e9e72a67/tools/local-mcp/README.md",
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/077083ab5065f5b09c866aaa51ebf584e9e72a67/src/components/AboutApp.tsx",
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/077083ab5065f5b09c866aaa51ebf584e9e72a67/tools/local-mcp/save.mjs",
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/077083ab5065f5b09c866aaa51ebf584e9e72a67/public/sw.js"
+        ],
+        "featurePullRequests": [
+          "https://github.com/Bamboosato/local-document-preprocessor/pull/62",
+          "https://github.com/Bamboosato/local-document-preprocessor/pull/63",
+          "https://github.com/Bamboosato/local-document-preprocessor/pull/64",
+          "https://github.com/Bamboosato/local-document-preprocessor/pull/65"
+        ],
+        "method": "Approved monitoring handoff of source and exact production deployment evidence, supplemented by read-only inspection of the listed fixed source paths in the content-edit task. Production HTTP and deployment observations below were supplied by monitoring, not remeasured from this Cloud environment. Static delivery does not establish interactive success.",
+        "confirmed": [
+          "Optional Windows Local MCP converts selected original documents using local assets. Explicit MKB saves require an already connected MKB profile on the same PC; save.mjs checks connection, origin and create_note capability and does not establish a connection automatically.",
+          "New MKB notes include quality annotations. Text-based PDFs are a representative input; OCR is outside scope. Normal browser use still does not persist input documents or conversion results.",
+          "The About page links a downloadable Markdown setup guide. PWA installation reuses prior static assets only after verification against the new manifest; no speed or bandwidth guarantee."
+        ],
+        "deployment": {
+          "reference": "https://vercel.com/bamboosato/local-document-preprocessor/9xxKSVJFcBXWet2P1XhNGC2uBG2q",
+          "exactSha": "077083ab5065f5b09c866aaa51ebf584e9e72a67",
+          "state": "READY",
+          "target": "production",
+          "canonical": "https://ldp.bamboosato.com/?page=about",
+          "publicHttpStatus": 200,
+          "asset": "/assets/index-DexuWiLq.js",
+          "assetHttpStatus": 200
+        },
+        "additionalProductionEvidence": {
+          "http200Urls": [
+            "https://ldp.bamboosato.com/?page=about",
+            "https://ldp.bamboosato.com/assets/README-BbS28D68.md",
+            "https://ldp.bamboosato.com/sw.js"
+          ],
+          "observations": "Monitoring handoff verified the delivered guide text and length against fixed source and verified static-file reuse code in sw.js. Author tested a synthetic PDF and an already connected MKB; this is not an independent end-to-end test."
+        },
+        "notVerified": [
+          "Fixed Windows Local MCP guide, About page, save.mjs and SW. Author tested synthetic PDF and connected MKB. Combined cold start, alternate agents/devices and public offline generation not independently run.",
+          "No application code, runtime, setup, live route provider, real device, or production website behavior was exercised by this content-edit task."
+        ]
       }
     },
     {
@@ -1586,6 +1648,66 @@
           "No PC setup, real Codex/PWA pairing, existing-note search/read/write, metadata preview/apply/removal or real-note connection was performed.",
           "No new print/PDF, cloud/Drive, offline, physical-device or cross-browser acceptance test. Source and static asset markers are not interactive validation or proof of whole-build byte identity."
         ]
+      },
+      "windowsMcpSaveDestinationEvidence": {
+        "proposalId": "markdown-knowledge-board-61b97b8482ae-6b8f4f25f1b3-windows-mcp-save-destination",
+        "updateId": "markdown-knowledge-board-windows-mcp-save-destination-2026-11-26",
+        "checkedAt": "2026-11-26",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "c4fe611e3958e2b3f6102a9f7cc7bc87e3bb9938",
+        "baseCommit": "61b97b8482ae65feccd8c4db2e74edb06f45a0cd",
+        "commit": "6b8f4f25f1b3bb7931195db6614a4a5e672a16f2",
+        "compareUrl": "https://github.com/Bamboosato/markdown-knowledge-board/compare/61b97b8482ae65feccd8c4db2e74edb06f45a0cd...6b8f4f25f1b3bb7931195db6614a4a5e672a16f2",
+        "applicationUpdateDate": "2026-11-26",
+        "dateEvidence": {
+          "applicationUpdateDate": "2026-11-26",
+          "timezone": "Asia/Tokyo",
+          "source": "Approved monitoring handoff: user-facing feature date on November 26 JST, not the portfolio editing date."
+        },
+        "sourcePaths": [
+          "tools/local-mcp/windows/README.md",
+          "src/components/LocalMcpPanel.tsx"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/6b8f4f25f1b3bb7931195db6614a4a5e672a16f2/tools/local-mcp/windows/README.md",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/6b8f4f25f1b3bb7931195db6614a4a5e672a16f2/src/components/LocalMcpPanel.tsx"
+        ],
+        "featurePullRequests": [
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/79",
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/80",
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/81",
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/82",
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/83",
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/84",
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/85"
+        ],
+        "method": "Approved monitoring handoff of source and exact production deployment evidence, supplemented by read-only inspection of the listed fixed source paths in the content-edit task. Production HTTP and deployment observations below were supplied by monitoring, not remeasured from this Cloud environment. Static delivery does not establish interactive success.",
+        "confirmed": [
+          "Optional Windows Chrome/Edge save-destination registration uses a first-time connection code, a compatible local runtime and a browser profile. Find profiles and Register save destination are present in the delivered LocalMcpPanel.",
+          "With auto-launch enabled, an explicit save request can open the registered destination. Changing the destination does not move existing notes or synchronize browser profiles.",
+          "Existing note reading/updating remains an explicit permission under Local MCP → Note access, and retrieved note bodies are disclosed to the agent. Current instructions reference Windows Setup v1.5.0 and runtime 0.10.0, not the older v1.4.0 setup."
+        ],
+        "deployment": {
+          "reference": "https://vercel.com/bamboosato/markdown-knowledge-board/7xKDXpTyTwhNz9fSbg1ZCXXb6muZ",
+          "exactSha": "6b8f4f25f1b3bb7931195db6614a4a5e672a16f2",
+          "state": "READY",
+          "target": "production",
+          "canonical": "https://mkb.bamboosato.com/",
+          "publicHttpStatus": 200,
+          "asset": "/assets/index-BbhuakZS.js",
+          "assetHttpStatus": 200
+        },
+        "additionalProductionEvidence": {
+          "http200Urls": [
+            "https://mkb.bamboosato.com/assets/LocalMcpPanel-4cpf8_Nu.js"
+          ],
+          "observations": "Monitoring handoff found Find profiles and Register save destination in the production lazy asset and verified public Windows Setup v1.5.0 with runtime 0.10.0."
+        },
+        "notVerified": [
+          "Fixed source, exact web production and public Windows Setup 1.5.0 release with runtime 0.10.0. Setup, local runtime handoff, Windows browser auto-open and combined LDP→MKB cold-start not independently run.",
+          "No application code, runtime, setup, live route provider, real device, or production website behavior was exercised by this content-edit task."
+        ],
+        "windowsSetup": "https://github.com/Bamboosato/markdown-knowledge-board/releases/tag/mkb-windows-setup-v1.5.0"
       }
     },
     {
@@ -2988,6 +3110,61 @@
           "Prior denied public-app retrieval was not retried or bypassed. No WebGPU, 500-favorite, automatic-sync or precise-measurement claims adopted."
         ],
         "method": "Pinned-source analysis supplied by monitoring task; selected fixed-commit PresetNav, MapViewer, pointTimeseriesClient, TimelineBar and App paths re-read in Cloud. Earlier source and delivery records above remain historical at their own commits/dates."
+      },
+      "routeRainForecastEvidence": {
+        "proposalId": "3d-rain-viewer-1647467fbde2-3591770304aa-route-rain-forecast",
+        "updateId": "3d-rain-viewer-route-rain-forecast-2026-11-26",
+        "checkedAt": "2026-11-26",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "c4fe611e3958e2b3f6102a9f7cc7bc87e3bb9938",
+        "baseCommit": "1647467fbde201f19d27067adcc45933efb361c7",
+        "commit": "3591770304aa779260aea77dac5bd60a7e99ae98",
+        "compareUrl": "https://github.com/Bamboosato/3d-rain-viewer/compare/1647467fbde201f19d27067adcc45933efb361c7...3591770304aa779260aea77dac5bd60a7e99ae98",
+        "applicationUpdateDate": "2026-11-26",
+        "dateEvidence": {
+          "applicationUpdateDate": "2026-11-26",
+          "timezone": "Asia/Tokyo",
+          "source": "Approved monitoring handoff: user-facing feature date on November 26 JST, not the portfolio editing date."
+        },
+        "sourcePaths": [
+          "api/route.ts",
+          "src/components/RoutePlanner.tsx",
+          "src/lib/routeWeatherAnalyzer.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/3591770304aa779260aea77dac5bd60a7e99ae98/api/route.ts",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/3591770304aa779260aea77dac5bd60a7e99ae98/src/components/RoutePlanner.tsx",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/3591770304aa779260aea77dac5bd60a7e99ae98/src/lib/routeWeatherAnalyzer.ts"
+        ],
+        "featurePullRequests": [
+          "https://github.com/Bamboosato/3d-rain-viewer/pull/35",
+          "https://github.com/Bamboosato/3d-rain-viewer/pull/36",
+          "https://github.com/Bamboosato/3d-rain-viewer/pull/37",
+          "https://github.com/Bamboosato/3d-rain-viewer/pull/38"
+        ],
+        "method": "Approved monitoring handoff of source and exact production deployment evidence, supplemented by read-only inspection of the listed fixed source paths in the content-edit task. Production HTTP and deployment observations below were supplied by monitoring, not remeasured from this Cloud environment. Static delivery does not establish interactive success.",
+        "confirmed": [
+          "Start, destination, travel mode and departure time determine route segments colored using JMA forecast samples near expected passage times; the timeline indicates estimated progress.",
+          "Unavailable/out-of-range forecast data is distinct from dry segments. Forecast samples are estimates and do not establish travel safety.",
+          "api/route.ts forwards selected coordinates through the application to OpenRouteService. Existing location-permission, search and sharing notes are retained. Minor UI PRs #37/#38 are included in this review without separate Updates entries."
+        ],
+        "deployment": {
+          "reference": "https://vercel.com/bamboosato/3d-rain-viewer/8DgDKu5BMAJ2TYx9iCmgtUDJqHnW",
+          "exactSha": "3591770304aa779260aea77dac5bd60a7e99ae98",
+          "state": "READY",
+          "target": "production",
+          "canonical": "https://3d-rain-viewer.bamboosato.com/",
+          "publicHttpStatus": 200,
+          "asset": "/assets/index-D4_DxRdi.js",
+          "assetHttpStatus": 200
+        },
+        "additionalProductionEvidence": {
+          "observations": "Monitoring handoff found /api/route, foot-hiking and the out-of-range label in the production bundle. A GET to the API returned 405; no POST, OpenRouteService call, live weather-provider interaction or real route was tested."
+        },
+        "notVerified": [
+          "Fixed route UI, analyzer and provider proxy; the exact READY production HTML was retrieved. Route/forecast-provider interaction and timeline motion were not independently run. Estimates do not establish travel safety.",
+          "No application code, runtime, setup, live route provider, real device, or production website behavior was exercised by this content-edit task."
+        ]
       }
     },
     {
