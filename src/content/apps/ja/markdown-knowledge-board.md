@@ -6,7 +6,7 @@ slug: markdown-knowledge-board
 category: utilities
 description: "Markdownのメモを整理し、検索・編集・プレビュー・出力まで行うノートアプリ。"
 createdAt: "2026-07-09"
-updatedAt: "2026-11-26"
+updatedAt: "2026-11-27"
 status: active
 tags: ["React","TypeScript","IndexedDB","Markdown"]
 featured: true
@@ -33,6 +33,10 @@ Markdownファイルを取り込み、タグや検索で整理しながら編集
 - JSONバックアップ、印刷／PDF
 - 任意のGitHub・Google Drive連携による暗号化クラウドバックアップ・復元
 - 選択中ノートをGoogle Driveで選んだフォルダーへMarkdown出力
+
+## ノートを長押しして並べ替え
+
+ピン留め済みとその他のノートは、それぞれのグループ内でカードを長押ししてドラッグすると並べ替えられます。並び順はブラウザーに保存され、JSONバックアップや暗号化クラウドバックアップで復元できます。並べ替えだけではノートの更新日時は変わりません。
 
 ## 取り込み後の選択
 

@@ -1708,6 +1708,78 @@
           "No application code, runtime, setup, live route provider, real device, or production website behavior was exercised by this content-edit task."
         ],
         "windowsSetup": "https://github.com/Bamboosato/markdown-knowledge-board/releases/tag/mkb-windows-setup-v1.5.0"
+      },
+      "noteReorderingEvidence": {
+        "proposalId": "markdown-knowledge-board-6b8f4f25f1b3-fc25829a4cf3-note-reordering",
+        "updateId": "markdown-knowledge-board-note-reordering-2026-11-27",
+        "checkedAt": "2026-11-27",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "5e92d15ad2bea43f629c29d8236e19956cb56e83",
+        "baseCommit": "6b8f4f25f1b3bb7931195db6614a4a5e672a16f2",
+        "commit": "fc25829a4cf3e575309ec4f19fb5f9cd3850840d",
+        "compareUrl": "https://github.com/Bamboosato/markdown-knowledge-board/compare/6b8f4f25f1b3bb7931195db6614a4a5e672a16f2...fc25829a4cf3e575309ec4f19fb5f9cd3850840d",
+        "comparison": {
+          "commits": 1,
+          "changedFiles": 19
+        },
+        "featurePullRequests": [
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/86"
+        ],
+        "applicationUpdateDate": "2026-11-27",
+        "dateEvidence": {
+          "applicationUpdateDate": "2026-11-27",
+          "timezone": "Asia/Tokyo",
+          "committedAt": "2026-11-27T07:56:14Z",
+          "source": "https://github.com/Bamboosato/markdown-knowledge-board/commit/fc25829a4cf3e575309ec4f19fb5f9cd3850840d",
+          "reason": "Implementation date of note reordering, not the portfolio editing or monitoring date."
+        },
+        "sourcePaths": [
+          "README.md",
+          "src/App.tsx",
+          "src/components/NoteCardGroup.tsx",
+          "src/lib/noteOrder.ts",
+          "src/lib/db.ts",
+          "src/lib/backup.ts",
+          "src/lib/cloudRestore.ts",
+          "src/lib/googleDriveOperations.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/fc25829a4cf3e575309ec4f19fb5f9cd3850840d/README.md",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/fc25829a4cf3e575309ec4f19fb5f9cd3850840d/src/App.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/fc25829a4cf3e575309ec4f19fb5f9cd3850840d/src/components/NoteCardGroup.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/fc25829a4cf3e575309ec4f19fb5f9cd3850840d/src/lib/noteOrder.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/fc25829a4cf3e575309ec4f19fb5f9cd3850840d/src/lib/db.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/fc25829a4cf3e575309ec4f19fb5f9cd3850840d/src/lib/backup.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/fc25829a4cf3e575309ec4f19fb5f9cd3850840d/src/lib/cloudRestore.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/fc25829a4cf3e575309ec4f19fb5f9cd3850840d/src/lib/googleDriveOperations.ts"
+        ],
+        "method": "Independently reviewed the fixed public GitHub comparison and PR #86. Production metadata and anonymous HTTP observations below are inherited from the supplied verification, not remeasured by this Cloud task.",
+        "confirmed": [
+          "NoteCardGroup.tsx uses long-press dragging and separate pinned/other groups. db.ts stores group order in IndexedDB independently of note bodies and modification timestamps.",
+          "backup.ts includes noteOrder in JSON backups; local import and encrypted cloud backup/restore paths preserve or restore the order. These are explicit backup/restore operations, not synchronization.",
+          "The existing Windows Local MCP description, usage conditions, URLs and prior evidence are retained."
+        ],
+        "productionDeliveryEvidence": {
+          "source": "Supplied public deployment metadata and anonymous HTTP observations on 2026-11-27; inherited evidence.",
+          "reference": "https://vercel.com/bamboosato/markdown-knowledge-board/8v6JgxxLdhD39j6K3rx3JSeKpGV5",
+          "commit": "fc25829a4cf3e575309ec4f19fb5f9cd3850840d",
+          "target": "production",
+          "state": "READY",
+          "exactShaVerified": true,
+          "url": "https://mkb.bamboosato.com/",
+          "homepageHttpStatus": 200,
+          "asset": "/assets/index-B7p-IzC7.js",
+          "assetHttpStatus": 200,
+          "cloudRecheck": "Anonymous HEAD requests to the public homepage failed at the Cloud proxy with CONNECT tunnel 403 on 2026-11-27. This is not an application HTTP response."
+        },
+        "authorReportedVerification": {
+          "reference": "https://github.com/Bamboosato/markdown-knowledge-board/pull/86",
+          "scope": "PR author reports Pixel 10a Chrome interaction, 97 targeted unit tests and six Chromium E2E tests; cloud services were mocked. Not independently rerun in this content task."
+        },
+        "notVerified": [
+          "No independent touch, production iPhone or real cloud backup/restore test.",
+          "No fresh production HTTP 200 measurement in this Cloud task; source and inherited deployment evidence do not establish interactive success."
+        ]
       }
     },
     {
@@ -4162,6 +4234,74 @@
           "Portfolio production appearance remains unverified; this task prepares a draft PR without deploying."
         ]
       }
+    },
+    {
+      "name": "secure-sync-memo",
+      "appId": "secure-sync-memo",
+      "commit": "05f61a436b9efb8895c240d9547d82097fa82a0d",
+      "checkedAt": "2026-11-27",
+      "checkedAtTimezone": "Etc/UTC",
+      "siteBaseCommit": "5e92d15ad2bea43f629c29d8236e19956cb56e83",
+      "proposalId": "secure-sync-memo-initial-05f61a436b9e-public-listing",
+      "sourcePaths": [
+        "README.md",
+        "src/App.tsx",
+        "src/lib/firebase.ts",
+        "src/lib/notes.ts",
+        "src/lib/crypto.ts",
+        "src/components/NoteList.tsx",
+        "firestore.rules",
+        "firebase.json"
+      ],
+      "sourceUrls": [
+        "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/README.md",
+        "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/src/App.tsx",
+        "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/src/lib/firebase.ts",
+        "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/src/lib/notes.ts",
+        "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/src/lib/crypto.ts",
+        "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/src/components/NoteList.tsx",
+        "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/firestore.rules",
+        "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/firebase.json"
+      ],
+      "access": "login-required",
+      "usageFeatures": [],
+      "method": "Public repository visibility and all listed files at the fixed commit independently retrieved through GitHub. Source behavior is distinguished from supplied anonymous static delivery evidence and from untested application operations.",
+      "confirmed": [
+        "firebase.ts implements Google sign-in; App.tsx gates the notebook on authentication and encryption setup/unlock. Sign-in availability for arbitrary Google accounts has not been established.",
+        "notes.ts encrypts the body payload through crypto.ts before saving it to Cloud Firestore. Titles, tags, timestamps, pin state and ordering metadata remain unencrypted.",
+        "App.tsx and NoteList.tsx implement title/tag search, pinning and reordering within pinned/other groups. The README and editor integration describe Markdown editing and preview.",
+        "Notes are stored under the authenticated user path; firestore.rules defines owner-only access. This supports the personal, own-devices design and absence of note sharing, but does not verify deployed production rules.",
+        "Initial use and synchronization require network access. PWA and local-cache source mechanisms alone do not establish tested offline operation or justify an offline badge."
+      ],
+      "dateEvidence": {
+        "initialCommit": "c4893ad373941971caceee55f9a181a61f836caf",
+        "initialCommittedAt": "2026-11-27T03:02:11Z",
+        "applicationUpdateDate": "2026-11-27",
+        "timezone": "Asia/Tokyo",
+        "source": "https://github.com/Bamboosato/secure-sync-memo/commit/c4893ad373941971caceee55f9a181a61f836caf",
+        "reason": "Initial implementation and current feature source are from November 27 JST; not the README update or monitoring date."
+      },
+      "productionDeliveryEvidence": {
+        "source": "Supplied anonymous public HTTP and asset observations on 2026-11-27; inherited evidence, not remeasured by this Cloud task.",
+        "url": "https://sync-memo-366f4.web.app/",
+        "alternateUrl": "https://sync-memo-366f4.firebaseapp.com/",
+        "homepageHttpStatus": 200,
+        "alternateHomepageHttpStatus": 200,
+        "sameHtmlObserved": true,
+        "asset": "/assets/index-BkZAZCB6.js",
+        "assetHttpStatus": 200,
+        "manifestHttpStatus": 200,
+        "serviceWorkerHttpStatus": 200,
+        "scope": "Public app name, Google sign-in, body encryption, ordering and update-notification markers are consistent with source. Static delivery is not an exact deployed-commit attestation.",
+        "exactShaVerified": false,
+        "cloudRecheck": "Anonymous HEAD request to the canonical homepage failed at the Cloud proxy with CONNECT tunnel 403 on 2026-11-27. This is not an application HTTP response."
+      },
+      "notVerified": [
+        "No Google login, registration, passphrase entry, note creation or production Firebase rule test.",
+        "No real-device synchronization, key recovery, offline behavior or installed PWA test.",
+        "No exact Firebase Hosting commit equivalence or fresh public HTTP 200 measurement in this Cloud task.",
+        "No whole-note encryption, independent authentication/security audit, English application UI or unrestricted Google-account availability claim."
+      ]
     }
   ]
 }
