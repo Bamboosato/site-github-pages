@@ -386,9 +386,9 @@
       "appUrl": "https://local-document-preprocessor.vercel.app/",
       "homepageHttpStatus": 200,
       "createdAt": "2026-08-06",
-      "updatedAt": "2026-11-24",
-      "commit": "9386c99ea42c90b92516035522d9a076fc0fb7d4",
-      "commitUrl": "https://github.com/Bamboosato/local-document-preprocessor/commit/9386c99ea42c90b92516035522d9a076fc0fb7d4",
+      "updatedAt": "2026-11-26",
+      "commit": "077083ab5065f5b09c866aaa51ebf584e9e72a67",
+      "commitUrl": "https://github.com/Bamboosato/local-document-preprocessor/commit/077083ab5065f5b09c866aaa51ebf584e9e72a67",
       "readmeUrl": "https://github.com/Bamboosato/local-document-preprocessor/blob/main/README.md",
       "jsonOfflineUpdate": {
         "proposalId": "local-document-preprocessor-4ad89476a4ad-a6642c3bcc0b-json-input-pwa-generation",
@@ -404,11 +404,11 @@
           "https://github.com/Bamboosato/local-document-preprocessor/blob/12cf9d4c440fbc070329cf2c147eb62475791b01/docs/distribution-closeout-register.md"
         ]
       },
-      "verifiedAt": "2026-11-24",
+      "verifiedAt": "2026-11-26",
       "dateEvidence": {
-        "applicationUpdateDate": "2026-11-24",
+        "applicationUpdateDate": "2026-11-26",
         "timezone": "Asia/Tokyo",
-        "source": "Approved monitoring handoff: user-facing features integrated and publicly delivered on November 24 JST; not the portfolio editing date."
+        "source": "Approved monitoring handoff: user-facing feature date on November 26 JST, not the portfolio editing date."
       },
       "jsonArrayElementsMermaidDirectionEvidence": {
         "proposalId": "local-document-preprocessor-12cf9d4c440f-9386c99ea42c-json-array-elements-mermaid-direction",
@@ -437,6 +437,52 @@
             "source": "https://github.com/Bamboosato/local-document-preprocessor/blob/12cf9d4c440fbc070329cf2c147eb62475791b01/docs/distribution-closeout-register.md",
             "note": "Production release date; not content-edit or monitoring date. Deployment/interaction scope is recorded separately in docs/app-usage-evidence.json.",
             "deployedSource": "db29c664aa1f95bf7bded28d1356c652e43480e3"
+          }
+        }
+      },
+      "windowsLocalMcpPwaEvidence": {
+        "proposalId": "local-document-preprocessor-9386c99ea42c-077083ab5065-windows-local-mcp-pwa-update",
+        "updateId": "local-document-preprocessor-windows-local-mcp-pwa-update-2026-11-26",
+        "checkedAt": "2026-11-26",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "c4fe611e3958e2b3f6102a9f7cc7bc87e3bb9938",
+        "baseCommit": "9386c99ea42c90b92516035522d9a076fc0fb7d4",
+        "commit": "077083ab5065f5b09c866aaa51ebf584e9e72a67",
+        "compareUrl": "https://github.com/Bamboosato/local-document-preprocessor/compare/9386c99ea42c90b92516035522d9a076fc0fb7d4...077083ab5065f5b09c866aaa51ebf584e9e72a67",
+        "applicationUpdateDate": "2026-11-26",
+        "dateEvidence": {
+          "applicationUpdateDate": "2026-11-26",
+          "timezone": "Asia/Tokyo",
+          "source": "Approved monitoring handoff: user-facing feature date on November 26 JST, not the portfolio editing date."
+        },
+        "sourcePaths": [
+          "tools/local-mcp/README.md",
+          "src/components/AboutApp.tsx",
+          "tools/local-mcp/save.mjs",
+          "public/sw.js"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/077083ab5065f5b09c866aaa51ebf584e9e72a67/tools/local-mcp/README.md",
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/077083ab5065f5b09c866aaa51ebf584e9e72a67/src/components/AboutApp.tsx",
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/077083ab5065f5b09c866aaa51ebf584e9e72a67/tools/local-mcp/save.mjs",
+          "https://github.com/Bamboosato/local-document-preprocessor/blob/077083ab5065f5b09c866aaa51ebf584e9e72a67/public/sw.js"
+        ],
+        "featurePullRequests": [
+          "https://github.com/Bamboosato/local-document-preprocessor/pull/62",
+          "https://github.com/Bamboosato/local-document-preprocessor/pull/63",
+          "https://github.com/Bamboosato/local-document-preprocessor/pull/64",
+          "https://github.com/Bamboosato/local-document-preprocessor/pull/65"
+        ],
+        "usageEvidencePath": "docs/app-usage-evidence.json#repositories[local-document-preprocessor].windowsLocalMcpPwaEvidence",
+        "previousInventory": {
+          "updatedAt": "2026-11-24",
+          "verifiedAt": "2026-11-24",
+          "commit": "9386c99ea42c90b92516035522d9a076fc0fb7d4",
+          "commitUrl": "https://github.com/Bamboosato/local-document-preprocessor/commit/9386c99ea42c90b92516035522d9a076fc0fb7d4",
+          "dateEvidence": {
+            "applicationUpdateDate": "2026-11-24",
+            "timezone": "Asia/Tokyo",
+            "source": "Approved monitoring handoff: user-facing features integrated and publicly delivered on November 24 JST; not the portfolio editing date."
           }
         }
       }
@@ -489,9 +535,9 @@
       "appUrl": "https://markdown-knowledge-board.vercel.app/",
       "homepageHttpStatus": 200,
       "createdAt": "2026-07-09",
-      "updatedAt": "2026-11-17",
-      "commit": "ea80747c3f94690e062d031e2dbcd6107b1814da",
-      "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/ea80747c3f94690e062d031e2dbcd6107b1814da",
+      "updatedAt": "2026-11-26",
+      "commit": "6b8f4f25f1b3bb7931195db6614a4a5e672a16f2",
+      "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/6b8f4f25f1b3bb7931195db6614a4a5e672a16f2",
       "readmeUrl": "https://github.com/Bamboosato/markdown-knowledge-board/blob/main/README.md",
       "implementationSources": [
         "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/src/App.tsx#L1830-L1975",
@@ -631,6 +677,51 @@
           "metadataCommittedAt": "2026-11-17T04:42:12Z",
           "removeCommittedAt": "2026-11-17T05:32:30Z",
           "reason": "Feature commits, not the monitoring date; compared seven commits across 42 files."
+        }
+      },
+      "verifiedAt": "2026-11-26",
+      "dateEvidence": {
+        "applicationUpdateDate": "2026-11-26",
+        "timezone": "Asia/Tokyo",
+        "source": "Approved monitoring handoff: user-facing feature date on November 26 JST, not the portfolio editing date."
+      },
+      "windowsMcpSaveDestinationEvidence": {
+        "proposalId": "markdown-knowledge-board-61b97b8482ae-6b8f4f25f1b3-windows-mcp-save-destination",
+        "updateId": "markdown-knowledge-board-windows-mcp-save-destination-2026-11-26",
+        "checkedAt": "2026-11-26",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "c4fe611e3958e2b3f6102a9f7cc7bc87e3bb9938",
+        "baseCommit": "61b97b8482ae65feccd8c4db2e74edb06f45a0cd",
+        "commit": "6b8f4f25f1b3bb7931195db6614a4a5e672a16f2",
+        "compareUrl": "https://github.com/Bamboosato/markdown-knowledge-board/compare/61b97b8482ae65feccd8c4db2e74edb06f45a0cd...6b8f4f25f1b3bb7931195db6614a4a5e672a16f2",
+        "applicationUpdateDate": "2026-11-26",
+        "dateEvidence": {
+          "applicationUpdateDate": "2026-11-26",
+          "timezone": "Asia/Tokyo",
+          "source": "Approved monitoring handoff: user-facing feature date on November 26 JST, not the portfolio editing date."
+        },
+        "sourcePaths": [
+          "tools/local-mcp/windows/README.md",
+          "src/components/LocalMcpPanel.tsx"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/6b8f4f25f1b3bb7931195db6614a4a5e672a16f2/tools/local-mcp/windows/README.md",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/6b8f4f25f1b3bb7931195db6614a4a5e672a16f2/src/components/LocalMcpPanel.tsx"
+        ],
+        "featurePullRequests": [
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/79",
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/80",
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/81",
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/82",
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/83",
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/84",
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/85"
+        ],
+        "usageEvidencePath": "docs/app-usage-evidence.json#repositories[markdown-knowledge-board].windowsMcpSaveDestinationEvidence",
+        "previousInventory": {
+          "updatedAt": "2026-11-17",
+          "commit": "ea80747c3f94690e062d031e2dbcd6107b1814da",
+          "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/ea80747c3f94690e062d031e2dbcd6107b1814da"
         }
       }
     },
@@ -890,20 +981,19 @@
       "appId": "3d-rain-viewer",
       "category": "visual-experimental",
       "public": true,
-      "verifiedAt": "2026-11-11",
+      "verifiedAt": "2026-11-26",
       "githubUrl": "https://github.com/Bamboosato/3d-rain-viewer",
       "appUrl": "https://3d-rain-viewer.bamboosato.com/",
-      "updatedAt": "2026-11-11",
-      "commit": "1647467fbde201f19d27067adcc45933efb361c7",
-      "commitUrl": "https://github.com/Bamboosato/3d-rain-viewer/commit/1647467fbde201f19d27067adcc45933efb361c7",
+      "updatedAt": "2026-11-26",
+      "commit": "3591770304aa779260aea77dac5bd60a7e99ae98",
+      "commitUrl": "https://github.com/Bamboosato/3d-rain-viewer/commit/3591770304aa779260aea77dac5bd60a7e99ae98",
       "readmeUrl": "https://github.com/Bamboosato/3d-rain-viewer/blob/544546f3da6f9da33a040f746bf81d2c3097872a/README.md",
       "proposalId": "3d-rain-viewer-a273745c67c7-544546f3da6f-search-sharing-domain",
       "repositoryId": 1447817634,
       "dateEvidence": {
-        "type": "meaningful production feature update",
-        "applicationUpdateDate": "2026-11-11",
-        "source": "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/App.tsx",
-        "note": "Production release date; not content-edit or monitoring date. Deployment/interaction scope is recorded separately in docs/app-usage-evidence.json."
+        "applicationUpdateDate": "2026-11-26",
+        "timezone": "Asia/Tokyo",
+        "source": "Approved monitoring handoff: user-facing feature date on November 26 JST, not the portfolio editing date."
       },
       "implementationSources": [
         "https://github.com/Bamboosato/3d-rain-viewer/blob/a273745c67c7bc53737d1f708e87a875e7dc8f0c/README.md",
@@ -1020,6 +1110,51 @@
         "committedAt": "2026-11-09T09:14:06Z",
         "url": "https://github.com/Bamboosato/3d-rain-viewer/commit/dda9efc2de216ca9f93efcee7418034db6c10ac4",
         "note": "The supplied feature range is reflected as 2026-11-09. Subsequent maintenance is recorded separately and does not advance updatedAt."
+      },
+      "routeRainForecastEvidence": {
+        "proposalId": "3d-rain-viewer-1647467fbde2-3591770304aa-route-rain-forecast",
+        "updateId": "3d-rain-viewer-route-rain-forecast-2026-11-26",
+        "checkedAt": "2026-11-26",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "c4fe611e3958e2b3f6102a9f7cc7bc87e3bb9938",
+        "baseCommit": "1647467fbde201f19d27067adcc45933efb361c7",
+        "commit": "3591770304aa779260aea77dac5bd60a7e99ae98",
+        "compareUrl": "https://github.com/Bamboosato/3d-rain-viewer/compare/1647467fbde201f19d27067adcc45933efb361c7...3591770304aa779260aea77dac5bd60a7e99ae98",
+        "applicationUpdateDate": "2026-11-26",
+        "dateEvidence": {
+          "applicationUpdateDate": "2026-11-26",
+          "timezone": "Asia/Tokyo",
+          "source": "Approved monitoring handoff: user-facing feature date on November 26 JST, not the portfolio editing date."
+        },
+        "sourcePaths": [
+          "api/route.ts",
+          "src/components/RoutePlanner.tsx",
+          "src/lib/routeWeatherAnalyzer.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/3591770304aa779260aea77dac5bd60a7e99ae98/api/route.ts",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/3591770304aa779260aea77dac5bd60a7e99ae98/src/components/RoutePlanner.tsx",
+          "https://github.com/Bamboosato/3d-rain-viewer/blob/3591770304aa779260aea77dac5bd60a7e99ae98/src/lib/routeWeatherAnalyzer.ts"
+        ],
+        "featurePullRequests": [
+          "https://github.com/Bamboosato/3d-rain-viewer/pull/35",
+          "https://github.com/Bamboosato/3d-rain-viewer/pull/36",
+          "https://github.com/Bamboosato/3d-rain-viewer/pull/37",
+          "https://github.com/Bamboosato/3d-rain-viewer/pull/38"
+        ],
+        "usageEvidencePath": "docs/app-usage-evidence.json#repositories[3d-rain-viewer].routeRainForecastEvidence",
+        "previousInventory": {
+          "updatedAt": "2026-11-11",
+          "verifiedAt": "2026-11-11",
+          "commit": "1647467fbde201f19d27067adcc45933efb361c7",
+          "commitUrl": "https://github.com/Bamboosato/3d-rain-viewer/commit/1647467fbde201f19d27067adcc45933efb361c7",
+          "dateEvidence": {
+            "type": "meaningful production feature update",
+            "applicationUpdateDate": "2026-11-11",
+            "source": "https://github.com/Bamboosato/3d-rain-viewer/blob/1647467fbde201f19d27067adcc45933efb361c7/src/App.tsx",
+            "note": "Production release date; not content-edit or monitoring date. Deployment/interaction scope is recorded separately in docs/app-usage-evidence.json."
+          }
+        }
       }
     },
     {

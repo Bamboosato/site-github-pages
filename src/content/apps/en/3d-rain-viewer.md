@@ -5,7 +5,7 @@ title: "3D RainScape"
 slug: 3d-rain-viewer
 category: visual-experimental
 description: "A map viewer that overlays JMA and JAXA rain data on 3D mountain terrain to explore Japan's 100 famous mountains and favorite locations."
-updatedAt: "2026-11-11"
+updatedAt: "2026-11-26"
 status: active
 tags: ["React", "TypeScript", "Vite", "MapLibre GL JS", "WebGL2"]
 featured: false
@@ -13,7 +13,7 @@ appUrl: https://3d-rain-viewer.bamboosato.com/
 githubUrl: https://github.com/Bamboosato/3d-rain-viewer
 access: open
 usageFeatures: ["no-registration"]
-usageNote: "Use the app in your browser without registration. Favorites are stored per browser and site origin; they are not automatically transferred from the old URL to the new one. Loading maps, terrain, and weather data requires requests to external services. The browser may request location permission at startup, when using the current-location button, and when opening the search or favorites tab. Place and facility searches send the search term to GSI and OpenStreetMap services. Favorite-name suggestions send the selected coordinates to OpenStreetMap services. Shared URLs include location coordinates and, when specified, a place name. Favorite-transfer links contain the list's names, coordinates, and viewpoints. Anyone with the link can import the list, so choose recipients carefully. Transfers are manual, with no automatic synchronization. Distances use the current location when available, otherwise a reference such as the map center."
+usageNote: "Use the app in your browser without registration. Favorites are stored per browser and site origin; they are not automatically transferred from the old URL to the new one. Loading maps, terrain, and weather data requires requests to external services. The browser may request location permission at startup, when using the current-location button, and when opening the search or favorites tab. Place and facility searches send the search term to GSI and OpenStreetMap services. Favorite-name suggestions send the selected coordinates to OpenStreetMap services. Route searches send the specified coordinates through the app to OpenRouteService. Shared URLs include location coordinates and, when specified, a place name. Favorite-transfer links contain the list's names, coordinates, and viewpoints. Anyone with the link can import the list, so choose recipients carefully. Transfers are manual, with no automatic synchronization. Distances use the current location when available, otherwise a reference such as the map center."
 ---
 
 ## Overview
@@ -36,6 +36,12 @@ A map viewer that overlays Japan Meteorological Agency rain data and JAXA satell
 - Elevation and rainfall inspection for map locations, plus a current-location control
 - Terrain exaggeration, rain opacity, and standard map, shaded-relief, or aerial-imagery backgrounds
 - A vertical rainfall-intensity scale for mobile screens
+
+## Check rain along a planned route
+
+Choose a start, destination, travel mode, and departure time to color route segments by JMA precipitation estimates near the expected time of passage. The timeline shows estimated progress along the route.
+
+These are forecast samples at locations and times along the route. Segments outside the forecast range or without available data are shown separately from dry segments. Routes, travel times, and precipitation estimates do not guarantee actual travel conditions or safety.
 
 ## Design and usage
 

@@ -6,7 +6,7 @@ slug: markdown-knowledge-board
 category: utilities
 description: "Organize Markdown notes with search, editing, previews, and export."
 createdAt: "2026-07-09"
-updatedAt: "2026-11-17"
+updatedAt: "2026-11-26"
 status: active
 tags: ["React","TypeScript","IndexedDB","Markdown"]
 featured: true
@@ -50,9 +50,11 @@ In-app printing and PDF output wrap long code and URLs and adjust page breaks fo
 
 ## Local MCP integration
 
-Optional Local MCP integration lets Codex save new Markdown notes after setup on your PC and an explicit connection in the app. Enabling “Allow reading and updating notes” under Local MCP → Advanced settings also lets Codex search, retrieve, and update existing notes. Retrieved note bodies are passed to Codex. This is separate from automatic synchronization between PCs.
+Optional Local MCP integration lets Codex save new Markdown notes after setup on your PC and an explicit connection in the app. Enabling “Allow reading and updating notes” under Local MCP → Note access also lets Codex search, retrieve, and update existing notes. Retrieved note bodies are passed to Codex. This is separate from automatic synchronization between PCs.
 
-With the same permission, Custom metadata on matching notes can be changed in a batch after previewing the targets and changes. Add inserts missing keys only, Update changes existing keys only, Upsert updates existing keys or adds missing ones, and Remove deletes keys and their values. Remove does not delete the notes themselves. Removal requires support in both the local MCP service and the app. See [Windows Setup v1.4.0](https://github.com/Bamboosato/markdown-knowledge-board/releases/tag/mkb-windows-setup-v1.4.0) and the [setup instructions](https://github.com/Bamboosato/markdown-knowledge-board/blob/ea80747c3f94690e062d031e2dbcd6107b1814da/tools/local-mcp/windows/README.md); after upgrading, restart Codex, update the app, and reconnect.
+On Windows, you can optionally register a Chrome or Edge profile as the save destination under Local MCP → Use this profile for saves. Set up a compatible Windows runtime, enter the first-time connection code, choose a browser profile with “Find profiles”, and select “Register save destination”. With auto-launch enabled, an explicit save request to the agent can open that destination. Changing the destination does not move existing notes or synchronize profiles.
+
+With permission to read and update existing notes, Custom metadata on matching notes can be changed in a batch after previewing the targets and changes. Add inserts missing keys only, Update changes existing keys only, Upsert updates existing keys or adds missing ones, and Remove deletes keys and their values. Remove does not delete the notes themselves. Removal requires support in both the local MCP service and the app. See [Windows Setup v1.5.0](https://github.com/Bamboosato/markdown-knowledge-board/releases/tag/mkb-windows-setup-v1.5.0) and the [setup instructions](https://github.com/Bamboosato/markdown-knowledge-board/blob/6b8f4f25f1b3bb7931195db6614a4a5e672a16f2/tools/local-mcp/windows/README.md); after upgrading, restart Codex, update the app, and reconnect.
 
 ## Design and usage
 
