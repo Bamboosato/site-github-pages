@@ -535,9 +535,9 @@
       "appUrl": "https://markdown-knowledge-board.vercel.app/",
       "homepageHttpStatus": 200,
       "createdAt": "2026-07-09",
-      "updatedAt": "2026-11-26",
-      "commit": "6b8f4f25f1b3bb7931195db6614a4a5e672a16f2",
-      "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/6b8f4f25f1b3bb7931195db6614a4a5e672a16f2",
+      "updatedAt": "2026-11-27",
+      "commit": "fc25829a4cf3e575309ec4f19fb5f9cd3850840d",
+      "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/fc25829a4cf3e575309ec4f19fb5f9cd3850840d",
       "readmeUrl": "https://github.com/Bamboosato/markdown-knowledge-board/blob/main/README.md",
       "implementationSources": [
         "https://github.com/Bamboosato/markdown-knowledge-board/blob/c10cf11b2c1cf6f8ba77f85740241124e727a8a5/src/App.tsx#L1830-L1975",
@@ -679,11 +679,13 @@
           "reason": "Feature commits, not the monitoring date; compared seven commits across 42 files."
         }
       },
-      "verifiedAt": "2026-11-26",
+      "verifiedAt": "2026-11-27",
       "dateEvidence": {
-        "applicationUpdateDate": "2026-11-26",
+        "applicationUpdateDate": "2026-11-27",
         "timezone": "Asia/Tokyo",
-        "source": "Approved monitoring handoff: user-facing feature date on November 26 JST, not the portfolio editing date."
+        "committedAt": "2026-11-27T07:56:14Z",
+        "source": "https://github.com/Bamboosato/markdown-knowledge-board/commit/fc25829a4cf3e575309ec4f19fb5f9cd3850840d",
+        "reason": "Implementation date of note reordering, not the portfolio editing or monitoring date."
       },
       "windowsMcpSaveDestinationEvidence": {
         "proposalId": "markdown-knowledge-board-61b97b8482ae-6b8f4f25f1b3-windows-mcp-save-destination",
@@ -722,6 +724,63 @@
           "updatedAt": "2026-11-17",
           "commit": "ea80747c3f94690e062d031e2dbcd6107b1814da",
           "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/ea80747c3f94690e062d031e2dbcd6107b1814da"
+        }
+      },
+      "noteReorderingEvidence": {
+        "proposalId": "markdown-knowledge-board-6b8f4f25f1b3-fc25829a4cf3-note-reordering",
+        "updateId": "markdown-knowledge-board-note-reordering-2026-11-27",
+        "checkedAt": "2026-11-27",
+        "checkedAtTimezone": "Etc/UTC",
+        "siteBaseCommit": "5e92d15ad2bea43f629c29d8236e19956cb56e83",
+        "baseCommit": "6b8f4f25f1b3bb7931195db6614a4a5e672a16f2",
+        "commit": "fc25829a4cf3e575309ec4f19fb5f9cd3850840d",
+        "compareUrl": "https://github.com/Bamboosato/markdown-knowledge-board/compare/6b8f4f25f1b3bb7931195db6614a4a5e672a16f2...fc25829a4cf3e575309ec4f19fb5f9cd3850840d",
+        "comparison": {
+          "commits": 1,
+          "changedFiles": 19
+        },
+        "featurePullRequests": [
+          "https://github.com/Bamboosato/markdown-knowledge-board/pull/86"
+        ],
+        "applicationUpdateDate": "2026-11-27",
+        "dateEvidence": {
+          "applicationUpdateDate": "2026-11-27",
+          "timezone": "Asia/Tokyo",
+          "committedAt": "2026-11-27T07:56:14Z",
+          "source": "https://github.com/Bamboosato/markdown-knowledge-board/commit/fc25829a4cf3e575309ec4f19fb5f9cd3850840d",
+          "reason": "Implementation date of note reordering, not the portfolio editing or monitoring date."
+        },
+        "sourcePaths": [
+          "README.md",
+          "src/App.tsx",
+          "src/components/NoteCardGroup.tsx",
+          "src/lib/noteOrder.ts",
+          "src/lib/db.ts",
+          "src/lib/backup.ts",
+          "src/lib/cloudRestore.ts",
+          "src/lib/googleDriveOperations.ts"
+        ],
+        "sourceUrls": [
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/fc25829a4cf3e575309ec4f19fb5f9cd3850840d/README.md",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/fc25829a4cf3e575309ec4f19fb5f9cd3850840d/src/App.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/fc25829a4cf3e575309ec4f19fb5f9cd3850840d/src/components/NoteCardGroup.tsx",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/fc25829a4cf3e575309ec4f19fb5f9cd3850840d/src/lib/noteOrder.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/fc25829a4cf3e575309ec4f19fb5f9cd3850840d/src/lib/db.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/fc25829a4cf3e575309ec4f19fb5f9cd3850840d/src/lib/backup.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/fc25829a4cf3e575309ec4f19fb5f9cd3850840d/src/lib/cloudRestore.ts",
+          "https://github.com/Bamboosato/markdown-knowledge-board/blob/fc25829a4cf3e575309ec4f19fb5f9cd3850840d/src/lib/googleDriveOperations.ts"
+        ],
+        "usageEvidencePath": "docs/app-usage-evidence.json#repositories[markdown-knowledge-board].noteReorderingEvidence",
+        "previousInventory": {
+          "updatedAt": "2026-11-26",
+          "verifiedAt": "2026-11-26",
+          "commit": "6b8f4f25f1b3bb7931195db6614a4a5e672a16f2",
+          "commitUrl": "https://github.com/Bamboosato/markdown-knowledge-board/commit/6b8f4f25f1b3bb7931195db6614a4a5e672a16f2",
+          "dateEvidence": {
+            "applicationUpdateDate": "2026-11-26",
+            "timezone": "Asia/Tokyo",
+            "source": "Approved monitoring handoff: user-facing feature date on November 26 JST, not the portfolio editing date."
+          }
         }
       }
     },
@@ -1488,6 +1547,47 @@
           "homepageHttpStatusSource": "Parent Dot anonymous HTTP observation on 2026-11-23; not remeasured by this Cloud task."
         }
       }
+    },
+    {
+      "name": "secure-sync-memo",
+      "appId": "secure-sync-memo",
+      "category": "utilities",
+      "public": true,
+      "verifiedAt": "2026-11-27",
+      "githubUrl": "https://github.com/Bamboosato/secure-sync-memo",
+      "appUrl": "https://sync-memo-366f4.web.app/",
+      "createdAt": "2026-11-27",
+      "updatedAt": "2026-11-27",
+      "commit": "05f61a436b9efb8895c240d9547d82097fa82a0d",
+      "commitUrl": "https://github.com/Bamboosato/secure-sync-memo/commit/05f61a436b9efb8895c240d9547d82097fa82a0d",
+      "readmeUrl": "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/README.md",
+      "proposalId": "secure-sync-memo-initial-05f61a436b9e-public-listing",
+      "siteBaseCommit": "5e92d15ad2bea43f629c29d8236e19956cb56e83",
+      "dateEvidence": {
+        "initialCommit": "c4893ad373941971caceee55f9a181a61f836caf",
+        "initialCommittedAt": "2026-11-27T03:02:11Z",
+        "applicationUpdateDate": "2026-11-27",
+        "timezone": "Asia/Tokyo",
+        "source": "https://github.com/Bamboosato/secure-sync-memo/commit/c4893ad373941971caceee55f9a181a61f836caf",
+        "reason": "Initial implementation and current feature source are from November 27 JST; not the README update or monitoring date."
+      },
+      "implementationSources": [
+        "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/README.md",
+        "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/src/App.tsx",
+        "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/src/lib/firebase.ts",
+        "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/src/lib/notes.ts",
+        "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/src/lib/crypto.ts",
+        "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/src/components/NoteList.tsx",
+        "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/firestore.rules",
+        "https://github.com/Bamboosato/secure-sync-memo/blob/05f61a436b9efb8895c240d9547d82097fa82a0d/firebase.json"
+      ],
+      "publicVisibilityEvidence": {
+        "url": "https://api.github.com/repos/Bamboosato/secure-sync-memo",
+        "private": false,
+        "method": "Independently retrieved repository metadata on 2026-11-27 UTC."
+      },
+      "usageEvidencePath": "docs/app-usage-evidence.json#repositories[secure-sync-memo]",
+      "note": "Initial bilingual listing. Fixed source supports personal notes with Google sign-in and browser-side body encryption; metadata is not encrypted and notes cannot be shared. Public static delivery observations and all verification limits are recorded in the usage evidence. No exact Hosting commit match or successful authenticated operation is claimed."
     }
   ]
 }

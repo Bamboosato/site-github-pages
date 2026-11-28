@@ -6,7 +6,7 @@ slug: markdown-knowledge-board
 category: utilities
 description: "Organize Markdown notes with search, editing, previews, and export."
 createdAt: "2026-07-09"
-updatedAt: "2026-11-26"
+updatedAt: "2026-11-27"
 status: active
 tags: ["React","TypeScript","IndexedDB","Markdown"]
 featured: true
@@ -33,6 +33,10 @@ Import Markdown files and organize them with tags and search. Edit notes stored 
 - JSON backups and print/PDF output
 - Optional encrypted cloud backup and restore with GitHub or Google Drive
 - Markdown export of the current note to a selected Google Drive folder
+
+## Reorder notes with a long press
+
+Long-press and drag a note card to reorder it within either the pinned or other notes group. The order is stored in the browser and can be restored from a JSON backup or an encrypted cloud backup. Reordering does not change the note’s modification time.
 
 ## Selection after import
 
